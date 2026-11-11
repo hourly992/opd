@@ -1,0 +1,30 @@
+name: Publish the verified Windows archive
+on:
+  push:
+    branches: [codex/no-vehicles-windows-publish]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Verify the Windows archive and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          api="$GITHUB_API_URL/repos/$GITHUB_REPOSITORY"
+          auth="Authorization: Bearer $GH_TOKEN"
+          archive="$RUNNER_TEMP/DuninaGorkavicha-Windows-x64.zip"
+          sha=5ff1db5d5c286f55283b163320a7bd7ce2809c917bfbc95d34941b1c7fed165a
+          curl -fLsS --retry 2 -H "$auth" -H 'Accept: application/octet-stream' "$api/releases/assets/735117135" -o "$archive"
+          printf '%s  %s\n' "$sha" "$archive" | sha256sum -c -
+          release="$api/releases/441688226"
+          candidate=$(curl -fsS --retry 2 -H "$auth" "$release")
+          jq -e '.draft and .tag_name == "autumn-no-cars-windows-2026-11-11"' <<< "$candidate"
+          upload=$(jq -r '.upload_url | split("{")[0]' <<< "$candidate")
+          asset=$(curl -fsS --max-time 160 -H "$auth" -H 'Content-Type: application/zip' --data-binary "@$archive" "$upload?name=$(basename "$archive")")
+          jq -e --arg sha "sha256:$sha" '.digest == $sha and .state == "uploaded" and .size == 262483290' <<< "$asset"
+          curl -fsS --retry 2 -X PATCH -H "$auth" -H 'Content-Type: application/json' -d '{"draft":false,"prerelease":true,"make_latest":"false"}' "$release" | jq -er 'select(.draft == false) | .html_url'
+
