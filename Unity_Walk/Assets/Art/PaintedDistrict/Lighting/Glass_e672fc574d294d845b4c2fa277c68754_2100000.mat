@@ -51,12 +51,12 @@ Material:
     - _Colorize: 0
     - _Cull: 2
     - _Interior: 0
-    - _InteriorDetail: 0.12
+    - _InteriorDetail: 0.26
     - _Kind: 0
     - _Metallic: 0
     - _OcclusionStrength: 0.65
     - _Parallax: 0.002
-    - _ReflectionStrength: 0.53
+    - _ReflectionStrength: 1.18
     - _RoughnessBias: 0.4
     - _RoughnessScale: 1
     - _Saturation: 1

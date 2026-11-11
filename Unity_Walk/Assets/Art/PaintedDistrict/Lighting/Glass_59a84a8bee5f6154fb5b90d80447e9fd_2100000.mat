@@ -40,10 +40,10 @@ Material:
     - _AutumnSky: 1
     - _Cull: 2
     - _Interior: 0.58
-    - _InteriorDetail: 0.12
+    - _InteriorDetail: 0.26
     - _Kind: 0
     - _Metallic: 0.25
-    - _ReflectionStrength: 0.53
+    - _ReflectionStrength: 1.18
     - _SkyExposure: 1
     - _SkyLeaf: 0.92
     - _SkyPaintedDistrict: 1

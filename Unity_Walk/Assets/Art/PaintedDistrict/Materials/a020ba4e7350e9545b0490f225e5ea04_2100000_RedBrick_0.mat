@@ -42,13 +42,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlbedoContrast: 0.87
-    - _BumpStrength: 0.24
+    - _BumpStrength: 0.28
     - _Colorize: 0
     - _Cull: 2
     - _Kind: 1
     - _MeadowDrying: 0
     - _Metallic: 0
-    - _OcclusionStrength: 0.22
+    - _OcclusionStrength: 0.34
     - _PaintedVariation: 0.1
     - _Parallax: 0.00025
     - _PaverGreyFraction: 0.23
@@ -66,7 +66,7 @@ Material:
     m_Colors:
     - _AlbedoMean: {r: 0.47699985, g: 0.15487249, b: 0.07323897, a: 0}
     - _Color: {r: 0.97207004, g: 0.92573, b: 0.89331996, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.123, g: 0.074, b: 0.055, a: 1}
     - _MeadowSoilRange: {r: 0.078, g: 0.2, b: 0.36, a: 0.66}
     - _PaverFarTone: {r: 0.13, g: 0.072, b: 0.052, a: 0}
     - _PaverFinish: {r: 0.0025, g: 1, b: 0.75, a: 0}

@@ -11,14 +11,16 @@ internal sealed class PaintedDistrictQA : MonoBehaviour
     private const int Height = 900;
     private const int Samples = 42;
     private const float ComparisonFov = 62;
-    private static readonly string[] Names = { "01_house5", "02_court7", "03_street", "04_south", "05_east" };
+    private static readonly string[] Names = { "01_house5", "02_court7", "03_street", "04_south", "05_east", "06_west_court", "07_east_court", "08_north_court", "09_south_court" };
     private static readonly Vector3[] Positions = {
         Vector3.zero, new Vector3(26, 1.7f, 37), new Vector3(-31.5f, 1.75f, 20),
-        new Vector3(139, 2.05f, -215), new Vector3(195, 2.1f, 112)
+        new Vector3(139, 2.05f, -215), new Vector3(195, 2.1f, 112),
+        new Vector3(-116, 9, 12), new Vector3(231, 10, 36), new Vector3(-140, 8, 163), new Vector3(139, 11, -215)
     };
     private static readonly Vector3[] Targets = {
         Vector3.zero, new Vector3(56, 1.6f, 40), new Vector3(-4, 3, -43),
-        new Vector3(170, 1.2f, -230), new Vector3(225, 1.4f, 140)
+        new Vector3(170, 1.2f, -230), new Vector3(225, 1.4f, 140),
+        new Vector3(-70, 0, 12), new Vector3(193, 0, 34), new Vector3(-90, 0, 139), new Vector3(72, 0, -158)
     };
     private string output;
 
