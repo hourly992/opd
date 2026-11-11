@@ -49,26 +49,45 @@ public static class StreetBuilder
     }
 
     [MenuItem("Street/Build saved scene and Windows game")]
-    public static void Build()
+    public static void Build() => BuildGeneratedScene();
+
+    [MenuItem("Street/Build saved scene and Linux game")]
+    public static void BuildLinux()
     {
-        BuildGeneratedScene();
+        const BuildTarget target = BuildTarget.StandaloneLinux64;
+        if (!BuildPipeline.IsBuildTargetSupported(BuildTargetGroup.Standalone, target))
+            throw new InvalidOperationException("Установите Linux Build Support (Mono) для этой версии Unity.");
+        if (EditorUserBuildSettings.activeBuildTarget != target)
+            throw new InvalidOperationException("Переключите активный Build Profile на Linux или запустите Unity с -buildTarget linux64.");
+
+        BuildSavedScene(target, "Build/StreetLinux", "DuninaGorkavicha.x86_64");
     }
 
     // Historical method name retained for existing editor callers. This builds the saved
     // scene only; it never runs the archived map generator or reads its source data.
-    internal static void BuildGeneratedScene()
+    internal static void BuildGeneratedScene() =>
+        BuildSavedScene(BuildTarget.StandaloneWindows64, "Build/StreetWindows", "DuninaGorkavicha.exe");
+
+    private static void BuildSavedScene(BuildTarget target, string outputDirectory, string executable)
     {
         PrepareSavedStreetSceneForBuild();
         PlayerSettings.companyName="OPD";
         PlayerSettings.productName="Дунина-Горкавича — прогулка";
         PlayerSettings.defaultScreenWidth=1600; PlayerSettings.defaultScreenHeight=900;
         PlayerSettings.fullScreenMode=FullScreenMode.Windowed; PlayerSettings.resizableWindow=true;
-        string dir=Path.GetFullPath("Build/StreetWindows"); Directory.CreateDirectory(dir);
-        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions {
-            scenes=new[]{"Assets/Scenes/Street.unity"}, target=BuildTarget.StandaloneWindows64,
-            locationPathName=Path.Combine(dir,"DuninaGorkavicha.exe"), options=BuildOptions.None });
-        if(report.summary.result!=BuildResult.Succeeded) throw new Exception("Street build failed: "+report.summary.result);
-        Debug.Log("STREET_BUILD_SUCCEEDED "+dir);
+        string directory = Path.GetFullPath(outputDirectory);
+        Directory.CreateDirectory(directory);
+        var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
+        {
+            scenes = new[] { "Assets/Scenes/Street.unity" },
+            target = target,
+            subtarget = (int)StandaloneBuildSubtarget.Player,
+            locationPathName = Path.Combine(directory, executable),
+            options = BuildOptions.None
+        });
+        if (report.summary.result != BuildResult.Succeeded)
+            throw new InvalidOperationException($"Street build for {target} failed: {report.summary.result}");
+        Debug.Log("STREET_BUILD_SUCCEEDED " + directory);
     }
 
     private static void PrepareSavedStreetSceneForBuild()

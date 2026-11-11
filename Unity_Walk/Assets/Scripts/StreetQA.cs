@@ -9,6 +9,7 @@ public class StreetQA : MonoBehaviour
 {
     private string outputPath;
     private bool aborting;
+    private bool renderOnCaptureOnly;
     [Serializable] private class Report
     {
         public bool passed, grounded, buildingCollision, containerCollision, benchCollision, treeCollision;
@@ -92,6 +93,10 @@ public class StreetQA : MonoBehaviour
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
         var args = Environment.GetCommandLineArgs();
+        var camera = GetComponentInChildren<Camera>();
+        renderOnCaptureOnly = args.Contains("-qaCaptureOnly");
+        if (renderOnCaptureOnly)
+            camera.enabled = false;
         int index = Array.IndexOf(args, "-qaOutput");
         string output = index >= 0 && index + 1 < args.Length ? args[index + 1] : Path.Combine(Application.dataPath, "..", "QA");
         Directory.CreateDirectory(output);
@@ -102,7 +107,6 @@ public class StreetQA : MonoBehaviour
         GetComponent<FirstPersonWalk>().enabled = false;
         GetComponent<StreetSession>().enabled = false;
         var controller = GetComponent<CharacterController>();
-        var camera = GetComponentInChildren<Camera>();
         var block = FindAnyObjectByType<PilotBlock>();
         var report = new Report { engine = Application.unityVersion };
         if (args.Contains("-rayTracingQAOnly"))
@@ -1314,6 +1318,15 @@ public class StreetQA : MonoBehaviour
 
     private IEnumerator Capture(Camera camera, Transform view, string path, int width = 1600, int height = 900, int samples = 4)
     {
+        if (renderOnCaptureOnly)
+        {
+            if (width > 960)
+            {
+                height = height * 960 / width;
+                width = 960;
+            }
+            samples = 1;
+        }
         camera.transform.SetPositionAndRotation(view.position, view.rotation);
         yield return new WaitForSecondsRealtime(.35f);
         var targetTexture = new RenderTexture(width, height, 24) { antiAliasing = samples };
