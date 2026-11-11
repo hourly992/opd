@@ -53,6 +53,8 @@ public class StreetQA : MonoBehaviour
         public int rayTracingInstances, rayTracedContactPixels;
         public int districtWalkChecks, districtWalkPasses;
         public int leafFlightPaths, leafFlightMoved;
+        public int bakedLightProbes, probeLitRenderers;
+        public bool bakedProbeDataValid;
         public string districtSector;
         public string engine;
         public EntranceCheck[] entranceChecks;
@@ -303,6 +305,18 @@ public class StreetQA : MonoBehaviour
             presentationCheck.shader && presentationCheck.shader.isSupported && presentationCheck.occlusionShader &&
             presentationCheck.occlusionShader.isSupported && camera.allowHDR && presentationCheck.contactShadows > 0;
         var renderers = FindObjectsByType<MeshRenderer>();
+        var probeGroup = FindAnyObjectByType<LightProbeGroup>();
+        var bakedProbes = LightmapSettings.lightProbes;
+        var probeCoefficients = bakedProbes ? bakedProbes.bakedProbes : null;
+        report.bakedLightProbes = bakedProbes ? bakedProbes.count : 0;
+        report.probeLitRenderers = renderers.Count(renderer =>
+            renderer.lightProbeUsage != UnityEngine.Rendering.LightProbeUsage.Off);
+        report.bakedProbeDataValid = !probeGroup || bakedProbes && bakedProbes.count > 0 &&
+            probeCoefficients != null && probeCoefficients.Length == bakedProbes.count && report.probeLitRenderers > 500 &&
+            probeCoefficients.All(probe => Enumerable.Range(0, 27).All(index =>
+                !float.IsNaN(probe[index / 9, index % 9]) && !float.IsInfinity(probe[index / 9, index % 9])));
+        Debug.Log($"FULL_VISUAL_RUNTIME_GI probes={report.bakedLightProbes} " +
+                  $"receivers={report.probeLitRenderers} dataValid={report.bakedProbeDataValid}");
         report.shadowCasters = renderers.Count(r => r.shadowCastingMode != UnityEngine.Rendering.ShadowCastingMode.Off);
         report.shadowReceivers = renderers.Count(r => r.receiveShadows);
         var sunlight = RenderSettings.sun;
@@ -473,6 +487,7 @@ public class StreetQA : MonoBehaviour
             && report.parkedVehiclesConfigured && report.vehicleCollision && report.meadowCells >= 80 && report.graphicsPresentationConfigured
             && report.roadNetworkConfigured && report.roadSurfacesContinuous && report.facadeMaterialsConfigured
             && report.roadTransitionsContinuous && report.woodlandPlacementValid && report.woodlandLodsConfigured && report.lightingConfigured
+            && report.bakedProbeDataValid
             && report.playgroundsConfigured && report.residentialAccessConfigured && report.roadMaterialsDistinct && report.grassCoverageExpanded
             && report.parkingPlacementValid && report.parkingSurfacesContinuous && report.parkingAccessConnected && report.parkingVehiclesOnPaving
             && report.entrancesHaveContinuousPaving && (!report.photoEntrancePresent || report.photoEntranceSurfaceValid&&report.photoEntranceWalkValid)
