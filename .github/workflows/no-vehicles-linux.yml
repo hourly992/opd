@@ -1,0 +1,48 @@
+name: Verify car-free Linux player
+on:
+  push:
+    branches: [codex/no-vehicles-linux-qa]
+permissions:
+  contents: write
+jobs:
+  player:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        scope: [full, district]
+    env:
+      SCOPE: ${{ matrix.scope }}
+      RELEASE_ID: '441543772'
+      ARCHIVE_SHA: 'fd9bbb2be3dae9b4419b78f628e93e520f35143515a5ad98440d55c3f348a349'
+      LIBGL_ALWAYS_SOFTWARE: '1'
+      SDL_AUDIODRIVER: dummy
+    steps:
+      - name: Prepare Mesa and X11
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb xauth libgl1-mesa-dri
+      - name: Verify and run Linux player
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/qa"
+          release="$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID"
+          asset_id=$(curl -fsS --retry 3 -H "Authorization: Bearer $GH_TOKEN" "$release" | jq -er '.assets[] | select(.name == "DuninaGorkavicha-Linux-x86_64.tar.gz" and .state == "uploaded") | .id')
+          archive="$RUNNER_TEMP/linux.tar.gz"
+          curl -fLsS --retry 3 -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/octet-stream" "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/assets/$asset_id" -o "$archive"
+          printf '%s  %s\n' "$ARCHIVE_SHA" "$archive" | sha256sum -c -
+          tar -xzf "$archive" -C "$RUNNER_TEMP"
+          cd "$RUNNER_TEMP/DuninaGorkavicha-Linux"
+          qa="$RUNNER_TEMP/qa"
+          args=()
+          if [ "$SCOPE" = district ]; then args+=(-districtSector stage13); fi
+          result=0
+          timeout --kill-after=15s 18m xvfb-run -a -s '-screen 0 1280x720x24' ./DuninaGorkavicha.x86_64 -force-glcore -force-gfx-direct -batchmode -qaCaptureOnly -screen-fullscreen 0 -screen-width 480 -screen-height 270 -streetQA -qaOutput "$qa" -logFile "$qa/player.log" "${args[@]}" || result=$?
+          tail -n 18 "$qa/player.log" || true
+          test "$result" -eq 0
+          jq -e --arg scope "$SCOPE" '.passed and .vehiclesAbsent and .parkedVehicles == 0 and .parkingVehicleReferences == 0 and (if $scope == "district" then .districtWalkChecks == 15 and .districtWalkPasses == 15 else .grounded and .buildingCollision and .missingMaterials == 0 and .parkingSurfacesContinuous and .roadTransitionChecks == 96 and .roadTransitionHits == 96 and .streetLampNightValid end)' "$qa/report.json"
+          jq '{engine, passed, parkedVehicles, parkingVehicleReferences, districtWalkChecks, districtWalkPasses, missingMaterials, roadTransitionChecks, roadTransitionHits, activeNightLamps}' "$qa/report.json"
+
