@@ -1,0 +1,315 @@
+{
+  "originLon": 69.062503,
+  "originLat": 60.999706,
+  "checkedDate": "2026-11-02",
+  "sourceFile": "street_source.osm",
+  "sourceSha256": "e1f5949907406435031d74eeddf20de8fb7009807671bec5c44ae625bdbb37fd",
+  "sourceRetrievedDate": "2026-10-31 (according to STREET_README.md)",
+  "license": "ODbL-1.0",
+  "licenseUrl": "https://www.openstreetmap.org/copyright",
+  "sites": [
+    {
+      "id": 520458239,
+      "source": "https://www.openstreetmap.org/way/520458239",
+      "osmVersion": 2,
+      "osmTimestamp": "2020-08-22T06:26:57Z",
+      "points": [
+        {
+          "x": 106.055,
+          "z": -93.843
+        },
+        {
+          "x": 105.985,
+          "z": -109.695
+        },
+        {
+          "x": 113.439,
+          "z": -109.762
+        },
+        {
+          "x": 117.492,
+          "z": -106.578
+        },
+        {
+          "x": 117.276,
+          "z": -93.765
+        }
+      ],
+      "geographicPoints": [
+        {
+          "lon": 69.0644681,
+          "lat": 60.998863
+        },
+        {
+          "lon": 69.0644668,
+          "lat": 60.9987206
+        },
+        {
+          "lon": 69.0646049,
+          "lat": 60.99872
+        },
+        {
+          "lon": 69.06468,
+          "lat": 60.9987486
+        },
+        {
+          "lon": 69.064676,
+          "lat": 60.9988637
+        }
+      ],
+      "tags": {
+        "leisure": "playground"
+      },
+      "equipmentConfirmed": false
+    },
+    {
+      "id": 593456537,
+      "source": "https://www.openstreetmap.org/way/593456537",
+      "osmVersion": 1,
+      "osmTimestamp": "2018-06-03T15:44:09Z",
+      "points": [
+        {
+          "x": -462.994,
+          "z": 386.247
+        },
+        {
+          "x": -455.071,
+          "z": 371.686
+        },
+        {
+          "x": -469.103,
+          "z": 364.05
+        },
+        {
+          "x": -477.031,
+          "z": 378.599
+        }
+      ],
+      "geographicPoints": [
+        {
+          "lon": 69.0539242,
+          "lat": 61.0031757
+        },
+        {
+          "lon": 69.054071,
+          "lat": 61.0030449
+        },
+        {
+          "lon": 69.053811,
+          "lat": 61.0029763
+        },
+        {
+          "lon": 69.0536641,
+          "lat": 61.003107
+        }
+      ],
+      "tags": {
+        "leisure": "playground"
+      },
+      "equipmentConfirmed": false
+    },
+    {
+      "id": 594180154,
+      "source": "https://www.openstreetmap.org/way/594180154",
+      "osmVersion": 1,
+      "osmTimestamp": "2018-06-05T11:00:45Z",
+      "points": [
+        {
+          "x": 153.176,
+          "z": 55.693
+        },
+        {
+          "x": 153.273,
+          "z": 36.78
+        },
+        {
+          "x": 130.38,
+          "z": 36.658
+        },
+        {
+          "x": 125.663,
+          "z": 43.537
+        },
+        {
+          "x": 125.598,
+          "z": 55.549
+        }
+      ],
+      "geographicPoints": [
+        {
+          "lon": 69.0653412,
+          "lat": 61.0002063
+        },
+        {
+          "lon": 69.065343,
+          "lat": 61.0000364
+        },
+        {
+          "lon": 69.0649188,
+          "lat": 61.0000353
+        },
+        {
+          "lon": 69.0648314,
+          "lat": 61.0000971
+        },
+        {
+          "lon": 69.0648302,
+          "lat": 61.000205
+        }
+      ],
+      "tags": {
+        "leisure": "playground"
+      },
+      "equipmentConfirmed": false
+    },
+    {
+      "id": 594187439,
+      "source": "https://www.openstreetmap.org/way/594187439",
+      "osmVersion": 1,
+      "osmTimestamp": "2018-06-05T11:28:33Z",
+      "points": [
+        {
+          "x": -149.512,
+          "z": -479.077
+        },
+        {
+          "x": -123.023,
+          "z": -464.961
+        },
+        {
+          "x": -118.447,
+          "z": -473.544
+        },
+        {
+          "x": -144.935,
+          "z": -487.66
+        }
+      ],
+      "geographicPoints": [
+        {
+          "lon": 69.0597327,
+          "lat": 60.9954024
+        },
+        {
+          "lon": 69.0602235,
+          "lat": 60.9955292
+        },
+        {
+          "lon": 69.0603083,
+          "lat": 60.9954521
+        },
+        {
+          "lon": 69.0598175,
+          "lat": 60.9953253
+        }
+      ],
+      "tags": {
+        "leisure": "playground"
+      },
+      "equipmentConfirmed": false
+    },
+    {
+      "id": 839542772,
+      "source": "https://www.openstreetmap.org/way/839542772",
+      "osmVersion": 1,
+      "osmTimestamp": "2020-08-22T06:26:57Z",
+      "points": [
+        {
+          "x": 139.063,
+          "z": 124.89
+        },
+        {
+          "x": 148.616,
+          "z": 124.957
+        },
+        {
+          "x": 149.776,
+          "z": 121.851
+        },
+        {
+          "x": 159.259,
+          "z": 119.825
+        },
+        {
+          "x": 166.204,
+          "z": 115.762
+        },
+        {
+          "x": 166.275,
+          "z": 108.314
+        },
+        {
+          "x": 153.684,
+          "z": 108.025
+        },
+        {
+          "x": 153.608,
+          "z": 112.077
+        },
+        {
+          "x": 143.332,
+          "z": 111.932
+        },
+        {
+          "x": 141.956,
+          "z": 113.958
+        },
+        {
+          "x": 139.209,
+          "z": 114.025
+        }
+      ],
+      "geographicPoints": [
+        {
+          "lon": 69.0650797,
+          "lat": 61.0008279
+        },
+        {
+          "lon": 69.0652567,
+          "lat": 61.0008285
+        },
+        {
+          "lon": 69.0652782,
+          "lat": 61.0008006
+        },
+        {
+          "lon": 69.0654539,
+          "lat": 61.0007824
+        },
+        {
+          "lon": 69.0655826,
+          "lat": 61.0007459
+        },
+        {
+          "lon": 69.0655839,
+          "lat": 61.000679
+        },
+        {
+          "lon": 69.0653506,
+          "lat": 61.0006764
+        },
+        {
+          "lon": 69.0653492,
+          "lat": 61.0007128
+        },
+        {
+          "lon": 69.0651588,
+          "lat": 61.0007115
+        },
+        {
+          "lon": 69.0651333,
+          "lat": 61.0007297
+        },
+        {
+          "lon": 69.0650824,
+          "lat": 61.0007303
+        }
+      ],
+      "tags": {
+        "leisure": "playground"
+      },
+      "equipmentConfirmed": false
+    }
+  ],
+  "accuracy": "Mapped playground footprints from the saved OSM extract. Equipment, colours, heights, orientation and surfacing are a plausible authored reconstruction, not photo-confirmed or surveyed. Layout is fitted to each mapped footprint without moving the site or removing buildings."
+}

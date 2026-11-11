@@ -1,0 +1,1366 @@
+{
+  "checked": "2026-11-03",
+  "originLon": 69.062503,
+  "originLat": 60.999706,
+  "method": "OSM amenity=parking boundaries copied from the existing source dataset; coordinates follow prepare_street.py. Buildings and service-road centerlines remain in their source positions. Online OpenStreetMap page retrieval was unavailable during this check; no claim of current survey accuracy.",
+  "sourceDataset": "street_source.osm",
+  "siteCount": 18,
+  "sites": [
+    {
+      "id": "165065729",
+      "osmId": 165065729,
+      "address": "ул. Дунина-Горкавича, 15",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/165065729"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 80.787,
+          "z": -189.723
+        },
+        {
+          "x": 93.988,
+          "z": -182.197
+        },
+        {
+          "x": 108.991,
+          "z": -208.369
+        },
+        {
+          "x": 98.586,
+          "z": -215.148
+        },
+        {
+          "x": 93.356,
+          "z": -210.317
+        },
+        {
+          "x": 92.574,
+          "z": -210.473
+        }
+      ],
+      "accessRoadId": 520458233,
+      "accessRoute": [
+        {
+          "x": 85.47,
+          "z": -187.038
+        },
+        {
+          "x": 87.388,
+          "z": -185.96
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        0,
+        3
+      ],
+      "cameraPosition": {
+        "x": 82.714,
+        "y": 12,
+        "z": -219.704
+      },
+      "cameraTarget": {
+        "x": 94.714,
+        "y": 0.8,
+        "z": -202.704
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458232",
+      "osmId": 520458232,
+      "address": "ул. Дунина-Горкавича, 10",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458232"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 53.37,
+          "z": -229.553
+        },
+        {
+          "x": 79.351,
+          "z": -217.397
+        },
+        {
+          "x": 71.315,
+          "z": -201.979
+        },
+        {
+          "x": 69.291,
+          "z": -202.046
+        },
+        {
+          "x": 67.408,
+          "z": -198.138
+        },
+        {
+          "x": 67.338,
+          "z": -196.035
+        },
+        {
+          "x": 30.86,
+          "z": -197.704
+        }
+      ],
+      "accessRoadId": 165065716,
+      "accessRoute": [
+        {
+          "x": 48.979,
+          "z": -192.639
+        },
+        {
+          "x": 49.099,
+          "z": -196.87
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        5
+      ],
+      "cameraPosition": {
+        "x": 50.705,
+        "y": 12,
+        "z": -223.122
+      },
+      "cameraTarget": {
+        "x": 62.705,
+        "y": 0.8,
+        "z": -206.122
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458208",
+      "osmId": 520458208,
+      "address": "ул. Дунина-Горкавича, 6",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458208"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": -110.065,
+          "z": 65.389
+        },
+        {
+          "x": -90.307,
+          "z": 73.783
+        },
+        {
+          "x": -92.768,
+          "z": 77.768
+        },
+        {
+          "x": -130.185,
+          "z": 61.994
+        },
+        {
+          "x": -129.316,
+          "z": 45.196
+        },
+        {
+          "x": -124.686,
+          "z": 47.01
+        },
+        {
+          "x": -124.178,
+          "z": 44.328
+        },
+        {
+          "x": -128.814,
+          "z": 42.958
+        },
+        {
+          "x": -125.193,
+          "z": 27.251
+        },
+        {
+          "x": -121.323,
+          "z": 28.331
+        },
+        {
+          "x": -120.778,
+          "z": 26.784
+        },
+        {
+          "x": -124.178,
+          "z": 24.791
+        },
+        {
+          "x": -103.988,
+          "z": 7.124
+        },
+        {
+          "x": -100.729,
+          "z": 9.151
+        },
+        {
+          "x": -110.281,
+          "z": 29.567
+        }
+      ],
+      "accessRoadId": 165065715,
+      "accessRoute": [
+        {
+          "x": -108.014,
+          "z": 47.453
+        },
+        {
+          "x": -110.173,
+          "z": 47.478
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        13,
+        14
+      ],
+      "cameraPosition": {
+        "x": -127.786,
+        "y": 12,
+        "z": 23.762
+      },
+      "cameraTarget": {
+        "x": -115.786,
+        "y": 0.8,
+        "z": 40.762
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "839542773",
+      "osmId": 839542773,
+      "address": "ул. Дунина-Горкавича, 6",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/839542773"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": -88.569,
+          "z": 28.91
+        },
+        {
+          "x": -88.715,
+          "z": 8.794
+        },
+        {
+          "x": -92.919,
+          "z": 8.828
+        },
+        {
+          "x": -92.774,
+          "z": 28.943
+        }
+      ],
+      "accessRoadId": 165065715,
+      "accessRoute": [
+        {
+          "x": -93.897,
+          "z": 6.927
+        },
+        {
+          "x": -90.817,
+          "z": 8.811
+        }
+      ],
+      "accessWidth": 3.5,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": -102.744,
+        "y": 12,
+        "z": 1.869
+      },
+      "cameraTarget": {
+        "x": -90.744,
+        "y": 0.8,
+        "z": 18.869
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "594192943",
+      "osmId": 594192943,
+      "address": "ул. Дунина-Горкавича, 15",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/594192943"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 74.213,
+          "z": -96.592
+        },
+        {
+          "x": 83.912,
+          "z": -96.592
+        },
+        {
+          "x": 83.912,
+          "z": -114.537
+        },
+        {
+          "x": 74.213,
+          "z": -114.537
+        }
+      ],
+      "accessRoadId": 165065723,
+      "accessRoute": [
+        {
+          "x": 92.385,
+          "z": -105.533
+        },
+        {
+          "x": 83.912,
+          "z": -105.565
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 67.063,
+        "y": 12,
+        "z": -122.565
+      },
+      "cameraTarget": {
+        "x": 79.063,
+        "y": 0.8,
+        "z": -105.565
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458235",
+      "osmId": 520458235,
+      "address": "ул. Дунина-Горкавича, 15",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458235"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 119.229,
+          "z": -167.637
+        },
+        {
+          "x": 119.229,
+          "z": -173.025
+        },
+        {
+          "x": 118.468,
+          "z": -173.715
+        },
+        {
+          "x": 112.391,
+          "z": -173.57
+        },
+        {
+          "x": 114.561,
+          "z": -181.062
+        },
+        {
+          "x": 115.759,
+          "z": -180.773
+        },
+        {
+          "x": 121.367,
+          "z": -181.062
+        },
+        {
+          "x": 122.997,
+          "z": -181.708
+        },
+        {
+          "x": 123.72,
+          "z": -182.287
+        },
+        {
+          "x": 124.589,
+          "z": -183.522
+        },
+        {
+          "x": 120.568,
+          "z": -185.871
+        },
+        {
+          "x": 129.003,
+          "z": -201.289
+        },
+        {
+          "x": 154.876,
+          "z": -187.752
+        },
+        {
+          "x": 146.554,
+          "z": -172.735
+        },
+        {
+          "x": 146.554,
+          "z": -167.704
+        }
+      ],
+      "accessRoadId": 520458234,
+      "accessRoute": [
+        {
+          "x": 113.477,
+          "z": -177.371
+        },
+        {
+          "x": 113.476,
+          "z": -177.316
+        }
+      ],
+      "accessWidth": 4.289963474203492,
+      "openEdges": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cameraPosition": {
+        "x": 113.991,
+        "y": 12,
+        "z": -196.581
+      },
+      "cameraTarget": {
+        "x": 125.991,
+        "y": 0.8,
+        "z": -179.581
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "165065730",
+      "osmId": 165065730,
+      "address": "ул. Дунина-Горкавича, 15",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/165065730"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 113.158,
+          "z": -131.246
+        },
+        {
+          "x": 113.401,
+          "z": -167.347
+        },
+        {
+          "x": 108.392,
+          "z": -167.381
+        },
+        {
+          "x": 108.149,
+          "z": -131.28
+        }
+      ],
+      "accessRoadId": 165065723,
+      "accessRoute": [
+        {
+          "x": 104.967,
+          "z": -149.349
+        },
+        {
+          "x": 108.27,
+          "z": -149.331
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        2
+      ],
+      "cameraPosition": {
+        "x": 98.775,
+        "y": 12,
+        "z": -166.314
+      },
+      "cameraTarget": {
+        "x": 110.775,
+        "y": 0.8,
+        "z": -149.314
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "165067408",
+      "osmId": 165067408,
+      "address": "ул. Дунина-Горкавича, 11",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/165067408"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 114.788,
+          "z": -48.558
+        },
+        {
+          "x": 114.772,
+          "z": -43.715
+        },
+        {
+          "x": 144.115,
+          "z": -43.626
+        },
+        {
+          "x": 144.126,
+          "z": -48.48
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 129.425,
+          "z": -39.897
+        },
+        {
+          "x": 129.444,
+          "z": -43.671
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 117.45,
+        "y": 12,
+        "z": -63.095
+      },
+      "cameraTarget": {
+        "x": 129.45,
+        "y": 0.8,
+        "z": -46.095
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458240",
+      "osmId": 520458240,
+      "address": "ул. Дунина-Горкавича, 11",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458240"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 99.649,
+          "z": 3.306
+        },
+        {
+          "x": 104.652,
+          "z": 3.306
+        },
+        {
+          "x": 104.652,
+          "z": -19.96
+        },
+        {
+          "x": 99.649,
+          "z": -19.96
+        }
+      ],
+      "accessRoadId": 594180151,
+      "accessRoute": [
+        {
+          "x": 106.777,
+          "z": -8.337
+        },
+        {
+          "x": 104.652,
+          "z": -8.327
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 90.151,
+        "y": 12,
+        "z": -25.327
+      },
+      "cameraTarget": {
+        "x": 102.151,
+        "y": 0.8,
+        "z": -8.327
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "165067407",
+      "osmId": 165067407,
+      "address": "ул. Дунина-Горкавича, 11",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/165067407"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 152.529,
+          "z": -41.222
+        },
+        {
+          "x": 147.612,
+          "z": -41.255
+        },
+        {
+          "x": 147.509,
+          "z": -22.754
+        },
+        {
+          "x": 152.426,
+          "z": -22.72
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 144.211,
+          "z": -31.301
+        },
+        {
+          "x": 147.56,
+          "z": -32.005
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 138.019,
+        "y": 12,
+        "z": -48.988
+      },
+      "cameraTarget": {
+        "x": 150.019,
+        "y": 0.8,
+        "z": -31.988
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "165067177",
+      "osmId": 165067177,
+      "address": "ул. Дунина-Горкавича, 9",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/165067177"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 86.119,
+          "z": 116.697
+        },
+        {
+          "x": 90.663,
+          "z": 116.841
+        },
+        {
+          "x": 91.435,
+          "z": 92.262
+        },
+        {
+          "x": 86.891,
+          "z": 92.117
+        }
+      ],
+      "accessRoadId": 165065728,
+      "accessRoute": [
+        {
+          "x": 94.204,
+          "z": 104.571
+        },
+        {
+          "x": 91.049,
+          "z": 104.552
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 76.777,
+        "y": 12,
+        "z": 87.479
+      },
+      "cameraTarget": {
+        "x": 88.777,
+        "y": 0.8,
+        "z": 104.479
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458220",
+      "osmId": 520458220,
+      "address": "ул. Дунина-Горкавича, 13",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458220"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 158.314,
+          "z": -21.385
+        },
+        {
+          "x": 158.266,
+          "z": -15.307
+        },
+        {
+          "x": 203.357,
+          "z": -14.95
+        },
+        {
+          "x": 205.143,
+          "z": -16.898
+        },
+        {
+          "x": 203.406,
+          "z": -21.028
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 180.812,
+          "z": -12.853
+        },
+        {
+          "x": 180.811,
+          "z": -15.128
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 173.697,
+        "y": 12,
+        "z": -34.914
+      },
+      "cameraTarget": {
+        "x": 185.697,
+        "y": 0.8,
+        "z": -17.914
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458210",
+      "osmId": 520458210,
+      "address": "ул. Дунина-Горкавича, 9",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458210"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 121.183,
+          "z": 57.218
+        },
+        {
+          "x": 121.145,
+          "z": 62.217
+        },
+        {
+          "x": 147.342,
+          "z": 62.428
+        },
+        {
+          "x": 147.385,
+          "z": 57.43
+        }
+      ],
+      "accessRoadId": 594180152,
+      "accessRoute": [
+        {
+          "x": 134.265,
+          "z": 65.182
+        },
+        {
+          "x": 134.244,
+          "z": 62.322
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 122.264,
+        "y": 12,
+        "z": 42.823
+      },
+      "cameraTarget": {
+        "x": 134.264,
+        "y": 0.8,
+        "z": 59.823
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458219",
+      "osmId": 520458219,
+      "address": "ул. Дунина-Горкавича, 13",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458219"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 210.643,
+          "z": 1.547
+        },
+        {
+          "x": 210.573,
+          "z": -15.318
+        },
+        {
+          "x": 205.214,
+          "z": -15.295
+        },
+        {
+          "x": 205.289,
+          "z": 1.135
+        },
+        {
+          "x": 207.173,
+          "z": 3.796
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 204.559,
+          "z": 2.852
+        },
+        {
+          "x": 206.231,
+          "z": 2.466
+        }
+      ],
+      "accessWidth": 3.5,
+      "openEdges": [
+        2,
+        3,
+        4
+      ],
+      "cameraPosition": {
+        "x": 195.778,
+        "y": 12,
+        "z": -21.827
+      },
+      "cameraTarget": {
+        "x": 207.778,
+        "y": 0.8,
+        "z": -4.827
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458218",
+      "osmId": 520458218,
+      "address": "ул. Дунина-Горкавича, 13",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458218"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 219.764,
+          "z": 12.69
+        },
+        {
+          "x": 212.095,
+          "z": 2.204
+        },
+        {
+          "x": 207.815,
+          "z": 5.332
+        },
+        {
+          "x": 215.851,
+          "z": 16.475
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 210.073,
+          "z": 12.376
+        },
+        {
+          "x": 211.833,
+          "z": 10.904
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        2
+      ],
+      "cameraPosition": {
+        "x": 201.881,
+        "y": 12,
+        "z": -7.824
+      },
+      "cameraTarget": {
+        "x": 213.881,
+        "y": 0.8,
+        "z": 9.176
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458217",
+      "osmId": 520458217,
+      "address": "ул. Дунина-Горкавича, 13",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458217"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 220.924,
+          "z": 47.946
+        },
+        {
+          "x": 221.14,
+          "z": 17.767
+        },
+        {
+          "x": 216.294,
+          "z": 17.722
+        },
+        {
+          "x": 216.078,
+          "z": 47.912
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 214.453,
+          "z": 32.817
+        },
+        {
+          "x": 216.186,
+          "z": 32.817
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        2
+      ],
+      "cameraPosition": {
+        "x": 206.609,
+        "y": 12,
+        "z": 15.837
+      },
+      "cameraTarget": {
+        "x": 218.609,
+        "y": 0.8,
+        "z": 32.837
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458216",
+      "osmId": 520458216,
+      "address": "ул. Дунина-Горкавича, 13",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458216"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 211.803,
+          "z": 64.154
+        },
+        {
+          "x": 219.041,
+          "z": 53.367
+        },
+        {
+          "x": 215.57,
+          "z": 48.992
+        },
+        {
+          "x": 207.318,
+          "z": 61.148
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 210.198,
+          "z": 54.118
+        },
+        {
+          "x": 211.444,
+          "z": 55.07
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1,
+        2,
+        3
+      ],
+      "cameraPosition": {
+        "x": 201.433,
+        "y": 12,
+        "z": 39.915
+      },
+      "cameraTarget": {
+        "x": 213.433,
+        "y": 0.8,
+        "z": 56.915
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    },
+    {
+      "id": "520458215",
+      "osmId": 520458215,
+      "address": "ул. Дунина-Горкавича, 13",
+      "evidenceLevel": "OSM parking footprint; access connection estimated from mapped service road",
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/520458215"
+      ],
+      "accuracyNote": "Boundary copied from local street_source.osm using the project origin. Surface, kerb dimensions and exact access opening are reconstruction estimates, not surveyed coordinates. Parking markings are not documented; do not add marked bays or signs.",
+      "boundary": [
+        {
+          "x": 211.517,
+          "z": 65.234
+        },
+        {
+          "x": 207.221,
+          "z": 63.13
+        },
+        {
+          "x": 201.268,
+          "z": 81.798
+        },
+        {
+          "x": 206.336,
+          "z": 82.332
+        }
+      ],
+      "accessRoadId": 35312917,
+      "accessRoute": [
+        {
+          "x": 202.082,
+          "z": 71.756
+        },
+        {
+          "x": 204.245,
+          "z": 72.464
+        }
+      ],
+      "accessWidth": 5.4,
+      "openEdges": [
+        1
+      ],
+      "cameraPosition": {
+        "x": 194.586,
+        "y": 12,
+        "z": 56.123
+      },
+      "cameraTarget": {
+        "x": 206.586,
+        "y": 0.8,
+        "z": 73.123
+      },
+      "surface": "asphalt",
+      "markingsVerified": false
+    }
+  ],
+  "extraServiceRoads": [
+    {
+      "id": 165065719,
+      "width": 3.8,
+      "points": [
+        {
+          "x": 103.071,
+          "z": 31.014
+        },
+        {
+          "x": 120.935,
+          "z": 28.554
+        },
+        {
+          "x": 126.181,
+          "z": 28.531
+        },
+        {
+          "x": 159.879,
+          "z": 28.398
+        }
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/165065719",
+      "accuracyNote": "Mapped source centerline; 3.8m width is the same reconstruction estimate as existing service streets."
+    },
+    {
+      "id": 165065724,
+      "width": 3.8,
+      "points": [
+        {
+          "x": 143.791,
+          "z": 65.111
+        },
+        {
+          "x": 154.552,
+          "z": 65.033
+        },
+        {
+          "x": 156.69,
+          "z": 64.287
+        },
+        {
+          "x": 158.535,
+          "z": 62.617
+        },
+        {
+          "x": 159.253,
+          "z": 60.191
+        },
+        {
+          "x": 159.879,
+          "z": 28.398
+        },
+        {
+          "x": 160.392,
+          "z": -12.846
+        }
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/165065724",
+      "accuracyNote": "Mapped source centerline; 3.8m width is the same reconstruction estimate as existing service streets."
+    },
+    {
+      "id": 165065728,
+      "width": 3.8,
+      "points": [
+        {
+          "x": 94.042,
+          "z": 131.135
+        },
+        {
+          "x": 94.242,
+          "z": 98.373
+        },
+        {
+          "x": 95.289,
+          "z": 95.045
+        },
+        {
+          "x": 97.518,
+          "z": 92.685
+        },
+        {
+          "x": 102.807,
+          "z": 89.902
+        },
+        {
+          "x": 104.48,
+          "z": 87.664
+        },
+        {
+          "x": 105.035,
+          "z": 85.026
+        },
+        {
+          "x": 105.527,
+          "z": 74.74
+        },
+        {
+          "x": 105.969,
+          "z": 71.98
+        },
+        {
+          "x": 109.229,
+          "z": 65.367
+        }
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/165065728",
+      "accuracyNote": "Mapped source centerline; 3.8m width is the same reconstruction estimate as existing service streets."
+    },
+    {
+      "id": 520458211,
+      "width": 3.8,
+      "points": [
+        {
+          "x": 109.229,
+          "z": 65.367
+        },
+        {
+          "x": 125.02,
+          "z": 35.789
+        },
+        {
+          "x": 125.598,
+          "z": 33.763
+        },
+        {
+          "x": 125.959,
+          "z": 31.737
+        },
+        {
+          "x": 126.181,
+          "z": 28.531
+        }
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/520458211",
+      "accuracyNote": "Mapped source centerline; 3.8m width is the same reconstruction estimate as existing service streets."
+    },
+    {
+      "id": 594180152,
+      "width": 3.8,
+      "points": [
+        {
+          "x": 109.229,
+          "z": 65.367
+        },
+        {
+          "x": 143.791,
+          "z": 65.111
+        }
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/594180152",
+      "accuracyNote": "Mapped source centerline; 3.8m width is the same reconstruction estimate as existing service streets."
+    },
+    {
+      "id": 594180153,
+      "width": 3.8,
+      "points": [
+        {
+          "x": 148.125,
+          "z": 104.073
+        },
+        {
+          "x": 143.791,
+          "z": 65.111
+        }
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/594180153",
+      "accuracyNote": "Mapped source centerline; 3.8m width is the same reconstruction estimate as existing service streets."
+    }
+  ],
+  "photoObservations": [
+    {
+      "files": [
+        "image_4_b427d5dbd4.jpg",
+        "image_5_cc7e842cc7.jpg",
+        "image_6_62882d17a5.jpg"
+      ],
+      "source": "Original user photos packed in house_full/Дом_полностью.blend; extracted inspection copies indexed in tools/house-opening-reference/index.json",
+      "observed": "House 5 has a broad unmarked asphalt frontage apron, curb-separated narrow planted/footpath strips at facade, parked vehicles in clusters and a paved side entrance beside a garage ramp. Photos confirm parking use and general surface type, not an accurately georeferenced outline.",
+      "action": "Keep existing photo-supported frontage apron. Do not label an invented new polygon as an exact house-5 parking lot."
+    }
+  ],
+  "placementRules": [
+    "Do not place cars at arbitrary offsets along service roads.",
+    "Place vehicles only inside mapped parking polygons, leaving a clear aisle and pedestrian route.",
+    "No bay markings, parking signs or accessibility allocations without a matching reference.",
+    "Connections to mapped service-road axes are estimated and must be checked for building/footpath intersections.",
+    "Keep the roadside boundary open; do not enclose strip parking with kerbs on its vehicle approach."
+  ],
+  "photoSupportedRows": [
+    {
+      "id": "house5-frontage-photo",
+      "address": "ул. Дунина-Горкавича, 5",
+      "evidenceLevel": "Photo-confirmed parking use on existing apron; individual car positions estimated",
+      "sourceUrls": [
+        "https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_5/YkAYdgFiSUYOQFhrfXxxcXxmZg==/?panorama%5Bpoint%5D=69.061768%2C60.999805&panorama%5Bdirection%5D=147.434073%2C-17.622131",
+        "https://www.openstreetmap.org/way/114788180"
+      ],
+      "accuracyNote": "The original user photos image_4_b427d5dbd4.jpg and image_5_cc7e842cc7.jpg show clusters of unmarked parked cars on the asphalt frontage between the pedestrian strip and house 5. These are conservative scenery positions on the ALREADY GENERATED apron at route chainage333-377m, not surveyed individual spaces or a newly inferred parking polygon. Do not add a new slab, painted bays or signs. Vehicle headings alternate toward/away from the roughly north-south facade as shown in the photos. All tyre corners and entrance clearances must be validated against the generated scene before placement.",
+      "vehicles": [
+        {
+          "x": -33.223,
+          "z": 20.659,
+          "heading": 270,
+          "style": 1
+        },
+        {
+          "x": -30.417,
+          "z": 16.49,
+          "heading": 90,
+          "style": 0
+        },
+        {
+          "x": -26.121,
+          "z": 7.219,
+          "heading": 90,
+          "style": 2
+        },
+        {
+          "x": -22.945,
+          "z": 1.093,
+          "heading": 270,
+          "style": 1
+        },
+        {
+          "x": -17.639,
+          "z": -7.522,
+          "heading": 90,
+          "style": 2
+        },
+        {
+          "x": -12.763,
+          "z": -18.297,
+          "heading": 90,
+          "style": 0
+        }
+      ]
+    }
+  ]
+}

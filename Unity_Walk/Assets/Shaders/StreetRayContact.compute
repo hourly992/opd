@@ -1,0 +1,59 @@
+#pragma kernel TraceContacts
+#pragma require inlineraytracing
+#pragma only_renderers dx12
+
+#include "UnityCG.cginc"
+#include "UnityRayQuery.cginc"
+
+RaytracingAccelerationStructure _District;
+Texture2D<float4> _PackedDepthNormals;
+RWTexture2D<float> _ContactMask;
+float4x4 _StreetCameraToWorld;
+float4 _StreetProjection; // inverse x/y projection scales, far plane, AO radius
+
+float TraceContact(float3 origin, float3 direction, float radius)
+{
+    const uint flags = RAY_FLAG_FORCE_OPAQUE | RAY_FLAG_ACCEPT_FIRST_HIT_AND_END_SEARCH;
+    UnityRayQuery<flags> query;
+    RayDesc ray;
+    ray.Origin = origin;
+    ray.Direction = direction;
+    ray.TMin = .01;
+    ray.TMax = radius;
+    query.TraceRayInline(_District, RAY_FLAG_NONE, 0xff, ray);
+    query.Proceed();
+    return query.CommittedStatus() == COMMITTED_TRIANGLE_HIT;
+}
+
+[numthreads(8, 8, 1)]
+void TraceContacts(uint3 id : SV_DispatchThreadID)
+{
+    uint width, height;
+    _ContactMask.GetDimensions(width, height);
+    if (id.x >= width || id.y >= height) return;
+    float depth;
+    float3 viewNormal;
+    DecodeDepthNormal(_PackedDepthNormals.Load(int3(id.xy, 0)), depth, viewNormal);
+    depth *= _StreetProjection.z;
+    if (depth < .08 || depth > 55 || depth > _StreetProjection.z * .98)
+    {
+        _ContactMask[id.xy] = 1;
+        return;
+    }
+    float2 uv = (id.xy + .5) / float2(width, height);
+    float2 clipXY = float2(2 * uv.x - 1, 1 - 2 * uv.y);
+    float3 viewPosition = float3(clipXY * _StreetProjection.xy * depth, -depth);
+    float3 n = normalize(mul((float3x3)_StreetCameraToWorld, viewNormal));
+    float3 origin = mul(_StreetCameraToWorld, float4(viewPosition, 1)).xyz + n * (.035 + depth * .001);
+    float3 tangent = normalize(cross(abs(n.y) < .94 ? float3(0,1,0) : float3(1,0,0), n));
+    float3 bitangent = cross(n, tangent);
+    float occlusion = 0;
+    [unroll] for (int i = 0; i < 6; i++)
+    {
+        float r = sqrt((i + .5) / 6);
+        float angle = i * 2.399963;
+        float3 direction = tangent * (cos(angle) * r) + bitangent * (sin(angle) * r) + n * sqrt(1 - r*r);
+        occlusion += TraceContact(origin, direction, _StreetProjection.w);
+    }
+    _ContactMask[id.xy] = 1 - occlusion * (.77 / 6) * (1 - smoothstep(32, 55, depth));
+}

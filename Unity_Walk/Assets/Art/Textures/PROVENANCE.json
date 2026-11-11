@@ -1,0 +1,83 @@
+{
+  "author": "OPD project",
+  "generator": "prepare_art_textures.py",
+  "description": "Project-authored deterministic synthetic PBR maps and 16 hand-drawn room/curtain variants. No third-party photographs or generated-image services used.",
+  "metres_per_tile": {
+    "Paint": 0.6,
+    "Roof": 0.55,
+    "Rubber": 0.32,
+    "Linen": 0.4,
+    "GlassDirt": 1.5
+  },
+  "mask_channels": "RGB = occlusion, roughness, height",
+  "files": [
+    {
+      "file": "GlassDirt/Albedo.jpg",
+      "sha256": "52be6559d1c7996e9964734ee2a6414d65352bf606b65276a746865ec6f50ead"
+    },
+    {
+      "file": "GlassDirt/Mask.png",
+      "sha256": "875eac673e92f1ba6af1c4dab862ac0ac02ae866cafbfb32a2e32f599b9f7573"
+    },
+    {
+      "file": "GlassDirt/Normal.png",
+      "sha256": "deb0d8657577259edfb930a61afec93f6c78009a41feabdc486d4b0ce1d1432f"
+    },
+    {
+      "file": "Grass/Blade.png",
+      "sha256": "33de44e6cd2c71c29358dad0253c32c349e42801e1067b9cdbf764c2d250f2d0"
+    },
+    {
+      "file": "Linen/Albedo.jpg",
+      "sha256": "f6ea24c8fa2faf4da543094d80dc814b7c2535c7dc30a526d0a534aa3c54c7a5"
+    },
+    {
+      "file": "Linen/Mask.png",
+      "sha256": "41af421d347f234c0f43ce8c00c04a6d3651e0256b6ae62bc43e9a341810d396"
+    },
+    {
+      "file": "Linen/Normal.png",
+      "sha256": "cc68029aa3abfc8547c91b67be548d686f1832f1bd87b8f9dd9f1ba874c7b0ef"
+    },
+    {
+      "file": "Paint/Albedo.jpg",
+      "sha256": "51fc89880be561ae18408d6b5b2a203c4f7c0e2646b5284a3babd3dab555de82"
+    },
+    {
+      "file": "Paint/Mask.png",
+      "sha256": "91180c7f5365d7c8f12f6feb00f2ffa534a2bc637d90fd4743bdfdd57125853f"
+    },
+    {
+      "file": "Paint/Normal.png",
+      "sha256": "d0af3d51b6a9276ddcd1e461d860fb196e06e9bc69f927e968e922174883131c"
+    },
+    {
+      "file": "Roof/Albedo.jpg",
+      "sha256": "360f080531ba14fc3af595d7e5ce760cdc2a2344615b8437aecc4710e45ec782"
+    },
+    {
+      "file": "Roof/Mask.png",
+      "sha256": "eb81a8d81af115378d3df7094fc2348ce3c42d75232028881dabaf5f9ae812a4"
+    },
+    {
+      "file": "Roof/Normal.png",
+      "sha256": "25d88d4f9d5188393792aa25c49d6106a2c7478b2bb4b64fefdd4a00a4853107"
+    },
+    {
+      "file": "Rubber/Albedo.jpg",
+      "sha256": "e25642909529bd7d8928db9eeacce21eae44ac5cd675721e4cc56379699c3046"
+    },
+    {
+      "file": "Rubber/Mask.png",
+      "sha256": "eeb4758e4926335375848691ea509bb0cd93bcb7dbc087337032d6eb6602f294"
+    },
+    {
+      "file": "Rubber/Normal.png",
+      "sha256": "04e66962f8757cc313f91da77570c7cedc40b2bfee148ec8e11100549e6261f9"
+    },
+    {
+      "file": "Windows/Interiors.jpg",
+      "sha256": "37eae5a1a9cd9bca3c49cde09d42295ed78e791f9a54f1b070875f4734eeb6cd"
+    }
+  ]
+}

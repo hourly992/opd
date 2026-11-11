@@ -1,0 +1,55 @@
+{
+  "asset": "tree_small_02",
+  "author": "Rico Cilliers",
+  "license": "CC0-1.0",
+  "source": "https://polyhaven.com/a/tree_small_02",
+  "license_url": "https://polyhaven.com/license",
+  "original_url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/tree_small_02/tree_small_02_1k.blend",
+  "original_md5": "d602d9e4df77457454ac427fd37d0b53",
+  "operation": "Wood independently decimated at 0.15/0.075/0.035. Leaf UV islands are retained as oriented cards (curved/compound islands keep their topology), sampled at 1/2, 1/6, 1/18 with area compensation, rather than collapsing away their UV coverage. Leaf/trunk UVMap and branch UV_map_01 with author Mapping scale 3/0.6 retained, zero-area triangles discarded, material partitions retained, recentered on the actual low trunk (not canopy bounds) to match gameplay colliders, Z-up converted to Unity Y-up. No textures baked from reference photographs.",
+  "generator": "prepare_vegetation_models.py",
+  "files": [
+    {
+      "file": "Broadleaf_LOD0.bytes",
+      "wood_ratio": 0.15,
+      "leaf_island_step": 2,
+      "leaf_area_scale": 1.3435028842544403,
+      "vertices": 179016,
+      "material_triangles": [
+        11880,
+        83581,
+        4463
+      ],
+      "triangles": 99924,
+      "sha256": "133d79ebd43c172f5ddeb68ebdefb38dfa7a195845fb8de152bf91a8ba7be5d6"
+    },
+    {
+      "file": "Broadleaf_LOD1.bytes",
+      "wood_ratio": 0.075,
+      "leaf_island_step": 6,
+      "leaf_area_scale": 2.3270152556440187,
+      "vertices": 63290,
+      "material_triangles": [
+        5531,
+        27820,
+        2640
+      ],
+      "triangles": 35991,
+      "sha256": "42323c3fc000a224a09ce22bf4df5768e5a183a541b3cf2905d1533958a52f9c"
+    },
+    {
+      "file": "Broadleaf_LOD2.bytes",
+      "wood_ratio": 0.035,
+      "leaf_island_step": 18,
+      "leaf_area_scale": 4.03050865276332,
+      "vertices": 23198,
+      "material_triangles": [
+        2311,
+        9279,
+        1502
+      ],
+      "triangles": 13092,
+      "sha256": "f94fefee5b5dda7558a316690650d69ff76436b3444ffbeb07ef160d3cfffa01"
+    }
+  ]
+}

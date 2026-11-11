@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Path
+  m_Shader: {fileID: 4800000, guid: 0f7519d4c56003047941897ac372b14e, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 9cff2d32c13276c4fbd5a936687fab72, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6e7e6595c4e943246af5cc7fe009b323, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: bb348e78ba3cf68408382c8e8861c768, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 4a80d03df46768e4ba525cdb9fa656dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RoughnessMap:
+        m_Texture: {fileID: 2800000, guid: c6a63b359d7587c4b8f354da654b77d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlbedoContrast: 1
+    - _BumpStrength: 0.7
+    - _Colorize: 0
+    - _Cull: 2
+    - _Kind: 3
+    - _Metallic: 0
+    - _MetersPerTile: 1.8
+    - _OcclusionStrength: 0.65
+    - _Parallax: 0.004
+    - _RoughnessBias: 0
+    - _RoughnessScale: 1
+    - _Saturation: 1
+    - _Smoothness: 0.08
+    - _SurfaceClass: 0
+    - _UVRotation: 0
+    - _UseUV: 0
+    - _VertexTint: 0
+    - _Weathering: 0.3
+    m_Colors:
+    - _AlbedoMean: {r: 0.3, g: 0.3, b: 0.3, a: 0}
+    - _Color: {r: 0.85, g: 0.86, b: 0.83, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _TileMeters: {r: 1.8, g: 1.8, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

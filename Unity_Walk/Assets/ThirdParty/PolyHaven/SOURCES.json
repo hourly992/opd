@@ -1,0 +1,502 @@
+{
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "retrieved_utc": "2026-11-01T11:48:18.760039+00:00",
+  "provider": "Poly Haven",
+  "assets": [
+    {
+      "id": "asphalt_02",
+      "name": "Asphalt 02",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions_mm": [
+        3000.000238418579,
+        3000
+      ],
+      "source": "https://polyhaven.com/a/asphalt_02"
+    },
+    {
+      "id": "yellow_bricks",
+      "name": "Yellow Bricks",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions_mm": [
+        2000,
+        2000
+      ],
+      "source": "https://polyhaven.com/a/yellow_bricks"
+    },
+    {
+      "id": "red_brick_03",
+      "name": "Red Brick 03",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions_mm": [
+        1000,
+        1000
+      ],
+      "source": "https://polyhaven.com/a/red_brick_03"
+    },
+    {
+      "id": "concrete_pavement",
+      "name": "Concrete Pavement",
+      "authors": {
+        "Charlotte Baglioni": "All"
+      },
+      "dimensions_mm": [
+        1800.0000715255737,
+        1800.0000715255737
+      ],
+      "source": "https://polyhaven.com/a/concrete_pavement"
+    },
+    {
+      "id": "brick_pavement_02",
+      "name": "Brick Pavement 02",
+      "authors": {
+        "Charlotte Baglioni": "All"
+      },
+      "dimensions_mm": [
+        2000,
+        2000
+      ],
+      "source": "https://polyhaven.com/a/brick_pavement_02"
+    },
+    {
+      "id": "grass_ground",
+      "name": "Grass Ground",
+      "authors": {
+        "Charlotte Baglioni": "All"
+      },
+      "dimensions_mm": [
+        2509.999990463257,
+        2509.999990463257
+      ],
+      "source": "https://polyhaven.com/a/grass_ground"
+    },
+    {
+      "id": "bark_brown_02",
+      "name": "Bark Brown 02",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions_mm": [
+        999.9990463256836,
+        999.998927116394
+      ],
+      "source": "https://polyhaven.com/a/bark_brown_02"
+    },
+    {
+      "id": "tree_small_02",
+      "name": "Tree Small 02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "dimensions_mm": [
+        2921.434998512268,
+        4292.873501777649,
+        4649.933725595474
+      ],
+      "source": "https://polyhaven.com/a/tree_small_02"
+    },
+    {
+      "id": "fir_tree_01",
+      "name": "Fir Tree 01",
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "dimensions_mm": [
+        26732.96093940735,
+        6541.954040527344,
+        19267.957717180252
+      ],
+      "source": "https://polyhaven.com/a/fir_tree_01"
+    },
+    {
+      "id": "kloofendal_48d_partly_cloudy_puresky",
+      "name": "Kloofendal 48d Partly Cloudy (Pure Sky)",
+      "authors": {
+        "Greg Zaal": "Original",
+        "Jarod Guest": "Sky edits"
+      },
+      "dimensions_mm": null,
+      "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky"
+    }
+  ],
+  "downloads": [
+    {
+      "asset": "asphalt_02",
+      "role": "Albedo",
+      "file": "asphalt_02/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_diff_1k.jpg",
+      "md5": "fa19772d4817754c3efab708c651f5a8",
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+      "bytes": 731707
+    },
+    {
+      "asset": "asphalt_02",
+      "role": "Normal",
+      "file": "asphalt_02/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_nor_gl_1k.jpg",
+      "md5": "338da8de636ea36133170578cac82e8e",
+      "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3",
+      "bytes": 1240122
+    },
+    {
+      "asset": "asphalt_02",
+      "role": "Roughness",
+      "file": "asphalt_02/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_rough_1k.jpg",
+      "md5": "ec80a2929797c1b3ffc121c4f665585a",
+      "sha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712",
+      "bytes": 544032
+    },
+    {
+      "asset": "asphalt_02",
+      "role": "Occlusion",
+      "file": "asphalt_02/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_ao_1k.jpg",
+      "md5": "db52e3eb4895bbf347246fe8d2d0ebe7",
+      "sha256": "c7397b4187c53203592c68d1d52ce92cc42981c2154b15b9a685f2b5205a260d",
+      "bytes": 533336
+    },
+    {
+      "asset": "yellow_bricks",
+      "role": "Albedo",
+      "file": "yellow_bricks/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/yellow_bricks/yellow_bricks_diff_1k.jpg",
+      "md5": "b062bf521fb61f2b1a20d8385893c12d",
+      "sha256": "e8441ebdad8b269fc6a4f8462bac5e15ff6a3c3f112884c244e78982e5082c94",
+      "bytes": 1030524
+    },
+    {
+      "asset": "yellow_bricks",
+      "role": "Normal",
+      "file": "yellow_bricks/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/yellow_bricks/yellow_bricks_nor_gl_1k.jpg",
+      "md5": "7c755890306b92a70493e5ef8d730b2a",
+      "sha256": "aa3ca5af7e77a5a4dba1b8873baf29fe98150af43fe272a6088e892b1a9d9598",
+      "bytes": 670948
+    },
+    {
+      "asset": "yellow_bricks",
+      "role": "Roughness",
+      "file": "yellow_bricks/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/yellow_bricks/yellow_bricks_rough_1k.jpg",
+      "md5": "3c9a4addc17720fc9c9815b89306a7da",
+      "sha256": "35c3aba674f00b0d9a085a7e4d1f4d16315de38def3a6a8d2522cfbe3804eba1",
+      "bytes": 436357
+    },
+    {
+      "asset": "yellow_bricks",
+      "role": "Occlusion",
+      "file": "yellow_bricks/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/yellow_bricks/yellow_bricks_ao_1k.jpg",
+      "md5": "9ca6f3e08fddbe503758053d1826641b",
+      "sha256": "eb484d7ffb25f6a469bd63a6d5990c0cbb7426724276aab061de85bbc6c05f66",
+      "bytes": 422338
+    },
+    {
+      "asset": "red_brick_03",
+      "role": "Albedo",
+      "file": "red_brick_03/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_diff_1k.jpg",
+      "md5": "d157c6d6dd774762b4269927a87fe9b5",
+      "sha256": "9c58254c099b2d211478f50a427fcdde622af24249ff2e94da41fb836f8c857f",
+      "bytes": 694500
+    },
+    {
+      "asset": "red_brick_03",
+      "role": "Normal",
+      "file": "red_brick_03/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_nor_gl_1k.jpg",
+      "md5": "e89ce432d9160edb7c902f901756865f",
+      "sha256": "9bfd45e24720d851017c1e1678b70219c72239b2ac6b25e11d57d458bdab8503",
+      "bytes": 955430
+    },
+    {
+      "asset": "red_brick_03",
+      "role": "Roughness",
+      "file": "red_brick_03/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_rough_1k.jpg",
+      "md5": "8f16439361c5fe27f9df03be279ce8c9",
+      "sha256": "cd865623c1422926848024e877103e9dfe857b2ca8221fce49264b74c9ff48b1",
+      "bytes": 286623
+    },
+    {
+      "asset": "red_brick_03",
+      "role": "Occlusion",
+      "file": "red_brick_03/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_ao_1k.jpg",
+      "md5": "88b4779cc572664b18fa119486f98890",
+      "sha256": "6177d16144d78cd36535f56d4de3c4f7facc30318f6a9631237c94662886dd94",
+      "bytes": 400013
+    },
+    {
+      "asset": "concrete_pavement",
+      "role": "Albedo",
+      "file": "concrete_pavement/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_pavement/concrete_pavement_diff_1k.jpg",
+      "md5": "b7a0d071a3406d55a1c3e9a73a06df03",
+      "sha256": "70d3ff969a7421c7ae057b5d16386d11f5e59c6740db643352e1039413f419c4",
+      "bytes": 926197
+    },
+    {
+      "asset": "concrete_pavement",
+      "role": "Normal",
+      "file": "concrete_pavement/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_pavement/concrete_pavement_nor_gl_1k.jpg",
+      "md5": "025a1d4e910cf3e5b3d63ada43a791d8",
+      "sha256": "a5009e409ff0f7b2d19e1316fe5e2b2b4f28e4a6b79990a664be69d4e8a0e690",
+      "bytes": 1184345
+    },
+    {
+      "asset": "concrete_pavement",
+      "role": "Roughness",
+      "file": "concrete_pavement/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_pavement/concrete_pavement_rough_1k.jpg",
+      "md5": "e5a0fc9831bad12c7b3779179aa706f7",
+      "sha256": "99f81099af07b009134b6a81bf0f95ab16da09c57156cc2ed534975664a68533",
+      "bytes": 475799
+    },
+    {
+      "asset": "concrete_pavement",
+      "role": "Occlusion",
+      "file": "concrete_pavement/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_pavement/concrete_pavement_ao_1k.jpg",
+      "md5": "1c65e0b268fbdef5c4c13e080d15702f",
+      "sha256": "e8f529efda5559c428984880e265ec7e7711aa6de89f27a6b1d5ea2d44e446b8",
+      "bytes": 866967
+    },
+    {
+      "asset": "brick_pavement_02",
+      "role": "Albedo",
+      "file": "brick_pavement_02/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_pavement_02/brick_pavement_02_diff_1k.jpg",
+      "md5": "9fa4072c602f2092eaf5a750f65658b5",
+      "sha256": "fa1ce4c6da38bc75e488557420a03cb94e696c651075d36a7363cdc61c1b3944",
+      "bytes": 961154
+    },
+    {
+      "asset": "brick_pavement_02",
+      "role": "Normal",
+      "file": "brick_pavement_02/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_pavement_02/brick_pavement_02_nor_gl_1k.jpg",
+      "md5": "60bc2108e8191c55cb940953ae0d3beb",
+      "sha256": "b254abe7a04223339c59bfe3ba0a3eea865b61de8b2561ed56620db2190675e1",
+      "bytes": 1050532
+    },
+    {
+      "asset": "brick_pavement_02",
+      "role": "Roughness",
+      "file": "brick_pavement_02/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_pavement_02/brick_pavement_02_rough_1k.jpg",
+      "md5": "aecb7f26448e7d5924505b7977ad266d",
+      "sha256": "c0e0446a2067317226b8296b425f2fb6a00390cb895918b8f5cbb14342d92dbf",
+      "bytes": 466345
+    },
+    {
+      "asset": "brick_pavement_02",
+      "role": "Occlusion",
+      "file": "brick_pavement_02/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_pavement_02/brick_pavement_02_ao_1k.jpg",
+      "md5": "5f6b9bde928b6a0b25bcdb6a81bfc73b",
+      "sha256": "ba438059c830e0447ba3954dd8aaf7071ac9d57e853c4dc2ee3bd65667b5a2a4",
+      "bytes": 704813
+    },
+    {
+      "asset": "grass_ground",
+      "role": "Albedo",
+      "file": "grass_ground/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_diff_1k.jpg",
+      "md5": "299047258586c762735b7284d3c662c3",
+      "sha256": "a79cc5ed65af0f80261b39a383b64a8c5272c5144d724deb43dbc29f0e4cd19b",
+      "bytes": 876584
+    },
+    {
+      "asset": "grass_ground",
+      "role": "Normal",
+      "file": "grass_ground/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_nor_gl_1k.jpg",
+      "md5": "d518c5b2af6f2c0297bc807b351f511f",
+      "sha256": "7000e2ccd479bb7b66dcdf4faef7b47554324566886314ca620cbf03e274e826",
+      "bytes": 1310516
+    },
+    {
+      "asset": "grass_ground",
+      "role": "Roughness",
+      "file": "grass_ground/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_rough_1k.jpg",
+      "md5": "2e6afca246cf6b80bdb53f46fe7e5ce5",
+      "sha256": "111341f948b7e073edf7ac6add8777e1bf10df8959400df3863243e89bbc8c08",
+      "bytes": 328190
+    },
+    {
+      "asset": "grass_ground",
+      "role": "Occlusion",
+      "file": "grass_ground/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_ao_1k.jpg",
+      "md5": "de85b335b1dafb6a9296b93563607f4d",
+      "sha256": "5f6c3623404f9c3f0ef4d27fb96cc3bf107554352e1193e8480ab3e2c9fb187d",
+      "bytes": 968681
+    },
+    {
+      "asset": "bark_brown_02",
+      "role": "Albedo",
+      "file": "bark_brown_02/Albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+      "md5": "6669cca520594bdca19f94084984ab72",
+      "sha256": "920fa0bed0c9d78c1d530e99795113afd532d7db746de440f4a85d7c83ed0f1a",
+      "bytes": 659592
+    },
+    {
+      "asset": "bark_brown_02",
+      "role": "Normal",
+      "file": "bark_brown_02/Normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_nor_gl_1k.jpg",
+      "md5": "1cad3fe0349a44df2d4d1c2859c79920",
+      "sha256": "0d5e691e8ad8bcd093a3587887fda2a6b4a948b5708a4f256f7919584c6eb857",
+      "bytes": 1015623
+    },
+    {
+      "asset": "bark_brown_02",
+      "role": "Roughness",
+      "file": "bark_brown_02/Roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_rough_1k.jpg",
+      "md5": "bbcde696e5b9418cdcb2abe638965417",
+      "sha256": "68125592de36e15bae7aa6db85c4d135aeb7e5653199ba226483a70f6d69837d",
+      "bytes": 337946
+    },
+    {
+      "asset": "bark_brown_02",
+      "role": "Occlusion",
+      "file": "bark_brown_02/Occlusion.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_ao_1k.jpg",
+      "md5": "6034e9a388be7d4774da4671993ebb61",
+      "sha256": "f3572613f143ca84885f4b4e03332d9a8723420c740a12750ab538fad7f39552",
+      "bytes": 514586
+    },
+    {
+      "asset": "tree_small_02",
+      "role": "Albedo",
+      "file": "tree_small_02/Albedo.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_diff_1k.png",
+      "md5": "2c667193084725e8553062ddbdc73c7d",
+      "sha256": "d3fc48522c76aa1f91076c6b86f302669822ebe4e2acabd67d42c4d57eaa5ba0",
+      "bytes": 2338424
+    },
+    {
+      "asset": "tree_small_02",
+      "role": "Normal",
+      "file": "tree_small_02/Normal.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_nor_gl_1k.png",
+      "md5": "e81c5d7e7fc09af321e8c5ac5b4948f2",
+      "sha256": "fa4ad390f2e68b745db8f568cad64c3272696c5e01312ae564795e37724d79b8",
+      "bytes": 4903387
+    },
+    {
+      "asset": "tree_small_02",
+      "role": "Opacity",
+      "file": "tree_small_02/Opacity.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_alpha_1k.png",
+      "md5": "63199ba87a9e8928424bd8c3b8017bd0",
+      "sha256": "4f143e2dda8a6a572f427ac378b92255d21761e4611de0d26e21816c01aa533b",
+      "bytes": 264711
+    },
+    {
+      "asset": "fir_tree_01",
+      "role": "Albedo",
+      "file": "fir_tree_01/Albedo.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/fir_tree_01/fir_tree_01_twig_diff_1k.png",
+      "md5": "3791a2e595b63410ed0bd054633373de",
+      "sha256": "76f6d0c0044d76bac08fbbd3d2ac1c9b66bb046de7d0b1a22aa9b319308f3833",
+      "bytes": 3411459
+    },
+    {
+      "asset": "fir_tree_01",
+      "role": "Normal",
+      "file": "fir_tree_01/Normal.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/fir_tree_01/fir_tree_01_twig_nor_gl_1k.png",
+      "md5": "300954dfeee0541ad8512db4616de3c1",
+      "sha256": "cbb6b8179a9f7f6e84fd15d1f422bc342841d20845b2bad437612f03fb0067de",
+      "bytes": 1825146
+    },
+    {
+      "asset": "fir_tree_01",
+      "role": "Opacity",
+      "file": "fir_tree_01/Opacity.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/fir_tree_01/fir_tree_01_twig_alpha_1k.png",
+      "md5": "02ab808c8b2ff77ad9fdb2f92892db80",
+      "sha256": "3f399629337e7ac3af27a01b08ffb9c0d60224a9dd374a1427761a5c2eea9d6e",
+      "bytes": 371026
+    },
+    {
+      "asset": "kloofendal_48d_partly_cloudy_puresky",
+      "role": "Sky",
+      "file": "kloofendal_48d_partly_cloudy_puresky/Sky.hdr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "md5": "2eba3a4d7eeb23cbfbeca364c97e7980",
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    }
+  ],
+  "prepared": [
+    {
+      "file": "tree_small_02/Foliage.png",
+      "operation": "Unmodified albedo RGB with the author's opacity map in alpha",
+      "sha256": "541fdfb27d024a0bd0f323becd7de8021926a25e7e5994426935a4a98a861fd3"
+    },
+    {
+      "file": "tree_small_02/Leaf.png",
+      "crop_pixels": [
+        226,
+        289,
+        374,
+        392
+      ],
+      "operation": "Isolated atlas patch; leaf alpha also clipped to remove unrelated UV islands",
+      "sha256": "79bc93b8c661f0fa248cefe06cab72d78139b0d19b277dbf3d2f5a396af76359"
+    },
+    {
+      "file": "tree_small_02/LeafNormal.png",
+      "crop_pixels": [
+        226,
+        289,
+        374,
+        392
+      ],
+      "operation": "Isolated atlas patch; leaf alpha also clipped to remove unrelated UV islands",
+      "sha256": "ab3e934b32a3fba1104cc9668f670371caa828e75b3211d9f9f3050721242930"
+    },
+    {
+      "file": "fir_tree_01/Foliage.png",
+      "operation": "Unmodified albedo RGB with the author's opacity map in alpha",
+      "sha256": "f832bd49a5def0d2514cb4adfe894ffbff8b42cea6eacfef2fe134c0b1f2e058"
+    },
+    {
+      "file": "fir_tree_01/Sprig.png",
+      "crop_pixels": [
+        656,
+        35,
+        1004,
+        383
+      ],
+      "operation": "Isolated atlas patch; leaf alpha also clipped to remove unrelated UV islands",
+      "sha256": "b4b0b67e9c6a658b024fed33b3ed5f22fc0bf600f29fd11b030d4f882fbc5100"
+    },
+    {
+      "file": "fir_tree_01/SprigNormal.png",
+      "crop_pixels": [
+        656,
+        35,
+        1004,
+        383
+      ],
+      "operation": "Isolated atlas patch; leaf alpha also clipped to remove unrelated UV islands",
+      "sha256": "6da9cf56ab27f7bcd41366bd5ad4c60955c2215c0aae47e6fbc0f19148bdb679"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "retrieved_utc": "2026-11-02T14:49:34.608917+00:00",
+  "generator": "prepare_road_materials.py",
+  "preparation": "2K original photographic diffuse and OpenGL normal JPEGs preserved byte-for-byte; Mask RGB = original AO / roughness / height. No generated asphalt texture or recoloured derivative.",
+  "roles": {
+    "MainRoadAsphalt": "existing Graphics2K/asphalt_02",
+    "Asphalt": "asphalt_01 (courtyards, service roads and parking aprons)",
+    "FootpathAsphalt": "clean_asphalt (asphalt pedestrian strips)"
+  },
+  "materials": [
+    {
+      "id": "asphalt_01",
+      "source": "https://polyhaven.com/a/asphalt_01",
+      "name": "Asphalt 01",
+      "authors": {
+        "Dario Barresi": "Processing ",
+        "Charlotte Baglioni": "Photography"
+      },
+      "provider_dimensions_mm": [
+        2079.9994468688965,
+        2079.9996852874756
+      ],
+      "originals": [
+        {
+          "role": "Albedo",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_diff_2k.jpg",
+          "md5": "1a982193e0137381402a60cbd5892474",
+          "sha256": "10fe1dafe34fec51397dbe9011f798c68c4e3fc16abfd4d7aea0123122db8993",
+          "bytes": 3118607
+        },
+        {
+          "role": "Normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_nor_gl_2k.jpg",
+          "md5": "8b513a75b434f95ca268436265742638",
+          "sha256": "60fd6af2aae30bb3fd2231227ecbe52d0ced2c761d53a64f50dea59d173307cd",
+          "bytes": 4845665
+        },
+        {
+          "role": "Occlusion",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_ao_2k.jpg",
+          "md5": "21ee0f8dc9ecc084de45413e0a4b06ce",
+          "sha256": "0cbbf5252a632482c9ce15fd53b26a6b468250114b8e3fef20d0393d139d2611",
+          "bytes": 4048107
+        },
+        {
+          "role": "Roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_rough_2k.jpg",
+          "md5": "ee92528bdb30f4f1656a5a665e2c6225",
+          "sha256": "c6962037eb41c6f0feafba22353e315d37ae8c8ea472dfd7d4fe28136904ceb5",
+          "bytes": 1599661
+        },
+        {
+          "role": "Height",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_disp_2k.jpg",
+          "md5": "7af1832cc5819aa912419de6e8c343da",
+          "sha256": "c5c3e80e20613b1b925dd91da579238564ae3a0a29b8bea58101f3ed87d0fbec",
+          "bytes": 1389676
+        }
+      ],
+      "prepared": [
+        {
+          "file": "asphalt_01/Albedo.jpg",
+          "sha256": "10fe1dafe34fec51397dbe9011f798c68c4e3fc16abfd4d7aea0123122db8993"
+        },
+        {
+          "file": "asphalt_01/Mask.png",
+          "sha256": "a0751f1061e867a89dd57cfabc3206cb3a43d82e610c552537dc7a92c29cdb7d"
+        },
+        {
+          "file": "asphalt_01/Normal.jpg",
+          "sha256": "60fd6af2aae30bb3fd2231227ecbe52d0ced2c761d53a64f50dea59d173307cd"
+        }
+      ]
+    },
+    {
+      "id": "clean_asphalt",
+      "source": "https://polyhaven.com/a/clean_asphalt",
+      "name": "Clean Asphalt",
+      "authors": {
+        "Dimitrios Savva": "All"
+      },
+      "provider_dimensions_mm": [
+        2099.9999046325684,
+        2099.9999046325684
+      ],
+      "originals": [
+        {
+          "role": "Albedo",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_diff_2k.jpg",
+          "md5": "d3afa117daf0846a743bbf5b4eb2464d",
+          "sha256": "9d58f263b695c268e391aa39ea2f6b30ab9f36d279715cc78593a4d43368039c",
+          "bytes": 3314999
+        },
+        {
+          "role": "Normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_nor_gl_2k.jpg",
+          "md5": "f9d4e1b14ac5b231748b600dcd59f20e",
+          "sha256": "ee6e217a75851a73ab0ce54501e787b63707e0cf8dfd7293989adf7d3e325162",
+          "bytes": 3923727
+        },
+        {
+          "role": "Occlusion",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_ao_2k.jpg",
+          "md5": "72b00076439b3aff9819e51ad6a8dbf9",
+          "sha256": "581a6b5a1d40b599d1ce73a9eb1125acaa5ac09cb4dbaf33c5e0b1bcfdc8dae3",
+          "bytes": 3141137
+        },
+        {
+          "role": "Roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_rough_2k.jpg",
+          "md5": "b2dfdcd35bd5462dd8b275c6adc68d74",
+          "sha256": "3b5afbcee7e27fa8908b0e191dd7eda5d4239bbfe68f9ce0b84e4f55f708d2e7",
+          "bytes": 2898463
+        },
+        {
+          "role": "Height",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_disp_2k.jpg",
+          "md5": "3650d19a3975a4ee9e4fff94dde3fcae",
+          "sha256": "8e2f7d89de668a9c1da7d0cc3fbcaeade21f942cf92d2d3f04829e674ef1e6cf",
+          "bytes": 1453317
+        }
+      ],
+      "prepared": [
+        {
+          "file": "clean_asphalt/Albedo.jpg",
+          "sha256": "9d58f263b695c268e391aa39ea2f6b30ab9f36d279715cc78593a4d43368039c"
+        },
+        {
+          "file": "clean_asphalt/Mask.png",
+          "sha256": "36b33a35a6999555533ebd1f0b98b0a4816dcf26287f9b3a8c8dde5989867e21"
+        },
+        {
+          "file": "clean_asphalt/Normal.jpg",
+          "sha256": "ee6e217a75851a73ab0ce54501e787b63707e0cf8dfd7293989adf7d3e325162"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "checked": "2026-11-02",
+  "panoramaYear": 2025,
+  "method": "Visual reconstruction from inspected Yandex panoramas and original OSM route. Widths and elevations are estimates, not survey measurements. No panorama pixels are distributed.",
+  "sources": [
+    {"id":"north","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_1/YkAYdgFgTkADQFhrfXxxcH1lYA==/panorama/?panorama%5Bpoint%5D=69.060451%2C61.001011&panorama%5Bdirection%5D=146.460156%2C-13.047619","observed":"2025: narrow muted red rectangular paving on both sides, directly beside grey concrete kerbs; no continuous verge. Centre marking is very worn."},
+    {"id":"house5","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_5/YkAYdgFiSUYOQFhrfXxxcXxmZg==/?panorama%5Bpoint%5D=69.061768%2C60.999805&panorama%5Bdirection%5D=147.434073%2C-17.622131","observed":"2025: broad red-paver strip beside the carriageway on the east, paved parking/service apron towards house 5, asphalt raised strip and parking on the west; no fresh longitudinal white lines."},
+    {"id":"south","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_15/YkAYdgFjT0cHQFhqfXV4eXtlZQ==/panorama/?panorama%5Bpoint%5D=69.063256%2C60.998531&panorama%5Bdirection%5D=148.390169%2C-15.142857","observed":"2025: narrow grassy verge on the east, red paving above a low blue retaining edge, asphalt frontage parking and red building approaches. Opposite red sidewalk directly beside the road. Road has cracks and inset round manholes."}
+  ],
+  "sections": [
+    {"from":0,"to":161.5,"halfWidth":3.5,"leftWidth":1.8,"leftSetback":0,"leftSurface":"asphalt","rightWidth":1.8,"rightSetback":0,"rightSurface":"asphalt","leftApron":0,"rightApron":0,"source":"OSM only; transverse approaches remain approximate"},
+    {"from":161.5,"to":245,"halfWidth":3.5,"leftWidth":1.8,"leftSetback":0,"leftSurface":"red","rightWidth":2.0,"rightSetback":0,"rightSurface":"red","leftApron":0,"rightApron":0,"source":"north"},
+    {"from":245,"to":295,"halfWidth":3.5,"leftWidth":2.4,"leftSetback":0,"leftSurface":"red","rightWidth":2.2,"rightSetback":0,"rightSurface":"red","leftApron":0,"rightApron":0,"source":"north / transition estimated"},
+    {"from":295,"to":415,"halfWidth":3.5,"leftWidth":3.0,"leftSetback":0,"leftSurface":"red","rightWidth":2.4,"rightSetback":0,"rightSurface":"asphalt","leftApron":19,"rightApron":17,"source":"house5"},
+    {"from":415,"to":475,"halfWidth":3.5,"leftWidth":1.8,"leftSetback":1.2,"leftSurface":"red","rightWidth":2.4,"rightSetback":0,"rightSurface":"red","leftApron":18,"rightApron":17,"source":"house5 / south transition estimated"},
+    {"from":475,"to":613,"halfWidth":3.5,"leftWidth":1.6,"leftSetback":1.3,"leftSurface":"red","rightWidth":2.4,"rightSetback":0,"rightSurface":"red","leftApron":17.5,"rightApron":14.5,"source":"south"},
+    {"from":613,"to":773,"halfWidth":3.5,"leftWidth":1.8,"leftSetback":0,"leftSurface":"red","rightWidth":1.8,"rightSetback":0,"rightSurface":"red","leftApron":0,"rightApron":0,"source":"OSM only; transverse approaches remain approximate"}
+  ],
+  "crossings": [
+    {"osmId":5661546590,"x":-259.707,"z":117.821},
+    {"osmId":5070821005,"x":-77.349,"z":81.097},
+    {"osmId":5666264987,"x":20.147,"z":-94.655},
+    {"osmId":5661546539,"x":-31.745,"z":-309.926}
+  ],
+  "manholes": [
+    {"x":-42.7,"z":20.2}, {"x":-36.1,"z":4.2}, {"x":44.0,"z":-137.2}
+  ],
+  "manholeNote": "Round covers visually confirmed near the house-5 and house-15 panorama points; positions are visual estimates, not surveyed utility coordinates."
+}

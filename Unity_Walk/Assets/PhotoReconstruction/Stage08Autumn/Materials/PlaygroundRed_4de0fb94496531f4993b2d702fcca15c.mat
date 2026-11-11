@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlaygroundRed
+  m_Shader: {fileID: 4800000, guid: 0f7519d4c56003047941897ac372b14e, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 1049cdad227916e45bd3b53ba271544d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DryGroundTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3ed7f8b8371384845a7c55f1610fce31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: 5364c21002720f241970ea65425b54e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlbedoContrast: 0.72
+    - _BumpStrength: 0.22749999
+    - _Colorize: 0
+    - _Cull: 2
+    - _Kind: 0
+    - _MeadowDrying: 0
+    - _Metallic: 0.12
+    - _OcclusionStrength: 0.65
+    - _Parallax: 0.00084
+    - _PaverGreyFraction: 0.23
+    - _PaverJointMeters: 0.005
+    - _PaverPattern: 0
+    - _RoughnessBias: 0.18
+    - _RoughnessScale: 1
+    - _Saturation: 1
+    - _Smoothness: 0.32
+    - _SurfaceClass: 0
+    - _UVRotation: 0
+    - _UseUV: 0
+    - _VertexTint: 0
+    - _Weathering: 0.18300001
+    m_Colors:
+    - _AlbedoMean: {r: 0.3, g: 0.3, b: 0.3, a: 0}
+    - _Color: {r: 0.62, g: 0.12999997, b: 0.07499998, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _MeadowSoilRange: {r: 0.078, g: 0.2, b: 0.36, a: 0.66}
+    - _PlinthPanels: {r: 0, g: 0, b: 0, a: 0}
+    - _TileMeters: {r: 0.6, g: 0.6, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

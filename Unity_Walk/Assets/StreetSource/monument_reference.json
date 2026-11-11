@@ -1,0 +1,26 @@
+{
+  "name": "Памятник Александру Александровичу Дунину-Горкавичу",
+  "address": "Ханты-Мансийск, улица Дунина-Горкавича, 1",
+  "latitude": 61.001164,
+  "longitude": 69.060422,
+  "coordinateSource": "https://visit-hm.ru/places/216",
+  "coordinateNote": "Coordinates are the location field in the tourist portal page, not a surveyed monument centre. Needs local verification.",
+  "heightMetres": null,
+  "orientationDegrees": null,
+  "identityConfidence": "Primary manufacturer and city tourist portal identify this monument on the reconstructed street. User has not independently identified it.",
+  "checked": "2026-11-02",
+  "sources": [
+    "https://visit-hm.ru/places/216",
+    "https://litart.ru/pamyatnik-aleksandru-duninu-gorkavichu-v-hanty-mansijske/",
+    "https://rosleshoz.gov.ru/news/ufo/v-khanty-mansiyskom-sele-pokur-ustanovili-pamyatnyy-znak-v-chest-znamenitogo-lesovoda-yugry-ufo-27026/"
+  ],
+  "photographs": [
+    "https://visit-hm.ru/storage/images/medium.fda3834697ee06e9f8d74d9da7b658b3.jpg",
+    "https://visit-hm.ru/storage/images/medium.cdcdd6fd5b6696832211eefa06b8866c.jpg",
+    "https://visit-hm.ru/storage/images/medium.28720b42b70d147dc073a58b50153522.jpg"
+  ],
+  "observedShape": "Dark bronze half-length uniformed figure, right hand holds a scroll, inscription below, tall curved red granite slab on left with vertical foliage relief, shorter foliage panel on right, narrow granite pedestal, rectangular red/grey paved approach with flower beds.",
+  "status": "Editor-only placement and granite support study. Bronze figure and foliage relief are not modelled; not a completed replica.",
+  "needed": ["side and rear photographs", "monument and pedestal measured height/width/depth", "view linking monument to road and building corners", "current approach paving and planting photographs"],
+  "rights": "Photographs used only for observation; no photo pixels included in game or source assets. Site reserves reuse rights."
+}

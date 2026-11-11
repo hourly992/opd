@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1534649821447091534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5253166231450398974}
+  - component: {fileID: 1678325650130127339}
+  - component: {fileID: 2198314285571342940}
+  m_Layer: 0
+  m_Name: "\u0427\u0435\u0440\u043D\u043E\u0432\u043E\u0439 \u043F\u043E\u0441\u0442\u0430\u043C\u0435\u043D\u0442 \xB7 \u0431\u0435\u0437 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u0443\u0440\u044B \xB7 \u0440\u0430\u0437\u043C\u0435\u0440\u044B \u0442\u0440\u0435\u0431\u0443\u044E\u0442 \u043E\u0431\u043C\u0435\u0440\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5253166231450398974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534649821447091534}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6459483052112488670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1678325650130127339
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534649821447091534}
+  m_Mesh: {fileID: 4300000, guid: a9ea10db631b1564ea2ad547b35fc116, type: 2}
+--- !u!23 &2198314285571342940
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534649821447091534}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2edf4e267ef7c974d9bc0ebf27b9c881, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2317323253144973520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6459483052112488670}
+  - component: {fileID: 6329060328077807375}
+  m_Layer: 0
+  m_Name: DuninGorkavich_PlacementStudy
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6459483052112488670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317323253144973520}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5253166231450398974}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6329060328077807375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317323253144973520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01d120ed9995c14a8b79ef4a905ff9f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::MonumentReference
+  identity: "\u041F\u0430\u043C\u044F\u0442\u043D\u0438\u043A \u0410. \u0410. \u0414\u0443\u043D\u0438\u043D\u0443-\u0413\u043E\u0440\u043A\u0430\u0432\u0438\u0447\u0443, \u0443\u043B. \u0414\u0443\u043D\u0438\u043D\u0430-\u0413\u043E\u0440\u043A\u0430\u0432\u0438\u0447\u0430, 1"
+  source: https://visit-hm.ru/places/216
+  accuracy: "\u0422\u043E\u0447\u043A\u0430 \u0441 \u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u043F\u043E\u0440\u0442\u0430\u043B\u0430; \u0446\u0435\u043D\u0442\u0440 \u0438 \u043E\u0440\u0438\u0435\u043D\u0442\u0430\u0446\u0438\u044F \u0442\u0440\u0435\u0431\u0443\u044E\u0442 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438. \u0420\u0430\u0437\u043C\u0435\u0440\u044B \u043C\u0430\u043A\u0435\u0442\u0430 \u043F\u043E\u0441\u0442\u0430\u043C\u0435\u043D\u0442\u0430 \u0443\u0441\u043B\u043E\u0432\u043D\u044B. \u0411\u0440\u043E\u043D\u0437\u043E\u0432\u0430\u044F \u0444\u0438\u0433\u0443\u0440\u0430 \u0438 \u0440\u0430\u0441\u0442\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0440\u0435\u043B\u044C\u0435\u0444 \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u044E\u0442. \u041D\u0435 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0442\u043E\u0447\u043D\u043E\u0439 \u043A\u043E\u043F\u0438\u0435\u0439. \u0421\u043C. StreetSource/monument_reference.json."
+  latitude: 61.001164
+  longitude: 69.060422

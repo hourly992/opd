@@ -1,0 +1,45 @@
+# Local applications and packaged releases
+/tools/
+/*.exe
+/*.zip
+/.local-backups/
+
+# Unity caches, IDE files and generated builds
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/street_qa/
+**/.vs/
+*.csproj
+*.sln
+*.slnx
+*.log
+
+# Blender automatic backups and Python caches
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+
+# Local credentials/configuration
+.env
+.env.*
+!.env.example
+
+# Unity captures and local credentials
+**/MemoryCaptures/
+**/Recordings/
+**/CrashDumps/
+**/.idea/
+*.pfx
+*.p12
+*.pem
+*.key
+credentials.local.*
+secrets.local.*
+/comparison_blosm/
+/Запустить сравнение Blosm.cmd

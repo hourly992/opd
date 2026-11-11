@@ -1,0 +1,43 @@
+{
+  "method": "Own geometry reconstructed from OSM footprints and publicly visible architectural reference images. Unseen elevations and per-section heights are approximate, not surveyed. No panorama pixels are included in game assets.",
+  "checked": "2026-11-01",
+  "sources": [
+    {"id":"1","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_1/YkAYdgFgTkADQFhrfXxxcH1lYA==/","observed":"Двухэтажное краснокирпичное учреждение; центральный высокий ризалит со ступенчатым завершением и арочным окном. Обратная сторона скрыта."},
+    {"id":"2","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_2/YkAYdgFgSEUAQFhrfXxxcXVkYw==/","observed":"Двухэтажный краснокирпичный дом со светлыми вставками, серой вальмовой кровлей и низкой опоясывающей верандой; кирпичные столбы и светлые секции забора."},
+    {"id":"3","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_3/YkAYdgFhSEMPQFhrfXxxcXRhZA==/panorama/","observed":"Трёхэтажное кирпичное здание, небольшие выступы по углам и неглубокая тёмная кровля. Большую часть фасада закрывают ели; окна и обратная сторона приблизительны."},
+    {"id":"4","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_4/YkAYdgFgTUAPQFhrfXxxcXpmYA==/","observed":"Светлая кирпичная кладка с красными углами и обрамлениями, два этажа, серая вальмовая кровля, низкая веранда и светлый забор с кирпичными столбами."},
+    {"id":"5","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_5/YkAYdgFiSUYOQFhrfXxxcXxmZg==/","observed":"Светлый центральный ризалит, эркеры, арочные верхние окна, тёмный цоколь. Южная ранее созданная модель по фотографиям пользователя сохраняется."},
+    {"id":"6","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_6/YkAYdgFhSEAHQFhqfXV4eHRlZA==/","observed":"Ступенчатый ряд корпусов, красно-светлый кирпич, высокий входной портал, бирюзовый цоколь. Видимые корпуса разной высоты."},
+    {"id":"6-info","url":"https://2gis.ru/kh_mansiysk/geo/21111258942264461","observed":"Карточка: 5 этажей, 4 подъезда, 2006 год. Это не обмер высоты каждого корпуса."},
+    {"id":"7","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_7/YkAYdgFjQEAFQFhrfXxxcXxmZg==/","observed":"Кирпичные корпуса, светлые эркеры и арка входа, тёмно-серый цоколь. Верх высокого корпуса обрезан в превью; высоты закрытых частей предположительны, противоречивые 3/7 этажей из объявлений не считаются обмером."},
+    {"id":"8","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_8/YkAYdgFiSEEAQFhqfXV4eHxjYQ==/","observed":"Два смещённых корпуса, светлый центральный эркер, красная кладка, бирюзовый цоколь, подвальные входы."},
+    {"id":"8-info","url":"https://2gis.ru/kh_mansiysk/geo/21111258942264455","observed":"Карточка: 5 этажей, 2 подъезда."},
+    {"id":"9","url":"https://2gis.ru/kh_mansiysk/geo/21111258942264430","observed":"Просмотрено крупное фото фасада: 4 жилых этажа, красный/светлый кирпич, арки, небольшие балконы, зелёная кровля и бирюзовый цоколь. Фото только референс; не включено в проект."},
+    {"id":"10","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_10/YkAYdgFiTkwEQFhqfXV4eX9kYw==/","observed":"Смещённые корпуса, светлый центральный ризалит и боковые кирпичные вставки; бирюзовая облицовка цоколя. Дальняя сторона восстановлена по общим мотивам видимого фасада."},
+    {"id":"11","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_11/YkAYdgFlSUEPQFhqfXV4eHtnYw==/","observed":"Два смещённых невысоких корпуса, красный центральный фронтон на ближнем фасаде, большие верхние арочные окна, бирюзовый цоколь."},
+    {"id":"13","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_13/YkAYdgFlQEcHQFhrfXxxcX5hYw==/","observed":"Виден ряд более высоких красно-светлых корпусов в глубине. Мелкие детали и распределение этажей с этого расстояния не подтверждены."},
+    {"id":"13-info","url":"https://2gis.ru/kh_mansiysk/geo/21111258942260962","observed":"Карточка указывает 5 этажей; другие справочники расходятся. Текущая высота предварительная."},
+    {"id":"15","url":"https://yandex.ru/maps/57/khanty-mansiysk/house/ulitsa_dunina_gorkavicha_15/YkAYdgFjT0cHQFhqfXV4eXtlZQ==/","observed":"Красные торцы, светлые вертикальные полосы и центральные вставки, подвальные окна в бирюзовом цоколе, зелёная скатная кровля. Часть крыш вне кадра."}
+  ],
+  "buildings": [
+    {"osmId":110515900,"address":"1","referenceId":"1","style":"office-stepped","storeys":[2],"base":"dark","note":"Главный фасад по панораме: красная кладка, ступенчатый ризалит и арочное окно. Обратная сторона и размеры деталей приблизительны."},
+    {"osmId":110515918,"address":"2","referenceId":"2","style":"villa-red","storeys":[2],"base":"dark","note":"Кровля, красная кладка, веранда и забор по видимому фасаду; двор, задняя сторона и положение ворот приблизительны."},
+    {"osmId":114788563,"address":"3","referenceId":"3","style":"office-brick","storeys":[3],"base":"dark","note":"Фасад сильно закрыт растительностью; проёмы и невидимые стороны приблизительны, контур и этажность по OSM."},
+    {"osmId":114788560,"address":"4","referenceId":"4","style":"villa-cream","storeys":[2],"base":"dark","note":"Светлая кладка, красные обрамления, вальмовая кровля и веранда по панораме. Задняя сторона и границы ограды предположительны."},
+    {"osmId":114788180,"address":"5","referenceId":"5","style":"existing","storeys":[5,3],"base":"dark","note":"Исходная подробная модель не заменяется."},
+    {"osmId":114788185,"address":"5","referenceId":"5","style":"brick-arches","storeys":[5],"base":"dark","note":"Уличный центральный корпус; обратный фасад предположителен."},
+    {"osmId":114788167,"address":"5","referenceId":"5","style":"brick-arches","storeys":[5,3],"base":"dark","note":"Северные корпуса: мотивы подтверждены общим видом, высоты и закрытые фасады приблизительны."},
+    {"osmId":114788195,"address":"6","referenceId":"6","style":"brick-arches","storeys":[5,5,5,4],"base":"turquoise","note":"Пять этажей подтверждены для дома в целом; распределение между четырьмя секциями предварительное."},
+    {"osmId":114788164,"address":"7","referenceId":"7","style":"brick-arches","storeys":[3,5],"base":"dark","note":"Южная пара: подробности и распределение высот на скрытых частях восстановлены приблизительно."},
+    {"osmId":114788172,"address":"7","referenceId":"7","style":"brick-arches","storeys":[5],"base":"dark","note":"Центральный корпус: превью обрезает верх; текущая высота предварительная, точные сведения противоречат друг другу."},
+    {"osmId":114788165,"address":"7","referenceId":"7","style":"brick-arches","storeys":[5,3],"base":"dark","note":"Северная пара: часть облика восстановлена по общим мотивам комплекса; требуется уточнение высот."},
+    {"osmId":520207937,"address":"8","referenceId":"8","style":"brick-arches","storeys":[4,5],"base":"turquoise","note":"Пятиэтажный корпус подтверждён; закрытые части и высота дальней секции приблизительны."},
+    {"osmId":114788169,"address":"10","referenceId":"10","style":"brick-arches","storeys":[4,5],"base":"turquoise","note":"Пара смещённых корпусов; невидимые стороны и распределение высот предварительные."},
+    {"osmId":114788193,"address":"9","referenceId":"9","style":"brick-arches","storeys":[4,4],"base":"turquoise","note":"Фасад и этажность видны на фото; обратная сторона приблизительная."},
+    {"osmId":114788197,"address":"11","referenceId":"11","style":"brick-arches","storeys":[4,3],"base":"turquoise","redCenter":true,"note":"Силуэт и красный центральный фронтон по панораме; скрытый фасад и высоты отдельных секций приблизительны."},
+    {"osmId":114788188,"address":"13","referenceId":"13","style":"brick-arches","storeys":[5],"base":"turquoise","note":"Дальний вид: это предварительная реконструкция, мелкие детали и высота не подтверждены близкой фотографией."},
+    {"osmId":114788191,"address":"13","referenceId":"13","style":"brick-arches","storeys":[5,5,5],"base":"turquoise","note":"Три корпуса по контуру OSM; этажность и скрытые фасады предварительные из-за дальнего вида."},
+    {"osmId":114788179,"address":"15","referenceId":"15","style":"brick-arches","storeys":[5],"base":"turquoise","note":"Часть фасада видна, верх обрезан; высота и обратная сторона предварительные."},
+    {"osmId":114788174,"address":"15","referenceId":"15","style":"brick-arches","storeys":[4,5,4],"base":"turquoise","note":"Ступенчатый контур по OSM; распределение высот, кровли и скрытые фасады предположительные."}
+  ]
+}
