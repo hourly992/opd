@@ -13,6 +13,10 @@ Shader "Street/Glass"
         _SkyTint ("Scene sky tint", Color) = (.5,.5,.5,1)
         [Gamma] _SkyExposure ("Scene sky exposure", Float) = .82
         _SkyRotation ("Scene sky rotation", Float) = 110
+        _AutumnSky ("Use scene autumn sky", Range(0,1)) = 0
+        _SkySoftDaylight ("Scene soft daylight", Range(0,1)) = 0
+        _SkyLeaf ("Scene painted daylight", Range(0,1)) = 0
+        _SkySunDirection ("Scene sun direction", Vector) = (0,.5,1,0)
         _Variant ("Variant offset", Float) = 0
         [Enum(UnityEngine.Rendering.CullMode)] _Cull ("Face culling", Float) = 2
     }
@@ -25,10 +29,13 @@ Shader "Street/Glass"
         #pragma target 3.0
         #pragma multi_compile_instancing
         #include "UnityPBSLighting.cginc"
+        #include "StreetSkyLighting.cginc"
         sampler2D _MainTex, _DirtTex, _SkyTex;
         fixed4 _Color, _SkyTint;
         half4 _SkyTex_HDR;
         float _Interior, _Variant, _InteriorDetail, _ReflectionStrength, _SkyExposure, _SkyRotation;
+        float _AutumnSky, _SkySoftDaylight, _SkyLeaf;
+        float4 _SkySunDirection;
         struct Input
         {
             float2 paneUV;
@@ -61,6 +68,9 @@ Shader "Street/Glass"
             float latitude = acos(clamp(direction.y, -1, 1));
             float2 uv = float2(.5 - longitude / (2 * UNITY_PI), 1 - latitude / UNITY_PI);
             half3 radiance = DecodeHDR(tex2D(_SkyTex, uv), _SkyTex_HDR);
+            UNITY_BRANCH if (_AutumnSky > 0)
+                return StreetAutumnSkyColor(Unity_SafeNormalize(worldDirection),_SkySunDirection.xyz,
+                    dot(radiance,float3(.2126,.7152,.0722)),_SkySoftDaylight,_SkyLeaf) * _SkyExposure;
             return max(0, radiance * _SkyTint.rgb * unity_ColorSpaceDouble.rgb * _SkyExposure);
         }
 
@@ -75,7 +85,7 @@ Shader "Street/Glass"
             half fresnel = 4 * front / (1 + 3 * front);
             // Retain nonblack scene probes, including box projection and blending. Some built-in
             // captures return a black probe while realtime cubemaps are unavailable; in that case
-            // sample the SAME real HDR panorama used by the skybox, never a fabricated gradient.
+            // sample the same sky model and panorama as the visible environment.
             half3 probe = max(0, gi.indirect.specular);
             half3 sky = PanoramicSky(reflect(-view, normal));
             half signal = max(probe.r, max(probe.g, probe.b));

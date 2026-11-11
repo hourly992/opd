@@ -10,7 +10,9 @@ using UnityEngine;
 // pattern, plant coverage and scene geometry are retained.
 internal static class DistrictLeafPalette
 {
-    private const string Folder = "Assets/PhotoReconstruction/Stage16LeafStyle/Materials";
+    private const string StudyFolder = "Assets/PhotoReconstruction/Stage16LeafStyle/Materials";
+    private static string Folder => EditorSceneManager.GetActiveScene().path == "Assets/Scenes/Street.unity"
+        ? "Assets/Art/FullVisual/Materials/Palette" : StudyFolder;
 
     private enum Finish
     {
@@ -18,10 +20,10 @@ internal static class DistrictLeafPalette
         Broadleaf, Birch, Hedge, Needles, Blades
     }
 
-    internal static void Apply()
+    internal static void Apply(bool wholeDistrict = false)
     {
         var scene = EditorSceneManager.GetActiveScene();
-        if (scene.path != LeafCourtyardStudy.ScenePath)
+        if (scene.path != (wholeDistrict ? "Assets/Scenes/Street.unity" : LeafCourtyardStudy.ScenePath))
             throw new InvalidOperationException("Open the saved Street scene before applying its leaf palette.");
 
         Directory.CreateDirectory(Folder);
@@ -32,7 +34,7 @@ internal static class DistrictLeafPalette
         {
             if (renderer.gameObject.scene != scene)
                 continue;
-            if (!LeafCourtyardStudy.InStudyArea(renderer.bounds))
+            if (!wholeDistrict && !LeafCourtyardStudy.InStudyArea(renderer.bounds))
                 continue;
 
             var materials = renderer.sharedMaterials;
@@ -111,6 +113,11 @@ internal static class DistrictLeafPalette
         }
         if (material.shader.name != "Street/TexturedSurface")
             return Finish.Other;
+        if (name.Contains("Concrete", StringComparison.Ordinal) || name.Contains("Kerb", StringComparison.Ordinal) ||
+            name is "Curb" or "Path" or "DryGravel" or "ResidentialAccessEdge")
+            return Finish.Cement;
+        if (name.Contains("Plinth", StringComparison.Ordinal) || name == "Foundation")
+            return Finish.Plinth;
 
         switch (Mathf.RoundToInt(material.GetFloat("_SurfaceClass")))
         {

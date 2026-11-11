@@ -10,7 +10,8 @@ using Random = System.Random;
 
 internal static class DistrictLeafCarpets
 {
-    private const string AssetRoot = "Assets/PhotoReconstruction/AutumnCourtyardCarpets";
+    private static string AssetRoot => EditorSceneManager.GetActiveScene().path == "Assets/Scenes/Street.unity"
+        ? "Assets/Art/FullVisual/Leaves" : "Assets/PhotoReconstruction/AutumnCourtyardCarpets";
     private const string GroupName = "Осень · ковры листьев во дворах";
     private const string ReportPath = "street_qa/autumn_courtyard_carpets.json";
     private const float CellSize = 9f;
@@ -185,10 +186,10 @@ internal static class DistrictLeafCarpets
         }
     }
 
-    internal static void Apply()
+    internal static void Apply(bool wholeDistrict = false)
     {
         var scene = EditorSceneManager.GetActiveScene();
-        if (scene.path != LeafCourtyardStudy.ScenePath)
+        if (scene.path != (wholeDistrict ? "Assets/Scenes/Street.unity" : LeafCourtyardStudy.ScenePath))
             throw new InvalidOperationException("Open the saved Street scene before adding leaf carpets.");
         var access = UnityEngine.Object.FindAnyObjectByType<ResidentialAccess>();
         var material = AssetDatabase.LoadAssetAtPath<Material>("Assets/PhotoReconstruction/Stage08Autumn/Materials/FallenLeaves.mat");
@@ -198,7 +199,7 @@ internal static class DistrictLeafCarpets
         var random = new Random(151110);
         var batches = new Dictionary<Vector2Int, Batch>();
         var occupancy = new Dictionary<Vector2Int, int>();
-        var patches = MakePatches().ToArray();
+        var patches = MakePatches().Concat(wholeDistrict ? DistrictPatches(access) : Enumerable.Empty<Patch>()).ToArray();
         Physics.SyncTransforms();
         var ground = new Ground(access);
         foreach (var patch in patches)
@@ -210,7 +211,7 @@ internal static class DistrictLeafCarpets
             nearTriangles = batches.Values.Sum(batch => batch.near.triangles.Count / 3),
             farTriangles = batches.Values.Sum(batch => batch.far.triangles.Count / 3),
         };
-        if (report.leaves < 1900 || report.leaves > 12000)
+        if (report.leaves < 1900 || report.leaves > 30000)
             throw new InvalidOperationException($"Unexpected total of supported leaf placements: {report.leaves}.");
 
         Directory.CreateDirectory(AssetRoot + "/Meshes");
@@ -261,6 +262,51 @@ internal static class DistrictLeafCarpets
             };
         }
 
+    }
+
+    private static IEnumerable<Patch> DistrictPatches(ResidentialAccess access)
+    {
+        foreach (var anchor in new[]
+        {
+            new Vector2(-25, 15), new Vector2(-22, 10), new Vector2(-10, -15),
+            new Vector2(8, 15), new Vector2(22, -12), new Vector2(15, -39)
+        })
+            yield return new Patch { sector = "house5", center = anchor, axis = Vector2.right,
+                radii = new Vector2(2.4f, 1.25f), attempts = 790 };
+
+        foreach (var (sector, endpoint) in new[]
+        {
+            ("north", new Vector2(-103.582f, 156.452f)),
+            ("west", new Vector2(-46.623f, -47.697f)),
+            ("south", new Vector2(-18.790f, -104.057f)),
+            ("south", new Vector2(16.102f, -174.723f)),
+            ("south", new Vector2(72.810f, -107.209f)),
+            ("east", new Vector2(125.454f, 5.869f)),
+            ("east", new Vector2(166.854f, 98.192f)),
+            ("east", new Vector2(178.355f, 32.318f))
+        })
+        {
+            var route = access.routes.FirstOrDefault(r => r.points.Length > 1 &&
+                (XZ(r.points[0]) - endpoint).sqrMagnitude < .12f * .12f);
+            if (route == null) continue;
+            float walked = 0, next = 2.5f;
+            int drifts = 0;
+            for (int i = 1; i < route.points.Length && drifts < 3; i++)
+            {
+                Vector2 a = XZ(route.points[i - 1]), b = XZ(route.points[i]);
+                float length = Vector2.Distance(a, b);
+                if (length < .01f) continue;
+                Vector2 axis = (b - a) / length;
+                Vector2 across = new Vector2(-axis.y, axis.x);
+                for (; next <= walked + length && drifts < 3; next += 3.7f, drifts++)
+                    yield return new Patch
+                    {
+                        sector = sector, center = a + axis * (next - walked) + across * (drifts == 1 ? -1.03f : 1.03f),
+                        axis = axis, radii = new Vector2(1.8f, .95f), attempts = 540
+                    };
+                walked += length;
+            }
+        }
     }
 
     private static void Scatter(Patch patch, Random random, Ground ground,
