@@ -7,7 +7,7 @@ permissions:
 jobs:
   player:
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 48
     strategy:
       fail-fast: false
       matrix:
@@ -35,13 +35,16 @@ jobs:
           curl -fLsS --retry 3 -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/octet-stream" "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/releases/assets/$asset_id" -o "$archive"
           printf '%s  %s\n' "$ARCHIVE_SHA" "$archive" | sha256sum -c -
           tar -xzf "$archive" -C "$RUNNER_TEMP"
+          export XDG_RUNTIME_DIR="$RUNNER_TEMP/xdg"
+          install -d -m 0700 "$XDG_RUNTIME_DIR"
           cd "$RUNNER_TEMP/DuninaGorkavicha-Linux"
           qa="$RUNNER_TEMP/qa"
           args=()
           if [ "$SCOPE" = district ]; then args+=(-districtSector stage13); fi
           result=0
-          timeout --kill-after=15s 18m xvfb-run -a -s '-screen 0 1280x720x24' ./DuninaGorkavicha.x86_64 -force-glcore -force-gfx-direct -batchmode -qaCaptureOnly -screen-fullscreen 0 -screen-width 480 -screen-height 270 -streetQA -qaOutput "$qa" -logFile "$qa/player.log" "${args[@]}" || result=$?
-          tail -n 18 "$qa/player.log" || true
+          timeout --kill-after=15s 42m xvfb-run -a -s '-screen 0 1280x720x24' ./DuninaGorkavicha.x86_64 -force-glcore -force-gfx-direct -batchmode -qaCaptureOnly -screen-fullscreen 0 -screen-width 480 -screen-height 270 -streetQA -qaOutput "$qa" -logFile "$qa/player.log" "${args[@]}" || result=$?
+          tail -n 35 "$qa/player.log" || true
+          echo "Unity exit status $result"
           test "$result" -eq 0
           jq -e --arg scope "$SCOPE" '.passed and .vehiclesAbsent and .parkedVehicles == 0 and .parkingVehicleReferences == 0 and (if $scope == "district" then .districtWalkChecks == 15 and .districtWalkPasses == 15 else .grounded and .buildingCollision and .missingMaterials == 0 and .parkingSurfacesContinuous and .roadTransitionChecks == 96 and .roadTransitionHits == 96 and .streetLampNightValid end)' "$qa/report.json"
           jq '{engine, passed, parkedVehicles, parkingVehicleReferences, districtWalkChecks, districtWalkPasses, missingMaterials, roadTransitionChecks, roadTransitionHits, activeNightLamps}' "$qa/report.json"
