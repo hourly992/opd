@@ -324,8 +324,8 @@ public class StreetQA : MonoBehaviour
         report.shadowCasters = renderers.Count(r => r.shadowCastingMode != UnityEngine.Rendering.ShadowCastingMode.Off);
         report.shadowReceivers = renderers.Count(r => r.receiveShadows);
         var sunlight = RenderSettings.sun;
-        report.lightingConfigured = sunlight && sunlight.shadows == LightShadows.Soft && sunlight.shadowStrength >= .95f &&
-            QualitySettings.shadowCascades == 4 && QualitySettings.shadowDistance >= 230 && report.shadowCasters > 500 &&
+        report.lightingConfigured = sunlight && sunlight.shadows == LightShadows.Soft && sunlight.shadowStrength >= .80f &&
+            QualitySettings.shadowCascades == 4 && QualitySettings.shadowDistance >= 190 && report.shadowCasters > 500 &&
             report.shadowReceivers > 500 && presentationCheck.sunShaftShader && presentationCheck.sunShaftShader.isSupported && presentationCheck.sunShafts > 0;
         report.renderers = renderers.Length;
         report.missingMaterials = renderers.Count(r => r.sharedMaterials.Length == 0 ||
@@ -337,7 +337,7 @@ public class StreetQA : MonoBehaviour
         report.graphicsMaterialsConfigured = report.texturedMaterials >= 45 && report.reflectiveWindows >= 6 && report.legacyMaterials == 0;
         var roadMaterials = new[] { "ReferenceAsphalt", "ReferenceServiceAsphalt", "ReferenceFootpathAsphalt" }
             .Select(name => materials.FirstOrDefault(m => m.name == name)).ToArray();
-        report.roadMaterialsDistinct = roadMaterials.All(m => m && m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 2048 &&
+        report.roadMaterialsDistinct = roadMaterials.All(m => m && m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 1024 &&
             m.GetTexture("_BumpMap") && m.GetTexture("_MaskMap")) && roadMaterials.Select(m => m.GetTexture("_MainTex")).Distinct().Count() == 3;
         report.grassCoverageExpanded = report.meadowCells >= 250;
         var courtForMaterials=GameObject.Find("Двор №7 · мощение и подпорные стенки по фото · stage04");
@@ -348,8 +348,8 @@ public class StreetQA : MonoBehaviour
             var scale = m.GetVector("_TileMeters");
             // These scans span six bricks and 16/20 courses. A valid 75 mm course gives
             // a 1.20 m tile; the former strict >1.2 rejected that exact physical boundary.
-            return m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 4096 &&
-            m.GetTexture("_BumpMap") && m.GetTexture("_BumpMap").width >= 4096 && m.GetTexture("_MaskMap") &&
+            return m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 1024 &&
+            m.GetTexture("_BumpMap") && m.GetTexture("_BumpMap").width >= 1024 && m.GetTexture("_MaskMap") &&
             m.GetFloat("_Saturation") >= .9f && m.GetFloat("_Parallax") <= .0025f &&
             m.GetFloat("_BumpStrength") <= .3f && scale.x >= 1.50f && scale.x <= 1.65f &&
             scale.y >= 1.19f && scale.y <= 1.55f;

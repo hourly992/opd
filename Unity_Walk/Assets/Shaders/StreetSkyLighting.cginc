@@ -2,10 +2,18 @@
 #define STREET_SKY_LIGHTING_INCLUDED
 
 float3 StreetAutumnSkyColor(float3 direction, float3 sunDirection, float cloudLight,
-    float softDaylight, float leafSky)
+    float softDaylight, float leafSky, float paintedDistrict)
 {
     float height = saturate(direction.y);
     float warm = pow(saturate(dot(direction, normalize(sunDirection))), 6) * (1 - height);
+    UNITY_BRANCH if (paintedDistrict > 0)
+    {
+        float3 blueHorizon = lerp(float3(.32,.54,.91),float3(.54,.67,.83),warm * .55);
+        float3 blueSky = lerp(blueHorizon,float3(.060,.250,.74),smoothstep(-.08,.70,direction.y));
+        float cloud = smoothstep(.67,2.35,cloudLight) * smoothstep(.02,.20,direction.y);
+        return lerp(blueSky, float3(.86,.91,.99), cloud * .52);
+    }
+
     float3 horizon = lerp(float3(.38,.50,.51), float3(.68,.52,.34), warm * .72);
     horizon = lerp(horizon, lerp(float3(.47,.55,.56), float3(.72,.60,.44), warm * .62), softDaylight);
     float3 zenith = lerp(float3(.115,.255,.39), float3(.145,.28,.405), softDaylight);
