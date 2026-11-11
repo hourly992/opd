@@ -8,6 +8,7 @@ Shader "Skybox/StreetAutumn"
         _SunDirection ("Sun direction", Vector) = (0,.5,1,0)
         _SoftDaylight ("Soft autumn daylight", Range(0,1)) = 0
         _LeafSky ("Painted autumn sky", Range(0,1)) = 0
+        _PaintedDistrictSky ("Blue autumn sky", Range(0,1)) = 0
     }
     SubShader
     {
@@ -23,7 +24,7 @@ Shader "Skybox/StreetAutumn"
             #include "StreetSkyLighting.cginc"
             sampler2D _MainTex;
             half4 _MainTex_HDR;
-            float _Exposure, _Rotation, _SoftDaylight, _LeafSky;
+            float _Exposure, _Rotation, _SoftDaylight, _LeafSky, _PaintedDistrictSky;
             float4 _SunDirection;
             struct Varyings { float4 position : SV_POSITION; float3 direction : TEXCOORD0; };
             Varyings vert(float4 vertex : POSITION)
@@ -41,7 +42,7 @@ Shader "Skybox/StreetAutumn"
                 float2 uv = float2(frac(.5 - longitude / (2 * UNITY_PI)), .5 + latitude / UNITY_PI);
                 float3 clouds = DecodeHDR(tex2D(_MainTex, uv), _MainTex_HDR);
                 float cloudLight = dot(clouds, float3(.2126,.7152,.0722));
-                float3 sky = StreetAutumnSkyColor(direction,_SunDirection.xyz,cloudLight,_SoftDaylight,_LeafSky);
+                float3 sky = StreetAutumnSkyColor(direction,_SunDirection.xyz,cloudLight,_SoftDaylight,_LeafSky,_PaintedDistrictSky);
                 return half4(sky * _Exposure, 1);
             }
             ENDCG

@@ -16,6 +16,7 @@ Shader "Street/Glass"
         _AutumnSky ("Use scene autumn sky", Range(0,1)) = 0
         _SkySoftDaylight ("Scene soft daylight", Range(0,1)) = 0
         _SkyLeaf ("Scene painted daylight", Range(0,1)) = 0
+        _SkyPaintedDistrict ("Scene blue autumn sky", Range(0,1)) = 0
         _SkySunDirection ("Scene sun direction", Vector) = (0,.5,1,0)
         _Variant ("Variant offset", Float) = 0
         [Enum(UnityEngine.Rendering.CullMode)] _Cull ("Face culling", Float) = 2
@@ -34,7 +35,7 @@ Shader "Street/Glass"
         fixed4 _Color, _SkyTint;
         half4 _SkyTex_HDR;
         float _Interior, _Variant, _InteriorDetail, _ReflectionStrength, _SkyExposure, _SkyRotation;
-        float _AutumnSky, _SkySoftDaylight, _SkyLeaf;
+        float _AutumnSky, _SkySoftDaylight, _SkyLeaf, _SkyPaintedDistrict;
         float4 _SkySunDirection;
         struct Input
         {
@@ -70,7 +71,7 @@ Shader "Street/Glass"
             half3 radiance = DecodeHDR(tex2D(_SkyTex, uv), _SkyTex_HDR);
             UNITY_BRANCH if (_AutumnSky > 0)
                 return StreetAutumnSkyColor(Unity_SafeNormalize(worldDirection),_SkySunDirection.xyz,
-                    dot(radiance,float3(.2126,.7152,.0722)),_SkySoftDaylight,_SkyLeaf) * _SkyExposure;
+                    dot(radiance,float3(.2126,.7152,.0722)),_SkySoftDaylight,_SkyLeaf,_SkyPaintedDistrict) * _SkyExposure;
             return max(0, radiance * _SkyTint.rgb * unity_ColorSpaceDouble.rgb * _SkyExposure);
         }
 

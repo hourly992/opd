@@ -18,6 +18,7 @@ public sealed class StreetPresentation : MonoBehaviour
     [Range(0, .4f)] public float sharpness = .15f;
     [Range(0, 1)] public float autumnGrade;
     [Range(0, 1)] public float leafGrade;
+    public bool paintedDistrictGrade;
     private Material material;
     private Material occlusion;
     private Material sunlight;
@@ -55,6 +56,7 @@ public sealed class StreetPresentation : MonoBehaviour
         material.SetFloat("_BloomStrength", bloom);
         material.SetFloat("_AutumnGrade", autumnGrade);
         material.SetFloat("_LeafGrade", leafGrade);
+        material.SetFloat("_PaintedDistrictGrade", paintedDistrictGrade ? 1 : 0);
         bool previous = GL.sRGBWrite;
         RenderTexture raw = null, blurred = null, shaded = null;
         RenderTexture highlights = null, bloomSmall = null, bloomWide = null;
@@ -65,14 +67,15 @@ public sealed class StreetPresentation : MonoBehaviour
             if (occlusionShader && occlusionShader.isSupported && contactShadows > 0)
             {
                 if (!occlusion) occlusion = new Material(occlusionShader) { hideFlags = HideFlags.HideAndDontSave };
-                raw = RenderTexture.GetTemporary(Mathf.Max(1, source.width / 2), Mathf.Max(1, source.height / 2), 0, RenderTextureFormat.RHalf, RenderTextureReadWrite.Linear);
+                int contactDownsample = paintedDistrictGrade ? 3 : 2;
+                raw = RenderTexture.GetTemporary(Mathf.Max(1, source.width / contactDownsample), Mathf.Max(1, source.height / contactDownsample), 0, RenderTextureFormat.RHalf, RenderTextureReadWrite.Linear);
                 blurred = RenderTexture.GetTemporary(raw.width, raw.height, 0, RenderTextureFormat.RHalf, RenderTextureReadWrite.Linear);
                 raw.filterMode = blurred.filterMode = FilterMode.Bilinear;
                 shaded = RenderTexture.GetTemporary(source.width, source.height, 0, source.format, RenderTextureReadWrite.Linear);
                 occlusion.SetVector("_ProjectionScale", new Vector4(1 / view.projectionMatrix.m00, 1 / view.projectionMatrix.m11, 0, 0));
                 var rayMask = RenderRayContacts(source, raw.width, raw.height);
                 RayTracingActive = rayMask != null;
-                occlusion.SetVector("_AOSettings", new Vector4(contactRadius, 1, contactShadows, 0));
+                occlusion.SetVector("_AOSettings", new Vector4(contactRadius, 1, contactShadows, paintedDistrictGrade ? 1 : 0));
                 if (!RayTracingActive)
                     Graphics.Blit(source, raw, occlusion, 0);
                 occlusion.SetVector("_BlurDirection", new Vector4(1, 0, 0, 0));

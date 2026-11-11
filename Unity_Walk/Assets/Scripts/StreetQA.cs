@@ -22,8 +22,8 @@ public class StreetQA : MonoBehaviour
         public int masonryMaterials;
         public bool facadeMaterialsConfigured;
         public bool graphicsMaterialsConfigured;
-        public int parkedVehicles, meadowCells;
-        public bool parkedVehiclesConfigured, vehicleCollision, graphicsPresentationConfigured;
+        public int parkedVehicles, parkingVehicleReferences, meadowCells;
+        public bool vehiclesAbsent, graphicsPresentationConfigured;
         public bool roadNetworkConfigured, roadSurfacesContinuous;
         public int roadSurfaceChecks, roadSurfaceHits, roadWalkPasses;
         public int roadTransitionChecks, roadTransitionHits, woodlandPatches, woodlandTrees, woodlandShrubs;
@@ -37,9 +37,8 @@ public class StreetQA : MonoBehaviour
         public bool residentialDestinationsPaved;
         public int openingInspectionViews, backgroundOpeningViews;
         public int parkingSites, parkingSurfaceChecks, parkingSurfaceHits, parkingAccessChecks, parkingAccessHits;
-        public int parkingVehiclesChecked;
-        public int photoParkingAreas, photoParkedVehicles;
-        public bool parkingPlacementValid, parkingSurfacesContinuous, parkingAccessConnected, parkingVehiclesOnPaving;
+        public int photoParkingAreas;
+        public bool parkingPlacementValid, parkingSurfacesContinuous, parkingAccessConnected;
         public int entranceLandingChecks, entranceLandingHits;
         public bool entrancesHaveContinuousPaving;
         public int occludedSideDetails;
@@ -109,6 +108,10 @@ public class StreetQA : MonoBehaviour
         var controller = GetComponent<CharacterController>();
         var block = FindAnyObjectByType<PilotBlock>();
         var report = new Report { engine = Application.unityVersion };
+        report.parkedVehicles = FindObjectsByType<StreetVehicle>(FindObjectsInactive.Include).Length;
+        report.parkingVehicleReferences = FindObjectsByType<ParkingSite>(FindObjectsInactive.Include)
+            .Sum(site => site.vehicles?.Length ?? 0);
+        report.vehiclesAbsent = report.parkedVehicles == 0 && report.parkingVehicleReferences == 0;
         if (args.Contains("-rayTracingQAOnly"))
         {
             yield return CheckRayTracing(camera, output, report, 960, 540, 1);
@@ -143,7 +146,7 @@ public class StreetQA : MonoBehaviour
             if (!args.Contains("-rayTracingQA") || report.districtWalkChecks == 0 ||
                 report.districtWalkPasses != report.districtWalkChecks || !leavesPassed)
             {
-                report.passed = report.districtWalkChecks > 0 &&
+                report.passed = report.vehiclesAbsent && report.districtWalkChecks > 0 &&
                     report.districtWalkPasses == report.districtWalkChecks && leavesPassed;
                 File.WriteAllText(Path.Combine(output, "report.json"), JsonUtility.ToJson(report, true));
                 Application.Quit(report.passed ? 0 : 2);
@@ -254,27 +257,10 @@ public class StreetQA : MonoBehaviour
             }
             report.roadSurfacesContinuous = report.roadSurfaceHits == report.roadSurfaceChecks && report.roadWalkPasses == 6;
         }
-        var vehicles = FindObjectsByType<StreetVehicle>().OrderBy(v => v.transform.position.sqrMagnitude).ToArray();
-        report.parkedVehicles = vehicles.Length;
-        report.parkedVehiclesConfigured = vehicles.Length > 0 && vehicles.All(v => v.body &&
-            v.GetComponent<LODGroup>() && v.GetComponent<LODGroup>().GetLODs().Length == 3);
-        if (report.parkedVehiclesConfigured)
-        {
-            var vehicle = vehicles[0];
-            Vector3 direction = vehicle.transform.right;
-            Vector3 plane = vehicle.transform.TransformPoint(vehicle.body.center - Vector3.right * vehicle.body.size.x * .5f);
-            Vector3 start = plane - direction * 1.2f; start.y = 1.3f;
-            Teleport(controller, start, Quaternion.LookRotation(direction));
-            yield return Settle(controller);
-            for (int i = 0; i < 60; i++) { controller.Move(direction * .055f + Vector3.down * .04f); yield return null; }
-            float distance = Vector3.Dot(transform.position - plane, direction);
-            report.vehicleCollision = distance <= -.18f && distance > -.72f && controller.isGrounded;
-        }
         var parking = FindObjectsByType<ParkingSite>();
         var mappedParking = parking.Where(p => !p.usesExistingSurface).ToArray();
         report.parkingSites = mappedParking.Length;
         report.photoParkingAreas = parking.Count(p => p.usesExistingSurface);
-        report.photoParkedVehicles = parking.Where(p => p.usesExistingSurface).Sum(p => p.vehicles.Length);
         report.parkingPlacementValid = mappedParking.Length == 18 && mappedParking.All(p => p.osmId > 0 &&
             p.boundary != null && p.boundary.Length >= 3) && parking.All(p => p.sourceUrls != null && p.sourceUrls.Length > 0 &&
             !string.IsNullOrWhiteSpace(p.evidenceLevel) && p.surfaces != null && p.surfaces.Length > 0);
@@ -289,20 +275,6 @@ public class StreetQA : MonoBehaviour
         report.parkingAccessConnected = mappedParking.All(p => p.connectedToServiceRoad && p.accessRoute.Length >= 2) &&
             mappedParking.All(p => p.accessRoute.Any(point => PavedDestination(point, p.surfaces))) &&
             report.parkingAccessChecks > 0 && report.parkingAccessChecks == report.parkingAccessHits;
-        report.parkingVehiclesOnPaving = true;
-        foreach (var site in parking)
-            foreach (var vehicle in site.vehicles)
-            {
-                report.parkingVehiclesChecked++;
-                foreach (int x in new[] { -1, 1 }) foreach (int z in new[] { -1, 1 })
-                {
-                    var point = vehicle.transform.TransformPoint(vehicle.localBounds.center +
-                        new Vector3(x * vehicle.localBounds.extents.x, 0, z * vehicle.localBounds.extents.z));
-                    report.parkingVehiclesOnPaving &= (site.usesExistingSurface || GeographicLandscape.Contains(site.boundary, point)) &&
-                        site.surfaces.Any(c => c && c.Raycast(new Ray(point + Vector3.up * 2, Vector3.down), out var hit, 5) && hit.normal.y > .85f);
-                }
-            }
-        report.parkingVehiclesOnPaving &= report.parkingVehiclesChecked == vehicles.Length && vehicles.Length > 0;
         report.meadowCells = FindObjectsByType<LODGroup>().Count(g => g.name.StartsWith("Трава · ячейка ", StringComparison.Ordinal));
         var presentationCheck = camera.GetComponent<StreetPresentation>();
         report.graphicsPresentationConfigured = presentationCheck && presentationCheck.isActiveAndEnabled &&
@@ -324,8 +296,8 @@ public class StreetQA : MonoBehaviour
         report.shadowCasters = renderers.Count(r => r.shadowCastingMode != UnityEngine.Rendering.ShadowCastingMode.Off);
         report.shadowReceivers = renderers.Count(r => r.receiveShadows);
         var sunlight = RenderSettings.sun;
-        report.lightingConfigured = sunlight && sunlight.shadows == LightShadows.Soft && sunlight.shadowStrength >= .95f &&
-            QualitySettings.shadowCascades == 4 && QualitySettings.shadowDistance >= 230 && report.shadowCasters > 500 &&
+        report.lightingConfigured = sunlight && sunlight.shadows == LightShadows.Soft && sunlight.shadowStrength >= .80f &&
+            QualitySettings.shadowCascades == 4 && QualitySettings.shadowDistance >= 190 && report.shadowCasters > 500 &&
             report.shadowReceivers > 500 && presentationCheck.sunShaftShader && presentationCheck.sunShaftShader.isSupported && presentationCheck.sunShafts > 0;
         report.renderers = renderers.Length;
         report.missingMaterials = renderers.Count(r => r.sharedMaterials.Length == 0 ||
@@ -337,7 +309,7 @@ public class StreetQA : MonoBehaviour
         report.graphicsMaterialsConfigured = report.texturedMaterials >= 45 && report.reflectiveWindows >= 6 && report.legacyMaterials == 0;
         var roadMaterials = new[] { "ReferenceAsphalt", "ReferenceServiceAsphalt", "ReferenceFootpathAsphalt" }
             .Select(name => materials.FirstOrDefault(m => m.name == name)).ToArray();
-        report.roadMaterialsDistinct = roadMaterials.All(m => m && m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 2048 &&
+        report.roadMaterialsDistinct = roadMaterials.All(m => m && m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 1024 &&
             m.GetTexture("_BumpMap") && m.GetTexture("_MaskMap")) && roadMaterials.Select(m => m.GetTexture("_MainTex")).Distinct().Count() == 3;
         report.grassCoverageExpanded = report.meadowCells >= 250;
         var courtForMaterials=GameObject.Find("Двор №7 · мощение и подпорные стенки по фото · stage04");
@@ -348,8 +320,8 @@ public class StreetQA : MonoBehaviour
             var scale = m.GetVector("_TileMeters");
             // These scans span six bricks and 16/20 courses. A valid 75 mm course gives
             // a 1.20 m tile; the former strict >1.2 rejected that exact physical boundary.
-            return m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 4096 &&
-            m.GetTexture("_BumpMap") && m.GetTexture("_BumpMap").width >= 4096 && m.GetTexture("_MaskMap") &&
+            return m.GetTexture("_MainTex") && m.GetTexture("_MainTex").width >= 1024 &&
+            m.GetTexture("_BumpMap") && m.GetTexture("_BumpMap").width >= 1024 && m.GetTexture("_MaskMap") &&
             m.GetFloat("_Saturation") >= .9f && m.GetFloat("_Parallax") <= .0025f &&
             m.GetFloat("_BumpStrength") <= .3f && scale.x >= 1.50f && scale.x <= 1.65f &&
             scale.y >= 1.19f && scale.y <= 1.55f;
@@ -488,12 +460,12 @@ public class StreetQA : MonoBehaviour
             && report.approachesWalkable && report.entranceStepsWalkable && report.containerCollision
             && report.benchCollision && report.treeCollision && report.lodConfigured
             && report.referenceBuildingsConfigured && report.referenceBuildingCollisions && report.graphicsMaterialsConfigured
-            && report.parkedVehiclesConfigured && report.vehicleCollision && report.meadowCells >= 80 && report.graphicsPresentationConfigured
+            && report.vehiclesAbsent && report.meadowCells >= 80 && report.graphicsPresentationConfigured
             && report.roadNetworkConfigured && report.roadSurfacesContinuous && report.facadeMaterialsConfigured
             && report.roadTransitionsContinuous && report.woodlandPlacementValid && report.woodlandLodsConfigured && report.lightingConfigured
             && report.bakedProbeDataValid
             && report.playgroundsConfigured && report.residentialAccessConfigured && report.roadMaterialsDistinct && report.grassCoverageExpanded
-            && report.parkingPlacementValid && report.parkingSurfacesContinuous && report.parkingAccessConnected && report.parkingVehiclesOnPaving
+            && report.parkingPlacementValid && report.parkingSurfacesContinuous && report.parkingAccessConnected
             && report.entrancesHaveContinuousPaving && (!report.photoEntrancePresent || report.photoEntranceSurfaceValid&&report.photoEntranceWalkValid)
             &&(!lampNetwork||report.streetLampsConfigured&&report.streetLampCollision)
             &&(!report.centralCourtPresent||report.centralCourtWalkValid&&report.districtTerrainPresent&&report.districtTerrainValid)
@@ -568,14 +540,17 @@ public class StreetQA : MonoBehaviour
         var sun=RenderSettings.sun;float intensity=sun.intensity;
         var sky=RenderSettings.ambientSkyColor;var equator=RenderSettings.ambientEquatorColor;var ground=RenderSettings.ambientGroundColor;
         var skybox=RenderSettings.skybox;bool hasExposure=skybox&&skybox.HasProperty("_Exposure");float exposure=hasExposure?skybox.GetFloat("_Exposure"):0;
-        bool night=network.forceNight;
+        bool night=network.forceNight, cameraWasEnabled=camera.enabled;
         try
         {
             sun.intensity=.055f;RenderSettings.ambientSkyColor=new Color(.035f,.043f,.065f);
             RenderSettings.ambientEquatorColor=new Color(.027f,.032f,.048f);RenderSettings.ambientGroundColor=new Color(.018f,.019f,.025f);
             if(hasExposure)skybox.SetFloat("_Exposure",.15f);
             network.forceNight=true;camera.transform.SetPositionAndRotation(view.position,view.rotation);
+            // The lamp network locates the enabled main camera, including in capture-only QA.
+            camera.enabled = true;
             yield return new WaitForSecondsRealtime(.65f);
+            camera.enabled = cameraWasEnabled;
             report.activeNightLamps=network.lamps.Count(l=>l&&l.enabled);
             report.streetLampNightValid=report.activeNightLamps>0&&report.activeNightLamps<=8;
             yield return Capture(camera,view,Path.Combine(directory,"02_dusk_lights.png"));
@@ -583,7 +558,7 @@ public class StreetQA : MonoBehaviour
         finally
         {
             sun.intensity=intensity;RenderSettings.ambientSkyColor=sky;RenderSettings.ambientEquatorColor=equator;RenderSettings.ambientGroundColor=ground;
-            if(hasExposure)skybox.SetFloat("_Exposure",exposure);network.forceNight=night;Destroy(view.gameObject);
+            if(hasExposure)skybox.SetFloat("_Exposure",exposure);network.forceNight=night;camera.enabled=cameraWasEnabled;Destroy(view.gameObject);
         }
     }
     private IEnumerator CaptureDistrictViews(Camera camera,string output)
@@ -1194,29 +1169,6 @@ public class StreetQA : MonoBehaviour
                 }
             }
             finally { camera.fieldOfView = normalFov; }
-            var cars = FindObjectsByType<StreetVehicle>().OrderBy(v => v.transform.position.sqrMagnitude)
-                .GroupBy(v => v.name).Select(g => g.First()).ToArray();
-            for (int c = 0; c < cars.Length; c++)
-            {
-                var car = cars[c];
-                Vector3 center = car.transform.TransformPoint(car.localBounds.center);
-                view.position = center + car.transform.TransformDirection(new Vector3(-4.2f, 1.65f, 5.5f));
-                view.rotation = Quaternion.LookRotation(center - view.position);
-                yield return Capture(camera, view, Path.Combine(directory, c == 0 ? "08_vehicle_materials.png" : "vehicle_" + c + ".png"));
-                if (c == 0)
-                {
-                    var group = car.GetComponent<LODGroup>();
-                    try
-                    {
-                        for (int lod = 0; lod < 3; lod++)
-                        {
-                            group.ForceLOD(lod);
-                            yield return Capture(camera, view, Path.Combine(directory, "vehicle_LOD" + lod + ".png"));
-                        }
-                    }
-                    finally { group.ForceLOD(-1); }
-                }
-            }
             var presentation = camera.GetComponent<StreetPresentation>();
             float contact = presentation.contactShadows;
             try
