@@ -1,0 +1,46 @@
+{
+  "revisionBaseline": "00f63cb0102b1dd800d7a11a0a519ba42034c58f",
+  "entrances": [
+    {
+      "id": "north-west",
+      "x": 22.1,
+      "z": 121.0,
+      "direction": -1,
+      "groundY": -0.009999990463256836,
+      "depth": 2.64,
+      "clearWidth": 4.4,
+      "length": 18,
+      "maximumGrade": 0.16,
+      "provisional": true
+    },
+    {
+      "id": "north-east",
+      "x": 30.3,
+      "z": 121.0,
+      "direction": -1,
+      "groundY": -0.009999990463256836,
+      "depth": 2.64,
+      "clearWidth": 4.4,
+      "length": 18,
+      "maximumGrade": 0.16,
+      "provisional": true
+    }
+  ],
+  "entranceCount": 2,
+  "clearSeparation": 3.21,
+  "yardBounds": [
+    18.75,
+    97.8,
+    33.65,
+    130.0
+  ],
+  "yardRise": 0.85,
+  "frontRiseLength": 6,
+  "rearReturnLength": 5,
+  "excavatedMeshes": [
+    "Assets/Art/StreetRepair/Surfaces/CourtRetained_148822049.asset",
+    "Assets/Art/StreetRepair/LocalAsphalt.asset"
+  ],
+  "excavatedArea": 479.78,
+  "note": "Existing pair only. Photo-based geometry and spacing remain estimates; no surveyed positions inferred."
+}

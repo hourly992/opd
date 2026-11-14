@@ -136,6 +136,9 @@ internal static class StreetSurfaceLibrary
                 material.SetFloat("_Weathering", .08f); break;
             case "Pavement": case "WarmPaving":
                 Apply(material, "concrete_wall_006", 1.4f, Color.white, .35f);
+                material.SetFloat("_PaverPattern", 1);
+                material.SetFloat("_PaverGreyFraction", 0);
+                material.SetVector("_PaverFarTone", material.GetVector("_PaverRedTone"));
                 material.SetFloat("_SurfaceClass", 6); material.SetFloat("_Parallax", .001f); break;
             case "Path": Apply(material, "concrete_pavement", 1.8f, new Color(.85f, .86f, .83f)); break;
             case "Concrete": case "EntranceConcrete": case "RoadKerb": case "Kerbstone": case "Curb":

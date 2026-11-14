@@ -1,0 +1,79 @@
+{
+  "baseCommit": "00f63cb0102b1dd800d7a11a0a519ba42034c58f",
+  "leafLightingAndRoadProfileFilesUnchanged": true,
+  "unchangedProtectedSceneBlocks": 9282,
+  "allExistingSceneBlocksRetained": 17560,
+  "movedEntrance": {
+    "from": [
+      23.8,
+      121
+    ],
+    "to": [
+      22.1,
+      121
+    ]
+  },
+  "entranceCount": 2,
+  "garageMeshBasisAndWinding": {
+    "GarageEntrance.asset": {
+      "vertices": 2224,
+      "triangles": 1112
+    },
+    "GarageBarrelCanopy.asset": {
+      "vertices": 48,
+      "triangles": 24
+    },
+    "GarageMouthAsphalt.asset": {
+      "vertices": 216,
+      "triangles": 72
+    }
+  },
+  "courtyardFootprintSymmetricDifferenceSquareMeters": 0.00014319304660260031,
+  "lightConcreteRGBA": [
+    0.94,
+    0.94,
+    0.91,
+    1.0
+  ],
+  "transparentCanopyRGBA": [
+    0.72,
+    0.85,
+    0.89,
+    0.32
+  ],
+  "activePaverMaterials": [
+    {
+      "material": "Assets/Art/PaintedDistrict/Materials/f534ae48e98dc2f439fadb2be08207a0_2100000_Paver_0.mat",
+      "name": "ReferenceRedPaving",
+      "greyFraction": 0.0,
+      "pattern": 1.0
+    },
+    {
+      "material": "Assets/Art/PaintedDistrict/Materials/fb63895de6f782847b541a61a2a48f4f_2100000_Paver_0.mat",
+      "name": "PhotoRedRunningBond",
+      "greyFraction": 0.0,
+      "pattern": 1.0
+    },
+    {
+      "material": "Assets/Art/StreetRepair/RedGreyRunningBond.mat",
+      "name": "RedGreyRunningBond",
+      "greyFraction": 0.0,
+      "pattern": 1.0
+    }
+  ],
+  "clearRampCollisionProbes": 282,
+  "courtyardPassageAndRestoredOldFootprintProbes": 312,
+  "clearPassageWidthMeters": 3.2099999999999973,
+  "directSavedRenderersAllLodsUpperBound": {
+    "before": {
+      "triangles": 2931436,
+      "nonemptySubmeshes": 3076
+    },
+    "after": {
+      "triangles": 2931054,
+      "nonemptySubmeshes": 3076
+    }
+  },
+  "carriagewayMeshByteIdentical": true,
+  "unityImportPlayerAndFrameTimes": "NOT RUN by this saved-data validator"
+}
