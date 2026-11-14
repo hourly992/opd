@@ -301246,7 +301246,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020996117}
-  m_Mesh: {fileID: 4300000, guid: 24228d297bc25a040a7da88cd8854a39, type: 2}
+  m_Mesh: {fileID: 4300000, guid: abb746652a5dd0af03894026927b07a3, type: 2}
 --- !u!1001 &1021562330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -563304,7 +563304,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908367358}
-  m_Mesh: {fileID: 4300000, guid: 91e9a76c2026b354d91c34092e201380, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 3b70a679f696541aef2d948ce12dda63, type: 2}
 --- !u!1001 &1908373847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -724464,7 +724464,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093769640}
-  m_Mesh: {fileID: 4300000, guid: ea10b7992f86bf64ca9213945e3fab82, type: 2}
+  m_Mesh: {fileID: 4300000, guid: e7b7ea58811a3a89e26fb408fc61e254, type: 2}
 --- !u!1001 &2094828193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -739932,6 +739932,8 @@ SceneRoots:
   - {fileID: 4000000053}
   - {fileID: 4000000080}
   - {fileID: 4000000107}
+  - {fileID: 4000000121}
+  - {fileID: 4000000136}
 --- !u!1 &4000000010
 GameObject:
   m_ObjectHideFlags: 0
@@ -740314,7 +740316,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4000000052}
-  m_Mesh: {fileID: 4300000, guid: fa8dc4b5b222ae51e90351c3462194b9, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 4459ce60d84dad10e6426ad2e8293523, type: 2}
 --- !u!23 &4000000055
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -740427,7 +740429,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4000000066}
-  m_Mesh: {fileID: 4300000, guid: 7d0deb368c7cf888d77957b0cb1c4022, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 6323062e0be68b28b916e8bdeba19746, type: 2}
 --- !u!23 &4000000069
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -740540,7 +740542,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4000000079}
-  m_Mesh: {fileID: 4300000, guid: fa8dc4b5b222ae51e90351c3462194b9, type: 2}
+  m_Mesh: {fileID: 4300000, guid: dc87569f474a24b383fc35ba8261ab51, type: 2}
 --- !u!23 &4000000082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -740653,7 +740655,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4000000093}
-  m_Mesh: {fileID: 4300000, guid: 7d0deb368c7cf888d77957b0cb1c4022, type: 2}
+  m_Mesh: {fileID: 4300000, guid: e6668df27ef13f19f4804fa16d9c5608, type: 2}
 --- !u!23 &4000000096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -740836,3 +740838,153 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: caa8efb856d69d8704747db8ff98fd7f, type: 2}
+--- !u!1 &4000000120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000000121}
+  - component: {fileID: 4000000124}
+  - component: {fileID: 4000000125}
+  m_Layer: 0
+  m_Name: "\u041f\u043e\u0434\u0437\u0435\u043c\u043d\u0430\u044f \u043f\u0430\u0440\u043a\u043e\u0432\u043a\u0430 \u00b7 opposite-west"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000000121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000000120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071067811865475, z: 0, w: 0.7071067811865476}
+  m_LocalPosition: {x: -108.0, y: 0.06499999761581421, z: 67.0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &4000000124
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000000120}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: fa8dc4b5b222ae51e90351c3462194b9, type: 2}
+--- !u!114 &4000000125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000000120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e590bf6d8fc3c4ad0da5d59cd04cfaae, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::UndergroundParkingEntrance
+  address: west-side mirrored pair
+  placementProvisional: 1
+  length: 18
+  clearWidth: 4.4
+  depth: 2.64
+  maximumGrade: 0.16
+  floorAndWalls: {fileID: 4000000124}
+  evidence: Identical entrance model across the main street; free corridor checked against saved buildings and props. Placement is an estimate from user references 20-25.
+--- !u!1 &4000000135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000000136}
+  - component: {fileID: 4000000139}
+  - component: {fileID: 4000000140}
+  m_Layer: 0
+  m_Name: "\u041f\u043e\u0434\u0437\u0435\u043c\u043d\u0430\u044f \u043f\u0430\u0440\u043a\u043e\u0432\u043a\u0430 \u00b7 opposite-east"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000000136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000000135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071067811865475, z: 0, w: 0.7071067811865476}
+  m_LocalPosition: {x: -108.0, y: 0.06499999761581421, z: 75.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &4000000139
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000000135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: fa8dc4b5b222ae51e90351c3462194b9, type: 2}
+--- !u!114 &4000000140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000000135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e590bf6d8fc3c4ad0da5d59cd04cfaae, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::UndergroundParkingEntrance
+  address: west-side mirrored pair
+  placementProvisional: 1
+  length: 18
+  clearWidth: 4.4
+  depth: 2.64
+  maximumGrade: 0.16
+  floorAndWalls: {fileID: 4000000139}
+  evidence: Identical entrance model across the main street; free corridor checked against saved buildings and props. Placement is an estimate from user references 20-25.

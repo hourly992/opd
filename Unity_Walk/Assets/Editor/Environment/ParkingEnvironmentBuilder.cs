@@ -477,7 +477,15 @@ internal static class ParkingEnvironmentBuilder
                 var materials = renderer.sharedMaterials;
                 var material = i < materials.Length ? materials[i] : null;
                 var texture = material && material.HasProperty("_MainTex") ? material.GetTexture("_MainTex") : null;
-                if (texture && AssetDatabase.GetAssetPath(texture).Replace('\\', '/').Contains("/asphalt_01/"))
+                string texturePath = texture ? AssetDatabase.GetAssetPath(texture).Replace('\\', '/') : "";
+                bool sourceServiceAsphalt = texturePath.Contains("/asphalt_01/");
+                // The shared ambientCG texture is also used on the main road and
+                // footpaths: retain the original service-surface classification.
+                bool ambientServiceAsphalt = texturePath.StartsWith(StreetSurfaceLibrary.Asphalt020SRoot + "/", StringComparison.Ordinal) &&
+                    material.HasProperty("_SurfaceClass") && Mathf.RoundToInt(material.GetFloat("_SurfaceClass")) == 4 &&
+                    material.name != "ReferenceAsphalt" && material.name != "MainRoadAsphalt" &&
+                    !material.name.Contains("Footpath", StringComparison.OrdinalIgnoreCase);
+                if (sourceServiceAsphalt || ambientServiceAsphalt)
                 { result = hit; return true; }
                 break;
             }

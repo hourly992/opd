@@ -1,14 +1,14 @@
 {
   "preservedExistingSceneBlocks": 17520,
   "unchangedTransformsPrefabsLightsCamerasSettings": 9275,
-  "validatedMeshAssets": 1192,
+  "validatedMeshAssets": 1199,
   "changedAssetsTriangles": {
     "before": 1821231,
-    "after": 1523452
+    "after": 1528559
   },
   "changedAssetsVertices": {
     "before": 3958396,
-    "after": 3116390
+    "after": 3146092
   },
   "carriagewayTrianglesUnchanged": 3416,
   "crosswalkTrianglesUnchanged": 336,
@@ -21,7 +21,7 @@
   "rampClearLaneCollisionProbes": 138,
   "directSavedRenderersAllLodsUpperBoundTriangles": {
     "before": 3144792,
-    "after": 2931054
+    "after": 2921361
   },
   "directSavedRenderersAllLodsNonemptySubmeshes": {
     "before": 3082,

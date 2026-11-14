@@ -1,0 +1,29 @@
+{
+  "asset": "ambientCG Asphalt020S",
+  "installed": false,
+  "existingAsphaltMaterialsChanged": false,
+  "source": "https://ambientcg.com/view?id=Asphalt020S",
+  "officialArchive": "https://ambientcg.com/get?file=Asphalt020S_2K-JPG.zip",
+  "downloadHost": "acg-download.struffelproductions.com",
+  "license": "CC0 1.0 (official listing verified; original maps not downloaded)",
+  "physicalTileMeters": [
+    1.85,
+    1.85
+  ],
+  "requiredMaps": [
+    "Color",
+    "NormalGL",
+    "Roughness",
+    "AmbientOcclusion"
+  ],
+  "blockingReason": "Managed environment network proxy denies official asset/download hosts: CONNECT 403",
+  "requiredAllowedHosts": [
+    "ambientcg.com",
+    "acg-download.struffelproductions.com",
+    "docs.ambientcg.com"
+  ],
+  "preparedInstaller": "Maintenance/StreetRepair/install_asphalt020s.py",
+  "syntheticPackingSelfTestPassed": true,
+  "originalMapVerification": "NOT RUN: no source archive available",
+  "unityShaderImportAndFrameTimes": "NOT RUN: Unity 6000.6.7f1 not installed"
+}

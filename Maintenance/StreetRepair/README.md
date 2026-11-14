@@ -14,7 +14,7 @@ Install `requirements.txt` into a virtual environment, then run:
 
 ```sh
 python Maintenance/StreetRepair/validate.py
-python Maintenance/StreetRepair/validate_garage_revision.py
+python Maintenance/StreetRepair/validate_parking_network.py
 ```
 
 The validator compares against base `89336538c120b488cb93af6a6d46692a84ee5f69`
@@ -50,10 +50,37 @@ Use a separate checkout at that commit with the revised scripts copied in;
 run it once, then apply the red-paver material change and run both validators.
 Do not run `follow_surfaces.py`: the follow-up preserves every leaf asset.
 
-The revision validator compares against `00f63cb`, independently checking all
+The archived `validate_garage_revision.py` checks the two-entrance revision at
+`2fb3b79` against `00f63cb`; use the network validator for the current scene.
+The archived revision validator independently checks
 existing entrances, tangent bases/winding, ramp/deck collisions, exact courtyard
 coverage and holes, material colors, red paving, immutable leaves/lights/road,
 and the geometry/submesh budget. Use `--output <path.json>` to save its result.
+
+## Connected courts and the opposite-side pair
+
+`connect_parking.py` is a guarded one-time follow-up from the unchanged scene
+at `2fb3b792ddba4966e3aceb8c74866f81827a36bc`. The revised shared body/canopy
+assets must already be present. It fills the missing north connections to the
+existing ring drive, creates a west-side pair and its courtyard/mouth detour,
+and cuts matching ground/collision holes. Existing red paving, house poses,
+street profile, leaf assets and lighting are preserved.
+
+The new pair uses the same entrance model at `(-108,67)` and `(-108,75.2)`,
+rotation Y=90 degrees, on the west side of the main street. This is a checked
+free placement, not a literal geographic reflection into the existing woods.
+Panoramas 20–24 and overhead reference 25 guide connectivity; positions remain
+estimates. `batch_garages.py` bakes four entrances into the four existing
+renderer objects; the two new objects contain only collider/metadata.
+
+`validate_parking_network.py` checks the current saved scene against `2fb3b79`.
+It independently verifies all four ramp collisions, actual paved connectivity
+to the main street/courts, preserved objects/materials, and resource budgets.
+
+`install_asphalt020s.py --archive <original-official-2K-JPG.zip>` is prepared
+for the specifically requested ambientCG material. Installation requires the
+real color, NormalGL, roughness and AO maps; it validates all four before any
+material changes. No fallback texture is downloaded or chosen by this tool.
 
 The offline cutter uses constrained triangulation with holes and interpolates
 the original vertex channels. Render and collision meshes use the same cut.

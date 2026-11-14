@@ -2,7 +2,7 @@ Shader "Street/GarageCanopy"
 {
     Properties
     {
-        _Color ("Painted translucent polycarbonate", Color) = (.62,.69,.64,.24)
+        _Color ("Continuous translucent polycarbonate", Color) = (.72,.85,.89,.42)
     }
     SubShader
     {

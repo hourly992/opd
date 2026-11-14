@@ -87,7 +87,7 @@ def build_assets(drive):
  concrete.write_text(s);meta(concrete,fileid=2100000)
  canopy=ART/'GarageCanopy.mat';s=s.replace('GarageWhiteConcrete','GarageCanopy')
  s=re.sub(r'  m_Shader: .*',f'  m_Shader: {{fileID: 4800000, guid: {guid(ROOT/"Assets/Shaders/StreetGarageCanopy.shader")}, type: 3}}',s)
- s=re.sub(r'(- _Color:) .*',r'\1 {r: 0.72, g: 0.85, b: 0.89, a: 0.32}',s)
+ s=re.sub(r'(- _Color:) .*',r'\1 {r: 0.72, g: 0.85, b: 0.89, a: 0.42}',s)
  canopy.write_text(s);meta(canopy,fileid=2100000)
  v=[];colors=[];t=[[],[]]
  def face(points,slot=1,color=1):
@@ -101,7 +101,11 @@ def build_assets(drive):
   face([(X,y,Z),(X,Y,Z),(x,Y,Z),(x,y,Z)],color=color)
   face([(x,y,Z),(x,Y,Z),(x,Y,z),(x,y,z)],color=color)
   face([(X,y,z),(X,Y,z),(X,Y,Z),(X,y,Z)],color=color)
- for z0,z1 in zip(np.arange(0,18,.75),np.arange(.75,18.01,.75)):
+ # Keep every bend in the saved floor and wall profiles, merging only straight
+ # runs. This preserves the surfaces while paying for the mirrored pair with
+ # fewer triangles rather than adding per-frame work.
+ stations=[0,.75,1.5,6,16.5,17.25,18]
+ for z0,z1 in zip(stations,stations[1:]):
   a,b=floor(z0),floor(z1)
   face([(-2.2,a,z0),(-2.2,b,z1),(2.2,b,z1),(2.2,a,z0)],0)
   for sign in [-1,1]:
@@ -119,24 +123,17 @@ def build_assets(drive):
  # A closed, recessed garage shutter terminates the modeled entrance.
  box((-2.2,-2.70,18),(2.2,1.01,18.16),.88)
  for y in np.arange(-2.5,.8,.27):box((-2.18,y,17.98),(2.18,y+.014,18.005),.78)
- # Clearly curved translucent barrel roof with light metal ribs.
- gv=[];gt=[];gn=[]
- def arch(theta,z):return np.array([2.47*np.cos(theta),1.04+1.55*np.sin(theta),z])
+ # One connected translucent barrel shell. The eaves sit directly on the
+ # retaining wall; no opaque ribs or detached side frames float above it.
+ gt=[]
+ def arch(theta,z):return np.array([2.44*np.cos(theta),1.01+1.55*np.sin(theta),z])
  def outward(theta):
-  n=np.array([np.cos(theta)/2.47,np.sin(theta)/1.55,0]);return n/np.linalg.norm(n)
+  n=np.array([np.cos(theta)/2.44,np.sin(theta)/1.55,0]);return n/np.linalg.norm(n)
+ angles=np.linspace(0,np.pi,13)
+ gv=[arch(a,z) for z in [6,18] for a in angles]
+ gn=[outward(a) for z in [6,18] for a in angles]
  for j in range(12):
-  a=j*np.pi/12;b=(j+1)*np.pi/12;first=len(gv)
-  gv.extend([arch(a,6),arch(b,6),arch(b,18),arch(a,18)])
-  gn.extend([outward(a),outward(b),outward(b),outward(a)])
-  gt.extend([(first,first+1,first+2),(first,first+2,first+3)])
- for z in np.linspace(6,18,5):
-  for j in range(12):
-   a=j*np.pi/12;b=(j+1)*np.pi/12
-   p,q=arch(a,z),arch(b,z);out=np.array([np.cos((a+b)*.5),np.sin((a+b)*.5),0])*.022;dz=np.array([0,0,.022])
-   # Four-sided metal rib, folded into the same concrete/vertex-tint batch.
-   pts=[p-out-dz,p+out-dz,p+out+dz,p-out+dz];qs=[q-out-dz,q+out-dz,q+out+dz,q-out+dz]
-   for k in range(4):face([pts[k],qs[k],qs[(k+1)%4],pts[(k+1)%4]],color=.82)
- for sign in [-1,1]:box((sign*2.47-.025,1.015,6),(sign*2.47+.025,1.065,18),.82)
+  gt.extend([(j,j+1,j+14),(j,j+14,j+13)])
  op=ART/'GarageEntrance.asset';gp=ART/'GarageBarrelCanopy.asset'
  garage_mesh(op,v,t,colors=colors);garage_mesh(gp,gv,[gt],normals=gn)
  return op,gp,concrete,canopy
