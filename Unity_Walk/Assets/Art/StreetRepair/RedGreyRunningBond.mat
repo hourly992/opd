@@ -50,7 +50,7 @@ Material:
     - _OcclusionStrength: 0.22
     - _PaintedVariation: 0.08
     - _Parallax: 0.00025
-    - _PaverGreyFraction: .32
+    - _PaverGreyFraction: 0
     - _PaverJointMeters: 0.004
     - _PaverPattern: 1
     - _RoughnessBias: 0.45
@@ -65,7 +65,7 @@ Material:
     - _Color: {r: 0.92, g: 0.9, b: 0.88, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MeadowSoilRange: {r: 0.078, g: 0.2, b: 0.36, a: 0.66}
-    - _PaverFarTone: {r: 0.326, g: 0.23, b: 0.192, a: 1}
+    - _PaverFarTone: {r: 0.35, g: 0.2, b: 0.155, a: 1}
     - _PaverFinish: {r: 0.0015, g: 0.75, b: 0.55, a: 0}
     - _PaverGreyTone: {r: 0.3, g: 0.295, b: 0.27, a: 1}
     - _PaverRedTone: {r: 0.35, g: 0.2, b: 0.155, a: 1}

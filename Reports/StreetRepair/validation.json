@@ -4,11 +4,11 @@
   "validatedMeshAssets": 1192,
   "changedAssetsTriangles": {
     "before": 1821231,
-    "after": 1523638
+    "after": 1523452
   },
   "changedAssetsVertices": {
     "before": 3958396,
-    "after": 3116323
+    "after": 3116390
   },
   "carriagewayTrianglesUnchanged": 3416,
   "crosswalkTrianglesUnchanged": 336,
@@ -21,7 +21,7 @@
   "rampClearLaneCollisionProbes": 138,
   "directSavedRenderersAllLodsUpperBoundTriangles": {
     "before": 3144792,
-    "after": 2931436
+    "after": 2931054
   },
   "directSavedRenderersAllLodsNonemptySubmeshes": {
     "before": 3082,

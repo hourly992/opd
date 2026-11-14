@@ -14,6 +14,7 @@ Install `requirements.txt` into a virtual environment, then run:
 
 ```sh
 python Maintenance/StreetRepair/validate.py
+python Maintenance/StreetRepair/validate_garage_revision.py
 ```
 
 The validator compares against base `89336538c120b488cb93af6a6d46692a84ee5f69`
@@ -33,11 +34,26 @@ Run `python Maintenance/StreetRepair/bake.py`. Its guard refuses an edited scene
 or a different source commit. It runs the leaf, surface, garage, batching,
 surface-following, isolation and validation steps in order.
 
-`garages.py:SITES` records provisional positions, separately from the original
+`garages.py:SITES` records provisional positions, separately from the shared
 shared entrance geometry. The supplied photos establish shape and the 5/7
 address, but do not establish survey coordinates, count or ramp dimensions.
-The two entrances are a reviewable provisional pair in the unobstructed north
-5/7 corridor. Do not describe this placement as a verified reconstruction.
+The two entrances are the complete existing provisional pair in the north 5/7
+corridor. Their clear separation is now 3.21 m; rising asphalt connects to a
+flat raised courtyard, with a rear return to original grade. Do not describe
+this placement as a surveyed reconstruction.
+
+## Follow-up from the initial PR #3 head
+
+`revise_garages.py` applies only the garage follow-up to the unchanged saved
+scene at `00f63cb0102b1dd800d7a11a0a519ba42034c58f`. It refuses an edited scene.
+Use a separate checkout at that commit with the revised scripts copied in;
+run it once, then apply the red-paver material change and run both validators.
+Do not run `follow_surfaces.py`: the follow-up preserves every leaf asset.
+
+The revision validator compares against `00f63cb`, independently checking all
+existing entrances, tangent bases/winding, ramp/deck collisions, exact courtyard
+coverage and holes, material colors, red paving, immutable leaves/lights/road,
+and the geometry/submesh budget. Use `--output <path.json>` to save its result.
 
 The offline cutter uses constrained triangulation with holes and interpolates
 the original vertex channels. Render and collision meshes use the same cut.

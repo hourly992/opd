@@ -46,10 +46,11 @@ def short_aprons(access):
 def material_variant(source,name,finish=None):
  s=source.read_text();s=re.sub(r'  m_Name: .*','  m_Name: '+name,s)
  if finish=='paver':
-  for key,value in [('_PaverGreyFraction','.32'),('_PaverPattern','1'),('_BumpStrength','.22'),('_Weathering','.13')]:
+  # A single red running-bond finish; keep grain/joints without random grey blocks.
+  for key,value in [('_PaverGreyFraction','0'),('_PaverPattern','1'),('_BumpStrength','.22'),('_Weathering','.13')]:
    s=re.sub(r'(- '+key+r':) .*',r'\g<1> '+value,s)
   s=re.sub(r'(- _Color:) .*',r'\1 {r: 0.64, g: 0.46, b: 0.39, a: 1}',s)
-  for key,color in [('_Color',(.92,.90,.88)),('_PaverRedTone',(.35,.20,.155)),('_PaverGreyTone',(.30,.295,.27)),('_PaverFarTone',(.326,.230,.192))]:
+  for key,color in [('_Color',(.92,.90,.88)),('_PaverRedTone',(.35,.20,.155)),('_PaverGreyTone',(.30,.295,.27)),('_PaverFarTone',(.35,.20,.155))]:
    s=re.sub(r'(- '+key+r':) .*',r'\g<1> '+f'{{r: {color[0]}, g: {color[1]}, b: {color[2]}, a: 1}}',s)
  p=ART/(name+'.mat');p.write_text(s);meta(p,fileid=2100000);return p
 def change_materials(bs,x,materials):
