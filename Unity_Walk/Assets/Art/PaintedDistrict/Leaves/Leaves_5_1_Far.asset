@@ -17,8 +17,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 8
     localAABB:
-      m_Center: {x: 15.216606, y: 0.022649564, z: 9.510695}
-      m_Extent: {x: 0.8168931, y: 0.02174028, z: 3.1743605}
+      m_Center: {x: 15.2195301, y: 0.0226495638, z: 9.48513126}
+      m_Extent: {x: 0.870120525, y: 0.0217402801, z: 3.22529435}
   m_Shapes:
     vertices: []
     shapes: []
@@ -97,7 +97,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 288
-    _typelessdata: f4196941f05c6e3ad653ce4000000000ffff7f3f00000000cc7e0bed00000000b81e05bff66e6841f05c6e3a41c3ca40000000000000803f00000000a36409bd5c8fc2be8fc2f5bc39656641f05c6e3a0cedca4000000000ffff7f3f00000000cc7e0bed0ad7a33c0000003f6b226741f05c6e3aba28ce40000000000000803f00000000cc7e0bed7b14ae3e0ad7a33ce7a47e4120d2353dfdf54a41000000000000803f00000000801604ee00000000b81e05bf9b44804120d2353da492494100000000ffff7f3f00000000661103be5c8fc2be8fc2f5bc945c7f4120d2353d215b4741000000000000803f00000000801604ee0ad7a33c0000003f43b77d4120d2353d06c34841000000000000803f00000000801604ee7b14ae3e0ad7a33c
+    _typelessdata: e0e26941f05c6e3abed0cb40000000000000803f00000000c1770ae1abaaaa3e0ad723bc73366741f05c6e3a9550c840000000000000803f00000000c1770ae1abaaaa3eae47813f2f976541f05c6e3a3245cd40000000000000803f00000000c1770ae1abaa2a3fae47813f9c436841f05c6e3a5bc5d040000000000000803f00000000c1770ae1abaa2a3f0ad723bc9a51804120d2353de75d4b41000000000000803f00000000791403e2abaa2a3f0ad723bc9bb7804120d2353d8fc74741000000000000803f00000000791403e2abaa2a3fae47813f9c767d4120d2353dbae54641000000000000803f00000000791403e20000803fae47813f9aaa7c4120d2353d117c4a41000000000000803f00000000791403e20000803f0ad723bc
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -151,8 +151,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 15.216606, y: 0.022649564, z: 9.510695}
-    m_Extent: {x: 0.8168931, y: 0.02174028, z: 3.1743605}
+    m_Center: {x: 15.2195301, y: 0.0226495638, z: 9.48513126}
+    m_Extent: {x: 0.870120525, y: 0.0217402801, z: 3.22529435}
   m_CookingOptions: 30
   m_PreBakeConvexCollisionMesh: 0
   m_PreBakeTriangleCollisionMesh: 0
@@ -166,16 +166,3 @@ Mesh:
     offset: 0
     size: 0
     path: 
-  m_MeshLodInfo:
-    serializedVersion: 2
-    m_LodSelectionCurve:
-      serializedVersion: 1
-      m_LodSlope: 0
-      m_LodBias: 0
-    m_NumLevels: 1
-    m_SubMeshes:
-    - serializedVersion: 2
-      m_Levels:
-      - serializedVersion: 1
-        m_IndexStart: 0
-        m_IndexCount: 0

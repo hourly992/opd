@@ -1,0 +1,4688 @@
+[
+  {
+    "path": "Assets/Art/FullVisual/Meshes/DriftCopper.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/FullVisual/Meshes/DriftGold.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_6_Far.asset",
+    "leaves": 130,
+    "beforeTriangles": 260,
+    "afterTriangles": 260
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_6_Near.asset",
+    "leaves": 390,
+    "beforeTriangles": 1560,
+    "afterTriangles": 1560
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_7_Far.asset",
+    "leaves": 19,
+    "beforeTriangles": 38,
+    "afterTriangles": 38
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_7_Near.asset",
+    "leaves": 59,
+    "beforeTriangles": 236,
+    "afterTriangles": 236
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_8_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_8_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_9_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-10_9_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_6_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_7_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_7_Near.asset",
+    "leaves": 14,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_8_Far.asset",
+    "leaves": 11,
+    "beforeTriangles": 22,
+    "afterTriangles": 22
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_8_Near.asset",
+    "leaves": 35,
+    "beforeTriangles": 140,
+    "afterTriangles": 140
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_9_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-11_9_Near.asset",
+    "leaves": 6,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_6_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_6_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_7_Far.asset",
+    "leaves": 17,
+    "beforeTriangles": 34,
+    "afterTriangles": 34
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_7_Near.asset",
+    "leaves": 53,
+    "beforeTriangles": 212,
+    "afterTriangles": 212
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_8_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_8_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_9_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-12_9_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_5_Near.asset",
+    "leaves": 1,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_6_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_6_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_7_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_7_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_8_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-13_8_Near.asset",
+    "leaves": 6,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_5_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_5_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_6_Far.asset",
+    "leaves": 23,
+    "beforeTriangles": 46,
+    "afterTriangles": 46
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_6_Near.asset",
+    "leaves": 70,
+    "beforeTriangles": 280,
+    "afterTriangles": 280
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_7_Far.asset",
+    "leaves": 9,
+    "beforeTriangles": 18,
+    "afterTriangles": 18
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_7_Near.asset",
+    "leaves": 27,
+    "beforeTriangles": 108,
+    "afterTriangles": 108
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_8_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-14_8_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-15_5_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-15_5_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-15_6_Far.asset",
+    "leaves": 7,
+    "beforeTriangles": 14,
+    "afterTriangles": 14
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-15_6_Near.asset",
+    "leaves": 22,
+    "beforeTriangles": 88,
+    "afterTriangles": 88
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-15_7_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-15_7_Near.asset",
+    "leaves": 14,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-16_6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-16_6_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-16_7_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-16_7_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-10_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-10_Near.asset",
+    "leaves": 13,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-11_Far.asset",
+    "leaves": 16,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-11_Near.asset",
+    "leaves": 50,
+    "beforeTriangles": 200,
+    "afterTriangles": 200
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-15_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-15_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-16_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-16_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-17_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-17_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-18_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-18_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-1_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-1_Near.asset",
+    "leaves": 88,
+    "beforeTriangles": 352,
+    "afterTriangles": 352
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-2_Far.asset",
+    "leaves": 21,
+    "beforeTriangles": 42,
+    "afterTriangles": 42
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-2_Near.asset",
+    "leaves": 65,
+    "beforeTriangles": 260,
+    "afterTriangles": 260
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-3_Far.asset",
+    "leaves": 41,
+    "beforeTriangles": 82,
+    "afterTriangles": 82
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-3_Near.asset",
+    "leaves": 125,
+    "beforeTriangles": 500,
+    "afterTriangles": 500
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-4_Far.asset",
+    "leaves": 23,
+    "beforeTriangles": 46,
+    "afterTriangles": 46
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-4_Near.asset",
+    "leaves": 70,
+    "beforeTriangles": 280,
+    "afterTriangles": 280
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-5_Far.asset",
+    "leaves": 26,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-5_Near.asset",
+    "leaves": 78,
+    "beforeTriangles": 312,
+    "afterTriangles": 312
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-6_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-6_Near.asset",
+    "leaves": 24,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-7_Far.asset",
+    "leaves": 53,
+    "beforeTriangles": 106,
+    "afterTriangles": 106
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-7_Near.asset",
+    "leaves": 161,
+    "beforeTriangles": 644,
+    "afterTriangles": 644
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-8_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-8_Near.asset",
+    "leaves": 32,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-9_Far.asset",
+    "leaves": 114,
+    "beforeTriangles": 228,
+    "afterTriangles": 228
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_-9_Near.asset",
+    "leaves": 343,
+    "beforeTriangles": 1372,
+    "afterTriangles": 1372
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_0_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_0_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_1_Far.asset",
+    "leaves": 65,
+    "beforeTriangles": 130,
+    "afterTriangles": 130
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_1_Near.asset",
+    "leaves": 197,
+    "beforeTriangles": 788,
+    "afterTriangles": 788
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_2_Far.asset",
+    "leaves": 120,
+    "beforeTriangles": 240,
+    "afterTriangles": 240
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_2_Near.asset",
+    "leaves": 362,
+    "beforeTriangles": 1448,
+    "afterTriangles": 1448
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_3_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_3_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_4_Far.asset",
+    "leaves": 38,
+    "beforeTriangles": 76,
+    "afterTriangles": 76
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_4_Near.asset",
+    "leaves": 115,
+    "beforeTriangles": 460,
+    "afterTriangles": 460
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_5_Far.asset",
+    "leaves": 50,
+    "beforeTriangles": 100,
+    "afterTriangles": 100
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_5_Near.asset",
+    "leaves": 152,
+    "beforeTriangles": 608,
+    "afterTriangles": 608
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_6_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_6_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_7_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-1_7_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-10_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-11_Far.asset",
+    "leaves": 59,
+    "beforeTriangles": 118,
+    "afterTriangles": 118
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-11_Near.asset",
+    "leaves": 178,
+    "beforeTriangles": 712,
+    "afterTriangles": 712
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-16_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-17_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-17_Near.asset",
+    "leaves": 41,
+    "beforeTriangles": 164,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-18_Far.asset",
+    "leaves": 9,
+    "beforeTriangles": 18,
+    "afterTriangles": 18
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-18_Near.asset",
+    "leaves": 29,
+    "beforeTriangles": 116,
+    "afterTriangles": 116
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-1_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-1_Near.asset",
+    "leaves": 87,
+    "beforeTriangles": 348,
+    "afterTriangles": 348
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-2_Far.asset",
+    "leaves": 72,
+    "beforeTriangles": 144,
+    "afterTriangles": 144
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-2_Near.asset",
+    "leaves": 217,
+    "beforeTriangles": 868,
+    "afterTriangles": 868
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-3_Far.asset",
+    "leaves": 19,
+    "beforeTriangles": 38,
+    "afterTriangles": 38
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-3_Near.asset",
+    "leaves": 58,
+    "beforeTriangles": 232,
+    "afterTriangles": 232
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-4_Far.asset",
+    "leaves": 20,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-4_Near.asset",
+    "leaves": 61,
+    "beforeTriangles": 244,
+    "afterTriangles": 244
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-5_Far.asset",
+    "leaves": 19,
+    "beforeTriangles": 38,
+    "afterTriangles": 38
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-5_Near.asset",
+    "leaves": 59,
+    "beforeTriangles": 236,
+    "afterTriangles": 236
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-6_Far.asset",
+    "leaves": 125,
+    "beforeTriangles": 250,
+    "afterTriangles": 250
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-6_Near.asset",
+    "leaves": 376,
+    "beforeTriangles": 1504,
+    "afterTriangles": 1504
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-7_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-7_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-8_Far.asset",
+    "leaves": 80,
+    "beforeTriangles": 160,
+    "afterTriangles": 160
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-8_Near.asset",
+    "leaves": 241,
+    "beforeTriangles": 964,
+    "afterTriangles": 964
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-9_Far.asset",
+    "leaves": 192,
+    "beforeTriangles": 384,
+    "afterTriangles": 384
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_-9_Near.asset",
+    "leaves": 576,
+    "beforeTriangles": 2304,
+    "afterTriangles": 2304
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_0_Far.asset",
+    "leaves": 511,
+    "beforeTriangles": 1022,
+    "afterTriangles": 1022
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_0_Near.asset",
+    "leaves": 1533,
+    "beforeTriangles": 6132,
+    "afterTriangles": 6132
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_1_Far.asset",
+    "leaves": 76,
+    "beforeTriangles": 152,
+    "afterTriangles": 152
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_1_Near.asset",
+    "leaves": 228,
+    "beforeTriangles": 912,
+    "afterTriangles": 912
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_2_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_2_Near.asset",
+    "leaves": 88,
+    "beforeTriangles": 352,
+    "afterTriangles": 352
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_3_Far.asset",
+    "leaves": 104,
+    "beforeTriangles": 208,
+    "afterTriangles": 208
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_3_Near.asset",
+    "leaves": 314,
+    "beforeTriangles": 1256,
+    "afterTriangles": 1256
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_4_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_4_Near.asset",
+    "leaves": 14,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_5_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_5_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-2_6_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-17_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-17_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-18_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-18_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-1_Far.asset",
+    "leaves": 27,
+    "beforeTriangles": 54,
+    "afterTriangles": 54
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-1_Near.asset",
+    "leaves": 81,
+    "beforeTriangles": 324,
+    "afterTriangles": 324
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-2_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-2_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-3_Far.asset",
+    "leaves": 122,
+    "beforeTriangles": 244,
+    "afterTriangles": 244
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-3_Near.asset",
+    "leaves": 367,
+    "beforeTriangles": 1468,
+    "afterTriangles": 1468
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-4_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-4_Near.asset",
+    "leaves": 17,
+    "beforeTriangles": 68,
+    "afterTriangles": 68
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-5_Far.asset",
+    "leaves": 42,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-5_Near.asset",
+    "leaves": 128,
+    "beforeTriangles": 512,
+    "afterTriangles": 512
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-6_Far.asset",
+    "leaves": 80,
+    "beforeTriangles": 160,
+    "afterTriangles": 160
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-6_Near.asset",
+    "leaves": 242,
+    "beforeTriangles": 968,
+    "afterTriangles": 968
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-7_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_-7_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_0_Far.asset",
+    "leaves": 31,
+    "beforeTriangles": 62,
+    "afterTriangles": 62
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_0_Near.asset",
+    "leaves": 95,
+    "beforeTriangles": 380,
+    "afterTriangles": 380
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_1_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_1_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_2_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_2_Near.asset",
+    "leaves": 89,
+    "beforeTriangles": 356,
+    "afterTriangles": 356
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_3_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_3_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_4_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_4_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_6_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_7_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_7_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_8_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_8_Near.asset",
+    "leaves": 6,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-3_9_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-1_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-1_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-2_Far.asset",
+    "leaves": 116,
+    "beforeTriangles": 232,
+    "afterTriangles": 232
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-2_Near.asset",
+    "leaves": 349,
+    "beforeTriangles": 1396,
+    "afterTriangles": 1396
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-3_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-3_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-4_Far.asset",
+    "leaves": 94,
+    "beforeTriangles": 188,
+    "afterTriangles": 188
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-4_Near.asset",
+    "leaves": 283,
+    "beforeTriangles": 1132,
+    "afterTriangles": 1132
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-5_Far.asset",
+    "leaves": 84,
+    "beforeTriangles": 168,
+    "afterTriangles": 168
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-5_Near.asset",
+    "leaves": 254,
+    "beforeTriangles": 1016,
+    "afterTriangles": 1016
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-6_Far.asset",
+    "leaves": 32,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_-6_Near.asset",
+    "leaves": 98,
+    "beforeTriangles": 392,
+    "afterTriangles": 392
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_0_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_0_Near.asset",
+    "leaves": 89,
+    "beforeTriangles": 356,
+    "afterTriangles": 356
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_1_Far.asset",
+    "leaves": 40,
+    "beforeTriangles": 80,
+    "afterTriangles": 80
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_1_Near.asset",
+    "leaves": 121,
+    "beforeTriangles": 484,
+    "afterTriangles": 484
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_2_Far.asset",
+    "leaves": 58,
+    "beforeTriangles": 116,
+    "afterTriangles": 116
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_2_Near.asset",
+    "leaves": 176,
+    "beforeTriangles": 704,
+    "afterTriangles": 704
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_3_Far.asset",
+    "leaves": 15,
+    "beforeTriangles": 30,
+    "afterTriangles": 30
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_3_Near.asset",
+    "leaves": 46,
+    "beforeTriangles": 184,
+    "afterTriangles": 184
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_4_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_4_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_5_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_5_Near.asset",
+    "leaves": 6,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_6_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_7_Far.asset",
+    "leaves": 28,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_7_Near.asset",
+    "leaves": 84,
+    "beforeTriangles": 336,
+    "afterTriangles": 336
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_8_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_8_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-4_9_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-1_Far.asset",
+    "leaves": 53,
+    "beforeTriangles": 106,
+    "afterTriangles": 106
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-1_Near.asset",
+    "leaves": 159,
+    "beforeTriangles": 636,
+    "afterTriangles": 636
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-2_Far.asset",
+    "leaves": 101,
+    "beforeTriangles": 202,
+    "afterTriangles": 202
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-2_Near.asset",
+    "leaves": 304,
+    "beforeTriangles": 1216,
+    "afterTriangles": 1216
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-3_Far.asset",
+    "leaves": 72,
+    "beforeTriangles": 144,
+    "afterTriangles": 144
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-3_Near.asset",
+    "leaves": 217,
+    "beforeTriangles": 868,
+    "afterTriangles": 868
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-4_Far.asset",
+    "leaves": 133,
+    "beforeTriangles": 266,
+    "afterTriangles": 266
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_-4_Near.asset",
+    "leaves": 401,
+    "beforeTriangles": 1604,
+    "afterTriangles": 1604
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_0_Far.asset",
+    "leaves": 63,
+    "beforeTriangles": 126,
+    "afterTriangles": 126
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_0_Near.asset",
+    "leaves": 191,
+    "beforeTriangles": 764,
+    "afterTriangles": 764
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_1_Far.asset",
+    "leaves": 17,
+    "beforeTriangles": 34,
+    "afterTriangles": 34
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_1_Near.asset",
+    "leaves": 53,
+    "beforeTriangles": 212,
+    "afterTriangles": 212
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_2_Far.asset",
+    "leaves": 46,
+    "beforeTriangles": 92,
+    "afterTriangles": 92
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_2_Near.asset",
+    "leaves": 140,
+    "beforeTriangles": 560,
+    "afterTriangles": 560
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_3_Far.asset",
+    "leaves": 55,
+    "beforeTriangles": 110,
+    "afterTriangles": 110
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_3_Near.asset",
+    "leaves": 167,
+    "beforeTriangles": 668,
+    "afterTriangles": 668
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_4_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_4_Near.asset",
+    "leaves": 25,
+    "beforeTriangles": 100,
+    "afterTriangles": 100
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_5_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_5_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_6_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_6_Near.asset",
+    "leaves": 41,
+    "beforeTriangles": 164,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_7_Far.asset",
+    "leaves": 53,
+    "beforeTriangles": 106,
+    "afterTriangles": 106
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_7_Near.asset",
+    "leaves": 161,
+    "beforeTriangles": 644,
+    "afterTriangles": 644
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_8_Far.asset",
+    "leaves": 15,
+    "beforeTriangles": 30,
+    "afterTriangles": 30
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_8_Near.asset",
+    "leaves": 45,
+    "beforeTriangles": 180,
+    "afterTriangles": 180
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_9_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-5_9_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_-1_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_-1_Near.asset",
+    "leaves": 32,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_-2_Far.asset",
+    "leaves": 50,
+    "beforeTriangles": 100,
+    "afterTriangles": 100
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_-2_Near.asset",
+    "leaves": 151,
+    "beforeTriangles": 604,
+    "afterTriangles": 604
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_0_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_0_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_1_Far.asset",
+    "leaves": 19,
+    "beforeTriangles": 38,
+    "afterTriangles": 38
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_1_Near.asset",
+    "leaves": 59,
+    "beforeTriangles": 236,
+    "afterTriangles": 236
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_2_Far.asset",
+    "leaves": 68,
+    "beforeTriangles": 136,
+    "afterTriangles": 136
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_2_Near.asset",
+    "leaves": 206,
+    "beforeTriangles": 824,
+    "afterTriangles": 824
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_3_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_3_Near.asset",
+    "leaves": 24,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_4_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_4_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_5_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_5_Near.asset",
+    "leaves": 32,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_6_Far.asset",
+    "leaves": 38,
+    "beforeTriangles": 76,
+    "afterTriangles": 76
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_6_Near.asset",
+    "leaves": 116,
+    "beforeTriangles": 464,
+    "afterTriangles": 464
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_7_Far.asset",
+    "leaves": 11,
+    "beforeTriangles": 22,
+    "afterTriangles": 22
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_7_Near.asset",
+    "leaves": 33,
+    "beforeTriangles": 132,
+    "afterTriangles": 132
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_8_Far.asset",
+    "leaves": 22,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_8_Near.asset",
+    "leaves": 68,
+    "beforeTriangles": 272,
+    "afterTriangles": 272
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_9_Far.asset",
+    "leaves": 9,
+    "beforeTriangles": 18,
+    "afterTriangles": 18
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-6_9_Near.asset",
+    "leaves": 27,
+    "beforeTriangles": 108,
+    "afterTriangles": 108
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_10_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_10_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_1_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_1_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_2_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_2_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_3_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_3_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_5_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_5_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_6_Far.asset",
+    "leaves": 9,
+    "beforeTriangles": 18,
+    "afterTriangles": 18
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_6_Near.asset",
+    "leaves": 27,
+    "beforeTriangles": 108,
+    "afterTriangles": 108
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_7_Far.asset",
+    "leaves": 18,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_7_Near.asset",
+    "leaves": 55,
+    "beforeTriangles": 220,
+    "afterTriangles": 220
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_8_Far.asset",
+    "leaves": 119,
+    "beforeTriangles": 238,
+    "afterTriangles": 238
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_8_Near.asset",
+    "leaves": 359,
+    "beforeTriangles": 1436,
+    "afterTriangles": 1436
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_9_Far.asset",
+    "leaves": 70,
+    "beforeTriangles": 140,
+    "afterTriangles": 140
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-7_9_Near.asset",
+    "leaves": 212,
+    "beforeTriangles": 848,
+    "afterTriangles": 848
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_10_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_10_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_6_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_7_Far.asset",
+    "leaves": 7,
+    "beforeTriangles": 14,
+    "afterTriangles": 14
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_7_Near.asset",
+    "leaves": 21,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_8_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_8_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_9_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-8_9_Near.asset",
+    "leaves": 88,
+    "beforeTriangles": 352,
+    "afterTriangles": 352
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_10_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_10_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_7_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_7_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_8_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_8_Near.asset",
+    "leaves": 24,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_9_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_-9_9_Near.asset",
+    "leaves": 24,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-10_Far.asset",
+    "leaves": 158,
+    "beforeTriangles": 316,
+    "afterTriangles": 316
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-10_Near.asset",
+    "leaves": 474,
+    "beforeTriangles": 1896,
+    "afterTriangles": 1896
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-11_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-11_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-12_Far.asset",
+    "leaves": 154,
+    "beforeTriangles": 308,
+    "afterTriangles": 308
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-12_Near.asset",
+    "leaves": 463,
+    "beforeTriangles": 1852,
+    "afterTriangles": 1852
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-13_Far.asset",
+    "leaves": 24,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-13_Near.asset",
+    "leaves": 72,
+    "beforeTriangles": 288,
+    "afterTriangles": 288
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-14_Far.asset",
+    "leaves": 133,
+    "beforeTriangles": 266,
+    "afterTriangles": 266
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-14_Near.asset",
+    "leaves": 401,
+    "beforeTriangles": 1604,
+    "afterTriangles": 1604
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-15_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-16_Far.asset",
+    "leaves": 82,
+    "beforeTriangles": 164,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-16_Near.asset",
+    "leaves": 246,
+    "beforeTriangles": 984,
+    "afterTriangles": 984
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-17_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-17_Near.asset",
+    "leaves": 39,
+    "beforeTriangles": 156,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-18_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-18_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-1_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-1_Near.asset",
+    "leaves": 13,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-2_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-2_Near.asset",
+    "leaves": 32,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-3_Far.asset",
+    "leaves": 27,
+    "beforeTriangles": 54,
+    "afterTriangles": 54
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-3_Near.asset",
+    "leaves": 81,
+    "beforeTriangles": 324,
+    "afterTriangles": 324
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-4_Far.asset",
+    "leaves": 20,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-4_Near.asset",
+    "leaves": 60,
+    "beforeTriangles": 240,
+    "afterTriangles": 240
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-5_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-5_Near.asset",
+    "leaves": 89,
+    "beforeTriangles": 356,
+    "afterTriangles": 356
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-6_Far.asset",
+    "leaves": 36,
+    "beforeTriangles": 72,
+    "afterTriangles": 72
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-6_Near.asset",
+    "leaves": 110,
+    "beforeTriangles": 440,
+    "afterTriangles": 440
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-7_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-7_Near.asset",
+    "leaves": 41,
+    "beforeTriangles": 164,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-8_Far.asset",
+    "leaves": 26,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-8_Near.asset",
+    "leaves": 80,
+    "beforeTriangles": 320,
+    "afterTriangles": 320
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-9_Far.asset",
+    "leaves": 12,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_-9_Near.asset",
+    "leaves": 38,
+    "beforeTriangles": 152,
+    "afterTriangles": 152
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_0_Far.asset",
+    "leaves": 17,
+    "beforeTriangles": 34,
+    "afterTriangles": 34
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_0_Near.asset",
+    "leaves": 52,
+    "beforeTriangles": 208,
+    "afterTriangles": 208
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_1_Far.asset",
+    "leaves": 159,
+    "beforeTriangles": 318,
+    "afterTriangles": 318
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_1_Near.asset",
+    "leaves": 477,
+    "beforeTriangles": 1908,
+    "afterTriangles": 1908
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_2_Far.asset",
+    "leaves": 33,
+    "beforeTriangles": 66,
+    "afterTriangles": 66
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_2_Near.asset",
+    "leaves": 99,
+    "beforeTriangles": 396,
+    "afterTriangles": 396
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_3_Far.asset",
+    "leaves": 167,
+    "beforeTriangles": 334,
+    "afterTriangles": 334
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_3_Near.asset",
+    "leaves": 503,
+    "beforeTriangles": 2012,
+    "afterTriangles": 2012
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_4_Far.asset",
+    "leaves": 49,
+    "beforeTriangles": 98,
+    "afterTriangles": 98
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_4_Near.asset",
+    "leaves": 147,
+    "beforeTriangles": 588,
+    "afterTriangles": 588
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_5_Far.asset",
+    "leaves": 55,
+    "beforeTriangles": 110,
+    "afterTriangles": 110
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_5_Near.asset",
+    "leaves": 167,
+    "beforeTriangles": 668,
+    "afterTriangles": 668
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_6_Far.asset",
+    "leaves": 12,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_6_Near.asset",
+    "leaves": 38,
+    "beforeTriangles": 152,
+    "afterTriangles": 152
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_7_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_0_7_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_-1_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_-1_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_-2_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_-2_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_0_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_0_Near.asset",
+    "leaves": 87,
+    "beforeTriangles": 348,
+    "afterTriangles": 348
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_1_Far.asset",
+    "leaves": 9,
+    "beforeTriangles": 18,
+    "afterTriangles": 18
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_1_Near.asset",
+    "leaves": 27,
+    "beforeTriangles": 108,
+    "afterTriangles": 108
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_2_Far.asset",
+    "leaves": 35,
+    "beforeTriangles": 70,
+    "afterTriangles": 70
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_2_Near.asset",
+    "leaves": 107,
+    "beforeTriangles": 428,
+    "afterTriangles": 428
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_3_Far.asset",
+    "leaves": 27,
+    "beforeTriangles": 54,
+    "afterTriangles": 54
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_3_Near.asset",
+    "leaves": 81,
+    "beforeTriangles": 324,
+    "afterTriangles": 324
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_4_Far.asset",
+    "leaves": 122,
+    "beforeTriangles": 244,
+    "afterTriangles": 244
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_4_Near.asset",
+    "leaves": 367,
+    "beforeTriangles": 1468,
+    "afterTriangles": 1468
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_5_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_5_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_6_Far.asset",
+    "leaves": 42,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_10_6_Near.asset",
+    "leaves": 128,
+    "beforeTriangles": 512,
+    "afterTriangles": 512
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_-1_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_-1_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_0_Far.asset",
+    "leaves": 44,
+    "beforeTriangles": 88,
+    "afterTriangles": 88
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_0_Near.asset",
+    "leaves": 132,
+    "beforeTriangles": 528,
+    "afterTriangles": 528
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_1_Far.asset",
+    "leaves": 35,
+    "beforeTriangles": 70,
+    "afterTriangles": 70
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_1_Near.asset",
+    "leaves": 105,
+    "beforeTriangles": 420,
+    "afterTriangles": 420
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_2_Far.asset",
+    "leaves": 23,
+    "beforeTriangles": 46,
+    "afterTriangles": 46
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_2_Near.asset",
+    "leaves": 69,
+    "beforeTriangles": 276,
+    "afterTriangles": 276
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_3_Far.asset",
+    "leaves": 39,
+    "beforeTriangles": 78,
+    "afterTriangles": 78
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_3_Near.asset",
+    "leaves": 119,
+    "beforeTriangles": 476,
+    "afterTriangles": 476
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_4_Far.asset",
+    "leaves": 6,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_4_Near.asset",
+    "leaves": 18,
+    "beforeTriangles": 72,
+    "afterTriangles": 72
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_5_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_5_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_6_Far.asset",
+    "leaves": 114,
+    "beforeTriangles": 228,
+    "afterTriangles": 228
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_11_6_Near.asset",
+    "leaves": 343,
+    "beforeTriangles": 1372,
+    "afterTriangles": 1372
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_-1_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_-1_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_0_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_0_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_1_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_1_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_2_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_2_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_3_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_12_3_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-10_Far.asset",
+    "leaves": 6,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-10_Near.asset",
+    "leaves": 18,
+    "beforeTriangles": 72,
+    "afterTriangles": 72
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-11_Far.asset",
+    "leaves": 15,
+    "beforeTriangles": 30,
+    "afterTriangles": 30
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-11_Near.asset",
+    "leaves": 47,
+    "beforeTriangles": 188,
+    "afterTriangles": 188
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-12_Far.asset",
+    "leaves": 123,
+    "beforeTriangles": 246,
+    "afterTriangles": 246
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-12_Near.asset",
+    "leaves": 370,
+    "beforeTriangles": 1480,
+    "afterTriangles": 1480
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-13_Far.asset",
+    "leaves": 192,
+    "beforeTriangles": 384,
+    "afterTriangles": 384
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-13_Near.asset",
+    "leaves": 578,
+    "beforeTriangles": 2312,
+    "afterTriangles": 2312
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-14_Far.asset",
+    "leaves": 87,
+    "beforeTriangles": 174,
+    "afterTriangles": 174
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-14_Near.asset",
+    "leaves": 263,
+    "beforeTriangles": 1052,
+    "afterTriangles": 1052
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-15_Far.asset",
+    "leaves": 113,
+    "beforeTriangles": 226,
+    "afterTriangles": 226
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-15_Near.asset",
+    "leaves": 340,
+    "beforeTriangles": 1360,
+    "afterTriangles": 1360
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-16_Far.asset",
+    "leaves": 71,
+    "beforeTriangles": 142,
+    "afterTriangles": 142
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-16_Near.asset",
+    "leaves": 213,
+    "beforeTriangles": 852,
+    "afterTriangles": 852
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-17_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-17_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-18_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-1_Far.asset",
+    "leaves": 107,
+    "beforeTriangles": 214,
+    "afterTriangles": 214
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-1_Near.asset",
+    "leaves": 323,
+    "beforeTriangles": 1292,
+    "afterTriangles": 1292
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-2_Far.asset",
+    "leaves": 34,
+    "beforeTriangles": 68,
+    "afterTriangles": 68
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-2_Near.asset",
+    "leaves": 104,
+    "beforeTriangles": 416,
+    "afterTriangles": 416
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-3_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-3_Near.asset",
+    "leaves": 14,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-4_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-4_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-5_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-5_Near.asset",
+    "leaves": 39,
+    "beforeTriangles": 156,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-6_Far.asset",
+    "leaves": 30,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-6_Near.asset",
+    "leaves": 90,
+    "beforeTriangles": 360,
+    "afterTriangles": 360
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-7_Far.asset",
+    "leaves": 44,
+    "beforeTriangles": 88,
+    "afterTriangles": 88
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-7_Near.asset",
+    "leaves": 134,
+    "beforeTriangles": 536,
+    "afterTriangles": 536
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-8_Far.asset",
+    "leaves": 29,
+    "beforeTriangles": 58,
+    "afterTriangles": 58
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-8_Near.asset",
+    "leaves": 89,
+    "beforeTriangles": 356,
+    "afterTriangles": 356
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-9_Far.asset",
+    "leaves": 64,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-9_Near.asset",
+    "leaves": 192,
+    "beforeTriangles": 768,
+    "afterTriangles": 768
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_0_Far.asset",
+    "leaves": 66,
+    "beforeTriangles": 132,
+    "afterTriangles": 132
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_0_Near.asset",
+    "leaves": 199,
+    "beforeTriangles": 796,
+    "afterTriangles": 796
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_1_Far.asset",
+    "leaves": 118,
+    "beforeTriangles": 236,
+    "afterTriangles": 236
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_1_Near.asset",
+    "leaves": 355,
+    "beforeTriangles": 1420,
+    "afterTriangles": 1420
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_2_Far.asset",
+    "leaves": 325,
+    "beforeTriangles": 650,
+    "afterTriangles": 650
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_2_Near.asset",
+    "leaves": 975,
+    "beforeTriangles": 3900,
+    "afterTriangles": 3900
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_3_Far.asset",
+    "leaves": 49,
+    "beforeTriangles": 98,
+    "afterTriangles": 98
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_3_Near.asset",
+    "leaves": 149,
+    "beforeTriangles": 596,
+    "afterTriangles": 596
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_4_Far.asset",
+    "leaves": 50,
+    "beforeTriangles": 100,
+    "afterTriangles": 100
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_4_Near.asset",
+    "leaves": 151,
+    "beforeTriangles": 604,
+    "afterTriangles": 604
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_5_Far.asset",
+    "leaves": 184,
+    "beforeTriangles": 368,
+    "afterTriangles": 368
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_5_Near.asset",
+    "leaves": 552,
+    "beforeTriangles": 2208,
+    "afterTriangles": 2208
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_6_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_1_6_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-10_Far.asset",
+    "leaves": 53,
+    "beforeTriangles": 106,
+    "afterTriangles": 106
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-10_Near.asset",
+    "leaves": 161,
+    "beforeTriangles": 644,
+    "afterTriangles": 644
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-11_Far.asset",
+    "leaves": 17,
+    "beforeTriangles": 34,
+    "afterTriangles": 34
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-11_Near.asset",
+    "leaves": 51,
+    "beforeTriangles": 204,
+    "afterTriangles": 204
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-12_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-12_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-13_Far.asset",
+    "leaves": 93,
+    "beforeTriangles": 186,
+    "afterTriangles": 186
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-13_Near.asset",
+    "leaves": 280,
+    "beforeTriangles": 1120,
+    "afterTriangles": 1120
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-14_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-14_Near.asset",
+    "leaves": 17,
+    "beforeTriangles": 68,
+    "afterTriangles": 68
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-15_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-15_Near.asset",
+    "leaves": 26,
+    "beforeTriangles": 104,
+    "afterTriangles": 104
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-16_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-16_Near.asset",
+    "leaves": 13,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-17_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-17_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-2_Far.asset",
+    "leaves": 46,
+    "beforeTriangles": 92,
+    "afterTriangles": 92
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-2_Near.asset",
+    "leaves": 140,
+    "beforeTriangles": 560,
+    "afterTriangles": 560
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-3_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-3_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-4_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-4_Near.asset",
+    "leaves": 13,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-5_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-5_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-6_Far.asset",
+    "leaves": 12,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-6_Near.asset",
+    "leaves": 36,
+    "beforeTriangles": 144,
+    "afterTriangles": 144
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-7_Far.asset",
+    "leaves": 11,
+    "beforeTriangles": 22,
+    "afterTriangles": 22
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-7_Near.asset",
+    "leaves": 33,
+    "beforeTriangles": 132,
+    "afterTriangles": 132
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-8_Far.asset",
+    "leaves": 22,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-8_Near.asset",
+    "leaves": 66,
+    "beforeTriangles": 264,
+    "afterTriangles": 264
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-9_Far.asset",
+    "leaves": 22,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_-9_Near.asset",
+    "leaves": 68,
+    "beforeTriangles": 272,
+    "afterTriangles": 272
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_0_Far.asset",
+    "leaves": 39,
+    "beforeTriangles": 78,
+    "afterTriangles": 78
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_0_Near.asset",
+    "leaves": 117,
+    "beforeTriangles": 468,
+    "afterTriangles": 468
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_1_Far.asset",
+    "leaves": 115,
+    "beforeTriangles": 230,
+    "afterTriangles": 230
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_1_Near.asset",
+    "leaves": 345,
+    "beforeTriangles": 1380,
+    "afterTriangles": 1380
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_2_Far.asset",
+    "leaves": 363,
+    "beforeTriangles": 726,
+    "afterTriangles": 726
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_2_Near.asset",
+    "leaves": 1091,
+    "beforeTriangles": 4364,
+    "afterTriangles": 4364
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_3_Far.asset",
+    "leaves": 55,
+    "beforeTriangles": 110,
+    "afterTriangles": 110
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_3_Near.asset",
+    "leaves": 166,
+    "beforeTriangles": 664,
+    "afterTriangles": 664
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_4_Far.asset",
+    "leaves": 40,
+    "beforeTriangles": 80,
+    "afterTriangles": 80
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_4_Near.asset",
+    "leaves": 121,
+    "beforeTriangles": 484,
+    "afterTriangles": 484
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_5_Far.asset",
+    "leaves": 95,
+    "beforeTriangles": 190,
+    "afterTriangles": 190
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_5_Near.asset",
+    "leaves": 286,
+    "beforeTriangles": 1144,
+    "afterTriangles": 1144
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_6_Far.asset",
+    "leaves": 20,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_6_Near.asset",
+    "leaves": 60,
+    "beforeTriangles": 240,
+    "afterTriangles": 240
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_7_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_2_7_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-10_Far.asset",
+    "leaves": 40,
+    "beforeTriangles": 80,
+    "afterTriangles": 80
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-10_Near.asset",
+    "leaves": 120,
+    "beforeTriangles": 480,
+    "afterTriangles": 480
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-11_Far.asset",
+    "leaves": 17,
+    "beforeTriangles": 34,
+    "afterTriangles": 34
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-11_Near.asset",
+    "leaves": 53,
+    "beforeTriangles": 212,
+    "afterTriangles": 212
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-12_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-12_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-13_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-13_Near.asset",
+    "leaves": 14,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-14_Far.asset",
+    "leaves": 18,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-14_Near.asset",
+    "leaves": 56,
+    "beforeTriangles": 224,
+    "afterTriangles": 224
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-15_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-15_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-16_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-16_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-1_Far.asset",
+    "leaves": 32,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-1_Near.asset",
+    "leaves": 96,
+    "beforeTriangles": 384,
+    "afterTriangles": 384
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-2_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-2_Near.asset",
+    "leaves": 39,
+    "beforeTriangles": 156,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-3_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-3_Near.asset",
+    "leaves": 17,
+    "beforeTriangles": 68,
+    "afterTriangles": 68
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-4_Far.asset",
+    "leaves": 12,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-4_Near.asset",
+    "leaves": 37,
+    "beforeTriangles": 148,
+    "afterTriangles": 148
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-5_Far.asset",
+    "leaves": 46,
+    "beforeTriangles": 92,
+    "afterTriangles": 92
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-5_Near.asset",
+    "leaves": 140,
+    "beforeTriangles": 560,
+    "afterTriangles": 560
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-6_Far.asset",
+    "leaves": 55,
+    "beforeTriangles": 110,
+    "afterTriangles": 110
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-6_Near.asset",
+    "leaves": 167,
+    "beforeTriangles": 668,
+    "afterTriangles": 668
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-7_Far.asset",
+    "leaves": 48,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-7_Near.asset",
+    "leaves": 146,
+    "beforeTriangles": 584,
+    "afterTriangles": 584
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-8_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-8_Near.asset",
+    "leaves": 41,
+    "beforeTriangles": 164,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-9_Far.asset",
+    "leaves": 48,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_-9_Near.asset",
+    "leaves": 145,
+    "beforeTriangles": 580,
+    "afterTriangles": 580
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_0_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_0_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_1_Far.asset",
+    "leaves": 65,
+    "beforeTriangles": 130,
+    "afterTriangles": 130
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_1_Near.asset",
+    "leaves": 197,
+    "beforeTriangles": 788,
+    "afterTriangles": 788
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_2_Far.asset",
+    "leaves": 207,
+    "beforeTriangles": 414,
+    "afterTriangles": 414
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_2_Near.asset",
+    "leaves": 622,
+    "beforeTriangles": 2488,
+    "afterTriangles": 2488
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_3_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_3_Near.asset",
+    "leaves": 13,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_4_Far.asset",
+    "leaves": 121,
+    "beforeTriangles": 242,
+    "afterTriangles": 242
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_4_Near.asset",
+    "leaves": 365,
+    "beforeTriangles": 1460,
+    "afterTriangles": 1460
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_5_Far.asset",
+    "leaves": 64,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_5_Near.asset",
+    "leaves": 192,
+    "beforeTriangles": 768,
+    "afterTriangles": 768
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_6_Far.asset",
+    "leaves": 39,
+    "beforeTriangles": 78,
+    "afterTriangles": 78
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_6_Near.asset",
+    "leaves": 118,
+    "beforeTriangles": 472,
+    "afterTriangles": 472
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_3_7_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-10_Far.asset",
+    "leaves": 38,
+    "beforeTriangles": 76,
+    "afterTriangles": 76
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-10_Near.asset",
+    "leaves": 114,
+    "beforeTriangles": 456,
+    "afterTriangles": 456
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-11_Far.asset",
+    "leaves": 13,
+    "beforeTriangles": 26,
+    "afterTriangles": 26
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-11_Near.asset",
+    "leaves": 39,
+    "beforeTriangles": 156,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-12_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-12_Near.asset",
+    "leaves": 31,
+    "beforeTriangles": 124,
+    "afterTriangles": 124
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-13_Far.asset",
+    "leaves": 73,
+    "beforeTriangles": 146,
+    "afterTriangles": 146
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-13_Near.asset",
+    "leaves": 219,
+    "beforeTriangles": 876,
+    "afterTriangles": 876
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-14_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-14_Near.asset",
+    "leaves": 17,
+    "beforeTriangles": 68,
+    "afterTriangles": 68
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-15_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-15_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-1_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-1_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-2_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-2_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-3_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-3_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-4_Far.asset",
+    "leaves": 78,
+    "beforeTriangles": 156,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-4_Near.asset",
+    "leaves": 234,
+    "beforeTriangles": 936,
+    "afterTriangles": 936
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-5_Far.asset",
+    "leaves": 41,
+    "beforeTriangles": 82,
+    "afterTriangles": 82
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-5_Near.asset",
+    "leaves": 123,
+    "beforeTriangles": 492,
+    "afterTriangles": 492
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-6_Far.asset",
+    "leaves": 37,
+    "beforeTriangles": 74,
+    "afterTriangles": 74
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-6_Near.asset",
+    "leaves": 113,
+    "beforeTriangles": 452,
+    "afterTriangles": 452
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-7_Far.asset",
+    "leaves": 30,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-7_Near.asset",
+    "leaves": 91,
+    "beforeTriangles": 364,
+    "afterTriangles": 364
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-8_Far.asset",
+    "leaves": 44,
+    "beforeTriangles": 88,
+    "afterTriangles": 88
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-8_Near.asset",
+    "leaves": 132,
+    "beforeTriangles": 528,
+    "afterTriangles": 528
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-9_Far.asset",
+    "leaves": 18,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_-9_Near.asset",
+    "leaves": 56,
+    "beforeTriangles": 224,
+    "afterTriangles": 224
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_0_Far.asset",
+    "leaves": 93,
+    "beforeTriangles": 186,
+    "afterTriangles": 186
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_0_Near.asset",
+    "leaves": 279,
+    "beforeTriangles": 1116,
+    "afterTriangles": 1116
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_1_Far.asset",
+    "leaves": 27,
+    "beforeTriangles": 54,
+    "afterTriangles": 54
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_1_Near.asset",
+    "leaves": 82,
+    "beforeTriangles": 328,
+    "afterTriangles": 328
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_2_Far.asset",
+    "leaves": 42,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_2_Near.asset",
+    "leaves": 127,
+    "beforeTriangles": 508,
+    "afterTriangles": 508
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_3_Far.asset",
+    "leaves": 127,
+    "beforeTriangles": 254,
+    "afterTriangles": 254
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_3_Near.asset",
+    "leaves": 382,
+    "beforeTriangles": 1528,
+    "afterTriangles": 1528
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_4_Far.asset",
+    "leaves": 21,
+    "beforeTriangles": 42,
+    "afterTriangles": 42
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_4_Near.asset",
+    "leaves": 63,
+    "beforeTriangles": 252,
+    "afterTriangles": 252
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_5_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_5_Near.asset",
+    "leaves": 14,
+    "beforeTriangles": 56,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_6_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_6_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_7_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_4_7_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-10_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-10_Near.asset",
+    "leaves": 30,
+    "beforeTriangles": 120,
+    "afterTriangles": 120
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-11_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-11_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-12_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-12_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-13_Far.asset",
+    "leaves": 76,
+    "beforeTriangles": 152,
+    "afterTriangles": 152
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-13_Near.asset",
+    "leaves": 230,
+    "beforeTriangles": 920,
+    "afterTriangles": 920
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-14_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-14_Near.asset",
+    "leaves": 12,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-15_Near.asset",
+    "leaves": 1,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-1_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-1_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-2_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-2_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-3_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-3_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-4_Far.asset",
+    "leaves": 6,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-4_Near.asset",
+    "leaves": 18,
+    "beforeTriangles": 72,
+    "afterTriangles": 72
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-5_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-5_Near.asset",
+    "leaves": 11,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-6_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-7_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-7_Near.asset",
+    "leaves": 17,
+    "beforeTriangles": 68,
+    "afterTriangles": 68
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-8_Far.asset",
+    "leaves": 63,
+    "beforeTriangles": 126,
+    "afterTriangles": 126
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-8_Near.asset",
+    "leaves": 189,
+    "beforeTriangles": 756,
+    "afterTriangles": 756
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-9_Far.asset",
+    "leaves": 40,
+    "beforeTriangles": 80,
+    "afterTriangles": 80
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_-9_Near.asset",
+    "leaves": 122,
+    "beforeTriangles": 488,
+    "afterTriangles": 488
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_0_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_0_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_1_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_1_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_2_Far.asset",
+    "leaves": 83,
+    "beforeTriangles": 166,
+    "afterTriangles": 166
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_2_Near.asset",
+    "leaves": 251,
+    "beforeTriangles": 1004,
+    "afterTriangles": 1004
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_3_Far.asset",
+    "leaves": 25,
+    "beforeTriangles": 50,
+    "afterTriangles": 50
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_3_Near.asset",
+    "leaves": 75,
+    "beforeTriangles": 300,
+    "afterTriangles": 300
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_4_Far.asset",
+    "leaves": 10,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_4_Near.asset",
+    "leaves": 32,
+    "beforeTriangles": 128,
+    "afterTriangles": 128
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_5_Far.asset",
+    "leaves": 35,
+    "beforeTriangles": 70,
+    "afterTriangles": 70
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_5_Near.asset",
+    "leaves": 107,
+    "beforeTriangles": 428,
+    "afterTriangles": 428
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_6_Far.asset",
+    "leaves": 36,
+    "beforeTriangles": 72,
+    "afterTriangles": 72
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_6_Near.asset",
+    "leaves": 109,
+    "beforeTriangles": 436,
+    "afterTriangles": 436
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_7_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_5_7_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-10_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-10_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-1_Far.asset",
+    "leaves": 33,
+    "beforeTriangles": 66,
+    "afterTriangles": 66
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-1_Near.asset",
+    "leaves": 101,
+    "beforeTriangles": 404,
+    "afterTriangles": 404
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-2_Far.asset",
+    "leaves": 44,
+    "beforeTriangles": 88,
+    "afterTriangles": 88
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-2_Near.asset",
+    "leaves": 134,
+    "beforeTriangles": 536,
+    "afterTriangles": 536
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-3_Far.asset",
+    "leaves": 12,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-3_Near.asset",
+    "leaves": 36,
+    "beforeTriangles": 144,
+    "afterTriangles": 144
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-4_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-7_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-8_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-8_Near.asset",
+    "leaves": 8,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-9_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_-9_Near.asset",
+    "leaves": 7,
+    "beforeTriangles": 28,
+    "afterTriangles": 28
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_0_Far.asset",
+    "leaves": 46,
+    "beforeTriangles": 92,
+    "afterTriangles": 92
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_0_Near.asset",
+    "leaves": 138,
+    "beforeTriangles": 552,
+    "afterTriangles": 552
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_1_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_1_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_2_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_2_Near.asset",
+    "leaves": 15,
+    "beforeTriangles": 60,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_3_Far.asset",
+    "leaves": 57,
+    "beforeTriangles": 114,
+    "afterTriangles": 114
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_3_Near.asset",
+    "leaves": 171,
+    "beforeTriangles": 684,
+    "afterTriangles": 684
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_4_Far.asset",
+    "leaves": 22,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_4_Near.asset",
+    "leaves": 67,
+    "beforeTriangles": 268,
+    "afterTriangles": 268
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_5_Far.asset",
+    "leaves": 52,
+    "beforeTriangles": 104,
+    "afterTriangles": 104
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_5_Near.asset",
+    "leaves": 157,
+    "beforeTriangles": 628,
+    "afterTriangles": 628
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_6_Far.asset",
+    "leaves": 25,
+    "beforeTriangles": 50,
+    "afterTriangles": 50
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_6_Near.asset",
+    "leaves": 75,
+    "beforeTriangles": 300,
+    "afterTriangles": 300
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_7_Far.asset",
+    "leaves": 24,
+    "beforeTriangles": 48,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_6_7_Near.asset",
+    "leaves": 74,
+    "beforeTriangles": 296,
+    "afterTriangles": 296
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-12_Far.asset",
+    "leaves": 43,
+    "beforeTriangles": 86,
+    "afterTriangles": 86
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-12_Near.asset",
+    "leaves": 131,
+    "beforeTriangles": 524,
+    "afterTriangles": 524
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-13_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-13_Near.asset",
+    "leaves": 26,
+    "beforeTriangles": 104,
+    "afterTriangles": 104
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-1_Far.asset",
+    "leaves": 77,
+    "beforeTriangles": 154,
+    "afterTriangles": 154
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-1_Near.asset",
+    "leaves": 233,
+    "beforeTriangles": 932,
+    "afterTriangles": 932
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-2_Far.asset",
+    "leaves": 42,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-2_Near.asset",
+    "leaves": 127,
+    "beforeTriangles": 508,
+    "afterTriangles": 508
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-3_Far.asset",
+    "leaves": 7,
+    "beforeTriangles": 14,
+    "afterTriangles": 14
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-3_Near.asset",
+    "leaves": 21,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_-4_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_0_Far.asset",
+    "leaves": 15,
+    "beforeTriangles": 30,
+    "afterTriangles": 30
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_0_Near.asset",
+    "leaves": 46,
+    "beforeTriangles": 184,
+    "afterTriangles": 184
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_1_Far.asset",
+    "leaves": 59,
+    "beforeTriangles": 118,
+    "afterTriangles": 118
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_1_Near.asset",
+    "leaves": 179,
+    "beforeTriangles": 716,
+    "afterTriangles": 716
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_2_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_2_Near.asset",
+    "leaves": 3,
+    "beforeTriangles": 12,
+    "afterTriangles": 12
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_3_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_3_Near.asset",
+    "leaves": 9,
+    "beforeTriangles": 36,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_4_Far.asset",
+    "leaves": 38,
+    "beforeTriangles": 76,
+    "afterTriangles": 76
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_4_Near.asset",
+    "leaves": 114,
+    "beforeTriangles": 456,
+    "afterTriangles": 456
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_5_Far.asset",
+    "leaves": 70,
+    "beforeTriangles": 140,
+    "afterTriangles": 140
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_5_Near.asset",
+    "leaves": 212,
+    "beforeTriangles": 848,
+    "afterTriangles": 848
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_6_Far.asset",
+    "leaves": 22,
+    "beforeTriangles": 44,
+    "afterTriangles": 44
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_6_Near.asset",
+    "leaves": 68,
+    "beforeTriangles": 272,
+    "afterTriangles": 272
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_7_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_7_Near.asset",
+    "leaves": 5,
+    "beforeTriangles": 20,
+    "afterTriangles": 20
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_8_Far.asset",
+    "leaves": 207,
+    "beforeTriangles": 414,
+    "afterTriangles": 414
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_7_8_Near.asset",
+    "leaves": 622,
+    "beforeTriangles": 2488,
+    "afterTriangles": 2488
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-12_Far.asset",
+    "leaves": 39,
+    "beforeTriangles": 78,
+    "afterTriangles": 78
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-12_Near.asset",
+    "leaves": 118,
+    "beforeTriangles": 472,
+    "afterTriangles": 472
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-13_Far.asset",
+    "leaves": 78,
+    "beforeTriangles": 156,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-13_Near.asset",
+    "leaves": 234,
+    "beforeTriangles": 936,
+    "afterTriangles": 936
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-1_Far.asset",
+    "leaves": 12,
+    "beforeTriangles": 24,
+    "afterTriangles": 24
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-1_Near.asset",
+    "leaves": 37,
+    "beforeTriangles": 148,
+    "afterTriangles": 148
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-2_Far.asset",
+    "leaves": 8,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_-2_Near.asset",
+    "leaves": 26,
+    "beforeTriangles": 104,
+    "afterTriangles": 104
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_0_Far.asset",
+    "leaves": 56,
+    "beforeTriangles": 112,
+    "afterTriangles": 112
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_0_Near.asset",
+    "leaves": 168,
+    "beforeTriangles": 672,
+    "afterTriangles": 672
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_1_Far.asset",
+    "leaves": 32,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_1_Near.asset",
+    "leaves": 97,
+    "beforeTriangles": 388,
+    "afterTriangles": 388
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_2_Far.asset",
+    "leaves": 5,
+    "beforeTriangles": 10,
+    "afterTriangles": 10
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_2_Near.asset",
+    "leaves": 16,
+    "beforeTriangles": 64,
+    "afterTriangles": 64
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_3_Far.asset",
+    "leaves": 48,
+    "beforeTriangles": 96,
+    "afterTriangles": 96
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_3_Near.asset",
+    "leaves": 145,
+    "beforeTriangles": 580,
+    "afterTriangles": 580
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_4_Far.asset",
+    "leaves": 50,
+    "beforeTriangles": 100,
+    "afterTriangles": 100
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_4_Near.asset",
+    "leaves": 151,
+    "beforeTriangles": 604,
+    "afterTriangles": 604
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_5_Far.asset",
+    "leaves": 11,
+    "beforeTriangles": 22,
+    "afterTriangles": 22
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_5_Near.asset",
+    "leaves": 35,
+    "beforeTriangles": 140,
+    "afterTriangles": 140
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_6_Near.asset",
+    "leaves": 1,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_7_Far.asset",
+    "leaves": 4,
+    "beforeTriangles": 8,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_7_Near.asset",
+    "leaves": 13,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_8_Far.asset",
+    "leaves": 40,
+    "beforeTriangles": 80,
+    "afterTriangles": 80
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_8_8_Near.asset",
+    "leaves": 122,
+    "beforeTriangles": 488,
+    "afterTriangles": 488
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_-1_Far.asset",
+    "leaves": 42,
+    "beforeTriangles": 84,
+    "afterTriangles": 84
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_-1_Near.asset",
+    "leaves": 127,
+    "beforeTriangles": 508,
+    "afterTriangles": 508
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_-2_Far.asset",
+    "leaves": 3,
+    "beforeTriangles": 6,
+    "afterTriangles": 6
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_-2_Near.asset",
+    "leaves": 10,
+    "beforeTriangles": 40,
+    "afterTriangles": 40
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_0_Far.asset",
+    "leaves": 26,
+    "beforeTriangles": 52,
+    "afterTriangles": 52
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_0_Near.asset",
+    "leaves": 79,
+    "beforeTriangles": 316,
+    "afterTriangles": 316
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_1_Far.asset",
+    "leaves": 111,
+    "beforeTriangles": 222,
+    "afterTriangles": 222
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_1_Near.asset",
+    "leaves": 335,
+    "beforeTriangles": 1340,
+    "afterTriangles": 1340
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_2_Far.asset",
+    "leaves": 51,
+    "beforeTriangles": 102,
+    "afterTriangles": 102
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_2_Near.asset",
+    "leaves": 154,
+    "beforeTriangles": 616,
+    "afterTriangles": 616
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_3_Far.asset",
+    "leaves": 40,
+    "beforeTriangles": 80,
+    "afterTriangles": 80
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_3_Near.asset",
+    "leaves": 122,
+    "beforeTriangles": 488,
+    "afterTriangles": 488
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_4_Far.asset",
+    "leaves": 16,
+    "beforeTriangles": 32,
+    "afterTriangles": 32
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_4_Near.asset",
+    "leaves": 48,
+    "beforeTriangles": 192,
+    "afterTriangles": 192
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_5_Far.asset",
+    "leaves": 63,
+    "beforeTriangles": 126,
+    "afterTriangles": 126
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_5_Near.asset",
+    "leaves": 190,
+    "beforeTriangles": 760,
+    "afterTriangles": 760
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_6_Far.asset",
+    "leaves": 1,
+    "beforeTriangles": 2,
+    "afterTriangles": 2
+  },
+  {
+    "path": "Assets/Art/PaintedDistrict/Leaves/Leaves_9_6_Near.asset",
+    "leaves": 4,
+    "beforeTriangles": 16,
+    "afterTriangles": 16
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_2_3_Far.asset",
+    "leaves": 181,
+    "beforeTriangles": 362,
+    "afterTriangles": 362
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_2_3_Near.asset",
+    "leaves": 181,
+    "beforeTriangles": 1920,
+    "afterTriangles": 724
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_2_4_Far.asset",
+    "leaves": 176,
+    "beforeTriangles": 352,
+    "afterTriangles": 352
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_2_4_Near.asset",
+    "leaves": 176,
+    "beforeTriangles": 1896,
+    "afterTriangles": 704
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_3_3_Far.asset",
+    "leaves": 294,
+    "beforeTriangles": 588,
+    "afterTriangles": 588
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_3_3_Near.asset",
+    "leaves": 294,
+    "beforeTriangles": 3128,
+    "afterTriangles": 1176
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_3_4_Far.asset",
+    "leaves": 1427,
+    "beforeTriangles": 2854,
+    "afterTriangles": 2854
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_3_4_Near.asset",
+    "leaves": 1427,
+    "beforeTriangles": 15264,
+    "afterTriangles": 5708
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_4_3_Far.asset",
+    "leaves": 355,
+    "beforeTriangles": 710,
+    "afterTriangles": 710
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_4_3_Near.asset",
+    "leaves": 355,
+    "beforeTriangles": 3814,
+    "afterTriangles": 1420
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_4_4_Far.asset",
+    "leaves": 392,
+    "beforeTriangles": 784,
+    "afterTriangles": 784
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_4_4_Near.asset",
+    "leaves": 392,
+    "beforeTriangles": 4170,
+    "afterTriangles": 1568
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_5_3_Far.asset",
+    "leaves": 148,
+    "beforeTriangles": 296,
+    "afterTriangles": 296
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_5_3_Near.asset",
+    "leaves": 148,
+    "beforeTriangles": 1564,
+    "afterTriangles": 592
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_5_4_Far.asset",
+    "leaves": 866,
+    "beforeTriangles": 1732,
+    "afterTriangles": 1732
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_5_4_Near.asset",
+    "leaves": 866,
+    "beforeTriangles": 9226,
+    "afterTriangles": 3464
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_6_3_Far.asset",
+    "leaves": 2,
+    "beforeTriangles": 4,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_6_3_Near.asset",
+    "leaves": 2,
+    "beforeTriangles": 20,
+    "afterTriangles": 8
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_6_4_Far.asset",
+    "leaves": 571,
+    "beforeTriangles": 1142,
+    "afterTriangles": 1142
+  },
+  {
+    "path": "Assets/PhotoReconstruction/AutumnCourtyardCarpets/Meshes/AutumnCarpet_6_4_Near.asset",
+    "leaves": 571,
+    "beforeTriangles": 6074,
+    "afterTriangles": 2284
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_0_-6.asset",
+    "leaves": 15,
+    "beforeTriangles": 160,
+    "afterTriangles": 60
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_0_-7.asset",
+    "leaves": 14,
+    "beforeTriangles": 142,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_0_1.asset",
+    "leaves": 42,
+    "beforeTriangles": 438,
+    "afterTriangles": 168
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_0_2.asset",
+    "leaves": 12,
+    "beforeTriangles": 130,
+    "afterTriangles": 48
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_1_-6.asset",
+    "leaves": 33,
+    "beforeTriangles": 346,
+    "afterTriangles": 132
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_1_-7.asset",
+    "leaves": 41,
+    "beforeTriangles": 420,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_1_1.asset",
+    "leaves": 37,
+    "beforeTriangles": 392,
+    "afterTriangles": 148
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_1_2.asset",
+    "leaves": 14,
+    "beforeTriangles": 152,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_1_3.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_1_4.asset",
+    "leaves": 78,
+    "beforeTriangles": 814,
+    "afterTriangles": 312
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_2_-9.asset",
+    "leaves": 103,
+    "beforeTriangles": 1062,
+    "afterTriangles": 412
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_2_2.asset",
+    "leaves": 403,
+    "beforeTriangles": 4206,
+    "afterTriangles": 1612
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_2_3.asset",
+    "leaves": 151,
+    "beforeTriangles": 1578,
+    "afterTriangles": 604
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_2_4.asset",
+    "leaves": 26,
+    "beforeTriangles": 276,
+    "afterTriangles": 104
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_3_2.asset",
+    "leaves": 203,
+    "beforeTriangles": 2124,
+    "afterTriangles": 812
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_3_3.asset",
+    "leaves": 181,
+    "beforeTriangles": 1886,
+    "afterTriangles": 724
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_4_2.asset",
+    "leaves": 133,
+    "beforeTriangles": 1374,
+    "afterTriangles": 532
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/Leaves_4_3.asset",
+    "leaves": 194,
+    "beforeTriangles": 2012,
+    "afterTriangles": 776
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage09Courtyard/Leaves/WindblownLeaf.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-10_12.asset",
+    "leaves": 41,
+    "beforeTriangles": 426,
+    "afterTriangles": 164
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-10_13.asset",
+    "leaves": 14,
+    "beforeTriangles": 150,
+    "afterTriangles": 56
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-2_-9.asset",
+    "leaves": 106,
+    "beforeTriangles": 1102,
+    "afterTriangles": 424
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-3_-10.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-3_-9.asset",
+    "leaves": 48,
+    "beforeTriangles": 494,
+    "afterTriangles": 192
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-4_-5.asset",
+    "leaves": 31,
+    "beforeTriangles": 328,
+    "afterTriangles": 124
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-5_-5.asset",
+    "leaves": 70,
+    "beforeTriangles": 732,
+    "afterTriangles": 280
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-9_12.asset",
+    "leaves": 54,
+    "beforeTriangles": 566,
+    "afterTriangles": 216
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_-9_13.asset",
+    "leaves": 39,
+    "beforeTriangles": 406,
+    "afterTriangles": 156
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_0_-15.asset",
+    "leaves": 93,
+    "beforeTriangles": 962,
+    "afterTriangles": 372
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_10_0.asset",
+    "leaves": 54,
+    "beforeTriangles": 554,
+    "afterTriangles": 216
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_13_2.asset",
+    "leaves": 107,
+    "beforeTriangles": 1132,
+    "afterTriangles": 428
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_13_3.asset",
+    "leaves": 94,
+    "beforeTriangles": 982,
+    "afterTriangles": 376
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_13_8.asset",
+    "leaves": 26,
+    "beforeTriangles": 272,
+    "afterTriangles": 104
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_14_2.asset",
+    "leaves": 207,
+    "beforeTriangles": 2168,
+    "afterTriangles": 828
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_14_3.asset",
+    "leaves": 9,
+    "beforeTriangles": 94,
+    "afterTriangles": 36
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_14_8.asset",
+    "leaves": 79,
+    "beforeTriangles": 824,
+    "afterTriangles": 316
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage13Style/Meshes/AutumnPathLeaves_1_-15.asset",
+    "leaves": 63,
+    "beforeTriangles": 646,
+    "afterTriangles": 252
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage16Leaf/Meshes/DriftCopper.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  },
+  {
+    "path": "Assets/PhotoReconstruction/Stage16Leaf/Meshes/DriftGold.asset",
+    "leaves": 1,
+    "beforeTriangles": 10,
+    "afterTriangles": 4
+  }
+]

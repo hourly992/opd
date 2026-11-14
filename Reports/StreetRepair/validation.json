@@ -1,0 +1,31 @@
+{
+  "preservedExistingSceneBlocks": 17520,
+  "unchangedTransformsPrefabsLightsCamerasSettings": 9275,
+  "validatedMeshAssets": 1192,
+  "changedAssetsTriangles": {
+    "before": 1821231,
+    "after": 1523638
+  },
+  "changedAssetsVertices": {
+    "before": 3958396,
+    "after": 3116323
+  },
+  "carriagewayTrianglesUnchanged": 3416,
+  "crosswalkTrianglesUnchanged": 336,
+  "sidewalkWidthMeters": [
+    3.1999804973602295,
+    3.2000255584716797
+  ],
+  "pavingOutsideShortApronFacadePolicySquareMeters": 0.00017475566302081234,
+  "paintedLeafMeshesWithUnchangedTriangleVertexBudgets": 720,
+  "rampClearLaneCollisionProbes": 138,
+  "directSavedRenderersAllLodsUpperBoundTriangles": {
+    "before": 3144792,
+    "after": 2931436
+  },
+  "directSavedRenderersAllLodsNonemptySubmeshes": {
+    "before": 3082,
+    "after": 3076
+  },
+  "unityEditorPlayerScreenshotsAndFrameTimes": "NOT RUN: Unity 6000.6.7f1 not installed"
+}
