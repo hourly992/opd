@@ -8,7 +8,7 @@ Shader "Hidden/Street/SunShafts"
         #include "UnityCG.cginc"
         sampler2D _MainTex, _CameraDepthNormalsTexture, _ShaftTex;
         float4 _CameraDepthNormalsTexture_TexelSize, _SunPosition, _SunColor;
-        float _Strength, _RadialScale;
+        float _Strength, _RadialScale, _StreetWeatherEnabled;
         float Depth(float2 uv)
         {
             #if UNITY_UV_STARTS_AT_TOP
@@ -47,15 +47,15 @@ Shader "Hidden/Street/SunShafts"
             #pragma target 3.0
             float4 radial(v2f_img i) : SV_Target
             {
-                float2 delta = (_SunPosition.xy - i.uv) * (_RadialScale / 24);
+                float2 delta = (_SunPosition.xy - i.uv) * (_RadialScale / 12);
                 float2 uv = i.uv;
                 float sum = 0, weight = 1, total = 0;
-                [unroll] for (int n = 0; n < 24; n++)
+                [unroll] for (int n = 0; n < 12; n++)
                 {
                     float valid = all(uv >= 0) && all(uv <= 1) ? 1 : 0;
                     sum += tex2D(_MainTex, saturate(uv)).r * weight * valid;
                     total += weight;
-                    uv += delta; weight *= .975;
+                    uv += delta; weight *= .95;
                 }
                 return float4((sum / total).xxx, 1);
             }
@@ -74,8 +74,8 @@ Shader "Hidden/Street/SunShafts"
                 float distanceFade = lerp(.18 + .52 * smoothstep(2, 80, depth * _ProjectionParams.z), 1, sky);
                 float shaft = tex2D(_ShaftTex, i.uv).r * .32 * distanceFade;
                 float d = SunDistance(i.uv);
-                float disc = (1 - smoothstep(.004, .006, d)) * 5;
-                float corona = exp(-d*d*1100) * .16;
+                float disc = (1 - smoothstep(.004, .006, d)) * 5 * (1-step(.5,_StreetWeatherEnabled));
+                float corona = exp(-d*d*1100) * .16 * (1-step(.5,_StreetWeatherEnabled));
                 scene += _SunColor.rgb * _SunPosition.w * _Strength * (shaft + sky * (disc + corona));
                 return float4(scene, 1);
             }

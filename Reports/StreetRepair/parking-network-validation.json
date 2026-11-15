@@ -1,0 +1,71 @@
+{
+  "baseCommit": "2fb3b792ddba4966e3aceb8c74866f81827a36bc",
+  "existingSceneBlocksRetained": 17560,
+  "unchangedProtectedSceneBlocks": 9283,
+  "leavesLightingProfileAndWhiteConcreteUnchanged": true,
+  "unchangedPavingSubmeshes": 21,
+  "carriagewayAndRoadProfileMeshByteIdentical": true,
+  "fourIndependentEntranceCollidersAndPoses": true,
+  "continuousCanopyFootprintSquareMeters": 58.560001373291016,
+  "garageMeshBasisAndWinding": {
+    "GarageBarrelCanopy.asset": {
+      "vertices": 26,
+      "triangles": 24
+    },
+    "GarageEntrance.asset": {
+      "vertices": 568,
+      "triangles": 284
+    },
+    "GaragePairedBody_East.asset": {
+      "vertices": 1136,
+      "triangles": 568
+    },
+    "GaragePairedBody_West.asset": {
+      "vertices": 1136,
+      "triangles": 568
+    },
+    "GaragePairedCanopy_East.asset": {
+      "vertices": 52,
+      "triangles": 48
+    },
+    "GaragePairedCanopy_West.asset": {
+      "vertices": 52,
+      "triangles": 48
+    }
+  },
+  "connectedAsphaltTangentBasisValidated": true,
+  "clearRampCollisionProbes": 564,
+  "courtyardMiddlePassageCollisionProbes": 214,
+  "westYardFootprintSymmetricDifferenceSquareMeters": 0.00024266853859444392,
+  "asphaltTargetsConnectedToMainStreet": {
+    "main-road-north": 0.0,
+    "main-road-south": 0.0,
+    "main-road-middle": 0.0,
+    "upper-5-7-ring": 0.0,
+    "east-court-ring": 0.0,
+    "west-court-loop": 0.0,
+    "north-frontage-parking": 0.0,
+    "north-west": 0.0,
+    "north-east": 0.0,
+    "opposite-west": 0.0,
+    "opposite-east": 0.0
+  },
+  "asphaltSeamWeldToleranceMeters": 0.012,
+  "continuousConnectorCollisionProbes": 129,
+  "activeDirectSavedRenderersAllLodsUpperBound": {
+    "before": {
+      "activeRenderers": 1893,
+      "triangles": 2922795,
+      "vertices": 5802605,
+      "nonemptySubmeshes": 2912
+    },
+    "after": {
+      "activeRenderers": 1893,
+      "triangles": 2913102,
+      "vertices": 5802525,
+      "nonemptySubmeshes": 2912
+    }
+  },
+  "asphaltTextureStatus": "Check Asphalt020S source/license and importer report separately; geometry QA does not prove texture installation",
+  "unityImportPlayerAndFrameTimes": "NOT RUN: saved-data checks do not measure Unity or FPS"
+}

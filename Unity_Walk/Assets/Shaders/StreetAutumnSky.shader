@@ -22,6 +22,7 @@ Shader "Skybox/StreetAutumn"
             #pragma target 3.0
             #include "UnityCG.cginc"
             #include "StreetSkyLighting.cginc"
+            #include "StreetAutumnWeather.cginc"
             sampler2D _MainTex;
             half4 _MainTex_HDR;
             float _Exposure, _Rotation, _SoftDaylight, _LeafSky, _PaintedDistrictSky;
@@ -37,6 +38,8 @@ Shader "Skybox/StreetAutumn"
             half4 frag(Varyings input) : SV_Target
             {
                 float3 direction = normalize(input.direction);
+                UNITY_BRANCH if (_StreetWeatherEnabled > .5)
+                    return half4(StreetWeatherSkyColor(_WorldSpaceCameraPos,direction,1)*_Exposure,1);
                 float longitude = atan2(direction.z, direction.x) - radians(_Rotation);
                 float latitude = asin(clamp(direction.y, -1, 1));
                 float2 uv = float2(frac(.5 - longitude / (2 * UNITY_PI)), .5 + latitude / UNITY_PI);

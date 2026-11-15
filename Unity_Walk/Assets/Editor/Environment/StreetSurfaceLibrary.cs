@@ -8,6 +8,8 @@ using UnityEngine;
 internal static class StreetSurfaceLibrary
 {
     private const string Sources = "Assets/ThirdParty/PolyHaven/";
+    internal const string Asphalt020SRoot = "Assets/ThirdParty/ambientCG/Asphalt020S";
+    private const string Asphalt020SPrefix = "Asphalt020S_2K-JPG_";
     [Serializable] private sealed class FacadeDocument { public FacadeSource[] materials; }
     [Serializable] private sealed class FacadeSource
     {
@@ -113,6 +115,13 @@ internal static class StreetSurfaceLibrary
 
     internal static void ApplyNamed(Material material, string key)
     {
+        // Use the requested material once its original archive has been installed.
+        // Until then the saved scene and archived material paths stay unchanged.
+        if (IsAsphaltKey(key) && Asphalt020SInstalled())
+        {
+            ApplyAsphalt020S(material);
+            return;
+        }
         Color color = material.GetColor("_Color");
         float smoothness = material.HasProperty("_Smoothness") ? material.GetFloat("_Smoothness") : .15f;
         float metallic = material.HasProperty("_Metallic") ? material.GetFloat("_Metallic") : 0;
@@ -136,6 +145,9 @@ internal static class StreetSurfaceLibrary
                 material.SetFloat("_Weathering", .08f); break;
             case "Pavement": case "WarmPaving":
                 Apply(material, "concrete_wall_006", 1.4f, Color.white, .35f);
+                material.SetFloat("_PaverPattern", 1);
+                material.SetFloat("_PaverGreyFraction", 0);
+                material.SetVector("_PaverFarTone", material.GetVector("_PaverRedTone"));
                 material.SetFloat("_SurfaceClass", 6); material.SetFloat("_Parallax", .001f); break;
             case "Path": Apply(material, "concrete_pavement", 1.8f, new Color(.85f, .86f, .83f)); break;
             case "Concrete": case "EntranceConcrete": case "RoadKerb": case "Kerbstone": case "Curb":
@@ -177,6 +189,53 @@ internal static class StreetSurfaceLibrary
                 material.SetColor("_EmissionColor", emission);
                 break;
         }
+    }
+
+    private static bool IsAsphaltKey(string key) => key is "MainRoadAsphalt" or "ReferenceAsphalt" or
+        "Asphalt" or "FootpathAsphalt" or "ReferenceFootpathAsphalt" or "ReferenceServiceAsphalt" or
+        "MappedParkingAsphalt" or "ResidentialEntranceAsphalt" or "ParkingAsphalt" or "AsphaltArris" or
+        "GutterAsphalt" or "AsphaltSeam" or "AsphaltRepair";
+
+    internal static bool Asphalt020SInstalled() =>
+        new[] { "Color.jpg", "NormalGL.jpg", "Roughness.jpg", "AmbientOcclusion.jpg" }
+            .All(name => File.Exists(Asphalt020SRoot + "/" + Asphalt020SPrefix + name)) &&
+        File.Exists(Asphalt020SRoot + "/AO_Roughness.png") &&
+        File.Exists("Assets/Shaders/StreetAsphalt020S.shader");
+
+    internal static void ApplyAsphalt020S(Material material)
+    {
+        if (!Asphalt020SInstalled())
+            throw new InvalidOperationException("Install the original ambientCG Asphalt020S 2K archive with Maintenance/StreetRepair/install_asphalt020s.py first.");
+        var shader = Shader.Find("Street/Asphalt020S");
+        if (!shader) throw new InvalidOperationException("Street/Asphalt020S shader has not been imported.");
+        Texture2D Load(string name)
+        {
+            var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(Asphalt020SRoot + "/" + name);
+            if (!texture) throw new InvalidOperationException("Missing imported ambientCG source map: " + name);
+            return texture;
+        }
+        // Require all four original maps even though AO/roughness share one runtime sampler.
+        foreach (string name in new[] { "Color.jpg", "NormalGL.jpg", "Roughness.jpg", "AmbientOcclusion.jpg" })
+            Load(Asphalt020SPrefix + name);
+        material.shader = shader;
+        material.SetTexture("_MainTex", Load(Asphalt020SPrefix + "Color.jpg"));
+        material.SetTexture("_BumpMap", Load(Asphalt020SPrefix + "NormalGL.jpg"));
+        material.SetTexture("_MaskMap", Load("AO_Roughness.png"));
+        material.SetVector("_TileMeters", new Vector4(1.85f, 1.85f, 0, 0));
+        material.SetColor("_Color", Color.white);
+        // Vector gains are raw working-space values, independent of SetColor's
+        // implicit sRGB conversion. The original JPEG and all PBR maps stay intact.
+        // StreetPresentation publishes the shared inverse-display tone table;
+        // Asphalt020S corrects the lit result, including warm sun/ambient color.
+        material.SetVector("_ToneGain", QualitySettings.activeColorSpace == ColorSpace.Linear
+            ? new Vector4(.76364610f, .73200228f, .71368004f, 1)
+            : new Vector4(.87962990f, .86208631f, .85089430f, 1));
+        material.SetFloat("_BumpStrength", 1);
+        material.SetFloat("_OcclusionStrength", 1);
+        material.SetFloat("_SurfaceClass", 4);
+        material.SetFloat("_Cull", 2);
+        material.enableInstancing = true;
+        EditorUtility.SetDirty(material);
     }
 
     private static void Own(Material material, string asset, float meters, Color tint, float normal = .6f) =>

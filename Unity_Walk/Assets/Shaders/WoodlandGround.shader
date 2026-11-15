@@ -12,9 +12,10 @@ Shader "Street/WoodlandGround"
         Tags { "RenderType"="Opaque" }
         Offset -1, -1
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf StreetCloudStandard fullforwardshadows exclude_path:deferred
         #pragma target 3.0
         #pragma multi_compile_instancing
+        #include "StreetCloudLighting.cginc"
         sampler2D _MainTex, _GrassTex, _BumpMap;
         fixed4 _GrassTint;
         struct Input { float3 worldPos; float4 color : COLOR; };

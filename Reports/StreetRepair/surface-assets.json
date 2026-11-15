@@ -1,0 +1,1622 @@
+[
+  {
+    "source": "Assets/Art/PaintedDistrict/ReferenceKerbsPaintedEdges.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/ReferenceKerbsPaintedEdges.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/House5EntrancePaving/Meshes/House5StreetPavers.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House5StreetPavers.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage01/Meshes/PhotoStage01_ReferenceKerbs.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/PhotoStage01_ReferenceKerbs.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage02/Meshes/Photo11AccessKerb.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Photo11AccessKerb.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage03Surfaces/Meshes/Retained_1053760653.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Retained_1053760653.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage03Surfaces/Meshes/Retained_440010623.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Retained_440010623.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage03Surfaces/Meshes/Retained_736707032.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Retained_736707032.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage03Surfaces/Meshes/Stage03Surface_3.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Stage03Surface_3.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage03Surfaces/Meshes/Stage03Surface_4.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Stage03Surface_4.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/Court7LowThreshold.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Court7LowThreshold.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_1191989327.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_1191989327.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_1192127728.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_1192127728.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_1743582113.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_1743582113.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_2015232454.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_2015232454.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_2052694356.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_2052694356.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_2143996768.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_2143996768.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_251514831.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_251514831.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_592860793.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_592860793.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Courtyard/Meshes/FinalGrass_746263523.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/FinalGrass_746263523.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage04Terrain/Meshes/Grass_1583103181.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1583103181.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_100860154.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_100860154.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1009188076.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1009188076.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1015835594.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1015835594.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1038853802.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1038853802.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1042973924.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1042973924.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1046579914.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1046579914.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1056913256.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1056913256.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1058519789.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1058519789.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1058982372.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1058982372.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1066043077.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1066043077.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1066397464.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1066397464.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1067121201.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1067121201.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1077275538.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1077275538.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1078948576.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1078948576.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1079797409.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1079797409.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1098350343.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1098350343.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1105282058.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1105282058.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1111200217.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1111200217.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1115038397.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1115038397.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1121132363.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1121132363.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1122485541.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1122485541.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1123559293.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1123559293.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_113662981.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_113662981.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1150054426.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1150054426.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1156280545.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1156280545.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1167324455.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1167324455.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1175362387.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1175362387.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1186727553.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1186727553.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1191906369.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1191906369.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1194809397.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1194809397.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_120113044.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_120113044.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1225368147.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1225368147.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1246721045.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1246721045.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1247616623.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1247616623.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1248899801.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1248899801.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1250510663.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1250510663.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1253261424.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1253261424.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1260333773.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1260333773.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1261333013.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1261333013.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_126359800.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_126359800.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1278310906.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1278310906.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1279356083.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1279356083.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1283378276.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1283378276.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1292659717.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1292659717.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1308198806.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1308198806.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_13183928.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_13183928.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1323703277.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1323703277.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1329563463.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1329563463.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1332310090.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1332310090.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1369706786.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1369706786.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1372704365.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1372704365.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1377989073.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1377989073.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1382219885.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1382219885.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1404953361.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1404953361.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_141108207.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_141108207.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1411523632.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1411523632.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1413316961.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1413316961.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1419468375.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1419468375.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1425450024.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1425450024.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1426430813.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1426430813.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1426749497.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1426749497.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1457755010.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1457755010.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1481222111.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1481222111.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1482413411.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1482413411.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_148806415.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_148806415.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1492005214.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1492005214.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1493748322.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1493748322.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1500102576.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1500102576.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1502602184.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1502602184.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1503179811.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1503179811.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1507898665.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1507898665.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1508767266.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1508767266.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_151049772.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_151049772.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1513286929.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1513286929.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1534973382.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1534973382.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1541478830.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1541478830.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_15441275.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_15441275.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1555495064.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1555495064.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1555830381.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1555830381.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1565762790.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1565762790.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_157076337.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_157076337.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1579766444.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1579766444.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1581036237.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1581036237.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1590704032.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1590704032.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1594335361.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1594335361.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1595271192.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1595271192.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1598843873.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1598843873.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1599122162.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1599122162.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1606348877.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1606348877.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1624169303.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1624169303.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_162547048.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_162547048.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1628411214.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1628411214.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1628703422.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1628703422.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_163562855.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_163562855.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1641257160.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1641257160.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1644778814.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1644778814.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1648683003.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1648683003.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_166199275.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_166199275.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_166643805.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_166643805.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1686292790.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1686292790.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_16877216.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_16877216.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1693438094.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1693438094.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1702679828.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1702679828.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1711495581.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1711495581.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1716690364.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1716690364.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1717759576.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1717759576.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_171957139.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_171957139.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1724121833.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1724121833.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1725020526.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1725020526.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1736100580.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1736100580.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1742145345.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1742145345.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1744791171.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1744791171.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1745350206.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1745350206.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1745784778.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1745784778.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1746262946.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1746262946.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1748378142.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1748378142.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1749954810.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1749954810.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_176417408.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_176417408.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1765752781.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1765752781.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1779898112.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1779898112.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1800064163.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1800064163.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1808526327.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1808526327.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1812966437.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1812966437.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1819235437.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1819235437.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1842376392.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1842376392.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1848739837.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1848739837.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1854963092.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1854963092.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1861717843.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1861717843.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1864164301.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1864164301.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1866316119.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1866316119.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1876328089.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1876328089.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1886275419.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1886275419.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1896045476.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1896045476.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1901660244.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1901660244.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_191272847.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_191272847.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1930645239.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1930645239.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1943910441.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1943910441.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1955577630.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1955577630.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1963584935.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1963584935.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1979074258.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1979074258.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_1994519438.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_1994519438.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2002760230.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2002760230.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2009243136.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2009243136.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2023635032.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2023635032.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2025570672.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2025570672.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2036686144.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2036686144.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2039457679.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2039457679.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2045956938.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2045956938.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2057777301.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2057777301.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2057969911.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2057969911.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2059396918.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2059396918.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2061312373.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2061312373.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2065017601.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2065017601.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2066537208.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2066537208.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2069698807.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2069698807.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2073319159.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2073319159.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2075413346.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2075413346.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2077472244.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2077472244.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_207898961.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_207898961.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2103477331.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2103477331.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2106773912.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2106773912.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2126031237.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2126031237.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_2141702986.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_2141702986.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_214374377.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_214374377.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_217277427.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_217277427.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_219603742.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_219603742.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_225500229.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_225500229.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_233287159.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_233287159.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_234852713.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_234852713.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_237965576.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_237965576.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_238973639.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_238973639.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_243421456.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_243421456.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_246974323.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_246974323.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_248529959.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_248529959.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_254105333.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_254105333.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_271768787.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_271768787.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_278481421.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_278481421.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_281660759.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_281660759.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_287395400.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_287395400.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_29567407.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_29567407.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_298932108.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_298932108.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_308745651.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_308745651.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_311889589.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_311889589.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_318730474.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_318730474.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_333216812.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_333216812.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_339721325.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_339721325.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_350105896.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_350105896.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_351868350.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_351868350.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_35490600.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_35490600.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_360861941.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_360861941.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_370632418.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_370632418.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_373794791.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_373794791.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_387681758.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_387681758.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_39931886.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_39931886.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_406278427.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_406278427.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_406355633.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_406355633.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_423344589.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_423344589.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_453849013.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_453849013.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_456203765.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_456203765.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_46555502.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_46555502.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_475314231.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_475314231.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_482184520.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_482184520.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_485643619.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_485643619.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_488441083.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_488441083.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_492330003.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_492330003.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_494606697.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_494606697.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_495147971.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_495147971.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_519164384.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_519164384.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_524229878.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_524229878.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_534751955.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_534751955.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_551690942.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_551690942.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_580888007.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_580888007.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_581171568.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_581171568.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_583207460.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_583207460.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_584767565.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_584767565.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_586525422.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_586525422.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_587360422.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_587360422.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_597924157.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_597924157.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_601103483.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_601103483.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_602325460.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_602325460.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_61049981.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_61049981.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_614312948.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_614312948.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_62286157.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_62286157.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_623436040.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_623436040.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_640449419.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_640449419.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_647305655.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_647305655.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_662087769.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_662087769.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_672558109.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_672558109.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_675767857.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_675767857.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_677394981.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_677394981.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_678483165.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_678483165.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_68415747.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_68415747.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_685466515.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_685466515.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_693488511.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_693488511.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_695186571.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_695186571.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_723575032.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_723575032.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_728283371.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_728283371.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_743622822.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_743622822.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_748904122.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_748904122.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_749212837.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_749212837.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_75271496.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_75271496.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_766977213.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_766977213.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_772442429.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_772442429.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_793283849.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_793283849.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_809755161.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_809755161.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_816626537.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_816626537.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_822888270.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_822888270.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_8304097.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_8304097.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_832555889.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_832555889.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_836302036.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_836302036.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_840553270.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_840553270.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_855944960.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_855944960.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_858120326.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_858120326.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_868440302.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_868440302.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_884419779.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_884419779.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_898594392.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_898594392.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_905249570.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_905249570.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_91984843.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_91984843.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_92079366.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_92079366.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_921656991.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_921656991.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_927027652.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_927027652.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_930452855.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_930452855.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_931593321.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_931593321.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_934347141.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_934347141.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_940490911.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_940490911.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_949415058.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_949415058.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_96408293.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_96408293.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_970360791.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_970360791.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_973076525.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_973076525.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_977183810.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_977183810.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_990262898.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_990262898.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_993348028.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_993348028.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Grass_993544196.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Grass_993544196.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Shoulder_center.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Shoulder_center.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Edges/Meshes/Shoulder_east.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Shoulder_east.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage05Seams/Meshes/CourtDoorContinuousPaving05.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtDoorContinuousPaving05.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage10East/Meshes/East11PavedThreshold.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/East11PavedThreshold.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage11South/Meshes/CourtRetained_1019559121.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtRetained_1019559121.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage11South/Meshes/House15Apron.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House15Apron.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage11West/Meshes/CourtRetained_148822049.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtRetained_148822049.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage12East/Meshes/House13NorthLandingShoulders.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House13NorthLandingShoulders.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/CourtRetained_1442013316.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtRetained_1442013316.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/CourtRetained_1498890693.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtRetained_1498890693.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/CourtRetained_2070539796.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtRetained_2070539796.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/House13ApronRetainedAsphalt.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House13ApronRetainedAsphalt.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/House15ApronSideBlend.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House15ApronSideBlend.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/House1GateVergeTie.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House1GateVergeTie.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Entrances/Meshes/Library6VergeOutsideRecess.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/Library6VergeOutsideRecess.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Junctions/Meshes/CourtRetained_343165040.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/CourtRetained_343165040.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage13Junctions/Meshes/WalkthroughCentralPlazaJoin.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/WalkthroughCentralPlazaJoin.asset"
+  },
+  {
+    "source": "Assets/PhotoReconstruction/Stage15EntrancePaving/Meshes/House13PavingOutsideConcreteApron.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/House13PavingOutsideConcreteApron.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/ReferenceRoad.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/ReferenceRoad.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-10_4_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-10_4_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-10_4_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-10_4_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-10_4_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-10_4_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-10_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-10_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-10_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-10_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-10_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-10_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-11_4_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-11_4_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-1_-13_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-1_-13_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-1_-13_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-1_-13_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-1_-13_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-1_-13_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-1_1_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-1_1_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-3_1_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-3_1_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-3_1_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-3_1_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-3_1_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-3_1_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-3_3_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-3_3_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-3_3_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-3_3_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-4_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-4_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-4_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-4_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-4_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-4_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_4_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_4_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_4_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_4_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_4_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_4_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_6_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_6_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_6_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_6_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-5_6_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-5_6_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-6_6_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-6_6_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-6_6_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-6_6_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-6_6_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-6_6_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-7_6_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-7_6_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-7_6_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-7_6_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-7_6_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-7_6_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-7_7_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-7_7_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-7_7_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-7_7_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-7_7_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-7_7_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-8_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-8_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-8_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-8_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-8_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-8_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-8_6_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-8_6_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-8_6_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-8_6_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-8_6_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-8_6_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-9_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-9_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-9_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-9_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_-9_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_-9_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-12_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-12_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-12_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-12_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-12_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-12_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-13_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-13_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-13_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-13_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-13_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-13_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-1_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-1_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-1_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-1_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_-7_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_-7_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_0_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_0_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_0_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_0_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_0_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_0_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_3_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_3_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_3_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_3_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_0_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_0_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-11_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-11_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-11_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-11_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-11_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-11_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-12_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-12_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-12_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-12_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-12_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-12_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-13_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-13_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-13_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-13_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-13_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-13_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_-1_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_-1_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_3_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_3_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_4_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_4_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_4_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_4_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_4_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_4_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_5_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_5_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_5_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_5_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_1_5_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_1_5_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-11_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-11_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-11_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-11_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-11_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-11_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-12_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-12_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-12_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-12_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-6_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-6_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_-6_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_-6_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_2_3_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_2_3_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_3_-10_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_3_-10_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_3_-11_LOD0.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_3_-11_LOD0.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_3_-11_LOD1.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_3_-11_LOD1.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_3_-11_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_3_-11_LOD2.asset"
+  },
+  {
+    "source": "Assets/StreetGenerated/Pilot/Meshes/StreetGrass_3_2_LOD2.asset",
+    "repaired": "Assets/Art/StreetRepair/Surfaces/StreetGrass_3_2_LOD2.asset"
+  }
+]

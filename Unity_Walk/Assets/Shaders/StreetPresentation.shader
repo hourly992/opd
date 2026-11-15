@@ -8,7 +8,7 @@ Shader "Hidden/Street/Presentation"
         #include "UnityCG.cginc"
         sampler2D _MainTex, _BloomTex, _BloomWideTex;
         float4 _MainTex_TexelSize;
-        float _Exposure, _Saturation, _Sharpness, _BloomStrength, _AutumnGrade, _LeafGrade, _PaintedDistrictGrade;
+        float _Exposure, _Saturation, _Sharpness, _BloomStrength, _AutumnGrade, _LeafGrade, _PaintedDistrictGrade, _WarmAutumnGrade, _Vignette;
         float3 Filmic(float3 color)
         {
             return saturate((color * (2.51 * color + .03)) / (color * (2.43 * color + .59) + .14));
@@ -37,6 +37,19 @@ Shader "Hidden/Street/Presentation"
             float lift = (1 - smoothstep(.025,.49,level)) * .038;
             graded += lift * float3(1,.88,.67);
             return lerp(graded, dot(graded,weights).xxx, .10 * smoothstep(.78,1,level));
+        }
+        float3 WarmAutumnGrade(float3 color)
+        {
+            const float3 weights = float3(.2126,.7152,.0722);
+            float peak = max(color.r,max(color.g,color.b));
+            float chroma = peak - min(color.r,min(color.g,color.b));
+            // Golden midtones. Bright whites receive no extra tint;
+            // saturated red/green paving and autumn leaves receive much less.
+            float amount = _WarmAutumnGrade * (1 - smoothstep(.52,.82,peak)) *
+                lerp(1,.075,saturate(chroma * 4));
+            float3 warmed = color * float3(1.12,1.022,.91);
+            warmed *= dot(color,weights) / max(.00001,dot(warmed,weights));
+            return lerp(color,warmed,amount);
         }
         float3 Filter(float2 uv)
         {
@@ -107,7 +120,11 @@ Shader "Hidden/Street/Presentation"
                 float grey=dot(c,float3(.2126,.7152,.0722));
                 float chroma=max(c.r,max(c.g,c.b))-min(c.r,min(c.g,c.b));
                 c=lerp(grey.xxx,c,_Saturation+(1-saturate(chroma*3))*.04);
-                return float4(saturate(c),1);
+                UNITY_BRANCH if (_WarmAutumnGrade > 0)
+                    c = WarmAutumnGrade(c);
+                float2 edge = (i.uv - .5) * 2;
+                float vignette = 1 - _Vignette * smoothstep(.35,1.6,dot(edge,edge));
+                return float4(saturate(c) * vignette,1);
             }
             ENDCG
         }
@@ -121,8 +138,8 @@ Shader "Hidden/Street/Presentation"
             {
                 float3 c=max(0,Filter(i.uv));
                 float brightness=max(c.r,max(c.g,c.b));
-                float knee=clamp(brightness-1.05,0,.6);
-                float contribution=max(brightness-1.35,knee*knee/.6);
+                float knee=clamp(brightness-.72,0,.5);
+                float contribution=min(2.5,max(brightness-1.05,knee*knee/.5));
                 return float4(c*contribution/max(.0001,brightness),1);
             }
             ENDCG

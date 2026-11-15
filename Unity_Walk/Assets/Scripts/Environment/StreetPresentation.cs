@@ -19,12 +19,22 @@ public sealed class StreetPresentation : MonoBehaviour
     [Range(0, 1)] public float autumnGrade;
     [Range(0, 1)] public float leafGrade;
     public bool paintedDistrictGrade;
+    [Range(0, 1)] public float warmAutumnGrade;
+    [Range(0, .2f)] public float vignette = .09f;
+    public bool neutralAsphaltOutput = true;
     private Material material;
     private Material occlusion;
     private Material sunlight;
     private Camera view;
     private StreetRayContact rayContact;
     private bool rayContactAttempted;
+    private const int AsphaltToneSamples = 32;
+    private static readonly Vector3 Luma = new Vector3(.2126f,.7152f,.0722f);
+    private readonly Vector4[] asphaltNeutralTone = new Vector4[AsphaltToneSamples];
+    private Vector3 asphaltToneState = new Vector3(float.NaN,float.NaN,float.NaN);
+    private static StreetPresentation asphaltToneOwner;
+    private static readonly int AsphaltNeutralOutput = Shader.PropertyToID("_AsphaltNeutralOutput");
+    private static readonly int AsphaltNeutralTone = Shader.PropertyToID("_AsphaltNeutralTone");
     internal bool RayTracingEnabled { get; set; } = true;
     internal bool RayTracingActive { get; private set; }
     internal int RayTracingInstances => rayContact?.InstanceCount ?? 0;
@@ -37,6 +47,11 @@ public sealed class StreetPresentation : MonoBehaviour
         view.depthTextureMode |= DepthTextureMode.DepthNormals;
         if (Application.isPlaying && Array.IndexOf(Environment.GetCommandLineArgs(), "-noRayTracing") >= 0)
             RayTracingEnabled = false;
+    }
+
+    private void OnPreCull()
+    {
+        PublishAsphaltNeutrality();
     }
 
     private void Update()
@@ -57,6 +72,8 @@ public sealed class StreetPresentation : MonoBehaviour
         material.SetFloat("_AutumnGrade", autumnGrade);
         material.SetFloat("_LeafGrade", leafGrade);
         material.SetFloat("_PaintedDistrictGrade", paintedDistrictGrade ? 1 : 0);
+        material.SetFloat("_WarmAutumnGrade", warmAutumnGrade);
+        material.SetFloat("_Vignette", vignette);
         bool previous = GL.sRGBWrite;
         RenderTexture raw = null, blurred = null, shaded = null;
         RenderTexture highlights = null, bloomSmall = null, bloomWide = null;
@@ -67,7 +84,7 @@ public sealed class StreetPresentation : MonoBehaviour
             if (occlusionShader && occlusionShader.isSupported && contactShadows > 0)
             {
                 if (!occlusion) occlusion = new Material(occlusionShader) { hideFlags = HideFlags.HideAndDontSave };
-                int contactDownsample = paintedDistrictGrade ? 3 : 2;
+                int contactDownsample = paintedDistrictGrade ? 4 : 2;
                 raw = RenderTexture.GetTemporary(Mathf.Max(1, source.width / contactDownsample), Mathf.Max(1, source.height / contactDownsample), 0, RenderTextureFormat.RHalf, RenderTextureReadWrite.Linear);
                 blurred = RenderTexture.GetTemporary(raw.width, raw.height, 0, RenderTextureFormat.RHalf, RenderTextureReadWrite.Linear);
                 raw.filterMode = blurred.filterMode = FilterMode.Bilinear;
@@ -99,7 +116,7 @@ public sealed class StreetPresentation : MonoBehaviour
                     sunlight.SetVector("_SunPosition", new Vector4(screenSun.x, screenSun.y, (float)source.width / source.height, visibility));
                     sunlight.SetColor("_SunColor", sun.color.linear * Mathf.Min(2, sun.intensity));
                     sunlight.SetFloat("_Strength", sunShafts);
-                    sunMask = Temporary(source, 4); sunBlur = Temporary(source, 4);
+                    sunMask = SunMask(source); sunBlur = SunMask(source);
                     Graphics.Blit(source, sunMask, sunlight, 0);
                     sunlight.SetFloat("_RadialScale", .7f);
                     Graphics.Blit(sunMask, sunBlur, sunlight, 1);
@@ -138,6 +155,101 @@ public sealed class StreetPresentation : MonoBehaviour
             if (sunBlur) RenderTexture.ReleaseTemporary(sunBlur);
             if (sunComposite) RenderTexture.ReleaseTemporary(sunComposite);
         }
+    }
+
+    // This small table inverts the actual Painted/Warm display equations, not
+    // the source JPEG average. Updating a slider rebuilds it once; cloud shadow,
+    // sun color and AO only change lookup luminance. No per-frame arrays/RTs.
+    private void PublishAsphaltNeutrality()
+    {
+        if (!neutralAsphaltOutput || !paintedDistrictGrade || !shader || !shader.isSupported)
+        {
+            if (asphaltToneOwner == this)
+            {
+                Shader.SetGlobalVector(AsphaltNeutralOutput,Vector4.zero);
+                asphaltToneOwner = null;
+            }
+            return;
+        }
+        var state = new Vector3(exposure,saturation,warmAutumnGrade);
+        bool rebuild = state != asphaltToneState;
+        if (rebuild)
+        {
+            for (int i=0;i<AsphaltToneSamples;i++)
+            {
+                float level = Mathf.Pow(2,-10f + i*12f/(AsphaltToneSamples-1));
+                Vector3 guess = Vector3.one * level;
+                float target = Mathf.Max(Vector3.Dot(DisplayReference(guess),Luma),
+                    MaxChannel(DisplayReference(Vector3.zero))+.00001f);
+                float h = Mathf.Max(.00001f,level*.002f);
+                for (int step=0;step<14;step++)
+                {
+                    Vector3 current = DisplayReference(guess);
+                    Vector3 error = current - Vector3.one*target;
+                    if (MaxChannel(Abs(error)) < .0000001f) break;
+                    Vector3 a = (DisplayReference(guess+Vector3.right*h)-current)/h;
+                    Vector3 b = (DisplayReference(guess+Vector3.up*h)-current)/h;
+                    Vector3 c = (DisplayReference(guess+Vector3.forward*h)-current)/h;
+                    float determinant = Vector3.Dot(a,Vector3.Cross(b,c));
+                    if (Mathf.Abs(determinant)<.00000000000001f) break;
+                    Vector3 delta = new Vector3(Vector3.Dot(error,Vector3.Cross(b,c)),
+                        Vector3.Dot(a,Vector3.Cross(error,c)),Vector3.Dot(a,Vector3.Cross(b,error))) / determinant;
+                    guess -= delta*.85f;
+                    guess = new Vector3(Mathf.Max(.000001f,guess.x),Mathf.Max(.000001f,guess.y),Mathf.Max(.000001f,guess.z));
+                }
+                Vector3 gain = guess/level;
+                asphaltNeutralTone[i] = new Vector4(gain.x,gain.y,gain.z,0);
+            }
+            asphaltToneState = state;
+        }
+        if (rebuild || asphaltToneOwner != this)
+        {
+            Shader.SetGlobalVectorArray(AsphaltNeutralTone,asphaltNeutralTone);
+            Shader.SetGlobalVector(AsphaltNeutralOutput,new Vector4(1,-10,1f/12,AsphaltToneSamples));
+            asphaltToneOwner = this;
+        }
+    }
+
+    // CPU mirror of PaintedGrade -> saturation -> WarmAutumnGrade. The numeric
+    // validation checks both versions and the final sRGB neutral-channel error.
+    private Vector3 DisplayReference(Vector3 value)
+    {
+        value *= Mathf.Max(.01f,exposure);
+        float shadow = 1-SmoothRange(.08f,.68f,Vector3.Dot(value,Luma));
+        Vector3 balance = Vector3.LerpUnclamped(new Vector3(1.028f,1.006f,.970f),new Vector3(1.060f,1.026f,.949f),shadow);
+        Vector3 color = Vector3.Scale(value,balance);
+        color = new Vector3(Filmic(color.x),Filmic(color.y),Filmic(color.z));
+        float level = Vector3.Dot(color,Luma);
+        color += new Vector3(1,.88f,.67f)*((1-SmoothRange(.025f,.49f,level))*.038f);
+        color = Vector3.LerpUnclamped(color,Vector3.one*Vector3.Dot(color,Luma),.10f*SmoothRange(.78f,1,level));
+        float grey = Vector3.Dot(color,Luma);
+        float chroma = MaxChannel(color)-MinChannel(color);
+        color = Vector3.one*grey+(color-Vector3.one*grey)*(saturation+(1-Mathf.Clamp01(chroma*3))*.04f);
+        float peak = MaxChannel(color);
+        chroma = peak-MinChannel(color);
+        float amount = warmAutumnGrade*(1-SmoothRange(.52f,.82f,peak))*Mathf.Lerp(1,.075f,Mathf.Clamp01(chroma*4));
+        Vector3 warmed = Vector3.Scale(color,new Vector3(1.12f,1.022f,.91f));
+        warmed *= Vector3.Dot(color,Luma)/Mathf.Max(.00001f,Vector3.Dot(warmed,Luma));
+        return Vector3.LerpUnclamped(color,warmed,amount);
+    }
+
+    private static float Filmic(float value) => Mathf.Clamp01(value*(2.51f*value+.03f)/(value*(2.43f*value+.59f)+.14f));
+    private static float SmoothRange(float low,float high,float value)
+    {
+        float t = Mathf.Clamp01((value-low)/(high-low));
+        return t*t*(3-2*t);
+    }
+    private static float MaxChannel(Vector3 c) => Mathf.Max(c.x,Mathf.Max(c.y,c.z));
+    private static float MinChannel(Vector3 c) => Mathf.Min(c.x,Mathf.Min(c.y,c.z));
+    private static Vector3 Abs(Vector3 c) => new Vector3(Mathf.Abs(c.x),Mathf.Abs(c.y),Mathf.Abs(c.z));
+
+    private static RenderTexture SunMask(RenderTexture source)
+    {
+        var result = RenderTexture.GetTemporary(Mathf.Max(1,source.width/4),Mathf.Max(1,source.height/4),
+            0,RenderTextureFormat.RHalf,RenderTextureReadWrite.Linear);
+        result.filterMode = FilterMode.Bilinear;
+        result.wrapMode = TextureWrapMode.Clamp;
+        return result;
     }
 
     private RenderTexture RenderRayContacts(RenderTexture source, int width, int height)
@@ -184,6 +296,11 @@ public sealed class StreetPresentation : MonoBehaviour
 
     private void OnDisable()
     {
+        if (asphaltToneOwner == this)
+        {
+            Shader.SetGlobalVector(AsphaltNeutralOutput,Vector4.zero);
+            asphaltToneOwner = null;
+        }
         rayContact?.Dispose();
         rayContact = null;
         rayContactAttempted = false;

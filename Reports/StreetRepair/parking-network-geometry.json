@@ -1,0 +1,140 @@
+{
+  "baseCommit": "2fb3b792ddba4966e3aceb8c74866f81827a36bc",
+  "mirrorInterpretation": "Identical opposed models on west side of main street, not literal reflection into woodland",
+  "westEntrances": [
+    {
+      "id": "opposite-west",
+      "x": -108.0,
+      "z": 67.0,
+      "yaw": 90.0,
+      "y": 0.06499999761581421
+    },
+    {
+      "id": "opposite-east",
+      "x": -108.0,
+      "z": 75.2,
+      "yaw": 90.0,
+      "y": 0.06499999761581421
+    }
+  ],
+  "westYardBounds": [
+    -117.0,
+    63.65,
+    -84.8,
+    78.55
+  ],
+  "westYardRise": 0.85,
+  "connections": [
+    {
+      "id": "north-west-mouth",
+      "points": [
+        [
+          22.1,
+          121
+        ],
+        [
+          22.1,
+          135.14
+        ]
+      ],
+      "width": 4.4
+    },
+    {
+      "id": "north-east-mouth",
+      "points": [
+        [
+          30.3,
+          121
+        ],
+        [
+          30.3,
+          135.46
+        ]
+      ],
+      "width": 4.4
+    },
+    {
+      "id": "west-mouths-detour",
+      "points": [
+        [
+          -108,
+          57.7
+        ],
+        [
+          -113,
+          61
+        ],
+        [
+          -113,
+          71.1
+        ],
+        [
+          -108,
+          71.1
+        ]
+      ],
+      "width": 4.4
+    }
+  ],
+  "addedConnectorArea": 28.321379666933392,
+  "cutGroundAssets": [
+    "Assets/Art/StreetRepair/Surfaces/Library6VergeOutsideRecess.asset",
+    "Assets/Art/StreetRepair/Surfaces/CourtRetained_148822049.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_238973639.asset",
+    "Assets/Art/StreetRepair/Surfaces/House13ApronRetainedAsphalt.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_728283371.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_977183810.asset",
+    "Assets/Art/StreetRepair/Surfaces/GarageNetwork_Grass_1020996120.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_1150054426.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_1419468375.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_1457755010.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_1482413411.asset",
+    "Assets/Art/StreetRepair/Surfaces/CourtRetained_1498890693.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_1599122162.asset",
+    "Assets/Art/StreetRepair/Surfaces/Grass_1744791171.asset",
+    "Assets/Art/StreetRepair/Surfaces/GarageNetwork_Grass_1908367361.asset",
+    "Assets/Art/StreetRepair/Surfaces/GarageNetwork_Grass_2093769643.asset",
+    "Assets/Art/StreetRepair/LocalAsphalt.asset"
+  ],
+  "mirrorColliderIds": [
+    4000000124,
+    4000000139
+  ],
+  "batching": {
+    "existingRenderersReused": 4,
+    "newRenderers": 0,
+    "meshes": [
+      {
+        "mesh": "GaragePairedBody_West.asset",
+        "vertices": 1136,
+        "triangles": 568,
+        "nonemptySubmeshes": 2,
+        "mirroredSite": "opposite-west"
+      },
+      {
+        "mesh": "GaragePairedBody_East.asset",
+        "vertices": 1136,
+        "triangles": 568,
+        "nonemptySubmeshes": 2,
+        "mirroredSite": "opposite-east"
+      },
+      {
+        "mesh": "GaragePairedCanopy_West.asset",
+        "vertices": 52,
+        "triangles": 48,
+        "nonemptySubmeshes": 1,
+        "mirroredSite": "opposite-west"
+      },
+      {
+        "mesh": "GaragePairedCanopy_East.asset",
+        "vertices": 52,
+        "triangles": 48,
+        "nonemptySubmeshes": 1,
+        "mirroredSite": "opposite-east"
+      }
+    ],
+    "allFourEntrancesTriangles": 1232,
+    "nonemptyGarageSubmeshes": 6
+  },
+  "source": "User panoramas 20-24 and overhead25; saved street/service axes. Placement and dimensions remain estimates."
+}

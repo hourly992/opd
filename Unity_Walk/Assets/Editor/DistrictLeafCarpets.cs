@@ -355,29 +355,8 @@ internal static class DistrictLeafCarpets
     private static void AddLeaf(LeafMesh mesh, Vector2[] outline, Vector3 center, Vector3 axis,
         Vector3 width, Vector3 normal, Color tint, bool detail)
     {
-        int start = mesh.vertices.Count;
-        if (detail)
-        {
-            mesh.vertices.Add(center + normal * .010f);
-            mesh.uv.Add(Vector2.zero);
-            mesh.colors.Add(tint * 1.08f);
-            start++;
-        }
-        foreach (var p in outline)
-        {
-            float curl = detail ? Mathf.Max(0, Mathf.Abs(p.y) - .13f) * .015f : 0;
-            mesh.vertices.Add(center + width * p.x + axis * p.y + normal * curl);
-            mesh.uv.Add(p);
-            mesh.colors.Add(tint * (p.x < 0 ? .83f : 1.02f));
-        }
-        int firstEdge = detail ? 0 : 1;
-        int lastEdge = detail ? outline.Length : outline.Length - 1;
-        for (int i = firstEdge; i < lastEdge; i++)
-        {
-            mesh.triangles.Add(detail ? start - 1 : start);
-            mesh.triangles.Add(start + i);
-            mesh.triangles.Add(start + (i + 1) % outline.Length);
-        }
+        AutumnLeafShape.Append(mesh.vertices, mesh.uv, mesh.colors, mesh.triangles,
+            center, axis, width, normal, tint, mesh.vertices.Count / (detail ? 6 : 4) % 3, detail);
     }
 
     private static MeshRenderer MakeRenderer(Transform cell, string name, Mesh mesh, Material material)

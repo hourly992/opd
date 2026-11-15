@@ -42,9 +42,10 @@ Shader "Street/TexturedSurface"
         Cull [_Cull]
         LOD 300
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows addshadow
+        #pragma surface surf StreetCloudStandard fullforwardshadows addshadow exclude_path:deferred
         #pragma target 3.0
         #pragma multi_compile_instancing
+        #include "StreetCloudLighting.cginc"
         #include "StreetMeadow.cginc"
         sampler2D _MainTex, _BumpMap, _MaskMap, _DryGroundTex;
         fixed4 _Color, _EmissionColor;

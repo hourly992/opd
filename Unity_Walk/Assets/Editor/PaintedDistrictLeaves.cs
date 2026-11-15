@@ -534,20 +534,8 @@ internal static class PaintedDistrictLeaves
         internal void Add(Vector3 center, Vector3 axis, Vector3 width, Vector3 normal,
             Color tint, Vector2[] outline, bool folded)
         {
-            int first = vertices.Count;
-            foreach (Vector2 point in outline)
-            {
-                float curl = folded ? (point.y > .3f ? .017f : point.x > .2f ? .011f : .002f) : 0;
-                vertices.Add(center + width * point.x + axis * point.y + normal * curl);
-                uv.Add(point);
-                colors.Add(tint * (point.x < -.1f ? .83f : 1.04f));
-            }
-            for (int i = 1; i < outline.Length - 1; i++)
-            {
-                triangles.Add(first);
-                triangles.Add(first + i);
-                triangles.Add(first + i + 1);
-            }
+            AutumnLeafShape.Append(vertices, uv, colors, triangles, center, axis, width,
+                normal, tint, Count % 3, folded);
             Count++;
         }
 

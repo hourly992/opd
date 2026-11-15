@@ -1,0 +1,13 @@
+{
+  "streetLength": 772.039,
+  "sidewalkWidth": 3.2,
+  "sidewalkArea": 4947.78,
+  "localAsphaltArea": 5800.02,
+  "entranceRoutes": 116,
+  "modifiedSurfaceMeshes": 29,
+  "newMeshes": [
+    "Assets/Art/StreetRepair/StreetWidePaving.asset",
+    "Assets/Art/StreetRepair/LocalAsphalt.asset",
+    "Assets/Art/StreetRepair/WideWalkOuterKerb.asset"
+  ]
+}

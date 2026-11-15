@@ -1,0 +1,258 @@
+{
+  "baselineCommit": "0d73c23ee7bd71c144bf188d0f5b4cb91304c979",
+  "settingsTested": {
+    "exposure": 1.035,
+    "saturation": 1.075,
+    "warmth": 0.95
+  },
+  "neutralOutputMode": "StreetPresentation.neutralAsphaltOutput=true; OnPreCull publishes shared uniform LUT",
+  "litAsphaltLighting": "Standard PBR/GI preserved; scalar luminance is inverse-toned for the active camera display equations",
+  "uniformLutSamples": 32,
+  "uniformLutHDRLuminanceRange": [
+    0.0009765625,
+    4
+  ],
+  "float32BrightnessSweepSamples": 512,
+  "sunAmbientCookieAOCombinations": 405,
+  "maximumFinalSRGB8ChannelSpread": 0.4497833251953125,
+  "examples": [
+    {
+      "litHDR": [
+        0.00847,
+        0.010890000000000002,
+        0.01694
+      ],
+      "beforeDisplaySRGB8": [
+        59.72080993652344,
+        54.47267532348633,
+        47.605587005615234
+      ],
+      "afterDisplaySRGB8": [
+        57.17243957519531,
+        57.18648910522461,
+        57.20656967163086
+      ]
+    },
+    {
+      "litHDR": [
+        0.01155,
+        0.014850000000000002,
+        0.0231
+      ],
+      "beforeDisplaySRGB8": [
+        61.09294509887695,
+        56.46892166137695,
+        51.38905715942383
+      ],
+      "afterDisplaySRGB8": [
+        57.31728744506836,
+        57.399044036865234,
+        57.45481872558594
+      ]
+    },
+    {
+      "litHDR": [
+        0.015399999999999999,
+        0.0198,
+        0.030799999999999998
+      ],
+      "beforeDisplaySRGB8": [
+        63.069114685058594,
+        59.324188232421875,
+        56.568485260009766
+      ],
+      "afterDisplaySRGB8": [
+        59.8305549621582,
+        59.9376106262207,
+        60.02654266357422
+      ]
+    },
+    {
+      "litHDR": [
+        0.00847,
+        0.010890000000000002,
+        0.01694
+      ],
+      "beforeDisplaySRGB8": [
+        59.72080993652344,
+        54.47267532348633,
+        47.605587005615234
+      ],
+      "afterDisplaySRGB8": [
+        57.17243957519531,
+        57.18648910522461,
+        57.20656967163086
+      ]
+    }
+  ],
+  "addedGradeMaterialSwatches": {
+    "redPaving": {
+      "before": [
+        0.52,
+        0.25,
+        0.17
+      ],
+      "after": [
+        0.5223438739776611,
+        0.24946966767311096,
+        0.16835150122642517
+      ],
+      "addedHueShiftDegrees": 0.034853117806580514
+    },
+    "greenPaving": {
+      "before": [
+        0.16,
+        0.42,
+        0.1
+      ],
+      "after": [
+        0.16100344061851501,
+        0.41978511214256287,
+        0.09917362779378891
+      ],
+      "addedHueShiftDegrees": 0.32098388671875
+    },
+    "yellowLeaf": {
+      "before": [
+        0.74,
+        0.51,
+        0.08
+      ],
+      "after": [
+        0.7406167387962341,
+        0.509830117225647,
+        0.07986669987440109
+      ],
+      "addedHueShiftDegrees": 0.0476962002841006
+    },
+    "redLeaf": {
+      "before": [
+        0.6,
+        0.18,
+        0.06
+      ],
+      "after": [
+        0.6017128229141235,
+        0.17954353988170624,
+        0.05947820097208023
+      ],
+      "addedHueShiftDegrees": 0.047719319661464255
+    }
+  },
+  "brightWhiteSamplesWithoutAdditionalTint": 32,
+  "neutralMidtoneWarmChannelRatio": 1.217738151550293,
+  "sourceAndImporterBytesPreserved": [
+    {
+      "file": "AO_Roughness.png",
+      "sha256": "a30ae1fca43ef4d57fc25afe2232b7b4c9f9ec33e24d2b2e02880ffe3a65a5a2"
+    },
+    {
+      "file": "AO_Roughness.png.meta",
+      "sha256": "150aad8979a61ebbdca7b5af8aaebc4af54842c6b2cea7c9847acbc2a39387a1"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_AmbientOcclusion.jpg",
+      "sha256": "3f4643ea99f084695f57199a04725fc4c2d9c4f18e4f63f119e71dccd59a82dc"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_AmbientOcclusion.jpg.meta",
+      "sha256": "38822f9f7c3d7b769cba83d87a8702a11ea176a6ce82db571f4d9ac85f28a00d"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_Color.jpg",
+      "sha256": "8e27f2f40239a3f6a9c154c0f446c561d6261ef709f0b5bfe71a716688df5185"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_Color.jpg.meta",
+      "sha256": "54cfa3b86ab8287e70400195f8a06263ec213f5916edeb2ad45d6fe128eecb71"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_NormalGL.jpg",
+      "sha256": "95163b81491bc764e623b76119dd05e15238efbb470fe76e62fb6d185dd2c448"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_NormalGL.jpg.meta",
+      "sha256": "8459dc01f25c2c9281214533d8e6cece53891bf7167fe1c18c7920e016c7edcf"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_Roughness.jpg",
+      "sha256": "2a583291af6e95e8f13ec771586aeb3db5039b6dd0b70200affb43b0190b8225"
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_Roughness.jpg.meta",
+      "sha256": "6567be8788509735008b0c3efdbfdf2f304f6123e903d4ede241c3624e86f0ee"
+    }
+  ],
+  "asphaltSourceInstallation": {
+    "asset": "Asphalt020S",
+    "originalMapsVerified": 4,
+    "packedPixelCount": 4194304,
+    "runtimeTextureReads": 4,
+    "runtimeMaterialTextureReads": 3,
+    "runtimeMainLightCloudShadowTextureReads": 1,
+    "cloudShadowScope": "ForwardBase directional light only; skipped when weather is disabled; ambient unchanged",
+    "activeAsphaltMaterialsVerified": 7,
+    "neutralDisplayCompensation": "Standard PBR result luminance + 32 shared camera-inverse uniform tone gains; no new texture fetch",
+    "runtimeImportLimits": {
+      "color": 2048,
+      "normalGL": 1024,
+      "packedMask": 1024
+    },
+    "runtimeLevelZeroTexels": 6291456,
+    "projectColorSpace": "Linear",
+    "toneGain": [
+      0.7636461,
+      0.73200228,
+      0.71368004
+    ],
+    "intrinsicAlbedoMeanSRGB8": [
+      92.99999975204156,
+      92.00000020683058,
+      86.99999975288105
+    ],
+    "targetIntrinsicAlbedoMeanSRGB8": [
+      93,
+      92,
+      87
+    ],
+    "unityImportAndGPUFrameTimes": "NOT RUN by this saved-data verifier"
+  },
+  "bloomPrefilter": {
+    "softKneeBeginsAtHDR": 0.72,
+    "hardThresholdHDR": 1.05,
+    "sourceContributionCap": 2.5,
+    "strengthInScene": 0.1,
+    "samplesHDRToContribution": {
+      "0.2": 0.0,
+      "0.4": 0.0,
+      "0.7": 0.0,
+      "0.8": 0.012800000000000023,
+      "1": 0.15680000000000002,
+      "1.5": 0.5,
+      "8": 2.5
+    },
+    "maximumDiffuseAsphaltHDRChannel": 0.1664330831397745
+  },
+  "sourceTextureReads": 3,
+  "mainLightCloudShadowTextureReads": 1,
+  "totalAsphaltLightingTextureReadsWhenWeatherEnabled": 4,
+  "cloudShadowScope": "ForwardBase directional only; indirect/ambient unchanged; weather-disabled path skips cloud fetch",
+  "extraFullScreenPasses": 0,
+  "extraPostTextureReads": 0,
+  "sunShaftRadialSamplesBeforeAfter": [
+    24,
+    12
+  ],
+  "contactOcclusionDownsampleBeforeAfter": [
+    3,
+    4
+  ],
+  "sunMasks": "quarter-resolution RHalf instead of source HDR format",
+  "shaderModel": "3.5: dynamic fragment uniform-array lookup requires modern DX11/GL backends; Forward Standard lighting, deferred excluded",
+  "limitations": [
+    "These are CPU references and saved-source checks, not Unity shader/C# compilation or a captured game frame.",
+    "The compensation models lit Standard color and Painted/saturation/Warm display grading; source texture detail/normal/AO/roughness remains intact.",
+    "Fog, bloom, antialiasing and additive shafts can tint mixed boundary/highlight pixels after material shading. They are not material-identifiable without a new mask/pass.",
+    "No GPU frame time, FPS or driver shader compilation was measured."
+  ]
+}

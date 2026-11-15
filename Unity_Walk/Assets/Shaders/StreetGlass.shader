@@ -31,6 +31,7 @@ Shader "Street/Glass"
         #pragma multi_compile_instancing
         #include "UnityPBSLighting.cginc"
         #include "StreetSkyLighting.cginc"
+        #include "StreetAutumnWeather.cginc"
         sampler2D _MainTex, _DirtTex, _SkyTex;
         fixed4 _Color, _SkyTint;
         half4 _SkyTex_HDR;
@@ -87,11 +88,22 @@ Shader "Street/Glass"
             // Retain nonblack scene probes, including box projection and blending. Some built-in
             // captures return a black probe while realtime cubemaps are unavailable; in that case
             // sample the same sky model and panorama as the visible environment.
-            half3 probe = max(0, gi.indirect.specular);
-            half3 sky = PanoramicSky(reflect(-view, normal));
-            half signal = max(probe.r, max(probe.g, probe.b));
-            half available = smoothstep(.0005h, .005h, signal);
-            half3 reflection = lerp(sky, probe, available) * fresnel * _ReflectionStrength;
+            half3 reflectedSky;
+            UNITY_BRANCH if (_StreetWeatherEnabled > .5)
+            {
+                // The weather GI path supplies the moving sky at this pane's
+                // world position; an old captured probe must not freeze it.
+                reflectedSky = max(0, gi.indirect.specular);
+            }
+            else
+            {
+                half3 probe = max(0, gi.indirect.specular);
+                half3 sky = PanoramicSky(reflect(-view, normal));
+                half signal = max(probe.r, max(probe.g, probe.b));
+                half available = smoothstep(.0005h, .005h, signal);
+                reflectedSky = lerp(sky, probe, available);
+            }
+            half3 reflection = reflectedSky * fresnel * _ReflectionStrength;
             // The photographed room is a transmitted interior, not diffuse paint on the facade.
             // Soft indirect fill lights it; a small amount of direct daylight can enter the room.
             half daylight = saturate(dot(normal, gi.light.dir)) * .035h;
@@ -106,9 +118,26 @@ Shader "Street/Glass"
         }
         void LightingWindow_GI(SurfaceOutputStandard s, UnityGIInput data, inout UnityGI gi)
         {
-            // Keep UnityGlossyEnvironmentSetup / UnityGlobalIllumination for actual local probes.
-            // The direct panorama fallback above also works when these GI channels return black.
-            LightingStandard_GI(s, data, gi);
+            UNITY_BRANCH if (_StreetWeatherEnabled > .5)
+            {
+                // The built-in forward GI contract supplies world-space
+                // s.Normal/data.worldViewDir (also used by Standard_GI).
+                // This diffuse-only overload avoids sampling a stale cubemap.
+                gi = UnityGlobalIllumination(data, s.Occlusion, s.Normal);
+                #if defined(UNITY_PASS_FORWARDBASE) && defined(DIRECTIONAL)
+                gi.light.color *= StreetWeatherCloudShadow(data.worldPos);
+                #endif
+                #if !defined(UNITY_PASS_FORWARDADD)
+                float3 reflected = reflect(-Unity_SafeNormalize(data.worldViewDir),
+                    Unity_SafeNormalize(s.Normal));
+                gi.indirect.specular = StreetWeatherSkyColor(data.worldPos, reflected, 0);
+                #endif
+            }
+            else
+            {
+                // Preserve existing local probes/panorama for other scenes.
+                LightingStandard_GI(s, data, gi);
+            }
         }
 
         void surf(Input IN, inout SurfaceOutputStandard o)

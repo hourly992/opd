@@ -1,0 +1,188 @@
+{
+  "baselineCommit": "0d73c23ee7bd71c144bf188d0f5b4cb91304c979",
+  "existingSceneBlocksRetained": 17568,
+  "addedComponentIds": [
+    4000000200,
+    4000000201
+  ],
+  "changedExistingSceneBlocks": [
+    {
+      "id": 2,
+      "class": 104
+    },
+    {
+      "id": 1090422550,
+      "class": 114
+    },
+    {
+      "id": 1319908492,
+      "class": 1
+    },
+    {
+      "id": 1319908495,
+      "class": 114
+    },
+    {
+      "id": 1319908496,
+      "class": 20
+    },
+    {
+      "id": 1321379541,
+      "class": 1
+    },
+    {
+      "id": 1321379542,
+      "class": 108
+    },
+    {
+      "id": 1321379543,
+      "class": 4
+    },
+    {
+      "id": 2014896245,
+      "class": 114
+    }
+  ],
+  "unchangedGeometryAndHierarchy": {
+    "savedTransformsExceptSunRotation": 6177,
+    "prefabInstanceBlocks": 3022,
+    "rendererAndMeshFilterBlocks": 4180,
+    "colliderAndControllerBlocks": 162
+  },
+  "byteIdenticalProtectedAssets": {
+    "meshAssets": 6852,
+    "prefabs": 110,
+    "texturesAndImporters": 378,
+    "allNonAsphaltNonSkyMaterialsAndImporters": 1784,
+    "streetSources": 17
+  },
+  "nonSkyMaterialSourceColorsPreserved": 7,
+  "cars": {
+    "savedVehicleComponents": 0,
+    "emptyParkingVehicleArrays": 19,
+    "runtimeVehicleConstructionFound": false
+  },
+  "staticResourceBudget": {
+    "geometryAssetsAndSavedRendererCountUnchanged": true,
+    "savedLightsBeforeAndAfter": 81,
+    "presentationSourceCallCounts": {
+      "Graphics.Blit(": {
+        "before": 14,
+        "after": 14
+      },
+      "new Material(": {
+        "before": 3,
+        "after": 3
+      },
+      "sunMaskTargetPair": {
+        "before": 2,
+        "after": 2,
+        "formatBefore": "source.format",
+        "formatAfter": "RHalf",
+        "resolutionBeforeAndAfter": "quarter width and height"
+      }
+    },
+    "cameraVerticalFovDegrees": 64.0,
+    "sunElevationDegrees": 21.9999999912275
+  },
+  "walkAndRun": {
+    "walkSpeedMetersPerSecond": 4.0,
+    "runSpeedMetersPerSecond": 6.2
+  },
+  "dustResourceCeilings": {
+    "maximumConfiguredParticles": 24,
+    "maximumRuntimeQuads": 32,
+    "maximumSunOcclusionRaycastsPerFrame": 2,
+    "maximumAdditionalMeshDrawsWhenVisible": 1,
+    "additionalDepthOrFullscreenPasses": 0
+  },
+  "weatherResourceCeilings": {
+    "densityTexture": [
+      128,
+      128
+    ],
+    "shadowTexture": [
+      128,
+      128
+    ],
+    "shadowRefreshMaximumRowsPerFrame": 8,
+    "reflectionCubemapFaceSize": 16,
+    "reflectionFacesRefreshedPerHalfSecond": 1,
+    "ambientRefreshSeconds": 2,
+    "nativeDirectionalCookieAssigned": false,
+    "sceneCaptureCamerasOrProbeRenderCallsAdded": 0
+  },
+  "materialDependencyShaderClosure": {
+    "materials": 344,
+    "prefabs": 47,
+    "shaderMaterialCounts": {
+      "Assets/Shaders/TexturedSurface.shader": 301,
+      "Assets/Shaders/StreetFoliage.shader": 9,
+      "Assets/Shaders/PaintedBackdrop.shader": 1,
+      "Assets/Shaders/PaintedBackdropContact.shader": 1,
+      "Assets/Shaders/StreetAutumnSky.shader": 1,
+      "Assets/Shaders/StreetGlass.shader": 19,
+      "Assets/Shaders/StreetAsphalt020S.shader": 7,
+      "Assets/Shaders/StreetPlaygroundSoil.shader": 1,
+      "Assets/Shaders/WoodlandGround.shader": 1,
+      "Assets/Shaders/StreetGarageCanopy.shader": 1,
+      "Assets/Shaders/StreetSurface.shader": 1,
+      "Assets/Shaders/StreetFallenLeaves.shader": 1
+    },
+    "surfaceShaderCloudIntegration": [
+      {
+        "shader": "Assets/Shaders/PaintedBackdrop.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetAsphalt020S.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetFallenLeaves.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetFoliage.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetGarageCanopy.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetGlass.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetPlaygroundSoil.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/StreetSurface.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/TexturedSurface.shader",
+        "sharedCloudShadow": true
+      },
+      {
+        "shader": "Assets/Shaders/WoodlandGround.shader",
+        "sharedCloudShadow": true
+      }
+    ],
+    "allTenLitSurfaceColorFunctionsUnchanged": true,
+    "pipeline": "Built-in Forward; custom shadow tile, no native directional cookie"
+  },
+  "windows": {
+    "sameMovingWeatherSkyAtPaneWorldPosition": true,
+    "staleProbeBypassedOnlyWhenWeatherEnabled": true,
+    "transmittedRoomColorFunctionUnchanged": true,
+    "newRenderPasses": 0
+  },
+  "limitations": [
+    "Unity shader/C# import and compilation, a player build/run, actual rendered colors and FPS were not tested.",
+    "Static resource bounds and numerical models do not establish measured performance on a target GPU.",
+    "Sky/lighting and asphalt appearance need verification in the final player frame on the same machine and route."
+  ]
+}

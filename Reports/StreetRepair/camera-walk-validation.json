@@ -1,0 +1,130 @@
+{
+  "baselineCommit": "0d73c23",
+  "walkSpeedMetersPerSecond": 4.0,
+  "runSpeedMetersPerSecond": 6.2,
+  "runMultiplier": 1.55,
+  "walkingBobHeightMeters": 0.009,
+  "runningBobHeightMeters": 0.0117,
+  "standingCollisionBlockedPauseAndFocusCases": "PASS: no offset/phase accumulation; lifecycle restores neutral pose",
+  "perFrameGetComponentCalls": 0,
+  "randomShakeOrFovPulse": false,
+  "fpsSamplesCPU": {
+    "30": {
+      "walk": {
+        "distanceIn10SecondsMeters": 39.9999999999999,
+        "maxOffsetMeters": [
+          0.0024,
+          0.009,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.025,
+          0.055
+        ],
+        "neutralAfterStopSeconds": 0.2
+      },
+      "run": {
+        "distanceIn10SecondsMeters": 61.999999999999574,
+        "maxOffsetMeters": [
+          0.0031199458715448747,
+          0.011699188080216123,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.03249774466726701,
+          0.07149875955623672
+        ],
+        "neutralAfterStopSeconds": 0.2
+      }
+    },
+    "60": {
+      "walk": {
+        "distanceIn10SecondsMeters": 40.000000000000306,
+        "maxOffsetMeters": [
+          0.0024,
+          0.009,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.025,
+          0.055
+        ],
+        "neutralAfterStopSeconds": 0.18333333333333332
+      },
+      "run": {
+        "distanceIn10SecondsMeters": 61.999999999999304,
+        "maxOffsetMeters": [
+          0.0031199422028497987,
+          0.011699133050777053,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.03249759180771404,
+          0.07149867548197456
+        ],
+        "neutralAfterStopSeconds": 0.18333333333333332
+      }
+    },
+    "120": {
+      "walk": {
+        "distanceIn10SecondsMeters": 40.00000000000029,
+        "maxOffsetMeters": [
+          0.0024,
+          0.009,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.025,
+          0.055
+        ],
+        "neutralAfterStopSeconds": 0.16666666666666666
+      },
+      "run": {
+        "distanceIn10SecondsMeters": 62.00000000000123,
+        "maxOffsetMeters": [
+          0.0031199794161144863,
+          0.011699691242735802,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.03249914234093279,
+          0.07149952828595699
+        ],
+        "neutralAfterStopSeconds": 0.16666666666666666
+      }
+    },
+    "144": {
+      "walk": {
+        "distanceIn10SecondsMeters": 40.00000000000088,
+        "maxOffsetMeters": [
+          0.0024,
+          0.009,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.025,
+          0.055
+        ],
+        "neutralAfterStopSeconds": 0.1736111111111111
+      },
+      "run": {
+        "distanceIn10SecondsMeters": 61.999999999998714,
+        "maxOffsetMeters": [
+          0.0031199972803745593,
+          0.011699959205636165,
+          0.0
+        ],
+        "maxPitchRollDegrees": [
+          0.03249988668232269,
+          0.07149993767525033
+        ],
+        "neutralAfterStopSeconds": 0.1736111111111111
+      }
+    }
+  },
+  "qaCompatibility": "StreetQA and PaintedDistrictQA disable FirstPersonWalk before writing camera poses; OnDisable restores neutral camera before captures. SetCamera signature unchanged. Camera.localPosition saved as origin, never incremented.",
+  "limits": [
+    "Unity/C# compile and player/comfort checks not run: Unity and C# compiler unavailable.",
+    "CPU calculations model the movement/bob equations; no measured game FPS or visual capture."
+  ]
+}
