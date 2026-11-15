@@ -30,6 +30,7 @@ Shader "Street/Foliage"
         #pragma multi_compile_instancing
         #include "UnityPBSLighting.cginc"
         #include "StreetMeadow.cginc"
+        #include "StreetAutumnWeather.cginc"
         sampler2D _MainTex, _BumpMap;
         fixed4 _Color;
         float _BumpStrength, _Translucency, _WindStrength, _Grass, _WindStemHeight, _WindHeightScale;
@@ -40,11 +41,10 @@ Shader "Street/Foliage"
         void vert(inout appdata_full v)
         {
             float3 world=mul(unity_ObjectToWorld,v.vertex).xyz;
-            float phase=dot(world.xz,float2(.45,.31));
-            float wave=sin(_Time.y*1.45+phase)*.65+sin(_Time.y*2.7+phase*1.9)*.35;
+            float wave=StreetBreeze(world.xz,_Time.y);
             // The grass root stays fixed; tree motion increases towards the outer canopy.
             float weight=_Grass>.5?pow(saturate(v.texcoord.y),1.7):saturate((v.vertex.y-_WindStemHeight)*_WindHeightScale);
-            float3 offset=float3(.82,0,.57)*wave*_WindStrength*weight;
+            float3 offset=float3(.82,0,.57)*wave*_WindStrength*weight*.82;
             v.vertex.xyz+=mul((float3x3)unity_WorldToObject,offset);
         }
         half4 LightingLeaf(SurfaceOutputStandard s, float3 viewDir, UnityGI gi)
@@ -58,6 +58,10 @@ Shader "Street/Foliage"
         void LightingLeaf_GI(SurfaceOutputStandard s, UnityGIInput data, inout UnityGI gi)
         {
             LightingStandard_GI(s,data,gi);
+            #if defined(UNITY_PASS_FORWARDBASE) && defined(DIRECTIONAL)
+            UNITY_BRANCH if (_StreetWeatherEnabled > .5)
+                gi.light.color *= StreetWeatherCloudShadow(data.worldPos);
+            #endif
         }
         void surf(Input IN, inout SurfaceOutputStandard o)
         {

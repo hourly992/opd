@@ -53,10 +53,39 @@ SHADER = r'''Shader "Street/Asphalt020S"
         Cull [_Cull]
         LOD 200
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows vertex:vert
-        #pragma target 3.0
+        #pragma surface surf AsphaltNeutral fullforwardshadows vertex:vert exclude_path:deferred
+        #pragma target 3.5
         #pragma multi_compile_instancing
+        #include "UnityPBSLighting.cginc"
+        #include "StreetAutumnWeather.cginc"
         sampler2D _MainTex, _BumpMap, _MaskMap;
+        // Published by StreetPresentation only when the matching display grade
+        // is active. Constant-array interpolation adds no texture or render pass.
+        float4 _AsphaltNeutralOutput;
+        float4 _AsphaltNeutralTone[32];
+        half4 LightingAsphaltNeutral(SurfaceOutputStandard s, half3 viewDir, UnityGI gi)
+        {
+            half4 result = LightingStandard(s,viewDir,gi);
+            UNITY_BRANCH if (_AsphaltNeutralOutput.x > .5)
+            {
+                float level = max(0,dot(result.rgb,float3(.2126,.7152,.0722)));
+                float index = saturate((log2(max(level,.0009765625)) - _AsphaltNeutralOutput.y) * _AsphaltNeutralOutput.z) * (_AsphaltNeutralOutput.w-1);
+                int first = min(30,(int)index);
+                float3 gain = lerp(_AsphaltNeutralTone[first].rgb,
+                    _AsphaltNeutralTone[first+1].rgb,index-first);
+                result.rgb = level * gain;
+            }
+            return result;
+        }
+        void LightingAsphaltNeutral_GI(SurfaceOutputStandard s, UnityGIInput data, inout UnityGI gi)
+        {
+            LightingStandard_GI(s,data,gi);
+            #if defined(UNITY_PASS_FORWARDBASE) && defined(DIRECTIONAL)
+                // Main sunlight only. The shared helper skips the fetch when
+                // weather is disabled; indirect/ambient illumination stays intact.
+                gi.light.color *= StreetWeatherCloudShadow(data.worldPos);
+            #endif
+        }
         float4 _TileMeters;
         float4 _ToneGain;
         fixed4 _Color;
@@ -331,7 +360,12 @@ def verify():
     assert np.array_equal(arrays['packedMask'], expected), 'Packed AO/roughness differs from original maps'
     shader = ROOT / 'Assets/Shaders/StreetAsphalt020S.shader'
     assert shader.read_text() == SHADER, 'Shader differs from reproducible installer source'
-    assert SHADER.count('tex2D(') == 3, 'Runtime shader sampler budget changed'
+    assert SHADER.count('tex2D(') == 3, 'Material texture sampler budget changed'
+    weather = (ROOT / 'Assets/Shaders/StreetAutumnWeather.cginc').read_text()
+    shadow_function = re.search(r'float StreetWeatherCloudShadow\(.*?\n}', weather, re.S)
+    assert shadow_function and shadow_function[0].count('tex2D(') == 1, 'Cloud-shadow sampler budget changed'
+    assert 'gi.light.color *= StreetWeatherCloudShadow(data.worldPos);' in SHADER
+    assert '#if defined(UNITY_PASS_FORWARDBASE) && defined(DIRECTIONAL)' in SHADER
     materials = active_asphalt_materials()
     mean = toned_mean_srgb8(arrays['color'])
     assert np.allclose(mean, TARGET_ALBEDO_SRGB8, atol=.05), ('Intrinsic asphalt tone drifted', mean)
@@ -346,7 +380,10 @@ def verify():
         for key in ('color', 'normalGL', 'packedMask'):
             assert guid(FOLDER / manifest['files'][key]['file']) in text, (p, key)
     out = dict(asset=ASSET_ID, originalMapsVerified=4, packedPixelCount=2048*2048,
-               runtimeTextureReads=3, activeAsphaltMaterialsVerified=len(materials),
+               runtimeTextureReads=4, runtimeMaterialTextureReads=3, runtimeMainLightCloudShadowTextureReads=1,
+               cloudShadowScope='ForwardBase directional light only; skipped when weather is disabled; ambient unchanged',
+               activeAsphaltMaterialsVerified=len(materials),
+               neutralDisplayCompensation='Standard PBR result luminance + 32 shared camera-inverse uniform tone gains; no new texture fetch',
                runtimeImportLimits=dict(color=2048, normalGL=1024, packedMask=1024),
                runtimeLevelZeroTexels=2048*2048 + 2*1024*1024,
                projectColorSpace=project_color_space(), toneGain=list(tone_gain()),

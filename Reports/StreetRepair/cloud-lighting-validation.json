@@ -1,0 +1,61 @@
+{
+  "baseCommit": "0d73c23ee7bd71c144bf188d0f5b4cb91304c979",
+  "shaders": [
+    {
+      "shader": "Unity_Walk/Assets/Shaders/TexturedSurface.shader",
+      "surfPropertiesAndVertexLogicByteIdentical": true,
+      "surfaceModel": "StreetCloudStandard",
+      "explicitPassCountUnchanged": true,
+      "deferredExcluded": true
+    },
+    {
+      "shader": "Unity_Walk/Assets/Shaders/WoodlandGround.shader",
+      "surfPropertiesAndVertexLogicByteIdentical": true,
+      "surfaceModel": "StreetCloudStandard",
+      "explicitPassCountUnchanged": true,
+      "deferredExcluded": true
+    },
+    {
+      "shader": "Unity_Walk/Assets/Shaders/StreetPlaygroundSoil.shader",
+      "surfPropertiesAndVertexLogicByteIdentical": true,
+      "surfaceModel": "StreetCloudStandard",
+      "explicitPassCountUnchanged": true,
+      "deferredExcluded": true
+    },
+    {
+      "shader": "Unity_Walk/Assets/Shaders/StreetSurface.shader",
+      "surfPropertiesAndVertexLogicByteIdentical": true,
+      "surfaceModel": "StreetCloudStandard",
+      "explicitPassCountUnchanged": true,
+      "deferredExcluded": true
+    },
+    {
+      "shader": "Unity_Walk/Assets/Shaders/StreetGarageCanopy.shader",
+      "surfPropertiesAndVertexLogicByteIdentical": true,
+      "surfaceModel": "StreetCloudStandard",
+      "explicitPassCountUnchanged": true,
+      "deferredExcluded": true
+    },
+    {
+      "shader": "Unity_Walk/Assets/Shaders/PaintedBackdrop.shader",
+      "surfPropertiesAndVertexLogicByteIdentical": true,
+      "surfaceModel": "StreetCloudStandard",
+      "explicitPassCountUnchanged": true,
+      "deferredExcluded": true
+    }
+  ],
+  "sharedInclude": "Unity_Walk/Assets/Shaders/StreetCloudLighting.cginc",
+  "guid": "abb5f064dc7cf1cdad48de52a6e24dad",
+  "directSunOnly": true,
+  "standardGIAndAmbientReflectionUntouched": true,
+  "onlyForwardBaseDirectionalWhenWeatherEnabled": true,
+  "extraDrawPasses": 0,
+  "extraLightCookiePasses": 0,
+  "extraSamplesPerAffectedMainSunBaseFragment": 1,
+  "shadowDisabledReturnValue": 1,
+  "includeCycleAbsent": true,
+  "limits": [
+    "Unity shader compilation and rendered frames not executed: Unity unavailable.",
+    "Source pass/sample counts are not measured GPU costs or FPS."
+  ]
+}

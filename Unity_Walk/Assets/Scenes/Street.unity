@@ -15,16 +15,16 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.61, g: 0.74, b: 0.82, a: 1}
+  m_FogColor: {r: 0.64, g: 0.66, b: 0.67, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.002
+  m_FogDensity: 0.0015
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.805, g: 0.8, b: 0.785, a: 1}
   m_AmbientEquatorColor: {r: 0.735, g: 0.715, b: 0.68, a: 1}
   m_AmbientGroundColor: {r: 0.52, g: 0.475, b: 0.42, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 1
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 40be5578b1e828a42b79212a9ac05895, type: 2}
   m_HaloStrength: 0.5
@@ -324048,6 +324048,9 @@ MonoBehaviour:
   mouseSensitivity: 2
   gravity: -20
   view: {fileID: 1319908493}
+  runSpeed: 6.2
+  walkBobHeight: 0.009
+  runBobMultiplier: 1.3
 --- !u!143 &1090422551
 CharacterController:
   m_ObjectHideFlags: 0
@@ -391787,6 +391790,7 @@ GameObject:
   - component: {fileID: 1319908496}
   - component: {fileID: 1319908495}
   - component: {fileID: 1319908494}
+  - component: {fileID: 4000000201}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -391833,17 +391837,19 @@ MonoBehaviour:
   occlusionShader: {fileID: 4800000, guid: 629fe8df9bdfaa246b1c82be701c3c1e, type: 3}
   sunShaftShader: {fileID: 4800000, guid: 49ec591a7dd44cdf90d747daedbd57b8, type: 3}
   rayContactShader: {fileID: 7200000, guid: 520d0d90f7e06e5418af3a0d2928cd3d, type: 3}
-  sunShafts: 0.09
-  contactShadows: 0.33
+  sunShafts: 0.15
+  contactShadows: 0.26
   contactRadius: 0.42
   exposure: 1.035
   saturation: 1.075
-  bloom: 0.07
+  bloom: 0.1
   sharpness: 0.01
   autumnGrade: 0.88
   leafGrade: 0.95
   paintedDistrictGrade: 1
-  warmAutumnGrade: 0.35
+  warmAutumnGrade: 0.95
+  vignette: 0.09
+  neutralAsphaltOutput: 1
 --- !u!20 &1319908496
 Camera:
   m_ObjectHideFlags: 0
@@ -391877,7 +391883,7 @@ Camera:
     height: 1
   near clip plane: 0.07
   far clip plane: 1500
-  field of view: 60
+  field of view: 64
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -392664,6 +392670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321379543}
   - component: {fileID: 1321379542}
+  - component: {fileID: 4000000200}
   m_Layer: 0
   m_Name: "\u041B\u0435\u0442\u043D\u0435\u0435 \u0441\u043E\u043B\u043D\u0446\u0435 \xB7 \u0442\u0451\u043F\u043B\u044B\u0439 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043D\u044B\u0439 \u0441\u0432\u0435\u0442"
   m_TagString: Untagged
@@ -392681,8 +392688,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 1
-  m_Color: {r: 1, g: 0.948, b: 0.84, a: 1}
-  m_Intensity: 1.16
+  m_Color: {r: 1, g: 0.91, b: 0.75, a: 1}
+  m_Intensity: 1.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -392690,8 +392697,8 @@ Light:
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
-    m_CustomResolution: 4096
-    m_Strength: 0.86
+    m_CustomResolution: 2048
+    m_Strength: 0.72
     m_Bias: 0.065
     m_NormalBias: 0.23
     m_NearPlane: 0.3
@@ -392744,13 +392751,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321379541}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2833601, y: 0.46559563, z: -0.16031744, w: 0.8229375}
+  m_LocalRotation: {x: 0.166071696, y: 0.483376352, z: -0.0939588448, w: 0.85436481}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 22, y: 59, z: 0}
 --- !u!1001 &1321494722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -698125,1082 +698132,1082 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StreetWindblownLeaves
   paths:
   - renderer: {fileID: 1744563383}
-    from: {x: -23.549934, y: 2.6076844, z: 14.920925}
-    to: {x: -21.203598, y: 0.29850957, z: 15.8439865}
-    period: 7.438078
-    phase: 2.3844657
-    flightTime: 5.2142625
+    from: {x: 15.367096, y: 6.2306973, z: 23.270541}
+    to: {x: 16.761096, y: 0.05500001, z: 24.239541}
+    period: 34
+    phase: 0
+    flightTime: 5.866912
     scale: 1.4431044
   - renderer: {fileID: 1252175451}
     from: {x: -25.43483, y: 4.80153, z: 15.790933}
     to: {x: -22.710512, y: 0.29966015, z: 16.321325}
-    period: 10.072783
+    period: 0
     phase: 5.9361014
     flightTime: 3.5911279
     scale: 1.044602
   - renderer: {fileID: 504191053}
     from: {x: -28.033703, y: 4.17805, z: 14.143784}
     to: {x: -25.651505, y: 0.30274934, z: 15.544786}
-    period: 7.390404
+    period: 0
     phase: 4.1738706
     flightTime: 4.367467
     scale: 1.4099779
   - renderer: {fileID: 21028506}
-    from: {x: -25.091116, y: 3.3631976, z: 11.703593}
-    to: {x: -22.569633, y: 0.30090925, z: 13.529826}
-    period: 9.122258
-    phase: 6.7339935
-    flightTime: 4.99404
+    from: {x: 29.664035, y: 5.7243101, z: 0.55457307}
+    to: {x: 31.058035, y: 0.05500001, z: 1.5235731}
+    period: 55
+    phase: 35.193
+    flightTime: 5.385845
     scale: 1.4592667
   - renderer: {fileID: 1774753688}
     from: {x: -21.43574, y: 4.096152, z: 16.49274}
     to: {x: -20.28452, y: 0.26000002, z: 18.235914}
-    period: 8.085386
+    period: 0
     phase: 3.1494813
     flightTime: 4.7186723
     scale: 0.7995073
   - renderer: {fileID: 1045255882}
     from: {x: -28.716625, y: 2.9078875, z: 11.292507}
     to: {x: -26.766098, y: 0.30498782, z: 13.088651}
-    period: 9.000872
+    period: 0
     phase: 0.91525096
     flightTime: 4.7094426
     scale: 1.4248222
   - renderer: {fileID: 657923242}
-    from: {x: -26.290293, y: 4.8001246, z: 10.879092}
-    to: {x: -23.625948, y: 0.30243257, z: 12.413176}
-    period: 8.494462
-    phase: 1.7401567
-    flightTime: 4.038852
+    from: {x: 32.833935, y: 5.9693453, z: 36.492575}
+    to: {x: 34.227935, y: 0.085635714, z: 37.461575}
+    period: 53
+    phase: 17.386
+    flightTime: 5.589524
     scale: 1.0171399
   - renderer: {fileID: 1225014420}
     from: {x: -26.929165, y: 3.0649462, z: 18.390762}
     to: {x: -24.67942, y: 0.29997787, z: 19.345491}
-    period: 7.5071793
+    period: 0
     phase: 5.296649
     flightTime: 4.223982
     scale: 0.9689088
   - renderer: {fileID: 1739984004}
     from: {x: -28.047092, y: 3.3993433, z: 12.367659}
     to: {x: -26.153223, y: 0.30432755, z: 13.283934}
-    period: 8.734571
+    period: 0
     phase: 8.042556
     flightTime: 3.8895981
     scale: 1.3574136
   - renderer: {fileID: 1791915436}
-    from: {x: -22.3238, y: 3.399524, z: 16.782751}
-    to: {x: -20.612347, y: 0.26000002, z: 17.399145}
-    period: 7.782938
-    phase: 2.0483913
-    flightTime: 5.128851
+    from: {x: 25.997024, y: 7.3698893, z: 49.424019}
+    to: {x: 27.391024, y: 0.05500001, z: 50.393019}
+    period: 51
+    phase: 3.579
+    flightTime: 6.949145
     scale: 1.3747443
   - renderer: {fileID: 511575151}
     from: {x: -22.310585, y: 4.40654, z: 16.206514}
     to: {x: -20.601929, y: 0.26000002, z: 16.729073}
-    period: 9.744952
+    period: 0
     phase: 7.0179358
     flightTime: 4.024128
     scale: 0.80481184
   - renderer: {fileID: 2048557271}
     from: {x: -10.8189535, y: 3.0162833, z: -14.103576}
     to: {x: -8.242605, y: 0.30493915, z: -13.217379}
-    period: 10.450853
+    period: 0
     phase: 3.0242438
     flightTime: 4.4426513
     scale: 1.0518644
   - renderer: {fileID: 1576665585}
     from: {x: -7.444331, y: 4.4363775, z: -16.250269}
     to: {x: -5.305029, y: 0.29929733, z: -15.364973}
-    period: 9.698713
+    period: 0
     phase: 6.2990994
     flightTime: 4.3267107
     scale: 1.1535237
   - renderer: {fileID: 1584743981}
-    from: {x: -7.1901226, y: 2.6868467, z: -15.1698265}
-    to: {x: -5.310287, y: 0.29874584, z: -14.238623}
-    period: 8.451471
-    phase: 3.18765
-    flightTime: 5.3749247
+    from: {x: 16.157365, y: 7.2805631, z: -40.436142}
+    to: {x: 17.551365, y: 0.080783251, z: -39.467142}
+    period: 56
+    phase: 40.503
+    flightTime: 6.839791
     scale: 1.2590333
   - renderer: {fileID: 417303537}
     from: {x: -7.7880626, y: 3.929425, z: -15.74975}
     to: {x: -6.1478972, y: 0.29955724, z: -14.321207}
-    period: 7.106362
+    period: 0
     phase: 3.7106214
     flightTime: 4.3394136
     scale: 1.4124848
   - renderer: {fileID: 1755966933}
     from: {x: -15.2057085, y: 4.4885235, z: -12.1113205}
     to: {x: -13.37656, y: 0.30460876, z: -11.084299}
-    period: 10.321886
+    period: 0
     phase: 9.505775
     flightTime: 4.234454
     scale: 1.3035053
   - renderer: {fileID: 1359630547}
-    from: {x: -13.107221, y: 3.4722037, z: -12.092933}
-    to: {x: -10.5972, y: 0.30190444, z: -10.785963}
-    period: 8.220631
-    phase: 2.1532998
-    flightTime: 5.1320214
+    from: {x: -46.049587, y: 5.4487928, z: -62.81679}
+    to: {x: -44.655587, y: 0.05500001, z: -61.84779}
+    period: 54
+    phase: 25.696
+    flightTime: 5.124103
     scale: 0.86035544
   - renderer: {fileID: 515574502}
     from: {x: -10.5995245, y: 4.706623, z: -14.864535}
     to: {x: -9.40199, y: 0.3023622, z: -13.939079}
-    period: 7.8996077
+    period: 0
     phase: 2.2375855
     flightTime: 4.3733835
     scale: 1.0417315
   - renderer: {fileID: 342658397}
     from: {x: -15.044439, y: 4.3610506, z: -14.341322}
     to: {x: -13.3809185, y: 0.3056771, z: -13.239233}
-    period: 8.242242
+    period: 0
     phase: 7.167073
     flightTime: 4.8408785
     scale: 1.3964989
   - renderer: {fileID: 712146187}
-    from: {x: -14.571356, y: 3.475743, z: -11.785046}
-    to: {x: -13.118295, y: 0.30412376, z: -10.583372}
-    period: 9.527558
-    phase: 6.8408566
-    flightTime: 3.756613
+    from: {x: -69.661012, y: 4.2757633, z: -41.74272}
+    to: {x: -68.267012, y: 0.05500001, z: -40.77372}
+    period: 52
+    phase: 14.889
+    flightTime: 4.7
     scale: 1.0544668
   - renderer: {fileID: 1258328024}
     from: {x: -8.016923, y: 4.307367, z: -16.01258}
     to: {x: -5.165749, y: 0.299119, z: -15.263374}
-    period: 9.142635
+    period: 0
     phase: 4.937905
     flightTime: 3.74081
     scale: 0.87163734
   - renderer: {fileID: 1603975405}
     from: {x: -11.524701, y: 3.3644981, z: -11.39308}
     to: {x: -8.842269, y: 0.30030185, z: -10.8101015}
-    period: 9.647661
+    period: 0
     phase: 6.6358466
     flightTime: 4.275847
     scale: 1.279864
   - renderer: {fileID: 1808444766}
-    from: {x: 10.525932, y: 4.409936, z: 14.202457}
-    to: {x: 11.780357, y: 0.26000002, z: 14.980696}
-    period: 6.5484676
-    phase: 4.804682
-    flightTime: 4.3229456
+    from: {x: 24.75942, y: 7.4244316, z: 67.292617}
+    to: {x: 26.15342, y: 0.05500001, z: 68.261617}
+    period: 50
+    phase: 8.082
+    flightTime: 7.00096
     scale: 1.2099627
   - renderer: {fileID: 1871827014}
     from: {x: 10.792956, y: 4.197545, z: 17.83796}
     to: {x: 12.460565, y: 0.26000002, z: 18.458555}
-    period: 6.8591585
+    period: 0
     phase: 5.514731
     flightTime: 4.623272
     scale: 1.0755541
   - renderer: {fileID: 1528423163}
     from: {x: 10.801763, y: 3.2696474, z: 11.443686}
     to: {x: 11.878159, y: 0.26000002, z: 13.310468}
-    period: 10.380219
+    period: 0
     phase: 4.050712
     flightTime: 5.258837
     scale: 1.4354368
   - renderer: {fileID: 444976165}
     from: {x: 8.36108, y: 4.2579403, z: 15.160166}
     to: {x: 9.920894, y: 0.41000003, z: 16.063087}
-    period: 8.619993
+    period: 0
     phase: 4.6008244
     flightTime: 5.2598886
     scale: 1.0631417
   - renderer: {fileID: 149002198}
-    from: {x: 5.820294, y: 3.705546, z: 14.814512}
-    to: {x: 7.103855, y: 0.26000002, z: 16.659718}
-    period: 8.057908
-    phase: 0.22852637
-    flightTime: 5.002201
+    from: {x: 14.784718, y: 6.0886903, z: 74.381141}
+    to: {x: 16.178718, y: 0.14075703, z: 75.350141}
+    period: 55
+    phase: 30.006
+    flightTime: 5.650537
     scale: 0.89451003
   - renderer: {fileID: 575851994}
     from: {x: 10.158233, y: 3.3031797, z: 12.210547}
     to: {x: 12.6930895, y: 0.26000002, z: 13.81269}
-    period: 9.912834
+    period: 0
     phase: 3.4920604
     flightTime: 5.310269
     scale: 0.8933538
   - renderer: {fileID: 299503855}
     from: {x: 9.4912815, y: 4.609556, z: 14.494067}
     to: {x: 12.271642, y: 0.26000002, z: 15.258352}
-    period: 9.314634
+    period: 0
     phase: 6.5083294
     flightTime: 5.493938
     scale: 1.2228063
   - renderer: {fileID: 936682562}
-    from: {x: 10.594256, y: 4.1673393, z: 15.197778}
-    to: {x: 12.585491, y: 0.26000002, z: 15.8174515}
-    period: 7.767646
-    phase: 3.7028255
-    flightTime: 5.56431
+    from: {x: 37.322949, y: 5.3793721, z: 68.990598}
+    to: {x: 38.716949, y: 0.05500001, z: 69.959598}
+    period: 53
+    phase: 22.199
+    flightTime: 5.058154
     scale: 1.3605676
   - renderer: {fileID: 82169730}
     from: {x: 6.824393, y: 2.4845316, z: 17.326845}
     to: {x: 7.7687607, y: 0.26000002, z: 18.11589}
-    period: 9.431144
+    period: 0
     phase: 1.7700574
     flightTime: 5.421987
     scale: 0.989012
   - renderer: {fileID: 1922573417}
     from: {x: 9.535949, y: 4.731267, z: 17.460012}
     to: {x: 10.691996, y: 0.26000002, z: 19.000824}
-    period: 6.9376755
+    period: 0
     phase: 6.935717
     flightTime: 4.47238
     scale: 1.4247593
   - renderer: {fileID: 1363075792}
-    from: {x: 11.150728, y: 3.4903545, z: 14.050192}
-    to: {x: 12.861729, y: 0.26000002, z: 14.784164}
-    period: 10.10716
-    phase: 4.5600166
-    flightTime: 4.4241357
+    from: {x: 18.283848, y: 6.7497013, z: -68.598809}
+    to: {x: 19.677848, y: 0.099095638, z: -67.629809}
+    period: 51
+    phase: 18.392
+    flightTime: 6.318075
     scale: 1.3414708
   - renderer: {fileID: 1829486902}
     from: {x: 18.844913, y: 3.5607986, z: -39.891922}
     to: {x: 19.877354, y: 0.41000003, z: -39.156635}
-    period: 9.9549055
+    period: 0
     phase: 7.3877773
     flightTime: 5.3207393
     scale: 0.94600326
   - renderer: {fileID: 477978309}
     from: {x: 15.967798, y: 4.5897393, z: -38.51522}
     to: {x: 17.99514, y: 0.26000002, z: -36.804844}
-    period: 10.101053
+    period: 0
     phase: 9.481526
     flightTime: 3.8272226
     scale: 1.2923981
   - renderer: {fileID: 2131464666}
-    from: {x: 16.151438, y: 4.5948887, z: -38.91282}
-    to: {x: 18.50984, y: 0.26000002, z: -38.492657}
-    period: 7.2697453
-    phase: 6.544786
-    flightTime: 5.010691
+    from: {x: 32.626378, y: 7.0629085, z: -101.98351}
+    to: {x: 34.020378, y: 0.10306371, z: -101.01451}
+    period: 49
+    phase: 18.585
+    flightTime: 6.611853
     scale: 1.1616441
   - renderer: {fileID: 246827005}
     from: {x: 14.197175, y: 2.9719534, z: -35.111805}
     to: {x: 15.115995, y: 0.26000002, z: -33.64083}
-    period: 9.322533
+    period: 0
     phase: 0.5056831
     flightTime: 3.6105328
     scale: 0.8253901
   - renderer: {fileID: 882422758}
     from: {x: 18.284817, y: 3.5432577, z: -37.771584}
     to: {x: 19.345825, y: 0.26000002, z: -36.55892}
-    period: 8.865849
+    period: 0
     phase: 5.8307796
     flightTime: 5.261128
     scale: 1.3809128
   - renderer: {fileID: 133995818}
     from: {x: 17.475216, y: 4.0634174, z: -36.960964}
     to: {x: 19.696249, y: 0.26000002, z: -35.234703}
-    period: 7.803898
+    period: 0
     phase: 7.286038
     flightTime: 4.634177
     scale: 1.3741728
   - renderer: {fileID: 1796430825}
-    from: {x: 18.568165, y: 4.59929, z: -41.28147}
-    to: {x: 21.26527, y: 0.40110755, z: -40.410637}
-    period: 9.777372
-    phase: 7.835815
-    flightTime: 5.2503777
+    from: {x: -48.219659, y: 5.2469072, z: -74.605624}
+    to: {x: -46.825659, y: 0.05500001, z: -73.636624}
+    period: 54
+    phase: 25.509
+    flightTime: 4.932312
     scale: 0.8185639
   - renderer: {fileID: 639866621}
     from: {x: 13.759664, y: 2.5975685, z: -43.148888}
     to: {x: 15.277144, y: 0.26000002, z: -41.791504}
-    period: 6.654437
+    period: 0
     phase: 5.432736
     flightTime: 3.8450298
     scale: 0.96517247
   - renderer: {fileID: 1587394907}
     from: {x: 11.159811, y: 2.8255854, z: -40.218555}
     to: {x: 12.076563, y: 0.26000002, z: -38.726154}
-    period: 8.606663
+    period: 0
     phase: 0.070333436
     flightTime: 4.1711416
     scale: 1.0346925
   - renderer: {fileID: 1216643324}
-    from: {x: 12.757882, y: 4.6461897, z: -42.05258}
-    to: {x: 15.011, y: 0.41000003, z: -41.01815}
-    period: 8.779225
-    phase: 3.5466697
-    flightTime: 5.208449
+    from: {x: -50.953126, y: 3.1061815, z: -73.378546}
+    to: {x: -49.559126, y: 0.05500001, z: -72.409546}
+    period: 52
+    phase: 24.702
+    flightTime: 4.7
     scale: 1.2704219
   - renderer: {fileID: 1029571701}
     from: {x: 17.207853, y: 4.290941, z: -37.012505}
     to: {x: 18.556086, y: 0.26000002, z: -35.131268}
-    period: 9.170574
+    period: 0
     phase: 1.7262286
     flightTime: 4.7135186
     scale: 1.1353089
   - renderer: {fileID: 1855113864}
     from: {x: 29.559364, y: 3.6717632, z: 39.590935}
     to: {x: 31.698303, y: 0.296, z: 40.38675}
-    period: 9.502413
+    period: 0
     phase: 9.145125
     flightTime: 5.274682
     scale: 1.4297955
   - renderer: {fileID: 687329039}
-    from: {x: 32.007088, y: 2.8402236, z: 34.483242}
-    to: {x: 34.271946, y: 0.61800003, z: 35.34351}
-    period: 7.27356
-    phase: 2.1709774
-    flightTime: 5.2909346
+    from: {x: -76.047727, y: 3.4531203, z: -33.34288}
+    to: {x: -74.653727, y: 0.05500001, z: -32.37388}
+    period: 50
+    phase: 27.895
+    flightTime: 4.7
     scale: 1.3815047
   - renderer: {fileID: 785087641}
     from: {x: 28.666145, y: 2.9882507, z: 41.72225}
     to: {x: 29.72113, y: 0.296, z: 43.230656}
-    period: 7.591759
+    period: 0
     phase: 2.4096296
     flightTime: 3.62533
     scale: 1.074573
   - renderer: {fileID: 851190894}
     from: {x: 29.353699, y: 4.544555, z: 33.735714}
     to: {x: 31.13996, y: 0.5830027, z: 35.087612}
-    period: 10.401651
+    period: 0
     phase: 6.5112276
     flightTime: 5.4445076
     scale: 1.0931768
   - renderer: {fileID: 381289269}
-    from: {x: 25.516933, y: 2.51907, z: 38.982334}
-    to: {x: 27.525581, y: 0.296, z: 40.46604}
-    period: 8.299519
-    phase: 5.6649575
-    flightTime: 3.5645242
+    from: {x: -90.453681, y: 3.3934271, z: -6.9956809}
+    to: {x: -89.059681, y: 0.05500001, z: -6.0266809}
+    period: 48
+    phase: 35.088
+    flightTime: 4.7
     scale: 1.2485316
   - renderer: {fileID: 1117291604}
     from: {x: 32.7774, y: 3.49405, z: 40.43447}
     to: {x: 35.13151, y: 0.296, z: 41.80204}
-    period: 9.80443
+    period: 0
     phase: 4.419065
     flightTime: 4.227711
     scale: 1.423603
   - renderer: {fileID: 612834696}
     from: {x: 28.650728, y: 3.3603985, z: 36.429703}
     to: {x: 31.379135, y: 0.296, z: 37.99837}
-    period: 8.535715
+    period: 0
     phase: 4.7035327
     flightTime: 3.7967336
     scale: 0.9858323
   - renderer: {fileID: 1926942474}
     from: {x: 29.906527, y: 3.046605, z: 38.505604}
     to: {x: 31.89332, y: 0.296, z: 40.22172}
-    period: 8.640894
+    period: 0
     phase: 4.080801
     flightTime: 5.5632496
     scale: 0.86480284
   - renderer: {fileID: 284725710}
-    from: {x: 30.547554, y: 4.2275147, z: 38.434017}
-    to: {x: 32.0048, y: 0.296, z: 39.74872}
-    period: 6.5698833
-    phase: 2.4765654
-    flightTime: 4.816734
+    from: {x: -86.036415, y: 2.6318505, z: -18.889358}
+    to: {x: -84.642415, y: 0.09870449, z: -17.920358}
+    period: 53
+    phase: 27.012
+    flightTime: 4.7
     scale: 1.1592052
   - renderer: {fileID: 22865057}
     from: {x: 31.691603, y: 2.8673067, z: 41.406307}
     to: {x: 33.709866, y: 0.296, z: 42.731842}
-    period: 8.134199
+    period: 0
     phase: 0.23538695
     flightTime: 3.849846
     scale: 1.1938131
   - renderer: {fileID: 1211352835}
     from: {x: 29.398615, y: 2.8374352, z: 36.416565}
     to: {x: 30.7484, y: 0.296, z: 36.884655}
-    period: 10.08991
+    period: 0
     phase: 1.4850854
     flightTime: 3.6620247
     scale: 1.1009157
   - renderer: {fileID: 1935815768}
-    from: {x: 44.95234, y: 3.1260476, z: 35.231647}
-    to: {x: 46.90132, y: 0.296, z: 35.919395}
-    period: 8.350084
-    phase: 5.8567266
-    flightTime: 5.1186237
+    from: {x: 116.42027, y: 4.9895142, z: 146.99231}
+    to: {x: 117.81427, y: 0.05500001, z: 147.96131}
+    period: 51
+    phase: 33.205
+    flightTime: 4.7
     scale: 1.3213222
   - renderer: {fileID: 447832215}
     from: {x: 49.443542, y: 3.679855, z: 42.00644}
     to: {x: 51.477097, y: 0.6169709, z: 43.75154}
-    period: 9.549266
+    period: 0
     phase: 9.08397
     flightTime: 5.049935
     scale: 0.9467493
   - renderer: {fileID: 1472453817}
     from: {x: 50.09464, y: 4.783564, z: 43.200134}
     to: {x: 51.744465, y: 0.613979, z: 43.802402}
-    period: 6.8679686
+    period: 0
     phase: 6.3643737
     flightTime: 5.4444227
     scale: 1.2333016
   - renderer: {fileID: 14120895}
-    from: {x: 51.43844, y: 3.5362785, z: 40.157166}
-    to: {x: 53.096508, y: 0.296, z: 41.128883}
-    period: 9.193906
-    phase: 5.0156064
-    flightTime: 3.9858072
+    from: {x: 106.98312, y: 6.4362012, z: 155.62703}
+    to: {x: 108.37712, y: 0.05500001, z: 156.59603}
+    period: 49
+    phase: 43.398
+    flightTime: 6.062141
     scale: 1.1643338
   - renderer: {fileID: 1691463019}
     from: {x: 43.9852, y: 4.6235, z: 40.041843}
     to: {x: 46.3318, y: 0.296, z: 40.58676}
-    period: 8.152418
+    period: 0
     phase: 4.993255
     flightTime: 4.2582774
     scale: 0.99556506
   - renderer: {fileID: 1110569440}
     from: {x: 47.42696, y: 2.658852, z: 40.309418}
     to: {x: 49.134205, y: 0.296, z: 40.842567}
-    period: 6.5430956
+    period: 0
     phase: 1.3959322
     flightTime: 4.408251
     scale: 0.96030706
   - renderer: {fileID: 1426085989}
-    from: {x: 45.823032, y: 3.7488632, z: 41.544746}
-    to: {x: 48.326187, y: 0.58665335, z: 42.14907}
-    period: 7.646837
-    phase: 2.9590955
-    flightTime: 5.37593
+    from: {x: 113.58937, y: 6.5601508, z: 156.33746}
+    to: {x: 114.98337, y: 0.05500001, z: 157.30646}
+    period: 47
+    phase: 10.591
+    flightTime: 6.179893
     scale: 1.0188138
   - renderer: {fileID: 1271264491}
     from: {x: 45.16904, y: 3.678602, z: 36.39523}
     to: {x: 47.905266, y: 0.296, z: 36.970608}
-    period: 9.087806
+    period: 0
     phase: 0.6612553
     flightTime: 5.519798
     scale: 1.1352041
   - renderer: {fileID: 781261538}
     from: {x: 47.89156, y: 4.2329497, z: 41.36487}
     to: {x: 50.561363, y: 0.58734894, z: 42.179314}
-    period: 8.248969
+    period: 0
     phase: 4.458023
     flightTime: 5.4859047
     scale: 1.2756428
   - renderer: {fileID: 1687053583}
     from: {x: 44.20734, y: 3.270446, z: 39.7285}
     to: {x: 46.004368, y: 0.296, z: 40.459347}
-    period: 8.902647
+    period: 0
     phase: 3.1692283
     flightTime: 4.50052
     scale: 0.98448294
   - renderer: {fileID: 1135328777}
-    from: {x: 44.680794, y: 4.65809, z: 37.081215}
-    to: {x: 45.971714, y: 0.296, z: 37.592777}
-    period: 7.093889
-    phase: 2.1169639
-    flightTime: 5.0601025
+    from: {x: 142.35388, y: 5.0949561, z: 140.5803}
+    to: {x: 143.74788, y: 0.05500001, z: 141.5493}
+    period: 52
+    phase: 34.515
+    flightTime: 4.787958
     scale: 0.96051013
   - renderer: {fileID: 1797374468}
     from: {x: -105.953125, y: 3.5212576, z: 153.06984}
     to: {x: -104.32445, y: 0.26000002, z: 154.36351}
-    period: 8.731291
+    period: 0
     phase: 2.8636596
     flightTime: 4.14804
     scale: 1.3938242
   - renderer: {fileID: 1432614601}
     from: {x: -111.32233, y: 3.381237, z: 160.94498}
     to: {x: -109.05248, y: 0.26000002, z: 161.83533}
-    period: 9.879788
+    period: 0
     phase: 7.275774
     flightTime: 5.553542
     scale: 0.78679305
   - renderer: {fileID: 1569673651}
-    from: {x: -109.40914, y: 4.8075, z: 155.3944}
-    to: {x: -107.04484, y: 0.26000002, z: 156.73325}
-    period: 10.402929
-    phase: 5.2625504
-    flightTime: 4.0411806
+    from: {x: -109.33789, y: 5.2276994, z: 163.0624}
+    to: {x: -107.94389, y: 0.05500001, z: 164.0314}
+    period: 50
+    phase: 47.708
+    flightTime: 4.914064
     scale: 1.2898018
   - renderer: {fileID: 1975235389}
     from: {x: -108.44254, y: 4.405717, z: 158.92729}
     to: {x: -106.50944, y: 0.26000002, z: 160.23038}
-    period: 8.0829525
+    period: 0
     phase: 6.406953
     flightTime: 4.3823967
     scale: 1.363819
   - renderer: {fileID: 1965652662}
     from: {x: -109.522575, y: 3.4706957, z: 153.42981}
     to: {x: -107.80171, y: 0.26000002, z: 153.91574}
-    period: 7.1460695
+    period: 0
     phase: 2.236279
     flightTime: 5.206394
     scale: 1.2178009
   - renderer: {fileID: 786747396}
-    from: {x: -105.76288, y: 4.411125, z: 152.98393}
-    to: {x: -104.47778, y: 0.26000002, z: 153.73099}
-    period: 10.337107
-    phase: 0.26519674
-    flightTime: 5.0537577
+    from: {x: -101.04358, y: 5.9228431, z: 147.48669}
+    to: {x: -99.649576, y: 0.05500001, z: 148.45569}
+    period: 48
+    phase: 16.901
+    flightTime: 5.574451
     scale: 1.1807793
   - renderer: {fileID: 2111486154}
     from: {x: -113.53859, y: 4.5919213, z: 154.49748}
     to: {x: -112.63094, y: 0.46134168, z: 155.80167}
-    period: 7.4715447
+    period: 0
     phase: 6.6986003
     flightTime: 4.7224917
     scale: 0.927791
   - renderer: {fileID: 1820167658}
     from: {x: -107.836266, y: 4.5305405, z: 157.05048}
     to: {x: -106.78885, y: 0.26000002, z: 158.22101}
-    period: 8.545676
+    period: 0
     phase: 7.375016
     flightTime: 4.698324
     scale: 0.9928131
   - renderer: {fileID: 974926148}
-    from: {x: -110.43223, y: 2.6299937, z: 160.28493}
-    to: {x: -108.41769, y: 0.26000002, z: 161.54953}
-    period: 9.725428
-    phase: 5.5876684
-    flightTime: 3.9217234
+    from: {x: -111.72031, y: 5.8428994, z: 169.65017}
+    to: {x: -110.32631, y: 0.05500001, z: 170.61917}
+    period: 46
+    phase: 40.094
+    flightTime: 5.498504
     scale: 1.1092919
   - renderer: {fileID: 561922668}
     from: {x: -107.67529, y: 3.4615197, z: 157.38918}
     to: {x: -106.13151, y: 0.26000002, z: 159.06158}
-    period: 8.734896
+    period: 0
     phase: 3.6378696
     flightTime: 4.696333
     scale: 1.2881482
   - renderer: {fileID: 151193250}
     from: {x: -110.76927, y: 4.234229, z: 159.71481}
     to: {x: -108.987366, y: 0.26000002, z: 161.20305}
-    period: 8.282367
+    period: 0
     phase: 1.107876
     flightTime: 3.9797776
     scale: 1.2739315
   - renderer: {fileID: 1393603830}
     from: {x: -42.731693, y: 2.4534185, z: -48.504898}
     to: {x: -41.344242, y: 0.26000002, z: -47.424957}
-    period: 9.955386
+    period: 0
     phase: 6.489428
     flightTime: 4.6635733
     scale: 1.2701609
   - renderer: {fileID: 1439290906}
-    from: {x: -43.563324, y: 3.8029943, z: -56.114105}
-    to: {x: -42.056534, y: 0.305, z: -54.261456}
-    period: 9.152565
-    phase: 3.8124552
-    flightTime: 3.525004
+    from: {x: -56.155235, y: 6.1759575, z: -64.004108}
+    to: {x: -54.761235, y: 0.05500001, z: -63.035108}
+    period: 51
+    phase: 48.018
+    flightTime: 5.81491
     scale: 1.3896098
   - renderer: {fileID: 986861803}
     from: {x: -43.476307, y: 2.6688905, z: -51.272175}
     to: {x: -42.37104, y: 0.26000002, z: -50.25865}
-    period: 9.397001
+    period: 0
     phase: 1.0669351
     flightTime: 3.7345364
     scale: 1.0809971
   - renderer: {fileID: 1082345800}
     from: {x: -40.804825, y: 3.0122607, z: -55.61211}
     to: {x: -38.050694, y: 0.305, z: -54.770493}
-    period: 7.7680874
+    period: 0
     phase: 4.030312
     flightTime: 4.4618998
     scale: 0.9135702
   - renderer: {fileID: 65054691}
-    from: {x: -40.6255, y: 4.671742, z: -49.094067}
-    to: {x: -39.570923, y: 0.26000002, z: -47.339264}
-    period: 9.039071
-    phase: 1.5626569
-    flightTime: 5.3693714
+    from: {x: -64.8552, y: 3.8849084, z: -54.440505}
+    to: {x: -63.4612, y: 0.05840015, z: -53.471505}
+    period: 49
+    phase: 19.211
+    flightTime: 4.7
     scale: 1.2586346
   - renderer: {fileID: 1071252941}
     from: {x: -44.30069, y: 3.1335797, z: -52.196415}
     to: {x: -42.273155, y: 0.26000002, z: -50.948433}
-    period: 9.042283
+    period: 0
     phase: 0.089724615
     flightTime: 4.933949
     scale: 1.3706901
   - renderer: {fileID: 113218200}
     from: {x: -40.355392, y: 3.8474839, z: -52.38844}
     to: {x: -38.384098, y: 0.26000002, z: -50.743687}
-    period: 7.4100122
+    period: 0
     phase: 1.6586373
     flightTime: 5.4425397
     scale: 1.2531407
   - renderer: {fileID: 1679095448}
-    from: {x: -42.1447, y: 3.5140445, z: -54.095272}
-    to: {x: -39.682518, y: 0.26000002, z: -52.215714}
-    period: 6.9478
-    phase: 3.2426395
-    flightTime: 4.600738
+    from: {x: -59.692492, y: 5.6907512, z: -65.951893}
+    to: {x: -58.298492, y: 0.055001362, z: -64.982893}
+    period: 47
+    phase: 45.404
+    flightTime: 5.353962
     scale: 0.89832515
   - renderer: {fileID: 1419580279}
     from: {x: -41.25491, y: 2.9567263, z: -50.643845}
     to: {x: -39.087097, y: 0.26000002, z: -49.542046}
-    period: 7.4041095
+    period: 0
     phase: 0.15086706
     flightTime: 4.861858
     scale: 1.211476
   - renderer: {fileID: 784524248}
     from: {x: -40.741657, y: 3.1177764, z: -53.66661}
     to: {x: -38.30134, y: 0.26000002, z: -52.829376}
-    period: 8.73077
+    period: 0
     phase: 3.9145286
     flightTime: 4.74958
     scale: 0.78218615
   - renderer: {fileID: 1132738980}
-    from: {x: -42.61729, y: 4.065476, z: -55.762054}
-    to: {x: -41.25606, y: 0.305, z: -54.08738}
-    period: 6.6028266
-    phase: 6.199874
-    flightTime: 4.460005
+    from: {x: -64.415808, y: 2.5334487, z: -57.772663}
+    to: {x: -63.021808, y: 0.060458726, z: -56.803663}
+    period: 45
+    phase: 30.597
+    flightTime: 4.7
     scale: 1.2109929
   - renderer: {fileID: 1393321653}
     from: {x: 124.45671, y: 3.054562, z: 7.669443}
     to: {x: 125.73816, y: 0.3564309, z: 8.107154}
-    period: 8.323705
+    period: 0
     phase: 1.8203667
     flightTime: 4.1502004
     scale: 1.3304302
   - renderer: {fileID: 2053114042}
     from: {x: 121.34845, y: 4.485953, z: 12.058113}
     to: {x: 122.695244, y: 0.305, z: 13.265129}
-    period: 6.9349403
+    period: 0
     phase: 5.5891066
     flightTime: 4.4693794
     scale: 1.4215076
   - renderer: {fileID: 1227129326}
     from: {x: 122.793045, y: 3.4149477, z: 4.5392966}
     to: {x: 124.03272, y: 0.3443838, z: 5.8497443}
-    period: 7.3303924
+    period: 0
     phase: 7.216759
     flightTime: 5.2428546
     scale: 0.8437595
   - renderer: {fileID: 1018529196}
-    from: {x: 119.87662, y: 3.411549, z: 6.0377636}
-    to: {x: 121.29024, y: 0.305, z: 6.939371}
-    period: 6.553359
-    phase: 0.21564753
-    flightTime: 4.890073
+    from: {x: 152.39854, y: 6.8094819, z: 135.58167}
+    to: {x: 153.79254, y: 0.05677107, z: 136.55067}
+    period: 50
+    phase: 17.521
+    flightTime: 6.415075
     scale: 1.2555819
   - renderer: {fileID: 1034063078}
     from: {x: 121.48146, y: 4.801436, z: 9.869683}
     to: {x: 123.80519, y: 0.26000002, z: 11.453098}
-    period: 10.171595
+    period: 0
     phase: 4.1826954
     flightTime: 5.4763827
     scale: 1.1841294
   - renderer: {fileID: 1829490568}
     from: {x: 125.25175, y: 3.1681204, z: 9.641278}
     to: {x: 126.800545, y: 0.26000002, z: 11.114456}
-    period: 8.319094
+    period: 0
     phase: 1.7346433
     flightTime: 4.910277
     scale: 1.264572
   - renderer: {fileID: 1058623400}
-    from: {x: 123.237724, y: 4.6226597, z: 5.4312067}
-    to: {x: 125.16883, y: 0.41836593, z: 6.950333}
-    period: 8.092831
-    phase: 1.8547375
-    flightTime: 4.4113364
+    from: {x: 157.22088, y: 5.6012392, z: 141.10013}
+    to: {x: 158.61488, y: 0.05500001, z: 142.06913}
+    period: 48
+    phase: 46.714
+    flightTime: 5.268927
     scale: 0.83710694
   - renderer: {fileID: 231839987}
     from: {x: 122.74858, y: 3.7168715, z: 5.523872}
     to: {x: 124.33821, y: 0.3582267, z: 6.874506}
-    period: 8.43156
+    period: 0
     phase: 2.2831876
     flightTime: 4.374663
     scale: 1.4570638
   - renderer: {fileID: 1690736629}
     from: {x: 118.32096, y: 3.8689957, z: 7.4719477}
     to: {x: 120.78862, y: 0.305, z: 7.8847556}
-    period: 8.330173
+    period: 0
     phase: 0.15713944
     flightTime: 5.2595935
     scale: 0.85856783
   - renderer: {fileID: 360244997}
-    from: {x: 123.665146, y: 3.7149088, z: 10.469321}
-    to: {x: 125.19246, y: 0.26000002, z: 11.7089615}
-    period: 9.835671
-    phase: 4.8813505
-    flightTime: 4.0894504
+    from: {x: 149.1452, y: 4.6725714, z: 144.33008}
+    to: {x: 150.5392, y: 0.05500001, z: 145.29908}
+    period: 46
+    phase: 33.907
+    flightTime: 4.7
     scale: 0.97213167
   - renderer: {fileID: 1935156308}
     from: {x: 117.74868, y: 4.740571, z: 5.4639235}
     to: {x: 120.123405, y: 0.305, z: 6.618984}
-    period: 9.78407
+    period: 0
     phase: 6.528724
     flightTime: 3.8962085
     scale: 1.0804343
   - renderer: {fileID: 1725036020}
     from: {x: 167.65578, y: 2.8904674, z: 98.46834}
     to: {x: 169.44247, y: 0.26000002, z: 99.32957}
-    period: 8.058676
+    period: 0
     phase: 4.9394417
     flightTime: 5.5504956
     scale: 0.8242795
   - renderer: {fileID: 1881161203}
-    from: {x: 166.36237, y: 2.5888362, z: 101.386154}
-    to: {x: 168.19269, y: 0.27514833, z: 102.33177}
-    period: 7.1471615
-    phase: 5.7219973
-    flightTime: 4.8675003
+    from: {x: 166.51077, y: 7.2566332, z: 143.15726}
+    to: {x: 167.90477, y: 0.05500001, z: 144.12626}
+    period: 44
+    phase: 29.1
+    flightTime: 6.841552
     scale: 1.3557054
   - renderer: {fileID: 459256632}
     from: {x: 167.65717, y: 3.63354, z: 104.638916}
     to: {x: 169.99466, y: 0.305, z: 105.912796}
-    period: 9.666058
+    period: 0
     phase: 1.508407
     flightTime: 5.134156
     scale: 1.3263333
   - renderer: {fileID: 424774060}
     from: {x: 173.25842, y: 3.5108242, z: 104.90585}
     to: {x: 174.23734, y: 0.305, z: 105.33118}
-    period: 9.131754
+    period: 0
     phase: 0.61085683
     flightTime: 3.868496
     scale: 0.929351
   - renderer: {fileID: 1114276261}
     from: {x: 174.02594, y: 4.662382, z: 100.02076}
     to: {x: 176.2073, y: 0.26000002, z: 101.80675}
-    period: 8.802475
+    period: 0
     phase: 6.767351
     flightTime: 4.3804655
     scale: 1.2803358
   - renderer: {fileID: 35463480}
-    from: {x: 172.7296, y: 4.076664, z: 102.22051}
-    to: {x: 173.87411, y: 0.305, z: 103.48387}
-    period: 7.8128557
-    phase: 7.6127844
-    flightTime: 4.423379
+    from: {x: 191.8292, y: 6.3409002, z: 139.20771}
+    to: {x: 193.2232, y: 0.05500001, z: 140.17671}
+    period: 49
+    phase: 44.024
+    flightTime: 5.971605
     scale: 0.9605681
   - renderer: {fileID: 56634756}
     from: {x: 171.9184, y: 2.7534413, z: 102.24552}
     to: {x: 174.23085, y: 0.305, z: 103.62327}
-    period: 7.9731007
+    period: 0
     phase: 4.674131
     flightTime: 5.041501
     scale: 0.7951349
   - renderer: {fileID: 1894080691}
     from: {x: 165.92065, y: 3.1304321, z: 97.21718}
     to: {x: 167.01395, y: 0.409, z: 98.827995}
-    period: 10.129497
+    period: 0
     phase: 9.5435705
     flightTime: 5.248174
     scale: 0.96023715
   - renderer: {fileID: 701316952}
-    from: {x: 166.38905, y: 4.052814, z: 97.17925}
-    to: {x: 167.96637, y: 0.28800002, z: 97.78363}
-    period: 7.71326
-    phase: 1.9390582
-    flightTime: 4.9936156
+    from: {x: 183.29127, y: 7.7378198, z: 150.72292}
+    to: {x: 184.68527, y: 0.05500001, z: 151.69192}
+    period: 47
+    phase: 33.217
+    flightTime: 7.298679
     scale: 0.80889463
   - renderer: {fileID: 1820176425}
     from: {x: 165.77357, y: 3.62217, z: 100.074615}
     to: {x: 167.36122, y: 0.26000002, z: 101.27058}
-    period: 7.7652006
+    period: 0
     phase: 1.8225093
     flightTime: 4.072062
     scale: 1.0096694
   - renderer: {fileID: 6186249}
     from: {x: 167.52989, y: 3.9239478, z: 101.45891}
     to: {x: 169.91618, y: 0.32093564, z: 102.397606}
-    period: 6.5407243
+    period: 0
     phase: 2.2570283
     flightTime: 3.9512582
     scale: 1.2107221
   - renderer: {fileID: 157946744}
-    from: {x: 174.68752, y: 4.340664, z: 36.84695}
-    to: {x: 176.83975, y: 0.26000002, z: 38.141113}
-    period: 7.428102
-    phase: 6.722917
-    flightTime: 4.4045396
+    from: {x: 172.25634, y: 7.1572679, z: 147.23815}
+    to: {x: 173.65034, y: 0.05500001, z: 148.20715}
+    period: 45
+    phase: 30.41
+    flightTime: 6.747154
     scale: 1.3041878
   - renderer: {fileID: 260657032}
     from: {x: 172.40395, y: 4.6772547, z: 29.851746}
     to: {x: 173.48012, y: 0.26000002, z: 30.87397}
-    period: 8.006911
+    period: 0
     phase: 3.4329822
     flightTime: 4.583944
     scale: 0.8006396
   - renderer: {fileID: 1020924594}
     from: {x: 177.72835, y: 2.5595455, z: 38.00623}
     to: {x: 180.1554, y: 0.26000002, z: 39.29088}
-    period: 9.383959
+    period: 0
     phase: 3.9091868
     flightTime: 4.1898003
     scale: 1.3180001
   - renderer: {fileID: 1164548745}
-    from: {x: 173.71007, y: 3.047696, z: 35.46114}
-    to: {x: 175.37222, y: 0.26000002, z: 36.833267}
-    period: 9.989765
-    phase: 1.0305403
-    flightTime: 5.10415
+    from: {x: 176.84216, y: 5.4268931, z: 148.45665}
+    to: {x: 178.23616, y: 0.05500001, z: 149.42565}
+    period: 43
+    phase: 35.603
+    flightTime: 5.103298
     scale: 1.2557317
   - renderer: {fileID: 568651834}
     from: {x: 177.33075, y: 3.4284418, z: 35.893665}
     to: {x: 179.07458, y: 0.26000002, z: 36.354244}
-    period: 9.628178
+    period: 0
     phase: 7.5340214
     flightTime: 4.400336
     scale: 1.0122116
   - renderer: {fileID: 930124296}
     from: {x: 174.4391, y: 2.88119, z: 34.82014}
     to: {x: 176.1232, y: 0.26000002, z: 36.47737}
-    period: 7.916596
+    period: 0
     phase: 0.25971863
     flightTime: 5.253338
     scale: 0.89578605
   - renderer: {fileID: 412887759}
     from: {x: 174.22112, y: 2.8208592, z: 38.21553}
     to: {x: 176.6419, y: 0.41182694, z: 39.973206}
-    period: 8.437201
+    period: 0
     phase: 3.7195308
     flightTime: 4.421433
     scale: 1.2973665
   - renderer: {fileID: 1859208987}
-    from: {x: 173.05212, y: 3.1379762, z: 35.430405}
-    to: {x: 175.43933, y: 0.26000002, z: 36.153873}
-    period: 7.256568
-    phase: 4.9135847
-    flightTime: 4.6370573
+    from: {x: 190.84413, y: 6.8611723, z: 151.27248}
+    to: {x: 192.23813, y: 0.05500001, z: 152.24148}
+    period: 48
+    phase: 28.527
+    flightTime: 6.465864
     scale: 1.3212596
   - renderer: {fileID: 683136695}
     from: {x: 174.93246, y: 4.327443, z: 37.381042}
     to: {x: 176.89877, y: 0.26000002, z: 39.253265}
-    period: 9.06765
+    period: 0
     phase: 3.441191
     flightTime: 5.3176007
     scale: 1.2785159
   - renderer: {fileID: 1015183411}
     from: {x: 173.13249, y: 3.8666704, z: 35.10192}
     to: {x: 174.96298, y: 0.26000002, z: 35.542313}
-    period: 8.256469
+    period: 0
     phase: 5.7974267
     flightTime: 4.7126412
     scale: 1.306118
   - renderer: {fileID: 2099340102}
-    from: {x: 177.77719, y: 3.8288867, z: 38.146736}
-    to: {x: 179.75853, y: 0.26000002, z: 39.95317}
-    period: 10.475625
-    phase: 0.22220138
-    flightTime: 4.324697
+    from: {x: 141.72748, y: 5.462906, z: 146.68952}
+    to: {x: 143.12148, y: 0.05500001, z: 147.65852}
+    period: 46
+    phase: 27.72
+    flightTime: 5.137511
     scale: 1.2984357
   - renderer: {fileID: 1686389903}
     from: {x: -21.158207, y: 2.9066296, z: -104.41545}
     to: {x: -19.69079, y: 0.36940593, z: -103.71109}
-    period: 9.152827
+    period: 0
     phase: 5.1089168
     flightTime: 4.391198
     scale: 1.4204094
   - renderer: {fileID: 526481421}
     from: {x: -20.820795, y: 3.6514785, z: -102.61963}
     to: {x: -19.554976, y: 0.36, z: -102.0419}
-    period: 7.7560015
+    period: 0
     phase: 5.826218
     flightTime: 3.5876179
     scale: 1.33124
   - renderer: {fileID: 2073517734}
-    from: {x: -23.75788, y: 3.6223474, z: -104.17947}
-    to: {x: -22.755787, y: 0.26000002, z: -103.32275}
-    period: 9.436834
-    phase: 3.92043
-    flightTime: 5.0496187
+    from: {x: -21.317207, y: 4.1715594, z: -109.9482}
+    to: {x: -19.923207, y: 0.05500001, z: -108.9792}
+    period: 44
+    phase: 34.913
+    flightTime: 4.7
     scale: 1.1603085
   - renderer: {fileID: 772204381}
     from: {x: -24.104414, y: 4.6946497, z: -101.53111}
     to: {x: -22.617197, y: 0.26000002, z: -100.322235}
-    period: 8.15822
+    period: 0
     phase: 7.175213
     flightTime: 5.1414003
     scale: 1.1404765
   - renderer: {fileID: 2043693536}
     from: {x: -22.435127, y: 3.6672733, z: -105.612526}
     to: {x: -20.600935, y: 0.38292632, z: -104.009476}
-    period: 7.2635965
+    period: 0
     phase: 3.6124678
     flightTime: 3.636607
     scale: 0.8025886
   - renderer: {fileID: 231554017}
-    from: {x: -21.21918, y: 2.8374496, z: -100.241776}
-    to: {x: -19.406054, y: 0.26000002, z: -99.50176}
-    period: 8.731254
-    phase: 1.6000822
-    flightTime: 5.023793
+    from: {x: -35.761807, y: 3.5299421, z: -112.83209}
+    to: {x: -34.367807, y: 0.060221789, z: -111.86309}
+    period: 42
+    phase: 8.106
+    flightTime: 4.7
     scale: 0.8003046
   - renderer: {fileID: 1178755282}
     from: {x: -24.244797, y: 4.4192123, z: -100.90163}
     to: {x: -21.777021, y: 0.26000002, z: -100.04895}
-    period: 7.8742046
+    period: 0
     phase: 3.886428
     flightTime: 5.377612
     scale: 1.3649004
   - renderer: {fileID: 2084927626}
     from: {x: -25.416656, y: 3.3373885, z: -107.053764}
     to: {x: -23.54793, y: 0.41300002, z: -105.55008}
-    period: 7.4386187
+    period: 0
     phase: 2.8616028
     flightTime: 3.8531115
     scale: 1.1119922
   - renderer: {fileID: 524118669}
     from: {x: -20.209663, y: 4.065443, z: -99.56082}
     to: {x: -18.492167, y: 0.26000002, z: -99.09486}
-    period: 7.163495
+    period: 0
     phase: 3.1327403
     flightTime: 5.2832537
     scale: 1.4376854
   - renderer: {fileID: 813660031}
-    from: {x: -22.436369, y: 3.4526744, z: -100.22703}
-    to: {x: -20.372875, y: 0.26000002, z: -98.75818}
-    period: 10.03861
-    phase: 7.1505866
-    flightTime: 5.2633867
+    from: {x: -42.551652, y: 2.0514566, z: -101.82033}
+    to: {x: -41.157652, y: 0.05500001, z: -100.85133}
+    period: 47
+    phase: 21.03
+    flightTime: 4.7
     scale: 0.93779486
   - renderer: {fileID: 1231977083}
     from: {x: -25.132475, y: 4.4264226, z: -99.97958}
     to: {x: -23.259983, y: 0.26000002, z: -99.01933}
-    period: 10.351293
+    period: 0
     phase: 5.237043
     flightTime: 3.5025518
     scale: 0.9664875
   - renderer: {fileID: 558389881}
     from: {x: 10.015251, y: 3.3107824, z: -171.45358}
     to: {x: 12.399002, y: 0.26000002, z: -170.52962}
-    period: 6.783315
+    period: 0
     phase: 1.7349887
     flightTime: 3.658989
     scale: 1.0532786
   - renderer: {fileID: 1654242972}
-    from: {x: 11.456105, y: 3.5549455, z: -176.72365}
-    to: {x: 13.947031, y: 0.38583964, z: -175.23131}
-    period: 10.331922
-    phase: 4.9721622
-    flightTime: 4.028634
+    from: {x: 2.2242839, y: 2.9990242, z: -185.68645}
+    to: {x: 3.6182839, y: 0.069930893, z: -184.71745}
+    period: 45
+    phase: 30.223
+    flightTime: 4.7
     scale: 0.7815013
   - renderer: {fileID: 801821782}
     from: {x: 12.140035, y: 2.3947463, z: -179.27762}
     to: {x: 13.5379095, y: 0.26000002, z: -178.40222}
-    period: 7.838689
+    period: 0
     phase: 0.40286857
     flightTime: 4.436443
     scale: 1.14587
   - renderer: {fileID: 266138194}
     from: {x: 13.693221, y: 2.9307418, z: -171.63202}
     to: {x: 14.929431, y: 0.26000002, z: -169.82681}
-    period: 6.899821
+    period: 0
     phase: 3.0274968
     flightTime: 4.5729284
     scale: 1.0906191
   - renderer: {fileID: 1715780315}
-    from: {x: 11.204769, y: 3.974685, z: -175.6159}
-    to: {x: 13.161301, y: 0.26000002, z: -173.8775}
-    period: 10.342462
-    phase: 1.7632759
-    flightTime: 4.7832394
+    from: {x: -4.6288017, y: 2.7275189, z: -178.7917}
+    to: {x: -3.2348017, y: 0.11977643, z: -177.8227}
+    period: 43
+    phase: 4.416
+    flightTime: 4.7
     scale: 1.2481089
   - renderer: {fileID: 1267777991}
     from: {x: 13.457735, y: 2.713334, z: -171.65555}
     to: {x: 14.808921, y: 0.26000002, z: -170.7355}
-    period: 9.515567
+    period: 0
     phase: 2.415007
     flightTime: 5.0561776
     scale: 1.0183301
   - renderer: {fileID: 1262317951}
     from: {x: 7.8822126, y: 4.4138575, z: -177.09897}
     to: {x: 9.085763, y: 0.36989206, z: -175.85382}
-    period: 10.233424
+    period: 0
     phase: 2.2388597
     flightTime: 3.7455716
     scale: 1.2885954
   - renderer: {fileID: 1029342583}
-    from: {x: 11.773921, y: 3.424893, z: -175.49529}
-    to: {x: 13.583152, y: 0.26000002, z: -174.36732}
-    period: 6.843279
-    phase: 1.3907726
-    flightTime: 4.547061
+    from: {x: -2.6713205, y: 5.5094827, z: -177.50382}
+    to: {x: -1.2773205, y: 0.091527176, z: -176.53482}
+    period: 41
+    phase: 31.609
+    flightTime: 5.147058
     scale: 0.81257457
   - renderer: {fileID: 417768422}
     from: {x: 13.0839, y: 3.2012262, z: -178.16234}
     to: {x: 14.553343, y: 0.30445668, z: -176.59445}
-    period: 8.783726
+    period: 0
     phase: 1.5253923
     flightTime: 4.564864
     scale: 1.2127045
   - renderer: {fileID: 1523272908}
     from: {x: 11.527032, y: 3.6694727, z: -175.8842}
     to: {x: 13.118962, y: 0.26000002, z: -174.46764}
-    period: 8.710261
+    period: 0
     phase: 1.2277528
     flightTime: 4.0238266
     scale: 1.3108661
   - renderer: {fileID: 1766058562}
     from: {x: 10.2225275, y: 4.5400867, z: -171.8581}
     to: {x: 12.682695, y: 0.26000002, z: -171.01016}
-    period: 8.522085
+    period: 0
     phase: 3.3575027
     flightTime: 3.5267904
     scale: 1.2106904
   - renderer: {fileID: 1689789492}
-    from: {x: 73.9306, y: 4.8323703, z: -109.71951}
-    to: {x: 76.29132, y: 0.33547944, z: -108.430405}
-    period: 8.352855
-    phase: 1.6501083
-    flightTime: 3.9788094
+    from: {x: -12.37064, y: 2.6615628, z: -138.42082}
+    to: {x: -10.97664, y: 0.10648336, z: -137.45182}
+    period: 46
+    phase: 21.533
+    flightTime: 4.7
     scale: 0.9639223
   - renderer: {fileID: 1093692413}
     from: {x: 72.457855, y: 4.751917, z: -110.11432}
     to: {x: 74.17409, y: 0.34432086, z: -108.61391}
-    period: 10.127796
+    period: 0
     phase: 7.598638
     flightTime: 5.5423946
     scale: 0.78730273
   - renderer: {fileID: 1203667123}
     from: {x: 79.368515, y: 4.335079, z: -106.66294}
     to: {x: 80.923325, y: 0.33495206, z: -105.90831}
-    period: 8.038496
+    period: 0
     phase: 2.6145494
     flightTime: 5.4688826
     scale: 1.0639266
   - renderer: {fileID: 672443458}
-    from: {x: 76.29063, y: 3.1336167, z: -107.03102}
-    to: {x: 77.2836, y: 0.335, z: -106.4243}
-    period: 10.289408
-    phase: 9.022495
-    flightTime: 4.692618
+    from: {x: -12.252703, y: 4.0912078, z: -142.48978}
+    to: {x: -10.858703, y: 0.13331214, z: -141.52078}
+    period: 44
+    phase: 40.726
+    flightTime: 4.7
     scale: 1.240864
   - renderer: {fileID: 1321034260}
     from: {x: 72.14626, y: 4.41969, z: -105.54694}
     to: {x: 73.09195, y: 0.34622106, z: -104.92128}
-    period: 8.4702015
+    period: 0
     phase: 7.5067782
     flightTime: 4.376536
     scale: 1.0332229
   - renderer: {fileID: 903244739}
     from: {x: 76.051094, y: 3.2033653, z: -106.6368}
     to: {x: 77.44836, y: 0.335, z: -105.9731}
-    period: 7.5613513
+    period: 0
     phase: 5.657665
     flightTime: 4.9364295
     scale: 1.3327899
   - renderer: {fileID: 1667335326}
-    from: {x: 79.46365, y: 3.4873157, z: -107.436966}
-    to: {x: 80.95837, y: 0.33496237, z: -106.38771}
-    period: 10.352517
-    phase: 9.838087
-    flightTime: 5.060557
+    from: {x: -17.442802, y: 2.622382, z: -134.25145}
+    to: {x: -16.048802, y: 0.11446825, z: -133.28245}
+    period: 42
+    phase: 25.919
+    flightTime: 4.7
     scale: 1.0933151
   - renderer: {fileID: 500133918}
     from: {x: 79.06799, y: 3.472731, z: -107.04815}
     to: {x: 80.42641, y: 0.3349731, z: -105.60057}
-    period: 10.451585
+    period: 0
     phase: 7.747152
     flightTime: 4.7798734
     scale: 1.347702
   - renderer: {fileID: 577449829}
     from: {x: 74.71137, y: 2.5573792, z: -107.18851}
     to: {x: 75.63585, y: 0.33587778, z: -105.707596}
-    period: 8.92981
+    period: 0
     phase: 4.174327
     flightTime: 5.3357615
     scale: 1.2019609
   - renderer: {fileID: 1445992994}
     from: {x: 79.34696, y: 4.432229, z: -109.41714}
     to: {x: 81.52678, y: 0.33497328, z: -108.09984}
-    period: 10.474908
+    period: 0
     phase: 2.5031345
     flightTime: 4.864853
     scale: 1.2491541
   - renderer: {fileID: 1021855503}
-    from: {x: 79.036606, y: 3.5860147, z: -107.02675}
-    to: {x: 80.06978, y: 0.3349847, z: -105.24205}
-    period: 9.017056
-    phase: 1.297468
-    flightTime: 3.590319
+    from: {x: -9.9340912, y: 3.7464758, z: -155.65128}
+    to: {x: -8.5400912, y: 0.10597677, z: -154.68228}
+    period: 47
+    phase: 8.843
+    flightTime: 4.7
     scale: 1.0737362
 --- !u!4 &2014896246
 Transform:
@@ -740989,3 +740996,40 @@ MonoBehaviour:
   maximumGrade: 0.16
   floorAndWalls: {fileID: 4000000139}
   evidence: Identical entrance model across the main street; free corridor checked against saved buildings and props. Placement is an estimate from user references 20-25.
+--- !u!114 &4000000200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321379541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f3fc867b1919ae8fde20eb39313916, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::StreetAutumnWeather
+  sun: {fileID: 1321379542}
+  sky: {fileID: 2100000, guid: 40be5578b1e828a42b79212a9ac05895, type: 2}
+  cloudHeight: 650
+  cloudWorldSize: 1200
+  cloudVelocity: {x: 0.98, y: 0.684}
+  cloudCoverage: 0.48
+  cloudSoftness: 0.18
+  cloudShadowStrength: 0.22
+  cookieWorldSize: 2048
+--- !u!114 &4000000201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319908492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440e21163b094c2f9c1c09af797b7e4c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::StreetAtmosphereParticles
+  dustShader: {fileID: 4800000, guid: 0c58e717b8ec4a4f828aa1028bc71a81, type: 3}
+  maximumDust: 24
+  birthsPerSecond: 0.85
+  opacity: 0.055

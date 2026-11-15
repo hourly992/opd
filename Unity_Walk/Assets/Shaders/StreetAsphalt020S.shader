@@ -19,10 +19,39 @@ Shader "Street/Asphalt020S"
         Cull [_Cull]
         LOD 200
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows vertex:vert
-        #pragma target 3.0
+        #pragma surface surf AsphaltNeutral fullforwardshadows vertex:vert exclude_path:deferred
+        #pragma target 3.5
         #pragma multi_compile_instancing
+        #include "UnityPBSLighting.cginc"
+        #include "StreetAutumnWeather.cginc"
         sampler2D _MainTex, _BumpMap, _MaskMap;
+        // Published by StreetPresentation only when the matching display grade
+        // is active. Constant-array interpolation adds no texture or render pass.
+        float4 _AsphaltNeutralOutput;
+        float4 _AsphaltNeutralTone[32];
+        half4 LightingAsphaltNeutral(SurfaceOutputStandard s, half3 viewDir, UnityGI gi)
+        {
+            half4 result = LightingStandard(s,viewDir,gi);
+            UNITY_BRANCH if (_AsphaltNeutralOutput.x > .5)
+            {
+                float level = max(0,dot(result.rgb,float3(.2126,.7152,.0722)));
+                float index = saturate((log2(max(level,.0009765625)) - _AsphaltNeutralOutput.y) * _AsphaltNeutralOutput.z) * (_AsphaltNeutralOutput.w-1);
+                int first = min(30,(int)index);
+                float3 gain = lerp(_AsphaltNeutralTone[first].rgb,
+                    _AsphaltNeutralTone[first+1].rgb,index-first);
+                result.rgb = level * gain;
+            }
+            return result;
+        }
+        void LightingAsphaltNeutral_GI(SurfaceOutputStandard s, UnityGIInput data, inout UnityGI gi)
+        {
+            LightingStandard_GI(s,data,gi);
+            #if defined(UNITY_PASS_FORWARDBASE) && defined(DIRECTIONAL)
+                // Main sunlight only. The shared helper skips the fetch when
+                // weather is disabled; indirect/ambient illumination stays intact.
+                gi.light.color *= StreetWeatherCloudShadow(data.worldPos);
+            #endif
+        }
         float4 _TileMeters;
         float4 _ToneGain;
         fixed4 _Color;

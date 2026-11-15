@@ -14,16 +14,38 @@ Install `requirements.txt` into a virtual environment, then run:
 
 ```sh
 python Maintenance/StreetRepair/install_asphalt020s.py --verify
-python Maintenance/StreetRepair/validate_warm_autumn.py --check-saved
-python Maintenance/StreetRepair/validate_autumn_update.py
+python Maintenance/StreetRepair/validate_weather.py --check-saved
+python Maintenance/StreetRepair/validate_asphalt_display.py
+python Maintenance/StreetRepair/validate_atmosphere_update.py
 ```
 
-The current audit compares against `c5d2798` and checks saved assets, object
-preservation, protected surfaces, plaza coverage, resource budgets and ramp
-collisions. The original `validate.py` and `validate_parking_network.py` target
-earlier stages and retain their historical geometry/lighting assumptions.
+The current atmosphere audit compares against `0d73c23` and checks protected
+assets, scene identities, unchanged geometry and material colors, cars, shared
+cloud-lighting coverage and bounded runtime resources. Earlier validators
+target their historical stages and retain the old lighting assumptions.
 These checks do not compile C#, import shaders, measure frame times or capture
 gameplay.
+
+`atmosphere_scene.py` is a guarded one-time migration from `0d73c23`, not a
+runtime generator. The new weather, dust and controller code and their `.meta`
+files must be present first. It adds only two serialized components, changes
+sun/camera/presentation settings and rebinds existing falling-leaf paths to
+actual tree crowns. It does not regenerate geometry or change material colors.
+The sky material's fallback sun vector is saved with the same 22-degree sun.
+Use the current committed scene for ordinary builds; do not rebake it.
+
+The sky, ambient SH, reflection cubemap and cloud shadows share one cloud
+model. Native directional `Light.cookie` is deliberately unused because it
+can force another ForwardAdd scene draw. Shared GI wrappers attenuate only
+the main directional light in the existing ForwardBase, adding one cached
+shadow fetch. Dust adds at most one small mesh draw. Weather texture updates,
+particles and falling leaves are capped; AO/shaft/shadow resolution work is
+reduced. Those are static budget decisions, not a measured FPS guarantee.
+
+Reproduce the separate report with
+`python Maintenance/StreetRepair/report_atmosphere_update.py` using system
+Python with `reportlab` and `pypdf`. Reports and numerical tests explicitly
+distinguish source/CPU verification from Unity import, rendering and frame time.
 
 ## Reproducing the bake
 

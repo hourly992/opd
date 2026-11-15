@@ -12,8 +12,9 @@ Shader "Street/PlaygroundSoil"
     {
         Tags { "RenderType"="TransparentCutout" "Queue"="AlphaTest" }
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows addshadow
+        #pragma surface surf StreetCloudStandard fullforwardshadows addshadow exclude_path:deferred
         #pragma target 3.0
+        #include "StreetCloudLighting.cginc"
         #include "StreetMeadow.cginc"
         sampler2D _MainTex, _BumpMap, _MaskMap;
         fixed4 _Color;

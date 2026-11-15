@@ -1,0 +1,65 @@
+{
+  "baselineCommit": "0d73c23ee7bd71c144bf188d0f5b4cb91304c979",
+  "savedSunDirectionChecked": true,
+  "sunElevationDegrees": 21.999999974326514,
+  "cloudField": {
+    "densityTileSize": [
+      128,
+      128
+    ],
+    "seed": 1337,
+    "periodMeters": 1200.0,
+    "lowerPlaneMeters": 650.0,
+    "upperPlaneMeters": 1170.0,
+    "velocityMetersPerSecondXZ": [
+      0.98,
+      0.684
+    ],
+    "noiseMean": 0.5316805970435049,
+    "periodicBilinearMaximumError": 1.9984014443252818e-15,
+    "shadowTransmittanceRange": [
+      0.78,
+      0.9948821790421036
+    ]
+  },
+  "projection": {
+    "worldToCloudMaximumResidualMeters": 1.3565598843027817e-12,
+    "sourceRoadBuildingPointsAndHeightsChecked": 6600,
+    "globalTileMinimumUV": [
+      0.16484485573310498,
+      0.4279330266864476
+    ],
+    "globalTileMaximumUV": [
+      0.7514988035219063,
+      0.5589089872289348
+    ],
+    "noRepeatSeamInsideSourceStreetOrBuildings": true,
+    "continuousMotionIndependentOfFrameRate": true,
+    "nativeLightCookieAssigned": false,
+    "sunTransformMutated": false
+  },
+  "resourceCaps": {
+    "densityTextureRGBA32Bytes": 65536,
+    "shadowTileRGBA32Bytes": 65536,
+    "reflectionCubeRGBAHalfWithMipsBytes": 16368,
+    "reflectionCubeFaceSize": 16,
+    "cookiePixelsPerActiveRefreshFrame": 1024,
+    "cookieRecenterSeconds": 60,
+    "cookieRefreshFrames": 16,
+    "ambientSHRefreshSeconds": 2,
+    "reflectionFaceRefreshSeconds": 0.5,
+    "fullCubeRefreshSeconds": 3,
+    "extraCameras": 0,
+    "extraLights": 0,
+    "extraFullResolutionPasses": 0,
+    "extraSceneCapturePasses": 0,
+    "skyDensityFetches": 3,
+    "mainDirectionalSurfaceShadowFetches": 1
+  },
+  "limitations": [
+    "CPU/source tests only; Unity import, shader compilation and native rendering were not executed.",
+    "No FPS, GPU time or actual draw calls were measured.",
+    "Soft dimensional clouds use two shaded planes, not a volumetric ray marcher.",
+    "The small cached shadow tile has intentionally soft spatial interpolation; window reflections use the full analytic field."
+  ]
+}

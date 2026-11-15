@@ -16,9 +16,10 @@ Shader "Street/Surface"
         Cull [_Cull]
         LOD 300
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf StreetCloudStandard fullforwardshadows exclude_path:deferred
         #pragma target 3.0
         #pragma multi_compile_instancing
+        #include "StreetCloudLighting.cginc"
         fixed4 _Color, _EmissionColor;
         half _Kind, _Smoothness, _Metallic, _VertexTint;
         struct Input { float3 worldPos; float3 worldNormal; float4 color : COLOR; INTERNAL_DATA };

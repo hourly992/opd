@@ -19,7 +19,7 @@ public class StreetSession : MonoBehaviour
         GUI.color = Color.white;
         GUI.Label(new Rect(32,26,310,35), "Дунина-Горкавича", title);
         GUI.Label(new Rect(33,61,300,25), "Ханты-Мансийск · первый участок", small);
-        GUI.Label(new Rect(24,677,800,30), "WASD / стрелки — идти     Мышь — обзор     Esc — меню", small);
+        GUI.Label(new Rect(24,677,800,30), "WASD / стрелки — идти     Shift — бег     Мышь — обзор     Esc — меню", small);
         GUI.Label(new Rect(1000,687,270,25), "Карта: © OpenStreetMap contributors", small);
 
         if (Cursor.lockState != CursorLockMode.Locked)

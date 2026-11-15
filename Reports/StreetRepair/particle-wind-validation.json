@@ -1,0 +1,982 @@
+{
+  "dustCapacity": 32,
+  "defaultDustLimit": 24,
+  "defaultBirthsPerSecond": 0.85,
+  "maximumRaycastsPerFrame": 2,
+  "dustMaximumQuadTriangles": 64,
+  "dustDrawCallsUpperBound": 1,
+  "dustNewFullscreenPasses": 0,
+  "dustNewRenderTargets": 0,
+  "dustDepthNormalsTextureReadsPerShadedPixel": 1,
+  "numericAlphaGridSamples": 61155,
+  "maximumGridAlpha": 0.0385,
+  "sunBelowHorizonZeroAlpha": true,
+  "occludedDustZeroAlpha": true,
+  "farDistanceZeroAlpha": true,
+  "foliageVertexSineCallsBefore": 2,
+  "foliageVertexSineCallsAfter": 2,
+  "foliageWindAmplitudeMultiplier": 0.82,
+  "windWaveAbsMaximumSampled": 0.9997587149918008,
+  "rootWeightZeroDisplacement": true,
+  "fallingLeavesMaximumVisible": 3,
+  "skitterLeavesMaximumVisible": 1,
+  "runtimeFrameAllocations": "Fixed arrays initialised once; no per-frame new reference objects/collections",
+  "limitations": [
+    "Unity shader/C# import and compilation not executed",
+    "No player/FPS/physics raycast benchmark executed",
+    "Numeric alpha checks model equations; real visibility depends on scene and camera"
+  ],
+  "baselineCommit": "0d73c23ee7bd71c144bf188d0f5b4cb91304c979",
+  "crownPaths": {
+    "component": 2014896245,
+    "availableDeciduousTreeInstances": 1144,
+    "existingDescendingRenderers": 154,
+    "enabledCrownPaths": 48,
+    "disabledPaths": 106,
+    "additionalRenderers": 0,
+    "groundAndBuildingFootprintChecks": true,
+    "directObstacleMeshesChecked": 292,
+    "sampledPathOffsetMeters": 0.22,
+    "parallelPathSamples": 5,
+    "trunkClearanceMeters": 0.4,
+    "anchors": [
+      {
+        "pathIndex": 0,
+        "treeInstance": 2006112492,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 35334,
+        "fromPosition": [
+          15.367096340995033,
+          6.230697325336242,
+          23.270540510605755
+        ],
+        "toPosition": [
+          16.76109634099503,
+          0.055000009536743166,
+          24.239540510605757
+        ],
+        "periodSeconds": 34
+      },
+      {
+        "pathIndex": 3,
+        "treeInstance": 187020013,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H760.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 71886,
+        "fromPosition": [
+          29.66403514139886,
+          5.724310136687564,
+          0.5545730709565713
+        ],
+        "toPosition": [
+          31.058035141398857,
+          0.055000009536743166,
+          1.5235730709565711
+        ],
+        "periodSeconds": 55
+      },
+      {
+        "pathIndex": 6,
+        "treeInstance": 415086874,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BirchYoung.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 38839,
+        "fromPosition": [
+          32.83393471283204,
+          5.969345275629503,
+          36.4925746214111
+        ],
+        "toPosition": [
+          34.22793471283204,
+          0.08563571358596161,
+          37.4615746214111
+        ],
+        "periodSeconds": 53
+      },
+      {
+        "pathIndex": 9,
+        "treeInstance": 723992064,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          25.997024291677693,
+          7.36988930748464,
+          49.42401925091853
+        ],
+        "toPosition": [
+          27.39102429167769,
+          0.055000009536743166,
+          50.393019250918535
+        ],
+        "periodSeconds": 51
+      },
+      {
+        "pathIndex": 13,
+        "treeInstance": 771468043,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 32303,
+        "fromPosition": [
+          16.15736533143042,
+          7.280563088221431,
+          -40.43614185780548
+        ],
+        "toPosition": [
+          17.551365331430418,
+          0.08078325116521806,
+          -39.46714185780548
+        ],
+        "periodSeconds": 56
+      },
+      {
+        "pathIndex": 16,
+        "treeInstance": 440874055,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 35334,
+        "fromPosition": [
+          -46.04958678315802,
+          5.4487927873759485,
+          -62.81679024031333
+        ],
+        "toPosition": [
+          -44.65558678315802,
+          0.055000009536743166,
+          -61.84779024031333
+        ],
+        "periodSeconds": 54
+      },
+      {
+        "pathIndex": 19,
+        "treeInstance": 270700581,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          -69.66101226625828,
+          4.2757633035809315,
+          -41.74272018573523
+        ],
+        "toPosition": [
+          -68.26701226625828,
+          0.055000009536743166,
+          -40.77372018573523
+        ],
+        "periodSeconds": 52
+      },
+      {
+        "pathIndex": 22,
+        "treeInstance": 230338327,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39090,
+        "fromPosition": [
+          24.75941981788741,
+          7.424431552733719,
+          67.29261699386903
+        ],
+        "toPosition": [
+          26.153419817887407,
+          0.055000009536743166,
+          68.26161699386903
+        ],
+        "periodSeconds": 50
+      },
+      {
+        "pathIndex": 26,
+        "treeInstance": 224845767,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39089,
+        "fromPosition": [
+          14.78471774209724,
+          6.088690256236842,
+          74.38114055994704
+        ],
+        "toPosition": [
+          16.178717742097238,
+          0.1407570296326926,
+          75.35014055994704
+        ],
+        "periodSeconds": 55
+      },
+      {
+        "pathIndex": 29,
+        "treeInstance": 1443412249,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BirchYoung.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39001,
+        "fromPosition": [
+          37.32294918375173,
+          5.379372128918064,
+          68.99059751125533
+        ],
+        "toPosition": [
+          38.71694918375173,
+          0.055000009536743166,
+          69.95959751125532
+        ],
+        "periodSeconds": 53
+      },
+      {
+        "pathIndex": 32,
+        "treeInstance": 131787151,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39089,
+        "fromPosition": [
+          18.283847929518874,
+          6.749701332124306,
+          -68.59880919102154
+        ],
+        "toPosition": [
+          19.677847929518872,
+          0.0990956381224772,
+          -67.62980919102155
+        ],
+        "periodSeconds": 51
+      },
+      {
+        "pathIndex": 35,
+        "treeInstance": 603631869,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          32.62637825497768,
+          7.062908466479278,
+          -101.9835053705536
+        ],
+        "toPosition": [
+          34.02037825497768,
+          0.10306370601159023,
+          -101.01450537055361
+        ],
+        "periodSeconds": 49
+      },
+      {
+        "pathIndex": 39,
+        "treeInstance": 277103408,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/Birch.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37453,
+        "fromPosition": [
+          -48.2196586704293,
+          5.246907206540797,
+          -74.60562384623242
+        ],
+        "toPosition": [
+          -46.8256586704293,
+          0.055000009536743166,
+          -73.63662384623242
+        ],
+        "periodSeconds": 54
+      },
+      {
+        "pathIndex": 42,
+        "treeInstance": 1740165169,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 71876,
+        "fromPosition": [
+          -50.95312559580805,
+          3.106181481302742,
+          -73.37854616669377
+        ],
+        "toPosition": [
+          -49.55912559580805,
+          0.055000009536743166,
+          -72.40954616669377
+        ],
+        "periodSeconds": 52
+      },
+      {
+        "pathIndex": 45,
+        "treeInstance": 738126062,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 71876,
+        "fromPosition": [
+          -76.04772681772516,
+          3.4531202959737,
+          -33.342879905907246
+        ],
+        "toPosition": [
+          -74.65372681772516,
+          0.055000009536743166,
+          -32.373879905907245
+        ],
+        "periodSeconds": 50
+      },
+      {
+        "pathIndex": 48,
+        "treeInstance": 1784765674,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 32303,
+        "fromPosition": [
+          -90.45368055965534,
+          3.3934271360696338,
+          -6.995680856803717
+        ],
+        "toPosition": [
+          -89.05968055965533,
+          0.055000009536743166,
+          -6.026680856803717
+        ],
+        "periodSeconds": 48
+      },
+      {
+        "pathIndex": 52,
+        "treeInstance": 1738204600,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37453,
+        "fromPosition": [
+          -86.03641450923409,
+          2.6318505109302306,
+          -18.889358392876744
+        ],
+        "toPosition": [
+          -84.64241450923409,
+          0.09870448970465834,
+          -17.920358392876743
+        ],
+        "periodSeconds": 53
+      },
+      {
+        "pathIndex": 55,
+        "treeInstance": 20504424,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 75436,
+        "fromPosition": [
+          116.42027413472037,
+          4.98951422066156,
+          146.9923087117341
+        ],
+        "toPosition": [
+          117.81427413472038,
+          0.055000009536743166,
+          147.9613087117341
+        ],
+        "periodSeconds": 51
+      },
+      {
+        "pathIndex": 58,
+        "treeInstance": 1027331617,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          106.98311824737888,
+          6.436201230060379,
+          155.6270319697589
+        ],
+        "toPosition": [
+          108.37711824737889,
+          0.055000009536743166,
+          156.59603196975888
+        ],
+        "periodSeconds": 49
+      },
+      {
+        "pathIndex": 61,
+        "treeInstance": 2053095658,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37656,
+        "fromPosition": [
+          113.58937344774642,
+          6.560150761359328,
+          156.3374583515096
+        ],
+        "toPosition": [
+          114.98337344774643,
+          0.055000009536743166,
+          157.3064583515096
+        ],
+        "periodSeconds": 47
+      },
+      {
+        "pathIndex": 65,
+        "treeInstance": 858245075,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39089,
+        "fromPosition": [
+          142.35388477060627,
+          5.094956101254202,
+          140.58029641146103
+        ],
+        "toPosition": [
+          143.74788477060628,
+          0.055000009536743166,
+          141.54929641146103
+        ],
+        "periodSeconds": 52
+      },
+      {
+        "pathIndex": 68,
+        "treeInstance": 329216763,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 75436,
+        "fromPosition": [
+          -109.33789262765612,
+          5.2276993772640346,
+          163.0623961717123
+        ],
+        "toPosition": [
+          -107.94389262765611,
+          0.055000009536743166,
+          164.0313961717123
+        ],
+        "periodSeconds": 50
+      },
+      {
+        "pathIndex": 71,
+        "treeInstance": 483578931,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          -101.04357587113877,
+          5.922843121842593,
+          147.48669403267704
+        ],
+        "toPosition": [
+          -99.64957587113877,
+          0.055000009536743166,
+          148.45569403267703
+        ],
+        "periodSeconds": 48
+      },
+      {
+        "pathIndex": 74,
+        "treeInstance": 1282982951,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 17578,
+        "fromPosition": [
+          -111.7203112703129,
+          5.842899385233615,
+          169.6501737900345
+        ],
+        "toPosition": [
+          -110.3263112703129,
+          0.055000009536743166,
+          170.6191737900345
+        ],
+        "periodSeconds": 46
+      },
+      {
+        "pathIndex": 78,
+        "treeInstance": 569030578,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 77895,
+        "fromPosition": [
+          -56.155234902835566,
+          6.1759574567851825,
+          -64.0041075499727
+        ],
+        "toPosition": [
+          -54.76123490283557,
+          0.055000009536743166,
+          -63.0351075499727
+        ],
+        "periodSeconds": 51
+      },
+      {
+        "pathIndex": 81,
+        "treeInstance": 1025798174,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 71886,
+        "fromPosition": [
+          -64.85520006918095,
+          3.8849083519099494,
+          -54.440504784379016
+        ],
+        "toPosition": [
+          -63.461200069180954,
+          0.05840015024293144,
+          -53.471504784379015
+        ],
+        "periodSeconds": 49
+      },
+      {
+        "pathIndex": 84,
+        "treeInstance": 545220934,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BirchYoung.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 32303,
+        "fromPosition": [
+          -59.69249150818707,
+          5.6907512380289464,
+          -65.95189271985393
+        ],
+        "toPosition": [
+          -58.29849150818707,
+          0.05500136162998642,
+          -64.98289271985394
+        ],
+        "periodSeconds": 47
+      },
+      {
+        "pathIndex": 87,
+        "treeInstance": 1969555190,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 77895,
+        "fromPosition": [
+          -64.4158077263041,
+          2.533448672595749,
+          -57.77266266094799
+        ],
+        "toPosition": [
+          -63.0218077263041,
+          0.060458725723184156,
+          -56.803662660947985
+        ],
+        "periodSeconds": 45
+      },
+      {
+        "pathIndex": 91,
+        "treeInstance": 1075930145,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          152.39853883215858,
+          6.809481869018664,
+          135.58167499521008
+        ],
+        "toPosition": [
+          153.79253883215858,
+          0.05677106950962055,
+          136.55067499521007
+        ],
+        "periodSeconds": 50
+      },
+      {
+        "pathIndex": 94,
+        "treeInstance": 1314670021,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37453,
+        "fromPosition": [
+          157.22088095787518,
+          5.601239169723726,
+          141.10013336290757
+        ],
+        "toPosition": [
+          158.6148809578752,
+          0.055000009536743166,
+          142.06913336290756
+        ],
+        "periodSeconds": 48
+      },
+      {
+        "pathIndex": 97,
+        "treeInstance": 780273405,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37453,
+        "fromPosition": [
+          149.14519958071034,
+          4.672571375192787,
+          144.3300768242769
+        ],
+        "toPosition": [
+          150.53919958071035,
+          0.055000009536743166,
+          145.29907682427688
+        ],
+        "periodSeconds": 46
+      },
+      {
+        "pathIndex": 100,
+        "treeInstance": 1644965062,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39089,
+        "fromPosition": [
+          166.51077426471159,
+          7.256633227588536,
+          143.1572606028262
+        ],
+        "toPosition": [
+          167.9047742647116,
+          0.055000009536743166,
+          144.1262606028262
+        ],
+        "periodSeconds": 44
+      },
+      {
+        "pathIndex": 104,
+        "treeInstance": 333555890,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          191.82919876646793,
+          6.340900205427735,
+          139.2077097116563
+        ],
+        "toPosition": [
+          193.22319876646793,
+          0.055000009536743166,
+          140.1767097116563
+        ],
+        "periodSeconds": 49
+      },
+      {
+        "pathIndex": 107,
+        "treeInstance": 2073959676,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV1H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V1_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 58560,
+        "fromPosition": [
+          183.29126654495496,
+          7.737819785458378,
+          150.7229163314514
+        ],
+        "toPosition": [
+          184.68526654495497,
+          0.055000009536743166,
+          151.69191633145138
+        ],
+        "periodSeconds": 47
+      },
+      {
+        "pathIndex": 110,
+        "treeInstance": 1456746266,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 76099,
+        "fromPosition": [
+          172.25634346858666,
+          7.157267902206285,
+          147.23815107464432
+        ],
+        "toPosition": [
+          173.65034346858667,
+          0.055000009536743166,
+          148.20715107464432
+        ],
+        "periodSeconds": 45
+      },
+      {
+        "pathIndex": 113,
+        "treeInstance": 1374543894,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 22564,
+        "fromPosition": [
+          176.8421579791953,
+          5.426893105380308,
+          148.45665175603202
+        ],
+        "toPosition": [
+          178.2361579791953,
+          0.055000009536743166,
+          149.425651756032
+        ],
+        "periodSeconds": 43
+      },
+      {
+        "pathIndex": 117,
+        "treeInstance": 761709932,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 71886,
+        "fromPosition": [
+          190.84412526109782,
+          6.861172270159298,
+          151.27248388562722
+        ],
+        "toPosition": [
+          192.23812526109782,
+          0.055000009536743166,
+          152.24148388562722
+        ],
+        "periodSeconds": 48
+      },
+      {
+        "pathIndex": 120,
+        "treeInstance": 1272321299,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 21063,
+        "fromPosition": [
+          141.72748481632104,
+          5.46290600749618,
+          146.68951613575646
+        ],
+        "toPosition": [
+          143.12148481632104,
+          0.055000009536743166,
+          147.65851613575646
+        ],
+        "periodSeconds": 46
+      },
+      {
+        "pathIndex": 123,
+        "treeInstance": 1313445436,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BirchYoung.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 77760,
+        "fromPosition": [
+          -21.317207334869142,
+          4.1715593683131615,
+          -109.94820062825909
+        ],
+        "toPosition": [
+          -19.923207334869144,
+          0.055000009536743166,
+          -108.9792006282591
+        ],
+        "periodSeconds": 44
+      },
+      {
+        "pathIndex": 126,
+        "treeInstance": 1765657510,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 32303,
+        "fromPosition": [
+          -35.761806596495425,
+          3.5299420623116387,
+          -112.83208907654434
+        ],
+        "toPosition": [
+          -34.36780659649543,
+          0.06022178876017101,
+          -111.86308907654434
+        ],
+        "periodSeconds": 42
+      },
+      {
+        "pathIndex": 130,
+        "treeInstance": 524129877,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 77905,
+        "fromPosition": [
+          -42.55165240372585,
+          2.0514566229341993,
+          -101.82032527270216
+        ],
+        "toPosition": [
+          -41.157652403725855,
+          0.055000009536743166,
+          -100.85132527270217
+        ],
+        "periodSeconds": 47
+      },
+      {
+        "pathIndex": 133,
+        "treeInstance": 411599362,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 35334,
+        "fromPosition": [
+          2.2242838900436572,
+          2.99902416049697,
+          -185.68645140505865
+        ],
+        "toPosition": [
+          3.6182838900436574,
+          0.06993089281419257,
+          -184.71745140505865
+        ],
+        "periodSeconds": 45
+      },
+      {
+        "pathIndex": 136,
+        "treeInstance": 2017510595,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 65482,
+        "fromPosition": [
+          -4.628801702246433,
+          2.7275189096928325,
+          -178.79169521238438
+        ],
+        "toPosition": [
+          -3.2348017022464326,
+          0.11977643084472372,
+          -177.8226952123844
+        ],
+        "periodSeconds": 43
+      },
+      {
+        "pathIndex": 139,
+        "treeInstance": 1903603298,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37453,
+        "fromPosition": [
+          -2.6713204798478287,
+          5.509482659622332,
+          -177.50382221725394
+        ],
+        "toPosition": [
+          -1.2773204798478288,
+          0.09152717604852795,
+          -176.53482221725395
+        ],
+        "periodSeconds": 41
+      },
+      {
+        "pathIndex": 143,
+        "treeInstance": 1423264712,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 39089,
+        "fromPosition": [
+          -12.370640171410294,
+          2.6615628158723195,
+          -138.420820073308
+        ],
+        "toPosition": [
+          -10.976640171410294,
+          0.1064833561944894,
+          -137.451820073308
+        ],
+        "periodSeconds": 46
+      },
+      {
+        "pathIndex": 146,
+        "treeInstance": 929330637,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV3H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V3_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 58560,
+        "fromPosition": [
+          -12.252702773793118,
+          4.091207849520243,
+          -142.48977762544123
+        ],
+        "toPosition": [
+          -10.858702773793118,
+          0.13331214335105845,
+          -141.52077762544124
+        ],
+        "periodSeconds": 44
+      },
+      {
+        "pathIndex": 149,
+        "treeInstance": 312511207,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV2H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_V2_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 37453,
+        "fromPosition": [
+          -17.44280206874488,
+          2.62238203216807,
+          -134.2514477209644
+        ],
+        "toPosition": [
+          -16.04880206874488,
+          0.11446825182541792,
+          -133.2824477209644
+        ],
+        "periodSeconds": 42
+      },
+      {
+        "pathIndex": 153,
+        "treeInstance": 1161323917,
+        "prefab": "Assets/StreetGenerated/Pilot/Prefabs/BroadleafV0H950.prefab",
+        "foliageMesh": "Assets/StreetGenerated/Pilot/Meshes/NaturalBroadleaf_LOD0.asset",
+        "foliageSubmesh": 1,
+        "foliageTriangle": 65453,
+        "fromPosition": [
+          -9.934091233070586,
+          3.7464758045904376,
+          -155.65128352669464
+        ],
+        "toPosition": [
+          -8.540091233070585,
+          0.105976773954185,
+          -154.68228352669465
+        ],
+        "periodSeconds": 47
+      }
+    ]
+  },
+  "activeFoliageMaterialCount": 9,
+  "activeFoliageWindStrengthsPreserved": {
+    "0.018": 1,
+    "0.035": 5,
+    "0.065": 2,
+    "0.075": 1
+  },
+  "dustWorldHalfSizeMeters": [
+    0.004,
+    0.009
+  ],
+  "sharedSkyCloudTransmittanceUsed": true,
+  "sceneBakeAppliedByThisAgent": false,
+  "cloudShadowIntegration": {
+    "affectedShaders": [
+      "Street/Foliage",
+      "Street/FallenLeaves"
+    ],
+    "baseDirectionalLightOnly": true,
+    "ambientAndAlbedoUnchanged": true,
+    "additionalShadowTextureFetchesPerFragment": 1,
+    "extraShaderPasses": 0,
+    "nativeLightCookieUsed": false,
+    "shaderCompilation": "NOT RUN: Unity unavailable"
+  }
+}

@@ -225,6 +225,8 @@ internal static class StreetSurfaceLibrary
         material.SetColor("_Color", Color.white);
         // Vector gains are raw working-space values, independent of SetColor's
         // implicit sRGB conversion. The original JPEG and all PBR maps stay intact.
+        // StreetPresentation publishes the shared inverse-display tone table;
+        // Asphalt020S corrects the lit result, including warm sun/ambient color.
         material.SetVector("_ToneGain", QualitySettings.activeColorSpace == ColorSpace.Linear
             ? new Vector4(.76364610f, .73200228f, .71368004f, 1)
             : new Vector4(.87962990f, .86208631f, .85089430f, 1));

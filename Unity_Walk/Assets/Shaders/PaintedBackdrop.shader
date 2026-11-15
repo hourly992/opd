@@ -4,8 +4,9 @@ Shader "Street/PaintedBackdrop"
     {
         Tags { "RenderType" = "Opaque" }
         CGPROGRAM
-        #pragma surface surf Standard noforwardadd nolightmap nodynlightmap
+        #pragma surface surf StreetCloudStandard noforwardadd nolightmap nodynlightmap exclude_path:deferred
         #pragma target 3.0
+        #include "StreetCloudLighting.cginc"
 
         struct Input { float4 color : COLOR; };
 

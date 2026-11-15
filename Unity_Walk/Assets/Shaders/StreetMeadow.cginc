@@ -20,4 +20,12 @@ float MeadowDryness(float2 worldXZ)
     return MeadowNoise(worldXZ * .19 + float2(13.7, 43.2)) * .72
          + MeadowNoise(worldXZ * .68 + float2(7.1, 29.6)) * .28;
 }
+
+// One restrained breeze is shared by crowns, shrubs and rooted grass.
+// Two sine evaluations, as in the previous foliage vertex path; no new texture.
+float StreetBreeze(float2 worldXZ, float seconds)
+{
+    float phase = dot(worldXZ, float2(.45,.31));
+    return sin(seconds * .52 + phase) * .72 + sin(seconds * .94 + phase * 1.9) * .28;
+}
 #endif

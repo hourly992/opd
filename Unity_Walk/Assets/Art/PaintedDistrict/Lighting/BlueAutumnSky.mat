@@ -35,6 +35,6 @@ Material:
     - _Rotation: 110
     - _SoftDaylight: 0.82
     m_Colors:
-    - _SunDirection: {r: -0.67545706, g: 0.6156615, b: -0.40585554, a: 0}
+    - _SunDirection: {r: -0.794751686, g: 0.374606593, b: -0.477534981, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -10,9 +10,10 @@ Shader "Street/GarageCanopy"
         Cull Off
         ZWrite Off
         CGPROGRAM
-        #pragma surface surf Standard alpha:fade keepalpha
+        #pragma surface surf StreetCloudStandard alpha:fade keepalpha exclude_path:deferred
         #pragma target 3.0
         #pragma multi_compile_instancing
+        #include "StreetCloudLighting.cginc"
         fixed4 _Color;
         struct Input { float3 worldPos; };
         void surf(Input input, inout SurfaceOutputStandard output)

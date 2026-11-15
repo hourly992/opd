@@ -10,10 +10,24 @@ Shader "Street/FallenLeaves"
         Cull Off
         AlphaToMask On
         CGPROGRAM
-        #pragma surface surf Lambert fullforwardshadows vertex:vert exclude_path:deferred
+        #pragma surface surf CloudLambert fullforwardshadows vertex:vert exclude_path:deferred
         #pragma target 3.0
+        #include "Lighting.cginc"
+        #include "StreetAutumnWeather.cginc"
         sampler2D _LeafAtlas;
         struct Input { float4 color : COLOR; float2 leafUV; };
+        half4 LightingCloudLambert(SurfaceOutput surface, UnityGI gi)
+        {
+            return LightingLambert(surface,gi);
+        }
+        void LightingCloudLambert_GI(SurfaceOutput surface, UnityGIInput data, inout UnityGI gi)
+        {
+            LightingLambert_GI(surface,data,gi);
+            #if defined(UNITY_PASS_FORWARDBASE) && defined(DIRECTIONAL)
+            UNITY_BRANCH if (_StreetWeatherEnabled > .5)
+                gi.light.color *= StreetWeatherCloudShadow(data.worldPos);
+            #endif
+        }
         void vert(inout appdata_full vertex, out Input output)
         {
             UNITY_INITIALIZE_OUTPUT(Input, output);
