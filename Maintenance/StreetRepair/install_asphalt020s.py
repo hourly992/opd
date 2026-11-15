@@ -25,6 +25,11 @@ SOURCE_URL = 'https://ambientcg.com/view?id=Asphalt020S'
 DOWNLOAD_URL = 'https://ambientcg.com/get?file=Asphalt020S_2K-JPG.zip'
 CDN_URL = 'https://acg-download.struffelproductions.com/file/ambientCG-Web/download/Asphalt020S_TN7SL6z0/Asphalt020S_2K-JPG.zip'
 FOLDER = ROOT / 'Assets/ThirdParty/ambientCG/Asphalt020S'
+# Calibrated against the unchanged original Color JPEG. ShaderLab Vector values
+# are raw working-space gains, so Material.SetVector cannot double-convert them.
+TARGET_ALBEDO_SRGB8 = (93, 92, 87)
+TONE_GAIN_LINEAR = (.76364610, .73200228, .71368004)
+TONE_GAIN_GAMMA = (.87962990, .86208631, .85089430)
 MAP_NAMES = {name: PACK + '_' + suffix + '.jpg' for name, suffix in
              [('color', 'Color'), ('normalGL', 'NormalGL'), ('roughness', 'Roughness'), ('ambientOcclusion', 'AmbientOcclusion')]}
 SHADER = r'''Shader "Street/Asphalt020S"
@@ -35,6 +40,7 @@ SHADER = r'''Shader "Street/Asphalt020S"
         [Normal] _BumpMap ("ambientCG Asphalt020S NormalGL", 2D) = "bump" {}
         _MaskMap ("ambientCG AO (R) and roughness (G)", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
+        _ToneGain ("Working color-space albedo gain", Vector) = (.76364610,.73200228,.71368004,1)
         _TileMeters ("Physical tile size in metres", Vector) = (1.85,1.85,0,0)
         _BumpStrength ("Normal strength", Range(0,1)) = 1
         _OcclusionStrength ("AO strength", Range(0,1)) = 1
@@ -52,6 +58,7 @@ SHADER = r'''Shader "Street/Asphalt020S"
         #pragma multi_compile_instancing
         sampler2D _MainTex, _BumpMap, _MaskMap;
         float4 _TileMeters;
+        float4 _ToneGain;
         fixed4 _Color;
         half _BumpStrength, _OcclusionStrength;
         struct Input { float3 worldPos; float3 worldNormal; INTERNAL_DATA };
@@ -77,7 +84,7 @@ SHADER = r'''Shader "Street/Asphalt020S"
             float3 bitangent = normalize(WorldNormalVector(IN,float3(0,1,0)));
             o.Normal = normalize(float3(dot(world,tangent),dot(world,bitangent),dot(world,n)));
             float2 mask = tex2D(_MaskMap,uv).rg;
-            o.Albedo = tex2D(_MainTex,uv).rgb * _Color.rgb;
+            o.Albedo = tex2D(_MainTex,uv).rgb * _Color.rgb * _ToneGain.rgb;
             o.Occlusion = lerp(1,mask.r,_OcclusionStrength);
             o.Smoothness = 1-saturate(mask.g);
             o.Metallic = 0;
@@ -123,6 +130,28 @@ def texture_meta(p, normal=False, scalar=False, runtime_limit=2048):
     Path(str(p) + '.meta').write_text('\n'.join(line.rstrip() for line in text.splitlines()) + '\n')
 
 
+def project_color_space():
+    settings = (ROOT / 'ProjectSettings/ProjectSettings.asset').read_text()
+    return 'Linear' if field(settings, 'm_ActiveColorSpace') == '1' else 'Gamma'
+
+
+def tone_gain():
+    return TONE_GAIN_LINEAR if project_color_space() == 'Linear' else TONE_GAIN_GAMMA
+
+
+def toned_mean_srgb8(color):
+    """CPU intrinsic-albedo reference, excluding lighting, AO and display grading."""
+    srgb = np.asarray(color, dtype=np.float64) / 255
+    gain = np.asarray(tone_gain())
+    if project_color_space() == 'Linear':
+        linear = np.where(srgb <= .04045, srgb / 12.92, ((srgb + .055) / 1.055) ** 2.4)
+        result = linear * gain
+        result = np.where(result <= .0031308, result * 12.92, 1.055 * result ** (1 / 2.4) - .055)
+    else:
+        result = srgb * gain
+    return result.mean(axis=(0, 1)) * 255
+
+
 def apply_material(p, paths, shader):
     text = p.read_text()
     text = re.sub(r'  m_Shader: .*', f'  m_Shader: {{fileID: 4800000, guid: {guid(shader)}, type: 3}}', text)
@@ -137,10 +166,13 @@ def apply_material(p, paths, shader):
     - _SurfaceClass: 4
     - _Cull: 2
 ''', text, flags=re.S)
-    text = re.sub(r'    m_Colors:.*?(?=  m_BuildTextureStacks:)', '''    m_Colors:
+    colors = '''    m_Colors:
     - _TileMeters: {r: 1.85, g: 1.85, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-''', text, flags=re.S)
+'''
+    gain = tone_gain()
+    colors += '    - _ToneGain: {r: %.8f, g: %.8f, b: %.8f, a: 1}\n' % gain
+    text = re.sub(r'    m_Colors:.*?(?=  m_BuildTextureStacks:)', colors, text, flags=re.S)
     text = text.replace('m_EnableInstancingVariants: 0', 'm_EnableInstancingVariants: 1')
     p.write_text('\n'.join(line.rstrip() for line in text.splitlines()) + '\n')
 
@@ -301,17 +333,24 @@ def verify():
     assert shader.read_text() == SHADER, 'Shader differs from reproducible installer source'
     assert SHADER.count('tex2D(') == 3, 'Runtime shader sampler budget changed'
     materials = active_asphalt_materials()
+    mean = toned_mean_srgb8(arrays['color'])
+    assert np.allclose(mean, TARGET_ALBEDO_SRGB8, atol=.05), ('Intrinsic asphalt tone drifted', mean)
     for p in materials:
         text = p.read_text()
         assert f'guid: {guid(shader)}' in field(text, 'm_Shader'), p
         assert field(text, '- _SurfaceClass') == '4', p
         assert field(text, 'm_EnableInstancingVariants') == '1', p
+        gain = [float(v) for v in re.findall(r'[rgb]: ([^,}]+)', field(text, '- _ToneGain', ''))]
+        assert len(gain) == 3 and np.allclose(gain, tone_gain(), atol=1e-7), ('Working-space asphalt gain changed', p)
+        assert field(text, '- _Color') == '{r: 1, g: 1, b: 1, a: 1}', ('Tint must remain white; use raw Vector gain', p)
         for key in ('color', 'normalGL', 'packedMask'):
             assert guid(FOLDER / manifest['files'][key]['file']) in text, (p, key)
     out = dict(asset=ASSET_ID, originalMapsVerified=4, packedPixelCount=2048*2048,
                runtimeTextureReads=3, activeAsphaltMaterialsVerified=len(materials),
                runtimeImportLimits=dict(color=2048, normalGL=1024, packedMask=1024),
                runtimeLevelZeroTexels=2048*2048 + 2*1024*1024,
+               projectColorSpace=project_color_space(), toneGain=list(tone_gain()),
+               intrinsicAlbedoMeanSRGB8=mean.tolist(), targetIntrinsicAlbedoMeanSRGB8=list(TARGET_ALBEDO_SRGB8),
                unityImportAndGPUFrameTimes='NOT RUN by this saved-data verifier')
     print(json.dumps(out, indent=2))
     return out

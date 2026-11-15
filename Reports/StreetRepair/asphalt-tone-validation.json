@@ -1,0 +1,136 @@
+{
+  "baselineCommit": "c5d2798c790a33b65f3660241cdc443a188f64d2",
+  "sourceColorMeanSRGB8": [
+    105.72628378256844,
+    106.71785330164019,
+    102.24536752147596
+  ],
+  "sourceColorMeanLinearRGB": [
+    0.14774670208629948,
+    0.15067939332588745,
+    0.13783830457604343
+  ],
+  "targetIntrinsicMeanSRGB8": [
+    93,
+    92,
+    87
+  ],
+  "actualCPUIntrinsicMeanSRGB8": [
+    92.99999975204156,
+    92.00000020683058,
+    86.99999975288105
+  ],
+  "actualCPUIntrinsicMeanLinearRGB": [
+    0.11282619283541297,
+    0.11029765946565423,
+    0.09837244672438829
+  ],
+  "projectColorSpace": "Linear",
+  "serializedColorProperty": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "rawVectorToneGainLinear": [
+    0.7636461,
+    0.73200228,
+    0.71368004
+  ],
+  "rawVectorToneGainGamma": [
+    0.8796299,
+    0.86208631,
+    0.8508943
+  ],
+  "gammaFallbackCPUIntrinsicMeanSRGB8": [
+    93.00000043678286,
+    92.00000036911644,
+    87.0000004301828
+  ],
+  "pipeline": "sRGB Color JPEG → hardware sRGB decode → linear PBR albedo × raw ShaderLab Vector _ToneGain; _Color stays white → sRGB encode only for this CPU display-reference mean. No [Gamma] attribute or SetColor conversion applies to the gain.",
+  "sourceFiles": [
+    {
+      "file": "Asphalt020S_2K-JPG_Color.jpg",
+      "sha256": "8e27f2f40239a3f6a9c154c0f446c561d6261ef709f0b5bfe71a716688df5185",
+      "byteIdenticalToBaselineAndSuppliedArchive": true,
+      "importerByteIdentical": true
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_NormalGL.jpg",
+      "sha256": "95163b81491bc764e623b76119dd05e15238efbb470fe76e62fb6d185dd2c448",
+      "byteIdenticalToBaselineAndSuppliedArchive": true,
+      "importerByteIdentical": true
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_Roughness.jpg",
+      "sha256": "2a583291af6e95e8f13ec771586aeb3db5039b6dd0b70200affb43b0190b8225",
+      "byteIdenticalToBaselineAndSuppliedArchive": true,
+      "importerByteIdentical": true
+    },
+    {
+      "file": "Asphalt020S_2K-JPG_AmbientOcclusion.jpg",
+      "sha256": "3f4643ea99f084695f57199a04725fc4c2d9c4f18e4f63f119e71dccd59a82dc",
+      "byteIdenticalToBaselineAndSuppliedArchive": true,
+      "importerByteIdentical": true
+    }
+  ],
+  "packedAORoughnessAndAllImporterSettingsByteIdentical": true,
+  "activeAsphaltMaterials": [
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/1179a107a75709a49a7908b832b653ee_2100000_WalkEdge_0.mat",
+      "name": "AsphaltArris",
+      "guid": "58e152f1488dcc44cbe690b721dc9084",
+      "onlyRawVectorGainAdded": true
+    },
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/202e4f73aee43d047ab787dd19a7ed19_2100000_Road_0.mat",
+      "name": "ReferenceAsphalt",
+      "guid": "121909ce7feba9c4799a6aa47553085b",
+      "onlyRawVectorGainAdded": true
+    },
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/92382cdfba4730e4790c7233d1007d3e_2100000_Drive_0.mat",
+      "name": "ReferenceServiceAsphalt",
+      "guid": "a37b844d7f21b7e46bdfe53dbc813325",
+      "onlyRawVectorGainAdded": true
+    },
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/a65fdcee10143d443a9c300a7cf71e2f_2100000_Footpath_0.mat",
+      "name": "ReferenceFootpathAsphalt",
+      "guid": "8618cabb1310d9245994616018b0c01b",
+      "onlyRawVectorGainAdded": true
+    },
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/bdbb81a299ae4de408c4af17df030b24_2100000_Drive_0.mat",
+      "name": "Asphalt",
+      "guid": "663ed0a6432231248a2c91652166b10a",
+      "onlyRawVectorGainAdded": true
+    },
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/cca1836fa60aaa5439da720af6c797fe_2100000_Drive_0.mat",
+      "name": "MappedParkingAsphalt",
+      "guid": "7b942ee289686b347b7c775fee348368",
+      "onlyRawVectorGainAdded": true
+    },
+    {
+      "path": "Assets/Art/PaintedDistrict/Materials/ce299b33f2934e041b68162dbf9c1c95_2100000_Drive_0.mat",
+      "name": "ResidentialEntranceAsphalt",
+      "guid": "9fedc99506e594b47a563305c037e63b",
+      "onlyRawVectorGainAdded": true
+    }
+  ],
+  "shaderTextureReadsBefore": 3,
+  "shaderTextureReadsAfter": 3,
+  "shaderALUChange": "one additional RGB multiply; no added sample, branch, saturation/noise, or runtime updater",
+  "installerReapplicationPreservesTone": true,
+  "generatorSetsRawVectorGain": true,
+  "additionalSaturationTransform": false,
+  "limitations": [
+    "The reported RGB is intrinsic, unlit albedo averaged over the original uncompressed source pixels, not a measured screenshot.",
+    "Rendered appearance depends on illumination, AO, material BRDF, compression/filtering and camera/display grading.",
+    "Unity shader/C# compilation, player rendering and GPU frame time were not executed."
+  ],
+  "documentation": [
+    "https://docs.unity.com/en-us/engine/6000.6/manual/materials-and-shaders/shaders/writing-custom/shader-writing/writing-shader-change-properties/sl-properties-in-programs"
+  ]
+}

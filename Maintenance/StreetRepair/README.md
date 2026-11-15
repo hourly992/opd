@@ -13,14 +13,17 @@ terrain/grass/paving has separate GUIDs, so it cannot punch holes in the study.
 Install `requirements.txt` into a virtual environment, then run:
 
 ```sh
-python Maintenance/StreetRepair/validate.py
-python Maintenance/StreetRepair/validate_parking_network.py
+python Maintenance/StreetRepair/install_asphalt020s.py --verify
+python Maintenance/StreetRepair/validate_warm_autumn.py --check-saved
+python Maintenance/StreetRepair/validate_autumn_update.py
 ```
 
-The validator compares against base `89336538c120b488cb93af6a6d46692a84ee5f69`
-on `codex/painted-district`. It checks saved asset data, object preservation,
-road/crosswalk invariants, walk widths, leaf budgets and ramp collisions. It
-does not compile C#, import shaders, measure frame times or capture gameplay.
+The current audit compares against `c5d2798` and checks saved assets, object
+preservation, protected surfaces, plaza coverage, resource budgets and ramp
+collisions. The original `validate.py` and `validate_parking_network.py` target
+earlier stages and retain their historical geometry/lighting assumptions.
+These checks do not compile C#, import shaders, measure frame times or capture
+gameplay.
 
 ## Reproducing the bake
 
@@ -73,7 +76,7 @@ Panoramas 20–24 and overhead reference 25 guide connectivity; positions remain
 estimates. `batch_garages.py` bakes four entrances into the four existing
 renderer objects; the two new objects contain only collider/metadata.
 
-`validate_parking_network.py` checks the current saved scene against `2fb3b79`.
+`validate_parking_network.py` checks the archived network stage against `2fb3b79`.
 It independently verifies all four ramp collisions, actual paved connectivity
 to the main street/courts, preserved objects/materials, and resource budgets.
 
@@ -132,7 +135,7 @@ not a measurement of FPS, GPU time or generated lighting/shadow-pass cost.
 
 The installed-source verifier checks source SHA-256, all packed pixels,
 importer settings, shader source and material references without writing
-assets. The independent report is
+assets. The independent report for that installation stage is
 `Reports/StreetRepair/asphalt020s-validation.json`; the current status is
 `Reports/StreetRepair/asphalt020s-status.json`. Reproduce that read-only audit
 with the supplied archive (only the optional JSON report is written):
@@ -151,6 +154,43 @@ python Maintenance/StreetRepair/report_asphalt020s.py
 The PDF reads the installed `SOURCE.json`, status and independent report;
 it does not rerun the original migration or alter the historical PDFs.
 Unity shader import, a game build and frame-time checks remain separate work.
+
+## Dark asphalt, full parking plazas and warm autumn presentation
+
+This follow-up starts at `c5d2798c790a33b65f3660241cdc443a188f64d2`.
+The original Asphalt020S files, packed mask and import settings stay unchanged.
+All seven asphalt materials use a raw `_ToneGain` vector, calibrated in the
+project's Linear color space to mean intrinsic albedo sRGB(93, 92, 87).
+This is an unlit source-pixel reference, not a measured game-frame RGB.
+The installer and editor material helper retain the gain on reapplication.
+
+`autumn_plazas.py` is a guarded one-time saved-scene migration from that commit.
+It expands the two paired parking courts along the outside walls, between the
+canopies and behind them. Actual paving and house footprints are excluded;
+ramps remain open and existing street/parking connections are retained. Visible
+ground and collision are cut together; the plaza is baked into existing asphalt
+renderers. The shared entrance meshes and house transforms do not change.
+
+`warm_autumn.py --apply-saved` changes only the saved sun/ambient colors and sets
+`StreetPresentation.warmAutumnGrade` to 0.35. The grade uses the existing final
+pass, with highlight and chroma protection. No pass, texture read, render target
+or light is added. Exposure, sun pose/intensity, shadow settings, fog, skybox and
+the original paving, foliage and concrete materials are preserved. The scene
+contains no cars or runtime car spawning.
+
+For the current stage, run these read-only checks after installing requirements:
+
+```sh
+python Maintenance/StreetRepair/install_asphalt020s.py --verify
+python Maintenance/StreetRepair/validate_warm_autumn.py --check-saved --output Reports/StreetRepair/warm-autumn-validation.json
+python Maintenance/StreetRepair/validate_autumn_update.py
+```
+
+Earlier validators and reports describe their respective historical stages;
+their exact old yard bounds and unchanged-light assumptions do not apply to
+this intentional plaza/lighting follow-up. Unity import/build/player QA and
+frame-time measurements are still required. The user captures gameplay views
+after building; the separate update PDF contains saved-data evidence only.
 
 The offline cutter uses constrained triangulation with holes and interpolates
 the original vertex channels. Render and collision meshes use the same cut.

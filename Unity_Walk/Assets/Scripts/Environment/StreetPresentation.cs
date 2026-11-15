@@ -19,6 +19,7 @@ public sealed class StreetPresentation : MonoBehaviour
     [Range(0, 1)] public float autumnGrade;
     [Range(0, 1)] public float leafGrade;
     public bool paintedDistrictGrade;
+    [Range(0, 1)] public float warmAutumnGrade;
     private Material material;
     private Material occlusion;
     private Material sunlight;
@@ -57,6 +58,7 @@ public sealed class StreetPresentation : MonoBehaviour
         material.SetFloat("_AutumnGrade", autumnGrade);
         material.SetFloat("_LeafGrade", leafGrade);
         material.SetFloat("_PaintedDistrictGrade", paintedDistrictGrade ? 1 : 0);
+        material.SetFloat("_WarmAutumnGrade", warmAutumnGrade);
         bool previous = GL.sRGBWrite;
         RenderTexture raw = null, blurred = null, shaded = null;
         RenderTexture highlights = null, bloomSmall = null, bloomWide = null;

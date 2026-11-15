@@ -44,5 +44,6 @@ Material:
     m_Colors:
     - _TileMeters: {r: 1.85, g: 1.85, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ToneGain: {r: 0.76364610, g: 0.73200228, b: 0.71368004, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

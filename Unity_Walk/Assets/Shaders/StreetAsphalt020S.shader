@@ -6,6 +6,7 @@ Shader "Street/Asphalt020S"
         [Normal] _BumpMap ("ambientCG Asphalt020S NormalGL", 2D) = "bump" {}
         _MaskMap ("ambientCG AO (R) and roughness (G)", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
+        _ToneGain ("Working color-space albedo gain", Vector) = (.76364610,.73200228,.71368004,1)
         _TileMeters ("Physical tile size in metres", Vector) = (1.85,1.85,0,0)
         _BumpStrength ("Normal strength", Range(0,1)) = 1
         _OcclusionStrength ("AO strength", Range(0,1)) = 1
@@ -23,6 +24,7 @@ Shader "Street/Asphalt020S"
         #pragma multi_compile_instancing
         sampler2D _MainTex, _BumpMap, _MaskMap;
         float4 _TileMeters;
+        float4 _ToneGain;
         fixed4 _Color;
         half _BumpStrength, _OcclusionStrength;
         struct Input { float3 worldPos; float3 worldNormal; INTERNAL_DATA };
@@ -48,7 +50,7 @@ Shader "Street/Asphalt020S"
             float3 bitangent = normalize(WorldNormalVector(IN,float3(0,1,0)));
             o.Normal = normalize(float3(dot(world,tangent),dot(world,bitangent),dot(world,n)));
             float2 mask = tex2D(_MaskMap,uv).rg;
-            o.Albedo = tex2D(_MainTex,uv).rgb * _Color.rgb;
+            o.Albedo = tex2D(_MainTex,uv).rgb * _Color.rgb * _ToneGain.rgb;
             o.Occlusion = lerp(1,mask.r,_OcclusionStrength);
             o.Smoothness = 1-saturate(mask.g);
             o.Metallic = 0;

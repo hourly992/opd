@@ -1,0 +1,104 @@
+{
+  "baseCommit": "c5d2798c790a33b65f3660241cdc443a188f64d2",
+  "savedSceneChecked": true,
+  "changedSceneBlocks": [
+    2,
+    1319908495,
+    1321379542
+  ],
+  "settings": [
+    {
+      "block": 2,
+      "property": "m_AmbientSkyColor",
+      "before": "{r: 0.76, g: 0.8, b: 0.84, a: 1}",
+      "after": "{r: 0.805, g: 0.8, b: 0.785, a: 1}"
+    },
+    {
+      "block": 2,
+      "property": "m_AmbientEquatorColor",
+      "before": "{r: 0.75, g: 0.71, b: 0.63, a: 1}",
+      "after": "{r: 0.735, g: 0.715, b: 0.68, a: 1}"
+    },
+    {
+      "block": 2,
+      "property": "m_AmbientGroundColor",
+      "before": "{r: 0.53, g: 0.46, b: 0.36, a: 1}",
+      "after": "{r: 0.52, g: 0.475, b: 0.42, a: 1}"
+    },
+    {
+      "block": 1321379542,
+      "property": "m_Color",
+      "before": "{r: 1, g: 0.951, b: 0.854, a: 1}",
+      "after": "{r: 1, g: 0.948, b: 0.84, a: 1}"
+    },
+    {
+      "block": 1319908495,
+      "property": "warmAutumnGrade",
+      "before": "0",
+      "after": "0.35"
+    }
+  ],
+  "extraRenderPasses": 0,
+  "extraTextureSamples": 0,
+  "exposureShadowPoseFogSkyboxAndMaterialAssetsPreserved": true,
+  "brightWhiteHighlightSamplesUntinted": 67,
+  "sampledDisplayColors": 729,
+  "maximumAddedGradeLuminanceError": 2.220446049250313e-16,
+  "neutralShadowChannelRatioLimit": 1.03,
+  "materialSwatches": {
+    "redPaver": {
+      "before": [
+        0.52,
+        0.25,
+        0.17
+      ],
+      "after": [
+        0.5206753716335668,
+        0.2498597057816032,
+        0.16940103068838097
+      ],
+      "hueDifferenceDegrees": 0.028592551754908158
+    },
+    "greenPaverOrLeaf": {
+      "before": [
+        0.16,
+        0.42,
+        0.1
+      ],
+      "after": [
+        0.1603244890869439,
+        0.4199398938396653,
+        0.09963991060923966
+      ],
+      "hueDifferenceDegrees": 0.11770183981823834
+    },
+    "redLeaf": {
+      "before": [
+        0.6,
+        0.18,
+        0.06
+      ],
+      "after": [
+        0.600492089855475,
+        0.1798727358186431,
+        0.059811648742831985
+      ],
+      "hueDifferenceDegrees": 0.010000960287708693
+    },
+    "yellowLeaf": {
+      "before": [
+        0.74,
+        0.51,
+        0.08
+      ],
+      "after": [
+        0.7401737752079735,
+        0.5099532820354028,
+        0.07995108142749029
+      ],
+      "hueDifferenceDegrees": 0.012985415275778678
+    }
+  },
+  "pavingFoliageAndWhiteConcreteMaterialsUnchanged": true,
+  "unityShaderCompilationAndFrameTimes": "NOT RUN: Unity is unavailable"
+}

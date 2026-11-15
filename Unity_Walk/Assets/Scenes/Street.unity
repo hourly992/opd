@@ -20,9 +20,9 @@ RenderSettings:
   m_FogDensity: 0.002
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.76, g: 0.8, b: 0.84, a: 1}
-  m_AmbientEquatorColor: {r: 0.75, g: 0.71, b: 0.63, a: 1}
-  m_AmbientGroundColor: {r: 0.53, g: 0.46, b: 0.36, a: 1}
+  m_AmbientSkyColor: {r: 0.805, g: 0.8, b: 0.785, a: 1}
+  m_AmbientEquatorColor: {r: 0.735, g: 0.715, b: 0.68, a: 1}
+  m_AmbientGroundColor: {r: 0.52, g: 0.475, b: 0.42, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -25775,7 +25775,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79346152}
-  m_Mesh: {fileID: 4300000, guid: 519dd0e588e1ca54e8a7ac1368a3e160, type: 2}
+  m_Mesh: {fileID: 4300000, guid: adf3077867d6066c58d5c303c360e74b, type: 2}
 --- !u!1 &79548224
 GameObject:
   m_ObjectHideFlags: 0
@@ -267931,7 +267931,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910724027}
-  m_Mesh: {fileID: 4300000, guid: 3df5f535f747c8946a4ec5a14325ddf4, type: 2}
+  m_Mesh: {fileID: 4300000, guid: da304079ff9beb4a6e8dd0dbc44d9fe8, type: 2}
 --- !u!1001 &910775784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332900,7 +332900,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119471922}
-  m_Mesh: {fileID: 4300000, guid: 443243ad5737f2645a0ef22af853f4ba, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 7b43b8b05aa6297817952e36c99bc7b8, type: 2}
 --- !u!1001 &1119711869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -377036,7 +377036,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264363888}
-  m_Mesh: {fileID: 4300000, guid: b5a5e0f9493bb2845b0be45429dc2ff5, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 81045481b135ee2347a192d410a7aa7d, type: 2}
 --- !u!1001 &1266157498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -391843,6 +391843,7 @@ MonoBehaviour:
   autumnGrade: 0.88
   leafGrade: 0.95
   paintedDistrictGrade: 1
+  warmAutumnGrade: 0.35
 --- !u!20 &1319908496
 Camera:
   m_ObjectHideFlags: 0
@@ -392680,7 +392681,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 1
-  m_Color: {r: 1, g: 0.951, b: 0.854, a: 1}
+  m_Color: {r: 1, g: 0.948, b: 0.84, a: 1}
   m_Intensity: 1.16
   m_Range: 10
   m_SpotAngle: 30
@@ -443359,7 +443360,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491391630}
-  m_Mesh: {fileID: 4300000, guid: f8e7d08fdd47da54584e77b59b7b5d9a, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 03dc514ce8d4e984c49c1d70f06595cd, type: 2}
 --- !u!1001 &1491697195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -690188,7 +690189,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985868235}
-  m_Mesh: {fileID: 4300000, guid: 0081281fed56ae046827d487261bb374, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 821e94923994a8b0d183dd4da45bf98e, type: 2}
 --- !u!1001 &1986069018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740774,7 +740775,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4000000106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -740833,7 +740834,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30

@@ -1,0 +1,266 @@
+{
+  "baselineCommit": "c5d2798c790a33b65f3660241cdc443a188f64d2",
+  "existingSceneBlocksRetained": 17568,
+  "retiredEmptyGroundComponents": [
+    4000000109,
+    4000000110
+  ],
+  "unchangedTransformAndPrefabBlocks": 9200,
+  "sceneChangesLimitedToLightingGradeGroundMeshRefsAndRetiredEmptyCourt": true,
+  "groundMeshReferenceChanges": [
+    {
+      "block": 79346155,
+      "type": 33,
+      "mesh": "Assets/Art/StreetRepair/Surfaces/AutumnPlaza_Grass_79346155_79346152.asset"
+    },
+    {
+      "block": 910724030,
+      "type": 33,
+      "mesh": "Assets/Art/StreetRepair/Surfaces/AutumnPlaza_StreetGrass_-6_3_LOD0_910724027.asset"
+    },
+    {
+      "block": 1119471925,
+      "type": 33,
+      "mesh": "Assets/Art/StreetRepair/Surfaces/AutumnPlaza_StreetGrass_-6_3_LOD2_1119471922.asset"
+    },
+    {
+      "block": 1264363891,
+      "type": 33,
+      "mesh": "Assets/Art/StreetRepair/Surfaces/AutumnPlaza_StreetGrass_-6_3_LOD1_1264363888.asset"
+    },
+    {
+      "block": 1491391633,
+      "type": 33,
+      "mesh": "Assets/Art/StreetRepair/Surfaces/AutumnPlaza_StreetGrass_-6_2_LOD2_1491391630.asset"
+    },
+    {
+      "block": 1985868238,
+      "type": 33,
+      "mesh": "Assets/Art/StreetRepair/Surfaces/AutumnPlaza_Grass_1985868238_1985868235.asset"
+    }
+  ],
+  "byteIdenticalProtectedAssets": {
+    "nonAsphaltMaterials": 1786,
+    "texturesAndImporters": 378,
+    "leaves": 1684,
+    "houseModelsAndImporters": 2,
+    "garageMeshesAndImporters": 12,
+    "roadProfile": 8
+  },
+  "byteIdentityMethod": "Raw file bytes hashed as Git blobs against the baseline tree",
+  "unchangedPaverSubmeshes": 21,
+  "cars": {
+    "savedVehicleComponents": 0,
+    "emptyParkingVehicleArrays": 19,
+    "runtimeVehicleConstructionFound": false,
+    "otherRuntimeSourceFilesByteIdentical": 21
+  },
+  "asphaltInstallation": {
+    "asset": "Asphalt020S",
+    "originalMapsVerified": 4,
+    "packedPixelCount": 4194304,
+    "runtimeTextureReads": 3,
+    "activeAsphaltMaterialsVerified": 7,
+    "runtimeImportLimits": {
+      "color": 2048,
+      "normalGL": 1024,
+      "packedMask": 1024
+    },
+    "runtimeLevelZeroTexels": 6291456,
+    "projectColorSpace": "Linear",
+    "toneGain": [
+      0.7636461,
+      0.73200228,
+      0.71368004
+    ],
+    "intrinsicAlbedoMeanSRGB8": [
+      92.99999975204156,
+      92.00000020683058,
+      86.99999975288105
+    ],
+    "targetIntrinsicAlbedoMeanSRGB8": [
+      93,
+      92,
+      87
+    ],
+    "unityImportAndGPUFrameTimes": "NOT RUN by this saved-data verifier"
+  },
+  "warmAutumn": {
+    "baseCommit": "c5d2798c790a33b65f3660241cdc443a188f64d2",
+    "savedSceneChecked": true,
+    "changedSceneBlocks": [
+      2,
+      1319908495,
+      1321379542
+    ],
+    "settings": [
+      {
+        "block": 2,
+        "property": "m_AmbientSkyColor",
+        "before": "{r: 0.76, g: 0.8, b: 0.84, a: 1}",
+        "after": "{r: 0.805, g: 0.8, b: 0.785, a: 1}"
+      },
+      {
+        "block": 2,
+        "property": "m_AmbientEquatorColor",
+        "before": "{r: 0.75, g: 0.71, b: 0.63, a: 1}",
+        "after": "{r: 0.735, g: 0.715, b: 0.68, a: 1}"
+      },
+      {
+        "block": 2,
+        "property": "m_AmbientGroundColor",
+        "before": "{r: 0.53, g: 0.46, b: 0.36, a: 1}",
+        "after": "{r: 0.52, g: 0.475, b: 0.42, a: 1}"
+      },
+      {
+        "block": 1321379542,
+        "property": "m_Color",
+        "before": "{r: 1, g: 0.951, b: 0.854, a: 1}",
+        "after": "{r: 1, g: 0.948, b: 0.84, a: 1}"
+      },
+      {
+        "block": 1319908495,
+        "property": "warmAutumnGrade",
+        "before": "0",
+        "after": "0.35"
+      }
+    ],
+    "extraRenderPasses": 0,
+    "extraTextureSamples": 0,
+    "exposureShadowPoseFogSkyboxAndMaterialAssetsPreserved": true,
+    "brightWhiteHighlightSamplesUntinted": 67,
+    "sampledDisplayColors": 729,
+    "maximumAddedGradeLuminanceError": 2.220446049250313e-16,
+    "neutralShadowChannelRatioLimit": 1.03,
+    "materialSwatches": {
+      "redPaver": {
+        "before": [
+          0.52,
+          0.25,
+          0.17
+        ],
+        "after": [
+          0.5206753716335668,
+          0.2498597057816032,
+          0.16940103068838097
+        ],
+        "hueDifferenceDegrees": 0.028592551754908158
+      },
+      "greenPaverOrLeaf": {
+        "before": [
+          0.16,
+          0.42,
+          0.1
+        ],
+        "after": [
+          0.1603244890869439,
+          0.4199398938396653,
+          0.09963991060923966
+        ],
+        "hueDifferenceDegrees": 0.11770183981823834
+      },
+      "redLeaf": {
+        "before": [
+          0.6,
+          0.18,
+          0.06
+        ],
+        "after": [
+          0.600492089855475,
+          0.1798727358186431,
+          0.059811648742831985
+        ],
+        "hueDifferenceDegrees": 0.010000960287708693
+      },
+      "yellowLeaf": {
+        "before": [
+          0.74,
+          0.51,
+          0.08
+        ],
+        "after": [
+          0.7401737752079735,
+          0.5099532820354028,
+          0.07995108142749029
+        ],
+        "hueDifferenceDegrees": 0.012985415275778678
+      }
+    },
+    "pavingFoliageAndWhiteConcreteMaterialsUnchanged": true,
+    "unityShaderCompilationAndFrameTimes": "NOT RUN: Unity is unavailable"
+  },
+  "activeDirectSavedRenderersAllLodsUpperBound": {
+    "before": {
+      "activeRenderers": 1893,
+      "triangles": 2913102,
+      "vertices": 5802525,
+      "nonemptySubmeshes": 2912
+    },
+    "after": {
+      "activeRenderers": 1892,
+      "triangles": 2898195,
+      "vertices": 5750565,
+      "nonemptySubmeshes": 2911
+    }
+  },
+  "plazaCoverageAndExistingPavingHouseExclusion": {
+    "north": {
+      "rawBounds": [
+        16.1,
+        91.8,
+        36.3,
+        137.5
+      ],
+      "expectedAreaSquareMeters": 702.7878736186872,
+      "coverageSymmetricDifferenceSquareMeters": 9.882894361728137e-05,
+      "priorLegacyReservedAreaOverlapSquareMeters": 9.525030529643817e-06,
+      "finalReservedAreaOverlapSquareMeters": 2.9847697439509385e-05
+    },
+    "west": {
+      "rawBounds": [
+        -121.0,
+        60.5,
+        -81.0,
+        81.7
+      ],
+      "expectedAreaSquareMeters": 646.8740451145569,
+      "coverageSymmetricDifferenceSquareMeters": 0.0002745121513444973,
+      "priorLegacyReservedAreaOverlapSquareMeters": 9.99571057036519e-08,
+      "finalReservedAreaOverlapSquareMeters": 1.6600630932831558e-06
+    }
+  },
+  "vegetationExclusion": {
+    "activeGroundMeshesInspected": 14,
+    "candidateTrianglesInspected": 72954,
+    "survivingGrassLawnCloverInsidePlazas": 0,
+    "boundaryInsetToleranceMeters": 0.005
+  },
+  "collision": {
+    "clearDescendingRampProbes": 564,
+    "courtyardCentreSideStripsAndRearApproachProbes": 589,
+    "independentRampColliderComponentsUnchanged": 4
+  },
+  "connectivity": {
+    "asphaltTargetsConnectedToMainStreet": [
+      "main-road-north",
+      "main-road-south",
+      "main-road-middle",
+      "upper-5-7-ring",
+      "east-court-ring",
+      "west-court-loop",
+      "north-frontage-parking",
+      "north-west",
+      "north-east",
+      "opposite-west",
+      "opposite-east"
+    ],
+    "asphaltSeamWeldToleranceMeters": 0.012,
+    "continuousConnectorCollisionProbes": 129
+  },
+  "limitations": [
+    "Unity shader/asset import, C# compilation and a game build/run were not executed.",
+    "Resource counts include all direct saved LODs; they do not measure draw calls, GPU memory, frame time or FPS.",
+    "The asphalt RGB result is intrinsic albedo calculated from source pixels, not the measured color of a game screenshot.",
+    "Existing hidden asphalt beneath reserved house/paver areas is preserved; the overlap check prohibits adding more there."
+  ]
+}
