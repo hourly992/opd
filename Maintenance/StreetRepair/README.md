@@ -77,10 +77,80 @@ renderer objects; the two new objects contain only collider/metadata.
 It independently verifies all four ramp collisions, actual paved connectivity
 to the main street/courts, preserved objects/materials, and resource budgets.
 
-`install_asphalt020s.py --archive <original-official-2K-JPG.zip>` is prepared
-for the specifically requested ambientCG material. Installation requires the
-real color, NormalGL, roughness and AO maps; it validates all four before any
-material changes. No fallback texture is downloaded or chosen by this tool.
+## Asphalt020S source maps and material-only follow-up
+
+The Asphalt020S follow-up starts from
+`57691931f92fac05831e3246239ae93489372fce` on the same PR branch. It changes
+existing asphalt materials and adds the exact source maps plus a dedicated
+shader; it does not regenerate the scene or any mesh. Keep the saved street
+scene, red paving, white concrete, leaves, lighting and street profile intact.
+
+Use the specifically requested ambientCG **Asphalt020S**, licensed CC0 1.0:
+<https://ambientcg.com/view?id=Asphalt020S> and
+<https://docs.ambientcg.com/license/>. The four required original filenames are:
+
+- `Asphalt020S_2K-JPG_Color.jpg`
+- `Asphalt020S_2K-JPG_NormalGL.jpg`
+- `Asphalt020S_2K-JPG_Roughness.jpg`
+- `Asphalt020S_2K-JPG_AmbientOcclusion.jpg`
+
+Each must be a decodable 2048 × 2048 JPEG. The installer validates all four
+before changing any Unity asset. Use exactly one input mode:
+
+```sh
+python Maintenance/StreetRepair/install_asphalt020s.py --archive /path/to/Asphalt020S_4maps.zip
+# Or the directory containing the four unchanged original JPEGs:
+python Maintenance/StreetRepair/install_asphalt020s.py --maps-dir /path/to/extracted-four-original-maps
+python Maintenance/StreetRepair/install_asphalt020s.py --verify
+```
+
+The supplied `Asphalt020S_4maps.zip` is a user-repacked four-map container,
+not the complete official `Asphalt020S_2K-JPG.zip`. Its SHA-256 identifies that
+supplied container only. `SOURCE.json` records this distinction, the official
+asset/download/license URLs, delivery mode and each original map checksum.
+The archive is not committed. With `--maps-dir`, the installer records no
+archive checksum. No substitute texture is selected or downloaded.
+
+The original four JPEGs are saved byte-for-byte. `AO_Roughness.png` stores
+original AO red-channel values in R and original roughness red-channel values
+in G, with B=0; no resampling or repainting is performed. The runtime shader
+reads only color, NormalGL and this packed mask. All seven active asphalt
+materials share these maps at a physical repeat of 1.85 × 1.85 m, with mipmaps,
+repeat wrap and instancing. Source JPEGs and the packed PNG remain 2048².
+Unity imports the runtime color at up to 2048² and the normal/packed mask at up
+to 1024²: only the imported runtime versions of those two maps are downscaled.
+The packed PNG still contains every original AO/roughness value at 2048².
+This bounds the asphalt level-zero runtime texel count at 6,291,456, compared
+with 10,223,616 in the former active asphalt map set; it does not measure VRAM.
+The complete main-scene/prefab material closure has 124 → 116 unique texture
+references and 199,305,528 → 194,062,648 effective level-zero texels, including
+the three old WalkEdge maps still referenced by other materials. These are
+saved-reference/import-limit counts, not actual GPU memory measurements.
+The previous general shader used additional texture fetches in its asphalt
+path; three source texture reads in this shader are a static code count,
+not a measurement of FPS, GPU time or generated lighting/shadow-pass cost.
+
+The installed-source verifier checks source SHA-256, all packed pixels,
+importer settings, shader source and material references without writing
+assets. The independent report is
+`Reports/StreetRepair/asphalt020s-validation.json`; the current status is
+`Reports/StreetRepair/asphalt020s-status.json`. Reproduce that read-only audit
+with the supplied archive (only the optional JSON report is written):
+
+```sh
+python Maintenance/StreetRepair/validate_asphalt020s.py --archive /path/to/Asphalt020S_4maps.zip --output Reports/StreetRepair/asphalt020s-validation.json
+```
+
+Rebuild its separate PDF with
+system Python (`reportlab` and `pypdf` required):
+
+```sh
+python Maintenance/StreetRepair/report_asphalt020s.py
+```
+
+The PDF reads the installed `SOURCE.json`, status and independent report;
+it does not rerun the original migration or alter the historical PDFs.
+Unity shader import, a game build and frame-time checks remain separate work.
 
 The offline cutter uses constrained triangulation with holes and interpolates
 the original vertex channels. Render and collision meshes use the same cut.

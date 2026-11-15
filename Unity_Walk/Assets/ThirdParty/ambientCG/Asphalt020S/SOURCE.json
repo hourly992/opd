@@ -1,0 +1,65 @@
+{
+  "asset": "Asphalt020S",
+  "source": "https://ambientcg.com/view?id=Asphalt020S",
+  "download": "https://ambientcg.com/get?file=Asphalt020S_2K-JPG.zip",
+  "resolvedDownload": "https://acg-download.struffelproductions.com/file/ambientCG-Web/download/Asphalt020S_TN7SL6z0/Asphalt020S_2K-JPG.zip",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://docs.ambientcg.com/license/",
+  "legalCode": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "physicalTileMeters": [
+    1.85,
+    1.85
+  ],
+  "sourceResolution": [
+    2048,
+    2048
+  ],
+  "runtimeImportLimits": {
+    "color": 2048,
+    "normalGL": 1024,
+    "packedMask": 1024
+  },
+  "runtimeLevelZeroTexels": 6291456,
+  "sourceDelivery": "user-provided ZIP of original maps",
+  "archiveFileName": "Asphalt020S_4maps.zip",
+  "archiveSHA256": "1ad051186a4057c424c6f6919699313c59f0e9fbb28318aa638a126ee8d1fc7d",
+  "archiveHashMeaning": "Checksum of the supplied input ZIP, which may be a four-map repack; not a claimed checksum of the complete official package.",
+  "originalFileHashes": {
+    "Asphalt020S_2K-JPG_Color.jpg": "8e27f2f40239a3f6a9c154c0f446c561d6261ef709f0b5bfe71a716688df5185",
+    "Asphalt020S_2K-JPG_NormalGL.jpg": "95163b81491bc764e623b76119dd05e15238efbb470fe76e62fb6d185dd2c448",
+    "Asphalt020S_2K-JPG_Roughness.jpg": "2a583291af6e95e8f13ec771586aeb3db5039b6dd0b70200affb43b0190b8225",
+    "Asphalt020S_2K-JPG_AmbientOcclusion.jpg": "3f4643ea99f084695f57199a04725fc4c2d9c4f18e4f63f119e71dccd59a82dc"
+  },
+  "files": {
+    "color": {
+      "file": "Asphalt020S_2K-JPG_Color.jpg",
+      "sha256": "8e27f2f40239a3f6a9c154c0f446c561d6261ef709f0b5bfe71a716688df5185"
+    },
+    "normalGL": {
+      "file": "Asphalt020S_2K-JPG_NormalGL.jpg",
+      "sha256": "95163b81491bc764e623b76119dd05e15238efbb470fe76e62fb6d185dd2c448"
+    },
+    "roughness": {
+      "file": "Asphalt020S_2K-JPG_Roughness.jpg",
+      "sha256": "2a583291af6e95e8f13ec771586aeb3db5039b6dd0b70200affb43b0190b8225"
+    },
+    "ambientOcclusion": {
+      "file": "Asphalt020S_2K-JPG_AmbientOcclusion.jpg",
+      "sha256": "3f4643ea99f084695f57199a04725fc4c2d9c4f18e4f63f119e71dccd59a82dc"
+    },
+    "packedMask": {
+      "file": "AO_Roughness.png",
+      "sha256": "a30ae1fca43ef4d57fc25afe2232b7b4c9f9ec33e24d2b2e02880ffe3a65a5a2"
+    }
+  },
+  "packing": "AO_Roughness.png R=original AO red channel, G=original roughness red channel, B=0; no resampling/repainting.",
+  "materialPaths": [
+    "Assets/Art/PaintedDistrict/Materials/1179a107a75709a49a7908b832b653ee_2100000_WalkEdge_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/202e4f73aee43d047ab787dd19a7ed19_2100000_Road_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/92382cdfba4730e4790c7233d1007d3e_2100000_Drive_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/a65fdcee10143d443a9c300a7cf71e2f_2100000_Footpath_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/bdbb81a299ae4de408c4af17df030b24_2100000_Drive_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/cca1836fa60aaa5439da720af6c797fe_2100000_Drive_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/ce299b33f2934e041b68162dbf9c1c95_2100000_Drive_0.mat"
+  ]
+}

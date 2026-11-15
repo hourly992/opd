@@ -1,29 +1,100 @@
 {
   "asset": "ambientCG Asphalt020S",
-  "installed": false,
-  "existingAsphaltMaterialsChanged": false,
+  "installed": true,
+  "existingAsphaltMaterialsChanged": true,
+  "baselineCommit": "57691931f92fac05831e3246239ae93489372fce",
   "source": "https://ambientcg.com/view?id=Asphalt020S",
   "officialArchive": "https://ambientcg.com/get?file=Asphalt020S_2K-JPG.zip",
-  "downloadHost": "acg-download.struffelproductions.com",
-  "license": "CC0 1.0 (official listing verified; original maps not downloaded)",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://docs.ambientcg.com/license/",
+  "legalCode": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sourceDelivery": "user-provided ZIP of original maps",
+  "suppliedArchive": {
+    "fileName": "Asphalt020S_4maps.zip",
+    "bytes": 21412541,
+    "sha256": "1ad051186a4057c424c6f6919699313c59f0e9fbb28318aa638a126ee8d1fc7d",
+    "isFullOfficialZip": false,
+    "hashMeaning": "Checksum of the supplied input ZIP, which may be a four-map repack; not a claimed checksum of the complete official package."
+  },
+  "sourceResolution": [
+    2048,
+    2048
+  ],
   "physicalTileMeters": [
     1.85,
     1.85
   ],
-  "requiredMaps": [
-    "Color",
-    "NormalGL",
-    "Roughness",
-    "AmbientOcclusion"
+  "originalFileHashes": {
+    "Asphalt020S_2K-JPG_Color.jpg": "8e27f2f40239a3f6a9c154c0f446c561d6261ef709f0b5bfe71a716688df5185",
+    "Asphalt020S_2K-JPG_NormalGL.jpg": "95163b81491bc764e623b76119dd05e15238efbb470fe76e62fb6d185dd2c448",
+    "Asphalt020S_2K-JPG_Roughness.jpg": "2a583291af6e95e8f13ec771586aeb3db5039b6dd0b70200affb43b0190b8225",
+    "Asphalt020S_2K-JPG_AmbientOcclusion.jpg": "3f4643ea99f084695f57199a04725fc4c2d9c4f18e4f63f119e71dccd59a82dc"
+  },
+  "originalMapsVerified": 4,
+  "originalMapVerification": "All four installed JPEGs are byte-identical to the user-supplied four-map ZIP.",
+  "runtimeImportLimits": {
+    "color": 2048,
+    "normalGL": 1024,
+    "packedMask": 1024
+  },
+  "packing": {
+    "file": "AO_Roughness.png",
+    "channels": "R=original AO, G=original roughness, B=0",
+    "exactSourcePixelCount": 4194304,
+    "sourceResampling": false,
+    "runtimeNormalAndMaskImportedAtMost1024": true
+  },
+  "activeAsphaltMaterialCount": 7,
+  "materialPaths": [
+    "Assets/Art/PaintedDistrict/Materials/1179a107a75709a49a7908b832b653ee_2100000_WalkEdge_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/202e4f73aee43d047ab787dd19a7ed19_2100000_Road_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/92382cdfba4730e4790c7233d1007d3e_2100000_Drive_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/a65fdcee10143d443a9c300a7cf71e2f_2100000_Footpath_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/bdbb81a299ae4de408c4af17df030b24_2100000_Drive_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/cca1836fa60aaa5439da720af6c797fe_2100000_Drive_0.mat",
+    "Assets/Art/PaintedDistrict/Materials/ce299b33f2934e041b68162dbf9c1c95_2100000_Drive_0.mat"
   ],
-  "blockingReason": "Managed environment network proxy denies official asset/download hosts: CONNECT 403",
-  "requiredAllowedHosts": [
-    "ambientcg.com",
-    "acg-download.struffelproductions.com",
-    "docs.ambientcg.com"
-  ],
-  "preparedInstaller": "Maintenance/StreetRepair/install_asphalt020s.py",
-  "syntheticPackingSelfTestPassed": true,
-  "originalMapVerification": "NOT RUN: no source archive available",
-  "unityShaderImportAndFrameTimes": "NOT RUN: Unity 6000.6.7f1 not installed"
+  "runtimeTextureReads": 3,
+  "unchangedContent": {
+    "scene": true,
+    "meshAndPrefabGeometry": true,
+    "nonAsphaltMaterials": true,
+    "paverAndConcrete": true,
+    "leavesAndLighting": true
+  },
+  "sourceManifest": "Unity_Walk/Assets/ThirdParty/ambientCG/Asphalt020S/SOURCE.json",
+  "sourceManifestSHA256": "329cf8af6e035a53bcd9a157a8671e9d58612fdebda44d12aa1bcde332775214",
+  "independentValidation": {
+    "path": "Reports/StreetRepair/asphalt020s-validation.json",
+    "passed": true,
+    "sha256": "3cce9a194db31bea7d52c68b5d1260848b55dac31f44ee48bb1527f7dd5dd36c"
+  },
+  "savedResourceBudgets": {
+    "asphaltRuntimeUniqueTextures": {
+      "before": 12,
+      "after": 3
+    },
+    "asphaltRuntimeImportedTexelUpperBound": {
+      "before": 10223616,
+      "after": 6291456
+    },
+    "fullMaterialClosureTextureUnion": {
+      "beforeUniqueTextures": 124,
+      "afterUniqueTextures": 116,
+      "beforeLevelZeroTexels": 199305528,
+      "afterLevelZeroTexels": 194062648,
+      "oldAsphaltMapsStillReferenced": [
+        "Assets/Art/PaintedDistrict/Textures/WalkEdge/Albedo.png",
+        "Assets/Art/PaintedDistrict/Textures/WalkEdge/Mask.png",
+        "Assets/Art/PaintedDistrict/Textures/WalkEdge/Normal.png"
+      ],
+      "comparison": "Texel/import-limit upper bound only; not measured GPU bytes or FPS"
+    },
+    "interpretation": "Source-code texture reads and import-limit/level-zero texel counts; not measured VRAM, GPU commands, draw calls or FPS."
+  },
+  "blockingReason": null,
+  "installer": "Maintenance/StreetRepair/install_asphalt020s.py",
+  "independentValidator": "Maintenance/StreetRepair/validate_asphalt020s.py",
+  "unityShaderImportBuildAndFrameTimes": "NOT RUN: Unity 6000.6.7f1 is not installed.",
+  "gameplayScreenshots": "The user will capture gameplay screenshots after building; no screenshots are claimed by this report."
 }

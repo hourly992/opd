@@ -483,7 +483,7 @@ internal static class ParkingEnvironmentBuilder
                 // footpaths: retain the original service-surface classification.
                 bool ambientServiceAsphalt = texturePath.StartsWith(StreetSurfaceLibrary.Asphalt020SRoot + "/", StringComparison.Ordinal) &&
                     material.HasProperty("_SurfaceClass") && Mathf.RoundToInt(material.GetFloat("_SurfaceClass")) == 4 &&
-                    material.name != "ReferenceAsphalt" && material.name != "MainRoadAsphalt" &&
+                    material.name != "ReferenceAsphalt" && material.name != "MainRoadAsphalt" && material.name != "AsphaltArris" &&
                     !material.name.Contains("Footpath", StringComparison.OrdinalIgnoreCase);
                 if (sourceServiceAsphalt || ambientServiceAsphalt)
                 { result = hit; return true; }

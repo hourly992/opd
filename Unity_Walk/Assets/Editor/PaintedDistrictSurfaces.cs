@@ -280,6 +280,14 @@ internal static class PaintedDistrictSurfaces
 
     private static void Configure(Material material, Finish finish, int address, Dictionary<Finish, Maps> cache)
     {
+        // Preserve the specifically requested source through the archived art pass.
+        // AsphaltArris is classified as WalkEdge; other edges keep their finish.
+        if (StreetSurfaceLibrary.Asphalt020SInstalled() &&
+            (finish is Finish.Road or Finish.Drive or Finish.Footpath || Has(material.name, "Asphalt")))
+        {
+            StreetSurfaceLibrary.ApplyAsphalt020S(material);
+            return;
+        }
         var maps = GetMaps(finish, cache);
         material.SetTexture("_MainTex", maps.albedo);
         material.SetTexture("_BumpMap", maps.normal);
