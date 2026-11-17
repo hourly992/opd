@@ -88,7 +88,7 @@ Shader "Hidden/Street/Occlusion"
                 float4 c=tex2D(_MainTex,i.uv);
                 float3 normal;float center=DepthNormal(i.uv,normal);
                 float total=0, weights=0;
-                // Bilateral upsampling keeps half-resolution AO off foreground silhouettes and the sky.
+                // Bilateral upsampling keeps the reduced-resolution AO off foreground silhouettes and the sky.
                 [unroll] for(int k=0;k<5;k++)
                 {
                     float2 offset=k==0?float2(0,0):k==1?float2(1,0):k==2?float2(-1,0):k==3?float2(0,1):float2(0,-1);
@@ -98,7 +98,8 @@ Shader "Hidden/Street/Occlusion"
                     total+=tex2D(_AOTex,uv).r*weight;weights+=weight;
                 }
                 float ao=lerp(1,total/max(.0001,weights),_AOSettings.z);
-                c.rgb*=lerp(float3(.94,.97,1),float3(1,1,1),ao)*ao;
+                float3 shadowTint = lerp(float3(.94,.97,1),float3(1,.99,.96),_AOSettings.w);
+                c.rgb *= lerp(shadowTint,float3(1,1,1),ao) * ao;
                 return c;
             }
             ENDCG

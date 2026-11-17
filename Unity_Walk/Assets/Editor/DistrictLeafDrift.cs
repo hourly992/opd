@@ -8,10 +8,11 @@ using Random = System.Random;
 
 internal static class DistrictLeafDrift
 {
-    private const string Root = "Assets/PhotoReconstruction/Stage16Leaf";
+    private static string Root => UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene().path == "Assets/Scenes/Street.unity"
+        ? "Assets/Art/FullVisual" : "Assets/PhotoReconstruction/Stage16Leaf";
     private const string GroupName = "Осень · листья под порывами ветра";
 
-    internal static void Apply()
+    internal static void Apply(bool wholeDistrict = false)
     {
         if (GameObject.Find(GroupName)) return;
         var mesh = AssetDatabase.LoadAssetAtPath<Mesh>(
@@ -30,10 +31,12 @@ internal static class DistrictLeafDrift
         var random = new Random(161110);
         Physics.SyncTransforms();
         int sites = 0;
-        var anchors = new[]
-        {
-            new Vector2(29, 38), new Vector2(38, 38), new Vector2(48, 39), new Vector2(55, 39)
-        };
+        var anchors = wholeDistrict
+            ? new[] { new Vector2(-25, 15), new Vector2(-11, -12), new Vector2(8, 14), new Vector2(15, -39),
+                new Vector2(29, 38), new Vector2(48, 39), new Vector2(-110, 157), new Vector2(-44, -52),
+                new Vector2(122, 8), new Vector2(170, 101), new Vector2(174, 34),
+                new Vector2(-22, -103), new Vector2(12, -175), new Vector2(76, -106) }
+            : new[] { new Vector2(29, 38), new Vector2(38, 38), new Vector2(48, 39), new Vector2(55, 39) };
         foreach (var anchor in anchors)
         {
             int added = 0;
@@ -70,7 +73,7 @@ internal static class DistrictLeafDrift
             }
             if (added > 0) sites++;
         }
-        if (sites < 3 || paths.Count < 25)
+        if (sites < (wholeDistrict ? 10 : 3) || paths.Count < (wholeDistrict ? 85 : 25))
             throw new InvalidOperationException("Too few clear trajectories for the district leaf drift.");
         group.AddComponent<StreetWindblownLeaves>().paths = paths.ToArray();
         Debug.Log($"DISTRICT_LEAF_DRIFT paths={paths.Count} sites={sites}");
