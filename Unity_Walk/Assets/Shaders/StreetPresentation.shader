@@ -8,7 +8,7 @@ Shader "Hidden/Street/Presentation"
         #include "UnityCG.cginc"
         sampler2D _MainTex, _BloomTex, _BloomWideTex;
         float4 _MainTex_TexelSize;
-        float _Exposure, _Saturation, _Sharpness, _BloomStrength, _AutumnGrade, _LeafGrade;
+        float _Exposure, _Saturation, _Sharpness, _BloomStrength, _AutumnGrade, _LeafGrade, _PaintedDistrictGrade, _WarmAutumnGrade, _Vignette;
         float3 Filmic(float3 color)
         {
             return saturate((color * (2.51 * color + .03)) / (color * (2.43 * color + .59) + .14));
@@ -26,6 +26,30 @@ Shader "Hidden/Street/Presentation"
             graded *= displayLevel / max(.001,level);
             graded = lerp(graded, displayLevel.xxx, .08 * smoothstep(.72,.99,displayLevel));
             return graded + (1 - smoothstep(.015,.20,displayLevel)) * float3(.003,.004,.008);
+        }
+        float3 PaintedGrade(float3 color, float luminance)
+        {
+            const float3 weights = float3(.2126,.7152,.0722);
+            float shadow = 1 - smoothstep(.08,.68,luminance);
+            float3 whiteBalance = lerp(float3(1.028,1.006,.970),float3(1.060,1.026,.949),shadow);
+            float3 graded = Filmic(color * whiteBalance);
+            float level = dot(graded,weights);
+            float lift = (1 - smoothstep(.025,.49,level)) * .038;
+            graded += lift * float3(1,.88,.67);
+            return lerp(graded, dot(graded,weights).xxx, .10 * smoothstep(.78,1,level));
+        }
+        float3 WarmAutumnGrade(float3 color)
+        {
+            const float3 weights = float3(.2126,.7152,.0722);
+            float peak = max(color.r,max(color.g,color.b));
+            float chroma = peak - min(color.r,min(color.g,color.b));
+            // Golden midtones. Bright whites receive no extra tint;
+            // saturated red/green paving and autumn leaves receive much less.
+            float amount = _WarmAutumnGrade * (1 - smoothstep(.52,.82,peak)) *
+                lerp(1,.075,saturate(chroma * 4));
+            float3 warmed = color * float3(1.12,1.022,.91);
+            warmed *= dot(color,weights) / max(.00001,dot(warmed,weights));
+            return lerp(color,warmed,amount);
         }
         float3 Filter(float2 uv)
         {
@@ -76,21 +100,31 @@ Shader "Hidden/Street/Presentation"
                 c+=(tex2D(_BloomTex,i.uv).rgb*.6+tex2D(_BloomWideTex,i.uv).rgb*.4)*_BloomStrength;
                 c*=max(.01,_Exposure);
                 float luminance=dot(c,float3(.2126,.7152,.0722));
-                float3 neutral = Filmic(c * lerp(float3(.975,.995,1.025),
-                    float3(1.018,1.003,.982), smoothstep(.1,1.2,luminance)));
-                float3 warm = Filmic(c * lerp(float3(.99,1.012,1.035), float3(1.062,1.013,.944),
-                    smoothstep(.04,.72,luminance)));
-                float warmLuma = dot(warm,float3(.2126,.7152,.0722));
-                warm = lerp(warm, warmLuma.xxx, .24 * smoothstep(.64,.98,warmLuma));
-                warm += (1 - smoothstep(.02,.35,warmLuma)) * float3(.018,.019,.022);
-                float3 display = lerp(neutral, warm, _AutumnGrade);
-                UNITY_BRANCH if (_LeafGrade > 0)
-                    display = lerp(display, LeafGrade(c, luminance), _LeafGrade);
+                float3 display;
+                UNITY_BRANCH if (_PaintedDistrictGrade > 0)
+                    display = PaintedGrade(c, luminance);
+                else
+                {
+                    float3 neutral = Filmic(c * lerp(float3(.975,.995,1.025),
+                        float3(1.018,1.003,.982), smoothstep(.1,1.2,luminance)));
+                    float3 warm = Filmic(c * lerp(float3(.99,1.012,1.035), float3(1.062,1.013,.944),
+                        smoothstep(.04,.72,luminance)));
+                    float warmLuma = dot(warm,float3(.2126,.7152,.0722));
+                    warm = lerp(warm, warmLuma.xxx, .24 * smoothstep(.64,.98,warmLuma));
+                    warm += (1 - smoothstep(.02,.35,warmLuma)) * float3(.018,.019,.022);
+                    display = lerp(neutral, warm, _AutumnGrade);
+                    UNITY_BRANCH if (_LeafGrade > 0)
+                        display = lerp(display, LeafGrade(c, luminance), _LeafGrade);
+                }
                 c = display;
                 float grey=dot(c,float3(.2126,.7152,.0722));
                 float chroma=max(c.r,max(c.g,c.b))-min(c.r,min(c.g,c.b));
                 c=lerp(grey.xxx,c,_Saturation+(1-saturate(chroma*3))*.04);
-                return float4(saturate(c),1);
+                UNITY_BRANCH if (_WarmAutumnGrade > 0)
+                    c = WarmAutumnGrade(c);
+                float2 edge = (i.uv - .5) * 2;
+                float vignette = 1 - _Vignette * smoothstep(.35,1.6,dot(edge,edge));
+                return float4(saturate(c) * vignette,1);
             }
             ENDCG
         }
@@ -104,8 +138,8 @@ Shader "Hidden/Street/Presentation"
             {
                 float3 c=max(0,Filter(i.uv));
                 float brightness=max(c.r,max(c.g,c.b));
-                float knee=clamp(brightness-1.05,0,.6);
-                float contribution=max(brightness-1.35,knee*knee/.6);
+                float knee=clamp(brightness-.72,0,.5);
+                float contribution=min(2.5,max(brightness-1.05,knee*knee/.5));
                 return float4(c*contribution/max(.0001,brightness),1);
             }
             ENDCG

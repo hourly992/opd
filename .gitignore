@@ -43,3 +43,15 @@ credentials.local.*
 secrets.local.*
 /comparison_blosm/
 /Запустить сравнение Blosm.cmd
+
+# Main HDRP game: local checkpoints, generated captures and packaged games
+/.checkpoints/
+/.comparison-baseline/
+/Comparison*/
+/DayNight_Photos/
+/Maintenance/
+**/QA_HDRP/
+**/QA_*/
+/Unity_Walk/Build*/
+/Фотоальбом_игры.pdf
+/.qa-launchers/

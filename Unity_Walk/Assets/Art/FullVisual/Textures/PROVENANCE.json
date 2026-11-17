@@ -1,0 +1,35 @@
+{
+    "author": "OPD project",
+    "generator": "Assets/Editor/FullVisualTextureBuilder.cs",
+    "revision": "OPD concrete and stucco surface library 2",
+    "terms": "Project-authored source and textures. Same terms as the OPD project.",
+    "description": "Periodic concrete and stucco surfaces authored from mathematical aggregate, pores and trowel profiles. No copied artwork.",
+    "channels": "Albedo RGB sRGB. Normal RGB tangent-space OpenGL. Mask RGB = AO, roughness, height in linear data.",
+    "textureSize": 1024,
+    "files": [
+        {
+            "file": "CurbConcrete/Albedo.png",
+            "sha256": "8525994239216d7ed9db486fb92d857f40d87b558dec6d39bd2be9f4c7953820"
+        },
+        {
+            "file": "CurbConcrete/Normal.png",
+            "sha256": "6719ccb5d3e05fae81b113d3b1dc8ea54cd79128509381c00726d88449ca65a1"
+        },
+        {
+            "file": "CurbConcrete/Mask.png",
+            "sha256": "614ba1f69b5f7ab60b21e9aa8e412901559142e2900fc16f3e0283a1e0b3ca38"
+        },
+        {
+            "file": "SoftStucco/Albedo.png",
+            "sha256": "15f04f32b78001f9c77170fd1f902f8814bfcac0e5d7b246660c67949acc7bfe"
+        },
+        {
+            "file": "SoftStucco/Normal.png",
+            "sha256": "052e2fe595ede29362acf7cfea41e263f3cbb994773352baf3e969376f33fb6a"
+        },
+        {
+            "file": "SoftStucco/Mask.png",
+            "sha256": "133bfae9673bff85ecb287e1ffd346df7b568738c405f1272ee92e852fe0d006"
+        }
+    ]
+}

@@ -21,7 +21,7 @@ if ($build.ExitCode -ne 0) {
     Write-Host "Build failed. See log: $log"
     exit $build.ExitCode
 }
-$game = Join-Path $project 'Build\StreetWindows\DuninaGorkavicha.exe'
+$game = Join-Path $project 'Build\StreetWindowsHDRPModern\DuninaGorkavicha.exe'
 if (-not (Test-Path -LiteralPath $game)) {
     Write-Host "The game executable was not created. See log: $log"
     exit 1

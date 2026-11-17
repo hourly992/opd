@@ -433,21 +433,10 @@ internal static class StreetAutumnLitter
     private static void AddLeaf(LeafBatch batch, Vector2[] outline, float size, Vector3 axis,
         Vector3 width, Vector3 up, Vector3 center, Color colour)
     {
-        int start = batch.vertices.Count;
-        batch.vertices.Add(center + up * .009f);
-        batch.colours.Add(colour * 1.13f);
-        batch.uv.Add(Vector2.zero);
-        for (int edge = 0; edge < outline.Length; edge++)
-        {
-            Vector2 p = outline[edge];
-            float curl = Mathf.Abs(p.y) * size * .10f;
-            batch.vertices.Add(center + (width * p.x + axis * p.y) * size + up * curl);
-            batch.colours.Add(colour * (p.x < 0 ? .80f : .96f));
-            batch.uv.Add(p);
-            batch.triangles.Add(start);
-            batch.triangles.Add(start + 1 + edge);
-            batch.triangles.Add(start + 1 + (edge + 1) % outline.Length);
-        }
+        var colors = new List<Color32>();
+        AutumnLeafShape.Append(batch.vertices, batch.uv, colors, batch.triangles,
+            center, axis * size, width * size, up, colour, batch.count % 3, true);
+        foreach (var color in colors) batch.colours.Add(color);
         batch.count++;
     }
 

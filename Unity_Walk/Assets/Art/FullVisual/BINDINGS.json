@@ -1,0 +1,1897 @@
+{
+    "description": "Unified material bindings for the main saved Street scene.",
+    "authoredTextures": "Textures/PROVENANCE.json",
+    "retainedScans": "Assets/ThirdParty/PolyHaven/LICENSES.md",
+    "bindings": [
+        {
+            "name": "ModelBranches",
+            "family": "Bark / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_branch/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_branch/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_branch/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": true
+        },
+        {
+            "name": "ModelTrunk",
+            "family": "Bark / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_trunk/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_trunk/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_trunk/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": true
+        },
+        {
+            "name": "SummerBark",
+            "family": "Bark / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/bark_brown_02/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/bark_brown_02/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/bark_brown_02/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "SummerBark",
+            "family": "Bark / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/bark_brown_02/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/bark_brown_02/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/bark_brown_02/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ModelBranches",
+            "family": "Bark / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_branch/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_branch/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_branch/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": true
+        },
+        {
+            "name": "ModelTrunk",
+            "family": "Bark / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_trunk/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_trunk/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/tree_small_02_trunk/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": true
+        },
+        {
+            "name": "GalvanizedPole",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PoleFasteners",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "WarmLedLens",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "EntranceConcrete",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CourtyardCastMetal",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "MeadowPetal",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "MeadowPollen",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleNavy",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.44999998807907104,
+                "y": 0.44999998807907104,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleTrim",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleAlloy",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehiclePlate",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleTailLight",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleHeadlight",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "WindowRecess",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "RedBrick",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "IvoryFrames",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CreamBrick",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "DarkPlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "BalconyIron",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "RoofEdge",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "EntranceSteel",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "DoorHardware",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "GreenStandingSeam",
+            "family": "Roof / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Roof/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Roof/Normal.png",
+            "mask": "Assets/Art/Textures/Roof/Mask.png",
+            "metresPerTile": {
+                "x": 0.550000011920929,
+                "y": 0.550000011920929,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleSilver",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.44999998807907104,
+                "y": 0.44999998807907104,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "GreyStandingSeam",
+            "family": "Roof / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Roof/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Roof/Normal.png",
+            "mask": "Assets/Art/Textures/Roof/Mask.png",
+            "metresPerTile": {
+                "x": 0.550000011920929,
+                "y": 0.550000011920929,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PhotoCanopyGreen",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PhotoDoorGrey",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PhotoFrameGraphite",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PhotoCourtPlinthGrey",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LibraryGasPipe",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2000000476837158,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "GraphiteMetal",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Concrete",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "OiledTimber",
+            "family": "Timber / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Mask.png",
+            "metresPerTile": {
+                "x": 1.2000000476837158,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LampDiffuser",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PlaygroundTimber",
+            "family": "Timber / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Mask.png",
+            "metresPerTile": {
+                "x": 1.2000000476837158,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PlaygroundOchre",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VehicleBurgundy",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.44999998807907104,
+                "y": 0.44999998807907104,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LibraryParapetConcrete",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.149999976158142,
+                "y": 1.149999976158142,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LibraryParapetDarkEdge",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 0.8500000238418579,
+                "y": 0.8500000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ReferenceAsphalt",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/asphalt_02/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/asphalt_02/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/asphalt_02/Mask.png",
+            "metresPerTile": {
+                "x": 3.0,
+                "y": 3.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ReferenceServiceAsphalt",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Mask.png",
+            "metresPerTile": {
+                "x": 2.0799999237060547,
+                "y": 2.0799999237060547,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_12",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PlaygroundBlue",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PlaygroundSteel",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PlaygroundRed",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Path",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.7999999523162842,
+                "y": 1.7999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "No7BenchWhiteConcrete",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 0.75,
+                "y": 0.75,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "No7BenchPaleSlat",
+            "family": "Timber / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Mask.png",
+            "metresPerTile": {
+                "x": 0.75,
+                "y": 0.75,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "No7BenchFadedBlue",
+            "family": "Timber / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Mask.png",
+            "metresPerTile": {
+                "x": 0.75,
+                "y": 0.75,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PhotoRedRunningBond",
+            "family": "Paver / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Mask.png",
+            "metresPerTile": {
+                "x": 1.399999976158142,
+                "y": 1.399999976158142,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "MappedParkingAsphalt",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Mask.png",
+            "metresPerTile": {
+                "x": 2.0799999237060547,
+                "y": 2.0799999237060547,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "PhotoWhitewashedKerb",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CopingMortar",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CopingBlocksAlternate",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CopingBlocks",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CourtMaintainedGrass",
+            "family": "Ground / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Mask.png",
+            "metresPerTile": {
+                "x": 2.0,
+                "y": 2.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "DryGravel",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ContainerGreen",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "IvoryPaint",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "AddressBlue",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_17",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_16",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_13",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "AsphaltArris",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Mask.png",
+            "metresPerTile": {
+                "x": 0.75,
+                "y": 0.75,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "SoilAggregate",
+            "family": "Ground / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/gravel_floor_02/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/gravel_floor_02/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/gravel_floor_02/Mask.png",
+            "metresPerTile": {
+                "x": 0.6499999761581421,
+                "y": 0.6499999761581421,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "DarkRedRetainingBrick",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/red_bricks_04/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/red_bricks_04/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/red_bricks_04/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "RedBrownCoping",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "CourtGreyRectangularPavers",
+            "family": "Paver / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/brick_pavement_02/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/brick_pavement_02/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/brick_pavement_02/Mask.png",
+            "metresPerTile": {
+                "x": 1.7999999523162842,
+                "y": 1.7999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Court7JambStone",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Court7CoatedEdging",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Court7SillMetal",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ManholeRecess",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ManholeMetal",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_7",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Foundation",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Brick0",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Frame",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "BackgroundDoorPaint",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "BackgroundDoorHardware",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Roof",
+            "family": "Roof / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Roof/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Roof/Normal.png",
+            "mask": "Assets/Art/Textures/Roof/Mask.png",
+            "metresPerTile": {
+                "x": 0.550000011920929,
+                "y": 0.550000011920929,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Brick2",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Brick1",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "MonumentGraniteStudy",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Metal",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Blue",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ResidentialAccessPaving",
+            "family": "Paver / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Mask.png",
+            "metresPerTile": {
+                "x": 1.399999976158142,
+                "y": 1.399999976158142,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Grass",
+            "family": "Ground / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Mask.png",
+            "metresPerTile": {
+                "x": 2.0,
+                "y": 2.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LibraryEntranceDarkSteel",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_15",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LibraryApronConcrete",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.4500000476837158,
+                "y": 1.4500000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "White",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_11",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "FenceGreen",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "EntranceConcrete",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ResidentialEntranceAsphalt",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Mask.png",
+            "metresPerTile": {
+                "x": 2.0799999237060547,
+                "y": 2.0799999237060547,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ResidentialAccessEdge",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_10",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_6",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "LampSteel",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_9",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/brick_wall_003/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "RedBrick",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "WindowRecess",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Court7DoorSlate",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Court7CanopySlateGreen",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Asphalt",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/asphalt_01/Mask.png",
+            "metresPerTile": {
+                "x": 2.0799999237060547,
+                "y": 2.0799999237060547,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Wood",
+            "family": "Timber / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/fine_grained_wood/Mask.png",
+            "metresPerTile": {
+                "x": 1.2000000476837158,
+                "y": 1.2000000476837158,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "East11RampPaving",
+            "family": "Paver / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Mask.png",
+            "metresPerTile": {
+                "x": 1.399999976158142,
+                "y": 1.399999976158142,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "TurquoisePlinth",
+            "family": "Stucco / SoftStucco",
+            "albedo": "Assets/Art/FullVisual/Textures/SoftStucco/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/SoftStucco/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/SoftStucco/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "RoadVergeSurface",
+            "family": "Ground / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/grass_ground/Mask.png",
+            "metresPerTile": {
+                "x": 2.0,
+                "y": 2.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "WarmPaving",
+            "family": "Paver / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Mask.png",
+            "metresPerTile": {
+                "x": 1.399999976158142,
+                "y": 1.399999976158142,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Kerbstone",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "Mulch",
+            "family": "Ground / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/gravel_floor_02/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/gravel_floor_02/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/gravel_floor_02/Mask.png",
+            "metresPerTile": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_4",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_5",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_20",
+            "family": "Roof / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Roof/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Roof/Normal.png",
+            "mask": "Assets/Art/Textures/Roof/Mask.png",
+            "metresPerTile": {
+                "x": 0.550000011920929,
+                "y": 0.550000011920929,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ReferenceFootpathAsphalt",
+            "family": "Asphalt / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/clean_asphalt/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/clean_asphalt/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/RoadSurfaces2K/clean_asphalt/Mask.png",
+            "metresPerTile": {
+                "x": 2.0999999046325684,
+                "y": 2.0999999046325684,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ReferenceRedPaving",
+            "family": "Paver / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/concrete_wall_006/Mask.png",
+            "metresPerTile": {
+                "x": 1.399999976158142,
+                "y": 1.399999976158142,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "RoadPaint",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.30000001192092896,
+                "y": 0.30000001192092896,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_14",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "BalconyIron",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Graphics2K/green_metal_rust/Mask.png",
+            "metresPerTile": {
+                "x": 1.2999999523162842,
+                "y": 1.2999999523162842,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "ReferenceKerbstone",
+            "family": "Concrete / CurbConcrete",
+            "albedo": "Assets/Art/FullVisual/Textures/CurbConcrete/Albedo.png",
+            "normal": "Assets/Art/FullVisual/Textures/CurbConcrete/Normal.png",
+            "mask": "Assets/Art/FullVisual/Textures/CurbConcrete/Mask.png",
+            "metresPerTile": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "VergeBlueEdge",
+            "family": "Painted / retained PBR maps",
+            "albedo": "Assets/Art/Textures/Paint/Albedo.jpg",
+            "normal": "Assets/Art/Textures/Paint/Normal.png",
+            "mask": "Assets/Art/Textures/Paint/Mask.png",
+            "metresPerTile": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        },
+        {
+            "name": "House5_19",
+            "family": "Brick / retained PBR maps",
+            "albedo": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Albedo.jpg",
+            "normal": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Normal.jpg",
+            "mask": "Assets/ThirdParty/PolyHaven/Facades4K/red_brick/Mask.png",
+            "metresPerTile": {
+                "x": 1.559999942779541,
+                "y": 1.5,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "sourceUV": false
+        }
+    ]
+}

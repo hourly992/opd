@@ -1,0 +1,228 @@
+# Дунина-Горкавича: графика и атмосфера HDRP
+
+Дата формирования: 2026-11-17T10:18:49. Основная версия: `C:\Users\Пользователь\Documents\Games\opd-hdrp`.
+
+Работа выполнена в существующем HDRP-проекте Unity 6000.6.7f1 / HDRP 17.6.0. Исходная папка `C:\Users\Пользователь\Documents\ChatGPT\opd` не редактировалась.
+
+Исходный коммит полной HDRP-базы перед этим обновлением: `e123956dc1062b5c8c2e2fe07dfb45620058fe2d`. Его родитель: `eb6b24ca312e7d4f76ba450dfecec2cb5585cb5d`. Ветка: `codex/hdrp-atmosphere-20261117`. Полная HDRP-база зафиксирована отдельным коммитом из контрольной точки, поскольку прежняя удалённая история ещё не содержала всех ресурсов и зависимостей этой локальной HDRP-версии. Атмосферное обновление записывается поверх этой базы.
+
+## Что изменено
+
+- Рассвет: дальность солнечных теней 320 м, четыре каскада с распределением 0,045 / 0,15 / 0,38. High использует 2048, Ultra — 4096. Уменьшены normal bias до 0,18 и slope bias до 0,35; тени обновляются каждый кадр. Сила солнечной тени достигает полной уже при низком солнце. Угловой размер солнца 0,56°.
+- Контактные тени: длина 0,24 м, opacity 0,67, до 45 м. SSAO: intensity 0,77, radius 0,58, direct lighting strength 0,22. Настройки подключены к действующим Volume Profiles.
+- У солнца уменьшены flare и Bloom. Дополнительная поправка экспозиции на рассвете плавная, до 0,4 EV. Заполняющий и непрямой свет согласованы с существующими игровыми часами.
+- Существующие уличные светильники получают 2200 кд, дворовые — 1400 кд; температура 3200 K. Одновременно выбираются до 12 ближайших источников и до двух источников с тенями 512. Включение и смена выбранных фонарей плавные. Луна ослаблена до 4,5 лк; ночной баланс белого — −10.
+- Ночное свечение окон реализовано в HDRP-шейдере существующего стекла. Выбор помещений стабилен для секций, оттенок и яркость варьируются, усиление синхронизировано с NightBlend. Отдельные источники света в каждое окно не добавлялись.
+- Аудит окон: 7050 секций, 1633 выбранных для свечения (23,16%). Это подсчёт секций геометрии, а не квартир.
+- Трава: три варианта настоящих пучков, по 7 травинок вместо 3; 36 вершин и 23 треугольника на прототип вместо 12 / 6. Ленты шире, основание пучка расширено. Высота исходных прототипов 6,2–10,2 см, с существующей вариацией размера экземпляров. Сохранены GPU Instancing, 24 м отсечения и затухание 13–21 м, мягкий ветер и три осенних оттенка.
+- Сохранность травяных масок: 43 TerrainData; densityMapsPreserved=True, prototypeInstancesPreserved=True. Существовавшее распределение корней сохранено; увеличение объёма происходит внутри каждого пучка.
+- Белая прерывистая осевая разметка: 71 отрезков на главной автомобильной дороге. Проверено 1065 точек по исходному автомобильному MeshCollider и материалу. allPaintSamplesOnMainCarriageway=True. Полосы следуют высоте полотна, подняты на 6 мм; на тротуары и дворы их генератор не наносит.
+- HDRP Decal Projectors: 75 небольших следов — 49 вдоль бордюров, 12 трещин на автомобильном асфальте, 14 у фундаментов. Выполнено 611 проверок поверхности. Эффекты отключаются вдали.
+
+## Проверки сборки и изображений
+
+В отчёте ниже статусы приведены из JSON, созданных самой Windows-игрой. Фотографии сняты с реальной сцены; изображения генеративными инструментами не создавались.
+
+| Состояние | Часы | Статус HDRP QA | Ошибки | Доступных основных кадров |
+|---|---:|---|---:|---:|
+| Рассвет | 07:27 | пройдена | 0 | 6/6 |
+| День | 13:00 | пройдена | 0 | 6/6 |
+| Ночь | 01:00 | пройдена | 0 | 6/6 |
+
+- Динамический цикл: пройдена.
+- Ultra / аппаратная трассировка: пройдена.
+- Фактическая конфигурация Ultra: RTGI=True, Ray-Traced Shadows=True, DLSS/DLAA selected=True, activeAntialiasing=DLAA; ошибок=0.
+- Цикл: clockAdvances=True, continuousSun=True, daylightShadowsEnabled=True, starsFade=True, nativeStarCubemap=True.
+- Мусорные баки: контейнеров 3, урн 3; видимых Renderer 0, включённых Collider 0. Исходные ассеты сохранены.
+
+### Окончательная Windows-сборка и проверка архива
+
+- Проверка Editor после корректировки скриптов: пройдена. Лог: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\Logs\HDRP-30-editor-validation.log`.
+- Финальная сборка с согласованным бюджетом QA для фонарей: пройдена. Лог: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\Logs\HDRP-31-final-qa-budget.log`.
+- Editor: cleanBatchExit=True, ошибок компиляции C# / шейдеров / сборки в выбранных проверках лога: 0.
+- Windows Build: cleanBatchExit=True, ошибок компиляции C# / шейдеров / сборки в выбранных проверках лога: 0.
+- Архив Windows x64: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\Build\ReleaseArchives\DuninaGorkavicha-HDRP-Atmosphere-Windows-x64.zip`.
+- Размер: 941516851 байт (941,5 МБ); файлов: 192.
+- Проверка CRC при упаковке: True; наличие архива при создании отчёта: True; размер совпадает с метаданными: True.
+- SHA256, вычисленный упаковщиком: `a8223d9db3a5542353765fbd196d44828a853f4a2869db2f775fa1f958ca7023`.
+
+| Проверка после сборки | Статус | Сцена | Ошибки |
+|---|---|---|---:|
+| Запуск распакованного Windows-пакета | пройдена | Street | 0 |
+| Дополнительная городская сцена Street_LeafStudy | пройдена | Street_LeafStudy | 0 |
+
+Исходные отчёты запусков:
+
+- `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\QA_HDRP\atmosphere-packaged-smoke\hdrp_report.json`
+- `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\QA_HDRP\atmosphere-leafstudy-smoke\hdrp_report.json`
+
+## Производительность: одинаковые ракурсы до и после
+
+RTX 5060, 1600 × 900, High, DirectX 12, остановленное игровое время, VSync выключен. Пять замеряемых участков: четыре неподвижных вида и один проход камеры. Стартовый кадр в FPS не входит. Сравниваются предыдущая сборка StreetWindowsHDRPDayNight и новая StreetWindowsHDRPAtmosphere. Диапазоны ниже — средние значения по отдельным участкам, а не минимальная/максимальная мгновенная частота.
+
+| Время суток | До, FPS | После, FPS | CPU до / после, мс | GPU до / после, мс |
+|---|---:|---:|---:|---:|
+| Рассвет 07:27 | 84,5–95,9 | 80,8–96,1 | 10,5–11,9 / 10,4–12,4 | 10,4–11,9 / 10,4–12,4 |
+| День 13:00 | 86,9–100,5 | 85,7–96,1 | 9,9–11,5 / 10,4–11,7 | 9,9–11,5 / 10,4–11,7 |
+| Ночь 01:00 | 112,7–126,0 | 106,6–119,9 | 7,9–8,8 / 8,3–9,4 | 7,9–8,8 / 8,3–9,4 |
+
+CPU/GPU получены из FrameTimingManager обычного Windows-окна. Если драйвер не предоставил показатель, в таблице указано «нет данных». Значение −1 из offscreen-измерений не считается временем GPU. Замеры offscreen StandardRequest сохранены отдельно в исходных QA-отчётах. Ориентир 100+ FPS не является гарантией для каждого участка и разрешения.
+
+Отдельная проверка Ultra ночью (01:00), нативные 1600 × 900: пройдена, ошибок 0. По пяти ракурсам получено 60,6–71,5 FPS, GPU 14,0–16,4 мс. RTGI=True, Ray-Traced Sun Shadows configured=True, сглаживание DLAA. Флаг солнечных RT-теней описывает конфигурацию режима; ночью прямой солнечный свет выключен существующей системой времени суток. Исходный отчёт: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\QA_HDRP\atmosphere-ultra-native-night\hdrp_report.json`.
+
+### Отдельные контрольные виды
+
+| Состояние / ракурс | FPS до | FPS после | GPU после, мс | CPU после, мс |
+|---|---:|---:|---:|---:|
+| Рассвет / 01_street.png | 91,3 | 94,2 | 10,6 | 10,6 |
+| Рассвет / 02_house5.png | 89,2 | 96,1 | 10,4 | 10,4 |
+| Рассвет / 03_courtyard.png | 84,5 | 80,8 | 12,4 | 12,4 |
+| Рассвет / 04_overview.png | 92,4 | 90,7 | 11,0 | 11,0 |
+| Рассвет / 05_motion_end.png | 95,9 | 94,7 | 10,5 | 10,5 |
+| День / 01_street.png | 100,2 | 90,8 | 11,0 | 11,0 |
+| День / 02_house5.png | 100,5 | 94,3 | 10,6 | 10,6 |
+| День / 03_courtyard.png | 86,9 | 85,7 | 11,7 | 11,7 |
+| День / 04_overview.png | 97,2 | 90,2 | 11,0 | 11,0 |
+| День / 05_motion_end.png | 93,7 | 96,1 | 10,4 | 10,4 |
+| Ночь / 01_street.png | 118,8 | 116,1 | 8,6 | 8,6 |
+| Ночь / 02_house5.png | 125,4 | 113,6 | 8,8 | 8,8 |
+| Ночь / 03_courtyard.png | 116,0 | 106,6 | 9,4 | 9,4 |
+| Ночь / 04_overview.png | 112,7 | 114,1 | 8,7 | 8,8 |
+| Ночь / 05_motion_end.png | 126,0 | 119,9 | 8,3 | 8,3 |
+
+## Геометрия, ресурсы и игровой процесс
+
+Аудит сохранности исходников: пройдена.
+- Исходных ресурсов в контрольной точке: 11888; неизменных по SHA256: 11873; отсутствующих: 0; неожиданно изменённых: 0.
+- sourceImages: сохранено 192/192.
+- sourceModels: сохранено 1/1.
+- originalPrefabs: сохранено 58/58.
+- nativeLawnTerrainData: сохранено 43/43.
+- originalMetaFiles: сохранено 6036/6036.
+- Assets/Scenes/Street.unity: исходных Transform 6280, изменений значений трансформаций 0, geometryAndOriginalAssignmentsPreserved=True.
+- Assets/Scenes/Street_LeafStudy.unity: исходных Transform 5005, изменений значений трансформаций 0, geometryAndOriginalAssignmentsPreserved=True.
+
+Общий StreetQA: не пройдена. Исходный JSON: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\QA_HDRP\atmosphere-gameplay\report.json`.
+- grounded: True.
+- buildingCollision: True.
+- containerCollision: False.
+- benchCollision: True.
+- treeCollision: True.
+- referenceBuildingCollisions: True.
+- walkDistance: 6.000002384185791.
+- missingMaterials: 0.
+- streetLampsConfigured: True.
+- streetLampCollision: True.
+- streetLampNightValid: True.
+- graphicsMaterialsConfigured: False.
+- roadMaterialsDistinct: False.
+Суммарный StreetQA не считается пройденным. Приведённые выше проверки движения и столкновений оцениваются отдельно. Причины и прежние ограничения нужно сверять с полным report.json; успешный HDRP QA не заменяет этот тест.
+
+### Сравнение с предыдущим игровым тестом
+
+Базовый отчёт предыдущей HDRP-версии: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\QA_HDRP\day-night-gameplay\report.json`. Сравниваются все булевы поля со значением false, кроме общего passed. Среди этих полей есть как критерии проверки, так и состояния режима (например, выключенная трассировка в High).
+
+Поля false в предыдущем отчёте:
+
+- `containerCollision`
+- `districtTerrainPresent`
+- `districtTerrainValid`
+- `entrancesHaveContinuousPaving`
+- `graphicsMaterialsConfigured`
+- `parkingSurfacesContinuous`
+- `rayTracingActive`
+- `rayTracingFallback`
+- `residentialAccessConfigured`
+- `residentialDestinationsPaved`
+- `roadMaterialsDistinct`
+- `roadTransitionsContinuous`
+- `stage05ApproachPaved`
+
+Поля false в текущем отчёте:
+
+- `containerCollision`
+- `districtTerrainPresent`
+- `districtTerrainValid`
+- `entrancesHaveContinuousPaving`
+- `graphicsMaterialsConfigured`
+- `parkingSurfacesContinuous`
+- `rayTracingActive`
+- `rayTracingFallback`
+- `residentialAccessConfigured`
+- `residentialDestinationsPaved`
+- `roadMaterialsDistinct`
+- `roadTransitionsContinuous`
+- `stage05ApproachPaved`
+
+Новые поля false: нет.
+Прежние поля false, ставшие true: нет.
+Наборы false совпадают. Новых провалов по этим сериализованным флагам не обнаружено; сохранившиеся непройденные критерии существовали в базовой версии до атмосферного обновления. Это сравнение не заменяет визуальную проверку и остальные регрессионные тесты.
+
+## Изменённые файлы
+
+- `Unity_Walk/Assets/Art/AutumnGrass/DenseLawn/Lawn HDRP Instanced.mat`
+- `Unity_Walk/Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 1.asset`
+- `Unity_Walk/Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 2.asset`
+- `Unity_Walk/Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 3.asset`
+- `Unity_Walk/Assets/Scenes/Street.unity`
+- `Unity_Walk/Assets/Scenes/Street_LeafStudy.unity`
+- `Unity_Walk/Assets/Scripts/Environment/StreetLampNetwork.cs`
+- `Unity_Walk/Assets/Scripts/StreetDayNight.cs`
+- `Unity_Walk/Assets/Scripts/StreetHdrpPreset.cs`
+- `Unity_Walk/Assets/Scripts/StreetQA.cs`
+- `Unity_Walk/Assets/Shaders/HDRP/StreetGlassLitData.hlsl`
+- `Unity_Walk/Assets/StreetHDRP/Autumn RT.asset`
+- `Unity_Walk/Assets/StreetHDRP/Autumn lighting.asset`
+- `Unity_Walk/Assets/StreetHDRP/Autumn.asset`
+- `Unity_Walk/Assets/StreetHDRP/Comparison lighting.asset`
+
+Новые ресурсы проекта:
+
+- `Unity_Walk/Assets/Editor/StreetAtmosphereUpgrade.cs`
+- `Unity_Walk/Assets/Editor/StreetAtmosphereUpgrade.cs.meta`
+- `Unity_Walk/Assets/Editor/StreetGrassVolumeUpgrade.cs`
+- `Unity_Walk/Assets/Editor/StreetGrassVolumeUpgrade.cs.meta`
+- `Unity_Walk/Assets/Editor/StreetNightLighting.cs`
+- `Unity_Walk/Assets/Editor/StreetNightLighting.cs.meta`
+- `Unity_Walk/Assets/Editor/StreetRoadAtmosphere.cs`
+- `Unity_Walk/Assets/Editor/StreetRoadAtmosphere.cs.meta`
+- `Unity_Walk/Assets/Editor/StreetWindowAudit.cs`
+- `Unity_Walk/Assets/Editor/StreetWindowAudit.cs.meta`
+- `Unity_Walk/Assets/Scripts/StreetAtmosphereAudit.cs`
+- `Unity_Walk/Assets/Scripts/StreetAtmosphereAudit.cs.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Curb dust.mat`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Curb dust.mat.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Curb dust.png`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Curb dust.png.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.mat`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.mat.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.png`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.png.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.mat`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.mat.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.png`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.png.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Main carriageway dashes.asset`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Main carriageway dashes.asset.meta`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Warm white road paint.mat`
+- `Unity_Walk/Assets/StreetHDRP/AtmosphereDetails/Warm white road paint.mat.meta`
+
+Пользовательские файлы передачи: `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd`, `Play_DLSS_Quality.cmd`, `Open_Report.cmd`, этот отчёт и PDF с реальными парными кадрами.
+
+## Ограничения и дальнейшие проверки
+
+- High использует существующий единственный дневной bake APV с плавной коррекцией интенсивности. Это не отдельные запечённые сценарии APV для рассвета и ночи. Ultra использует RTGI там, где это подтверждено QA.
+- Свечение окон передаёт видимые освещённые помещения; отдельных Point Light у каждого окна нет. В High эмиссия окон не заменяет физический расчёт полного непрямого освещения.
+- Отсечение короткой травы на 24 м намеренно ограничивает нагрузку. Вдали остаётся исходное травяное покрытие; травяные кластеры не отбрасывают отдельную дорогую тень каждой травинки.
+- Все дорожные полосы относятся к проверенной главной автомобильной дороге. Разметка дворов и пешеходных покрытий не добавлялась.
+- Динамические тени требуют прямого света. На рассвете при высоте солнца около 3,27° большие части улицы закрыты соседними домами; длинные тени не обязаны давать отдельные светлые полосы в полностью затенённом дворе.
+- Длительный игровой сеанс и проверка всех возможных положений камеры не заменяются контрольными ракурсами.
+- Linux-сборка этим отчётом не подтверждается. В отчёте отражена проверенная Windows-сборка.
+
+## Откат и запуск
+
+Контрольная точка перед изменениями: `.checkpoints/before-atmosphere-20261116-223040/Editable-resources.zip` и `Source-SHA256.tsv`. Предыдущая Windows-сборка сохранена отдельно.
+
+Новая Windows-сборка: `C:\Users\Пользователь\Documents\Games\opd-hdrp\Unity_Walk\Build\StreetWindowsHDRPAtmosphere\DuninaGorkavicha.exe`.
+Для обычного запуска используйте корневой `Play_High.cmd`; для максимального качества — `Play_Ultra.cmd`. `Play_Night.cmd` запускает ночь, `Open_Report.cmd` открывает текстовую версию отчёта в Блокноте.

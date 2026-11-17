@@ -1,0 +1,549 @@
+//-------------------------------------------------------------------------------------
+// Defines
+//-------------------------------------------------------------------------------------
+
+// Use surface gradient normal mapping as it handle correctly triplanar normal mapping and multiple UVSet
+// Not used in rtx as it requires derivatives
+#ifndef SHADER_STAGE_RAY_TRACING
+#define SURFACE_GRADIENT
+#endif
+
+//-------------------------------------------------------------------------------------
+// Fill SurfaceData/Builtin data function
+//-------------------------------------------------------------------------------------
+#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Sampling/SampleUVMapping.hlsl"
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialUtilities.hlsl"
+#if !defined(SHADER_STAGE_RAY_TRACING) || defined (PATH_TRACING_CLUSTERED_DECALS)
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Decal/DecalUtilities.hlsl"
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDecalData.hlsl"
+#endif
+#ifndef SURFACE_GRADIENT
+#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/NormalSurfaceGradient.hlsl"
+#endif
+
+//#define PROJECTED_SPACE_NDF_FILTERING
+
+// Struct that gather UVMapping info of all layers + common calculation
+// This is use to abstract the mapping that can differ on layers
+struct LayerTexCoord
+{
+#ifndef LAYERED_LIT_SHADER
+    UVMapping base;
+    UVMapping details;
+#else
+    // Regular texcoord
+    UVMapping base0;
+    UVMapping base1;
+    UVMapping base2;
+    UVMapping base3;
+
+    UVMapping details0;
+    UVMapping details1;
+    UVMapping details2;
+    UVMapping details3;
+
+    // Dedicated for blend mask
+    UVMapping blendMask;
+#endif
+
+    // Store information that will be share by all UVMapping
+    float3 vertexNormalWS; // TODO: store also object normal map for object triplanar
+    float3 triplanarWeights;
+
+#ifdef SURFACE_GRADIENT
+    // tangent basis for each UVSet - up to 4 for now
+    float3 vertexTangentWS0, vertexBitangentWS0;
+    float3 vertexTangentWS1, vertexBitangentWS1;
+    float3 vertexTangentWS2, vertexBitangentWS2;
+    float3 vertexTangentWS3, vertexBitangentWS3;
+#endif
+};
+
+#ifdef SURFACE_GRADIENT
+void GenerateLayerTexCoordBasisTB(FragInputs input, inout LayerTexCoord layerTexCoord)
+{
+    float3 vertexNormalWS = input.tangentToWorld[2];
+
+    layerTexCoord.vertexTangentWS0 = input.tangentToWorld[0];
+    layerTexCoord.vertexBitangentWS0 = input.tangentToWorld[1];
+
+    float3 dPdx = ddx_fine(input.positionRWS);
+    float3 dPdy = ddy_fine(input.positionRWS);
+
+    float3 sigmaX = dPdx - dot(dPdx, vertexNormalWS) * vertexNormalWS;
+    float3 sigmaY = dPdy - dot(dPdy, vertexNormalWS) * vertexNormalWS;
+    //float flipSign = dot(sigmaY, cross(vertexNormalWS, sigmaX) ) ? -1.0 : 1.0;
+    float flipSign = dot(dPdy, cross(vertexNormalWS, dPdx)) < 0.0 ? -1.0 : 1.0; // gives same as the commented out line above
+
+    // TODO: Optimize! The compiler will not be able to remove the tangent space that are not use because it can't know due to our UVMapping constant we use for both base and details
+    // To solve this we should track which UVSet is use for normal mapping... Maybe not as simple as it sounds
+    SurfaceGradientGenBasisTB(vertexNormalWS, sigmaX, sigmaY, flipSign, input.texCoord1.xy, layerTexCoord.vertexTangentWS1, layerTexCoord.vertexBitangentWS1);
+    #if defined(_REQUIRE_UV2) || defined(_REQUIRE_UV3)
+    SurfaceGradientGenBasisTB(vertexNormalWS, sigmaX, sigmaY, flipSign, input.texCoord2.xy, layerTexCoord.vertexTangentWS2, layerTexCoord.vertexBitangentWS2);
+    #endif
+    #if defined(_REQUIRE_UV3)
+    SurfaceGradientGenBasisTB(vertexNormalWS, sigmaX, sigmaY, flipSign, input.texCoord3.xy, layerTexCoord.vertexTangentWS3, layerTexCoord.vertexBitangentWS3);
+    #endif
+}
+#endif
+
+#ifndef LAYERED_LIT_SHADER
+
+// Want to use only one sampler for normalmap/bentnormalmap either we use OS or TS. And either we have normal map or bent normal or both.
+#ifdef _NORMALMAP_TANGENT_SPACE
+    #if defined(_NORMALMAP)
+    #define SAMPLER_NORMALMAP_IDX sampler_NormalMap
+    #elif defined(_BENTNORMALMAP)
+    #define SAMPLER_NORMALMAP_IDX sampler_BentNormalMap
+    #endif
+#else
+    #if defined(_NORMALMAP)
+    #define SAMPLER_NORMALMAP_IDX sampler_NormalMapOS
+    #elif defined(_BENTNORMALMAP)
+    #define SAMPLER_NORMALMAP_IDX sampler_BentNormalMapOS
+    #endif
+#endif
+
+#define SAMPLER_DETAILMAP_IDX sampler_DetailMap
+#define SAMPLER_MASKMAP_IDX sampler_MaskMap
+#define SAMPLER_HEIGHTMAP_IDX sampler_HeightMap
+
+#define SAMPLER_SUBSURFACE_MASK_MAP_IDX sampler_SubsurfaceMaskMap
+#define SAMPLER_TRANSMISSION_MASK_MAP_IDX sampler_TransmissionMaskMap
+#define SAMPLER_THICKNESSMAP_IDX sampler_ThicknessMap
+
+// include LitDataIndividualLayer to define GetSurfaceData
+#define LAYER_INDEX 0
+#define ADD_IDX(Name) Name
+#define ADD_ZERO_IDX(Name) Name
+#ifdef _NORMALMAP
+#define _NORMALMAP_IDX
+#endif
+#ifdef _NORMALMAP_TANGENT_SPACE
+#define _NORMALMAP_TANGENT_SPACE_IDX
+#endif
+#ifdef _DETAIL_MAP
+#define _DETAIL_MAP_IDX
+#endif
+#ifdef _SUBSURFACE_MASK_MAP
+#define _SUBSURFACE_MASK_MAP_IDX
+#endif
+#ifdef _TRANSMISSION_MASK_MAP
+#define _TRANSMISSION_MASK_MAP_IDX
+#endif
+#ifdef _THICKNESSMAP
+#define _THICKNESSMAP_IDX
+#endif
+#ifdef _MASKMAP
+#define _MASKMAP_IDX
+#endif
+#ifdef _BENTNORMALMAP
+#define _BENTNORMALMAP_IDX
+#endif
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDataIndividualLayer.hlsl"
+
+// This maybe call directly by tessellation (domain) shader, thus all part regarding surface gradient must be done
+// in function with FragInputs input as parameters
+// layerTexCoord must have been initialize to 0 outside of this function
+void GetLayerTexCoord(float2 texCoord0, float2 texCoord1, float2 texCoord2, float2 texCoord3,
+                      float3 positionRWS, float3 vertexNormalWS, inout LayerTexCoord layerTexCoord)
+{
+    layerTexCoord.vertexNormalWS = vertexNormalWS;
+    float objectSpaceMapping = false;
+    float3 normalToComputeWeights = layerTexCoord.vertexNormalWS;
+#ifndef LAYERED_LIT_SHADER
+    objectSpaceMapping = _ObjectSpaceUVMapping;
+    if (objectSpaceMapping)
+    {
+        normalToComputeWeights = TransformWorldToObjectNormal(normalToComputeWeights);
+    }
+#endif
+
+    layerTexCoord.triplanarWeights = ComputeTriplanarWeights(normalToComputeWeights);
+
+    int mappingType = UV_MAPPING_UVSET;
+#if defined(_MAPPING_PLANAR)
+    mappingType = UV_MAPPING_PLANAR;
+#elif defined(_MAPPING_TRIPLANAR)
+    mappingType = UV_MAPPING_TRIPLANAR;
+#endif
+
+
+    // Be sure that the compiler is aware that we don't use UV1 to UV3 for main layer so it can optimize code
+    ComputeLayerTexCoord(   texCoord0, texCoord1, texCoord2, texCoord3, _UVMappingMask, _UVDetailsMappingMask,
+                            _BaseColorMap_ST.xy, _BaseColorMap_ST.zw, _DetailMap_ST.xy, _DetailMap_ST.zw, 1.0, _LinkDetailsWithBase,
+                            positionRWS, _TexWorldScale,
+                            mappingType, objectSpaceMapping, layerTexCoord);
+}
+
+// This is call only in this file
+// layerTexCoord must have been initialize to 0 outside of this function
+void GetLayerTexCoord(FragInputs input, inout LayerTexCoord layerTexCoord)
+{
+#ifdef SURFACE_GRADIENT
+    GenerateLayerTexCoordBasisTB(input, layerTexCoord);
+#endif
+
+    GetLayerTexCoord(   input.texCoord0.xy, input.texCoord1.xy, input.texCoord2.xy, input.texCoord3.xy,
+                        input.positionRWS, input.tangentToWorld[2].xyz, layerTexCoord);
+}
+
+#if !defined(SHADER_STAGE_RAY_TRACING)
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDataDisplacement.hlsl"
+#endif
+
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitBuiltinData.hlsl"
+
+#include "Assets/Shaders/StreetMeadow.cginc"
+
+#if defined(SHADER_STAGE_RAY_TRACING)
+#define STREET_SAMPLE(tex, uv) SAMPLE_TEXTURE2D_LOD(tex, sampler##tex, uv, 0)
+#else
+#define STREET_SAMPLE(tex, uv) SAMPLE_TEXTURE2D(tex, sampler##tex, uv)
+#endif
+
+struct StreetInput
+{
+    float3 worldPos;
+    float3 worldNormal;
+    float3 tangent;
+    float3 bitangent;
+    float3 viewDir;
+    float2 uv_MainTex;
+    float2 paneUV;
+    float2 leafUV;
+    float variant;
+    float4 color;
+    float facing;
+};
+
+struct StreetSurfaceSample
+{
+    float3 Albedo;
+    float3 Normal;
+    float3 Emission;
+    float Smoothness;
+    float Occlusion;
+    float Metallic;
+    float Alpha;
+    float Visibility;
+};
+
+float3 StreetWorldNormal(StreetInput input, float3 normal)
+{
+    return normal.x * input.tangent + normal.y * input.bitangent + normal.z * input.worldNormal;
+}
+
+float3 StreetNormalMap(float4 packedNormal)
+{
+    return UnpackNormal(packedNormal);
+}
+
+StreetInput StreetFragment(FragInputs input, float3 view)
+{
+    StreetInput street;
+    street.worldPos = GetAbsolutePositionWS(input.positionRWS);
+    street.worldNormal = SafeNormalize(input.tangentToWorld[2]);
+    float3 reference = abs(street.worldNormal.y) > .9 ? float3(0, 0, 1) : float3(0, 1, 0);
+    float3 fallbackTangent = SafeNormalize(cross(reference, street.worldNormal));
+    float3 tangent = input.tangentToWorld[0];
+    float3 bitangent = input.tangentToWorld[1];
+    street.tangent = dot(tangent, tangent) > .01 ? SafeNormalize(tangent) : fallbackTangent;
+    street.bitangent = dot(bitangent, bitangent) > .01 ? SafeNormalize(bitangent)
+        : SafeNormalize(cross(street.worldNormal, street.tangent));
+    street.viewDir = float3(dot(view, street.tangent), dot(view, street.bitangent), dot(view, street.worldNormal));
+    street.uv_MainTex = input.texCoord0.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+    street.paneUV = input.texCoord0.xy;
+    street.leafUV = input.texCoord0.xy;
+    // Adjacent panes retain different atlas selections even on meshes with two UV channels.
+    float3 approximateOrigin = street.worldPos - street.tangent * street.paneUV.x
+                                                 - street.bitangent * street.paneUV.y;
+    street.variant = frac(dot(floor(approximateOrigin * .46), float3(.173, .317, .427)));
+    street.color = input.color;
+    street.facing = 1;
+    return street;
+}
+
+#if defined(SHADER_STAGE_RAY_TRACING)
+float StreetWidth(float v) { return .003; }
+float2 StreetWidth(float2 v) { return .003; }
+#else
+float StreetWidth(float v) { return fwidth(v); }
+float2 StreetWidth(float2 v) { return fwidth(v); }
+#endif
+float StreetHash(float2 p) { return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453); }
+        float StreetNoise(float2 p)
+        {
+            float2 i=floor(p), f=frac(p); f=f*f*(3-2*f);
+            return lerp(lerp(StreetHash(i),StreetHash(i+float2(1,0)),f.x),lerp(StreetHash(i+float2(0,1)),StreetHash(i+1),f.x),f.y);
+        }
+        float detailNoise(float2 p)
+        {
+            return lerp(.5, StreetNoise(p), 1-saturate(length(StreetWidth(p))*.7));
+        }
+        float3 Perturb(float3 p, float3 n, float height)
+        {
+#if defined(SHADER_STAGE_RAY_TRACING)
+    return n;
+#else
+            float3 dx=ddx(p), dy=ddy(p);
+            float3 r1=cross(dy,n), r2=cross(n,dx);
+            float determinant=dot(dx,r1);
+            float3 gradient=sign(determinant)*(ddx(height)*r1+ddy(height)*r2);
+            return normalize(abs(determinant)*n-gradient);
+        
+#endif
+}
+        void StreetSample(StreetInput IN, inout StreetSurfaceSample o)
+        {
+            float3 p=IN.worldPos;
+            float3 normal=normalize(StreetWorldNormal(IN,float3(0,0,1)));
+            float3 n=abs(normal);
+            float2 uv=n.y>.65?p.xz:(n.x>n.z?p.zy:p.xy);
+            float3 albedo=_Color.rgb;
+            float height=0, occlusion=1, roughness=1-_Smoothness;
+            float macro=StreetNoise(uv*.19)*.6+StreetNoise(uv*.71)*.4;
+            if (_Kind>.5 && _Kind<1.5)
+            {
+                float row=floor(uv.y/.077);
+                float2 q=float2(uv.x/.255+fmod(row,2)*.5,uv.y/.077);
+                float2 f=frac(q), aa=max(StreetWidth(q),.004);
+                float mortar=max(1-smoothstep(.028-aa.x,.028+aa.x,min(f.x,1-f.x)),
+                    1-smoothstep(.045-aa.y,.045+aa.y,min(f.y,1-f.y)));
+                float visible=1-saturate(max(aa.x,aa.y)*1.3);
+                mortar*=visible;
+                float brick=lerp(1,.83+.28*StreetHash(floor(q)),visible);
+                albedo*=brick*(.88+.20*macro);
+                albedo=lerp(albedo,float3(.255,.247,.222),mortar*.72);
+                height=(1-mortar)*.0025+(detailNoise(uv*95)-.5)*.0007;
+                occlusion=1-mortar*.12;
+                roughness=.89;
+            }
+            else if (_Kind>1.5 && _Kind<2.5)
+            {
+                float grain=detailNoise(uv*110);
+                float patches=StreetNoise(uv*.31)*.65+StreetNoise(uv*1.7)*.35;
+                albedo*=(.78+patches*.33)*(.88+grain*.23);
+                height=(grain-.5)*.0016;
+                roughness=.91;
+            }
+            else if (_Kind>2.5 && _Kind<3.5)
+            {
+                float2 q=uv/float2(.20,.10);
+                q.x+=fmod(floor(q.y),2)*.5;
+                float2 f=frac(q), aa=max(StreetWidth(q),.003);
+                float edge=min(min(f.x,1-f.x),min(f.y,1-f.y));
+                float mortar=(1-smoothstep(.027-max(aa.x,aa.y),.027+max(aa.x,aa.y),edge))*(1-saturate(max(aa.x,aa.y)*1.5));
+                albedo*=lerp(1,.86+.25*StreetHash(floor(q)),1-saturate(max(aa.x,aa.y)))*(.90+.15*macro);
+                albedo=lerp(albedo,albedo*.58,mortar*.65);
+                height=(1-mortar)*.003+detailNoise(uv*140)*.0008;
+                roughness=.84;
+            }
+            else if (_Kind>3.5 && _Kind<4.5)
+            {
+                float ground=StreetNoise(uv*1.7)*.65+StreetNoise(uv*5.7)*.35;
+                float dry=smoothstep(.38,.72,StreetNoise(uv*.8+17));
+                albedo=lerp(_Color.rgb,_Color.rgb*float3(1.15,.92,.64),dry*.55)*(.86+ground*.23);
+                height=StreetNoise(uv*9)*.012+detailNoise(uv*80)*.002;
+                roughness=.98;
+            }
+            else if (_Kind>4.5 && _Kind<5.5)
+            {
+                float grain=StreetNoise(float2(uv.x*1.6,uv.y*135));
+                albedo*=(.76+grain*.27)*(.87+.18*macro);
+                height=grain*.0006; roughness=.74;
+            }
+            else if (_Kind>5.5 && _Kind<6.5)
+            {
+                float aggregate=detailNoise(uv*65);
+                albedo*=(.83+.22*aggregate)*(.88+.18*macro);
+                height=aggregate*.0014; roughness=.90;
+            }
+            else if (_Kind>6.5 && _Kind<7.5)
+            {
+                float marks=smoothstep(.63,.77,StreetNoise(float2(uv.x*19,uv.y*35)))*smoothstep(.46,.65,StreetNoise(uv*9));
+                albedo*=lerp(.83+StreetNoise(uv*4)*.17,.21,marks);
+                height=marks*.0009; roughness=.88;
+            }
+            else if (_Kind>7.5 && _Kind<8.5) { roughness=.82; }
+            else if (_Kind>8.5) { albedo*=.82+.18*StreetNoise(float2(uv.x*2,.03*uv.y)); roughness=.12; }
+
+            // Dirt and dampness where masonry and paving meet, not uniform clean toy surfaces.
+            if (_Kind<7.5 && _Kind>.5)
+                albedo*=1-(1-smoothstep(.08,1.1,p.y))*.15*StreetNoise(uv*3.1);
+            float3 perturbed=Perturb(p,normal,height);
+            float3 tangent=normalize(StreetWorldNormal(IN,float3(1,0,0)));
+            float3 bitangent=normalize(StreetWorldNormal(IN,float3(0,1,0)));
+            o.Normal=normalize(float3(dot(perturbed,tangent),dot(perturbed,bitangent),dot(perturbed,normal)));
+            o.Albedo=albedo*lerp(float3(1,1,1),IN.color.rgb,_VertexTint);
+            o.Metallic=_Metallic;
+            o.Smoothness=1-roughness;
+            o.Occlusion=occlusion;
+            o.Emission=_EmissionColor.rgb;
+            o.Alpha=1;
+        }
+
+void GetSurfaceAndBuiltinData(FragInputs input, float3 V, inout PositionInputs posInput, out SurfaceData surfaceData, out BuiltinData builtinData RAY_TRACING_OPTIONAL_PARAMETERS)
+{
+    // Fix case 1210058. With Lit.shader / LayeredLit.shader we always have UV1. But in the case of some SpeedTree mesh, there is no stream sent
+    // and UV1 is corrupt when we use surface gradient. In case UV1 aren't required we set them to 0, so we ensure there is no garbage.
+    // When using lightmaps, the uv1 is always valid but we don't update _UVMappingMask.y to 1
+    // So when we are using them, we just need to keep the UVs as is.
+#if !defined(LIGHTMAP_ON) && defined(SURFACE_GRADIENT)
+    input.texCoord1 = (_UVMappingMask.y + _UVDetailsMappingMask.y + _UVMappingMaskEmissive.y) > 0 ? input.texCoord1 : 0;
+#endif
+
+// Don't dither if displaced tessellation (we're fading out the displacement instead to match the next LOD)
+#if !defined(SHADER_STAGE_RAY_TRACING) && !defined(_TESSELLATION_DISPLACEMENT)
+#ifdef LOD_FADE_CROSSFADE // enable dithering LOD transition if user select CrossFade transition in LOD group
+    LODDitheringTransition(ComputeFadeMaskSeed(V, posInput.positionSS), unity_LODFade.x);
+#endif
+#endif
+
+    float3 doubleSidedConstants = GetDoubleSidedConstants();
+
+    ApplyDoubleSidedFlipOrMirror(input, doubleSidedConstants); // Apply double sided flip on the vertex normal
+
+    LayerTexCoord layerTexCoord;
+    ZERO_INITIALIZE(LayerTexCoord, layerTexCoord);
+    GetLayerTexCoord(input, layerTexCoord);
+
+#if !defined(SHADER_STAGE_RAY_TRACING)
+    float depthOffset = ApplyPerPixelDisplacement(input, V, layerTexCoord);
+    #ifdef _DEPTHOFFSET_ON
+    ApplyDepthOffsetPositionInput(V, depthOffset, GetViewForwardDir(), GetWorldToHClipMatrix(), posInput);
+    #endif
+#else
+    float depthOffset = 0.0;
+#endif
+
+    StreetInput streetInput = StreetFragment(input, V);
+    StreetSurfaceSample street = (StreetSurfaceSample)0;
+    street.Normal = float3(0, 0, 1);
+    street.Occlusion = 1;
+    street.Alpha = 1;
+    street.Visibility = 1;
+    StreetSample(streetInput, street);
+
+#if defined(_ALPHATEST_ON)
+    float alphaTex = street.Alpha * street.Visibility;
+    alphaTex = lerp(_AlphaRemapMin, _AlphaRemapMax, alphaTex);
+    float alphaValue = alphaTex * _BaseColor.a;
+
+    // Perform alha test very early to save performance (a killed pixel will not sample textures)
+    #if SHADERPASS == SHADERPASS_TRANSPARENT_DEPTH_PREPASS
+    float alphaCutoff = _AlphaCutoffPrepass;
+    #elif SHADERPASS == SHADERPASS_TRANSPARENT_DEPTH_POSTPASS
+    float alphaCutoff = _AlphaCutoffPostpass;
+    #elif (SHADERPASS == SHADERPASS_SHADOWS) || (SHADERPASS == SHADERPASS_RAYTRACING_VISIBILITY)
+    float alphaCutoff = _UseShadowThreshold ? _AlphaCutoffShadow : _AlphaCutoff;
+    #else
+    float alphaCutoff = _AlphaCutoff;
+    #endif
+
+    GENERIC_ALPHA_TEST(alphaValue, alphaCutoff);
+#endif
+
+    // We perform the conversion to world of the normalTS outside of the GetSurfaceData
+    // so it allow us to correctly deal with detail normal map and optimize the code for the layered shaders
+    float3 normalTS;
+    float3 bentNormalTS;
+    float3 bentNormalWS;
+    float alpha = GetSurfaceData(input, layerTexCoord, surfaceData, normalTS, bentNormalTS);
+
+    // This need to be init here to quiet the compiler in case of decal, but can be override later.
+    surfaceData.geomNormalWS = input.tangentToWorld[2];
+    surfaceData.specularOcclusion = 1.0;
+
+#ifdef DECAL_NORMAL_BLENDING
+    if (_EnableDecals)
+    {
+        #ifndef SURFACE_GRADIENT
+        normalTS = SurfaceGradientFromTangentSpaceNormalAndFromTBN(normalTS,
+                input.tangentToWorld[0], input.tangentToWorld[1]);
+        #endif
+
+        DecalSurfaceData decalSurfaceData = GetDecalSurfaceData(posInput, input, alpha);
+        ApplyDecalToSurfaceData(decalSurfaceData, input.tangentToWorld[2], surfaceData, normalTS);
+    }
+
+    GetNormalWS_SG(input, normalTS, surfaceData.normalWS, doubleSidedConstants);
+#else
+    GetNormalWS(input, normalTS, surfaceData.normalWS, doubleSidedConstants);
+
+    #if HAVE_DECALS
+    if (_EnableDecals)
+    {
+        // Both uses and modifies 'surfaceData.normalWS'.
+        DecalSurfaceData decalSurfaceData = GetDecalSurfaceData(posInput, input, alpha);
+        ApplyDecalToSurfaceData(decalSurfaceData, input.tangentToWorld[2], surfaceData);
+    }
+    #endif
+#endif
+
+    alpha = street.Alpha;
+    surfaceData.baseColor = street.Albedo;
+    surfaceData.normalWS = SafeNormalize(StreetWorldNormal(streetInput, street.Normal));
+    surfaceData.perceptualSmoothness = street.Smoothness;
+    surfaceData.ambientOcclusion = street.Occlusion;
+    surfaceData.metallic = street.Metallic;
+
+    // Use bent normal to sample GI if available
+#ifdef _BENTNORMALMAP
+    GetNormalWS(input, bentNormalTS, bentNormalWS, doubleSidedConstants);
+#else
+    bentNormalWS = surfaceData.normalWS;
+#endif
+
+#if defined(DEBUG_DISPLAY)
+#if !defined(SHADER_STAGE_RAY_TRACING)
+    // Mipmap mode debugging isn't supported with ray tracing as it relies on derivatives
+    if (_DebugMipMapMode != DEBUGMIPMAPMODE_NONE)
+    {
+        surfaceData.baseColor = GET_TEXTURE_STREAMING_DEBUG(posInput.positionSS, input.texCoord0);
+        surfaceData.metallic = 0;
+    }
+#endif
+
+    // We need to call ApplyDebugToSurfaceData after filling the surfaceData and before filling builtinData
+    // as it can modify attribute use for static lighting
+    ApplyDebugToSurfaceData(input.tangentToWorld, surfaceData);
+#endif
+
+    // By default we use the ambient occlusion with Tri-ace trick (apply outside) for specular occlusion.
+    // If user provide bent normal then we process a better term
+#if defined(_SPECULAR_OCCLUSION_FROM_BENT_NORMAL_MAP)
+    // If we have bent normal and ambient occlusion, process a specular occlusion
+    surfaceData.specularOcclusion = GetSpecularOcclusionFromBentAO(V, bentNormalWS, surfaceData.normalWS, surfaceData.ambientOcclusion, PerceptualSmoothnessToRoughness(surfaceData.perceptualSmoothness));
+    // Don't do spec occ from Ambient if there is no mask mask
+#elif defined(_MASKMAP) && !defined(_SPECULAR_OCCLUSION_NONE)
+    surfaceData.specularOcclusion = GetSpecularOcclusionFromAmbientOcclusion(ClampNdotV(dot(surfaceData.normalWS, V)), surfaceData.ambientOcclusion, PerceptualSmoothnessToRoughness(surfaceData.perceptualSmoothness));
+#endif
+
+    // This is use with anisotropic material
+    surfaceData.tangentWS = Orthonormalize(surfaceData.tangentWS, surfaceData.normalWS);
+
+#if defined(_ENABLE_GEOMETRIC_SPECULAR_AA) && !defined(SHADER_STAGE_RAY_TRACING)
+    // Specular AA
+    #ifdef PROJECTED_SPACE_NDF_FILTERING
+    surfaceData.perceptualSmoothness = ProjectedSpaceGeometricNormalFiltering(surfaceData.perceptualSmoothness, input.tangentToWorld[2], _SpecularAAScreenSpaceVariance, _SpecularAAThreshold);
+    #else
+    surfaceData.perceptualSmoothness = GeometricNormalFiltering(surfaceData.perceptualSmoothness, input.tangentToWorld[2], _SpecularAAScreenSpaceVariance, _SpecularAAThreshold);
+    #endif
+#endif
+
+    // Caution: surfaceData must be fully initialize before calling GetBuiltinData
+    GetBuiltinData(input, V, posInput, surfaceData, alpha, bentNormalWS, depthOffset, layerTexCoord.base, builtinData);
+    builtinData.emissiveColor += street.Emission;
+
+#ifdef _ALPHATEST_ON
+    // Used for sharpening by alpha to mask
+    builtinData.alphaClipTreshold = alphaCutoff;
+#endif
+
+    RAY_TRACING_OPTIONAL_ALPHA_TEST_PASS
+}
+#if !defined(SHADER_STAGE_RAY_TRACING)
+    #include "Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitDataMeshModification.hlsl"
+#endif
+#endif // #ifndef LAYERED_LIT_SHADER
