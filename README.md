@@ -4,7 +4,7 @@
 
 Основа 3D-игры про уборку Ханты-Мансийска. Первый участок — улица Дунина-Горкавича у дома №5. Unity 6.6 (6000.6.7f1), C#. Сейчас разрабатывается окружение, без экономики и механик уборки.
 
-Откройте папку `Unity_Walk` в Unity Hub и сцену `Assets/Scenes/Street.unity`. Текущая проверенная HDRP-сборка находится в `Unity_Walk/Build/StreetWindowsHDRPAtmosphere/`. Для запуска используйте `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd` или `Play_DLSS_Quality.cmd`. Повторная сборка сохранённых городских сцен выполняется через `StreetAtmosphereUpgrade.Build`; генерацию карты для неё запускать не требуется.
+Откройте папку `Unity_Walk` в Unity Hub и сцену `Assets/Scenes/Street.unity`. Текущая проверенная HDRP-сборка находится в `Unity_Walk/Build/StreetWindowsHDRPGarage/`. Для запуска используйте `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd` или `Play_DLSS_Quality.cmd`. Повторная сборка сохранённых городских сцен выполняется через `StreetGarageLevelRepair.BuildAfter`; генерацию карты для неё запускать не требуется.
 
 WASD / стрелки — ходьба, мышь — обзор, Esc — меню.
 
@@ -15,3 +15,5 @@ WASD / стрелки — ходьба, мышь — обзор, Esc — мен�
 Обновление графики: [Unity_Walk/GRAPHICS_REFRESH.md](Unity_Walk/GRAPHICS_REFRESH.md). Дороги и тротуары сверены с панорамами 2025 года: [Unity_Walk/ROAD_RECONSTRUCTION.md](Unity_Walk/ROAD_RECONSTRUCTION.md). Типы покрытий и характерные детали восстановлены по видам; ширины и высоты остаются оценочными, без обмерной точности 1:1.
 
 Обновление атмосферы от 17.11.2026: [отчёт и ограничения](Reports/Atmosphere-Upgrade.md), [PDF с парными кадрами до и после](Reports/Atmosphere-Upgrade.pdf). Open_Report.cmd открывает текстовый отчёт, Фотоальбом_игры.pdf содержит 18 новых снимков рассвета, дня и ночи.
+
+Южный двор у домов № 5 и № 7: [отчёт и парные кадры до и после](Reports/Garage-Court.pdf), [замеры и проверки](Reports/Garage-Court-Checks.json).
