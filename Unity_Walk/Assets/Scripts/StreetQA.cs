@@ -623,7 +623,9 @@ public class StreetQA : MonoBehaviour
             yield return new WaitForSecondsRealtime(.65f);
             camera.enabled = cameraWasEnabled;
             report.activeNightLamps=network.lamps.Count(l=>l&&l.enabled);
-            report.streetLampNightValid=report.activeNightLamps>0&&report.activeNightLamps<=8;
+            report.streetLampNightValid = report.activeNightLamps > 0 &&
+                report.activeNightLamps <= StreetLampNetwork.LampBudget &&
+                network.ShadowLampCount <= StreetLampNetwork.ShadowBudget;
             yield return Capture(camera,view,Path.Combine(directory,"02_dusk_lights.png"));
         }
         finally

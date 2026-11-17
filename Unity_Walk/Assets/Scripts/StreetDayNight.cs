@@ -40,6 +40,7 @@ public sealed class StreetDayNight : MonoBehaviour
     private Fog fog;
     private VolumetricClouds clouds;
     private WhiteBalance whiteBalance;
+    private Bloom bloom;
     private float[] fillLux;
     private float dayEv = 12.05f, baseIndirect = 1.35f, baseCloud = .4f, baseFogDistance = 385f;
     private Color baseFogColor = new(.88f, .91f, .95f);
@@ -131,6 +132,10 @@ public sealed class StreetDayNight : MonoBehaviour
         fog.meanFreePath.Override(baseFogDistance);
         clouds = runtimeProfile.Add<VolumetricClouds>();
         clouds.densityMultiplier.Override(baseCloud);
+        bloom = runtimeProfile.Add<Bloom>();
+        bloom.intensity.Override(.045f);
+        bloom.threshold.Override(3.5f);
+        bloom.scatter.Override(.38f);
 
         initialized = true;
         float requested = startHour;
@@ -192,6 +197,7 @@ public sealed class StreetDayNight : MonoBehaviour
         float highSun = Rise(0f, 30f, SunElevation);
         NightBlend = 1f - Rise(-9f, 3f, SunElevation);
         StarVisibility = 1f - Rise(-15f, -4f, SunElevation);
+        Shader.SetGlobalFloat("_StreetNightBlend", NightBlend);
 
         sun.transform.rotation = Quaternion.LookRotation(-direction, Vector3.up);
         bool morning = currentHour < (sunriseHour + sunsetHour) * .5f;
@@ -201,7 +207,7 @@ public sealed class StreetDayNight : MonoBehaviour
         sun.intensity = solarLux * Rise(-9f, 1f, SunElevation);
         sunData.lightDimmer = surfaceSun;
         sunData.volumetricDimmer = .92f * Rise(-8f, 4f, SunElevation);
-        sun.shadowStrength = surfaceSun;
+        sun.shadowStrength = Rise(-.1f, 1.1f, SunElevation);
         var shadowMode = SunElevation > 0f ? LightShadows.Soft : LightShadows.None;
         if (sun.shadows != shadowMode)
             sun.shadows = shadowMode;
@@ -212,18 +218,20 @@ public sealed class StreetDayNight : MonoBehaviour
         moon.enabled = moon.intensity > .001f;
         for (int index = 0; index < fillLux.Length; index++)
             if (daylightFill[index])
-                daylightFill[index].intensity = fillLux[index] * (Rise(-5f, 17f, SunElevation) * .82f +
-                    .006f * nightAmbient);
+                daylightFill[index].intensity = fillLux[index] * (Rise(-5f, 17f, SunElevation) * .72f +
+                    .0028f * nightAmbient);
 
-        exposure.fixedExposure.value = Mathf.Lerp(nightExposure, dayEv + .48f * highSun, daylight);
+        float dawnExposure = .40f * Rise(-5f, 2f, SunElevation) * (1f - Rise(6f, 16f, SunElevation));
+        exposure.fixedExposure.value = Mathf.Lerp(nightExposure, dayEv + .48f * highSun, daylight) + dawnExposure;
         ambient.indirectDiffuseLightingMultiplier.value = baseIndirect *
-            Mathf.Lerp(.00045f * nightAmbient, 1f, Rise(-6f, 16f, SunElevation));
+            Mathf.Lerp(.00045f * nightAmbient, 1f, Rise(-4f, 20f, SunElevation));
         ambient.reflectionLightingMultiplier.value = Mathf.Lerp(.78f, 1f, daylight);
         ambient.reflectionProbeIntensityMultiplier.value = Mathf.Lerp(.008f, 1f, daylight);
-        whiteBalance.temperature.value = Mathf.Lerp(-22f, baseWhiteBalance, daylight);
+        whiteBalance.temperature.value = Mathf.Lerp(-10f, baseWhiteBalance, daylight);
         fog.albedo.value = Color.Lerp(new Color(.48f, .62f, .86f), baseFogColor, daylight);
         fog.meanFreePath.value = Mathf.Lerp(baseFogDistance * 1.45f, baseFogDistance, daylight);
         clouds.densityMultiplier.value = Mathf.Lerp(baseCloud * .27f, baseCloud, Rise(-11f, 4f, SunElevation));
+        bloom.intensity.value = Mathf.Lerp(.065f, .025f, Rise(-3f, 8f, SunElevation));
         // The camera sky updates continuously. Refresh the convolved sky and its ambient probe less often.
         sky.spaceEmissionMultiplier.value = starRadiance * StarVisibility;
         if (milkyWay != appliedMilkyWay)
@@ -243,6 +251,7 @@ public sealed class StreetDayNight : MonoBehaviour
 
     private void OnDestroy()
     {
+        Shader.SetGlobalFloat("_StreetNightBlend", 0f);
         if (!runtimeProfile)
             return;
         foreach (var component in runtimeProfile.components)

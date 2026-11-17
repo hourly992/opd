@@ -213,6 +213,7 @@ struct StreetInput
     float2 paneUV;
     float2 leafUV;
     float variant;
+    float paneSeedHint;
     float4 color;
     float facing;
 };
@@ -259,6 +260,7 @@ StreetInput StreetFragment(FragInputs input, float3 view)
     float3 approximateOrigin = street.worldPos - street.tangent * street.paneUV.x
                                                  - street.bitangent * street.paneUV.y;
     street.variant = frac(dot(floor(approximateOrigin * .46), float3(.173, .317, .427)));
+    street.paneSeedHint = input.texCoord0.z;
     street.color = input.color;
     street.facing = 1;
     return street;
@@ -271,6 +273,7 @@ float2 StreetWidth(float2 v) { return .003; }
 float StreetWidth(float v) { return fwidth(v); }
 float2 StreetWidth(float2 v) { return fwidth(v); }
 #endif
+float _StreetNightBlend;
 float StreetHashPane(float n) { return frac(sin(n * 127.13 + 7.17) * 43758.5453); }
 void StreetSample(StreetInput IN, inout StreetSurfaceSample o)
         {
@@ -315,7 +318,28 @@ void StreetSample(StreetInput IN, inout StreetSurfaceSample o)
             o.Smoothness = lerp(.89, .955, dirt);
             o.Metallic = 0;
             o.Occlusion = 1;
-            o.Emission = 0;
+            // The existing per-pane seed is stable over the complete UV rectangle.
+            // The hash selects one quarter of the authored panes as occupied rooms.
+            float3 paneOrigin = IN.worldPos;
+#if defined(SHADER_STAGE_RAY_TRACING)
+            paneOrigin = IN.worldPos - IN.tangent * uv.x - IN.bitangent * uv.y;
+#else
+            // Recover one fixed origin for each authored pane, including windows wider than one metre.
+            float3 alongU = (dxP * dyUV.y - dyP * dxUV.y) / denominator;
+            float3 alongV = (dyP * dxUV.x - dxP * dyUV.x) / denominator;
+            paneOrigin -= alongU * uv.x + alongV * uv.y;
+#endif
+            float paneSeed = abs(IN.paneSeedHint) > .000001
+                ? floor(frac(IN.paneSeedHint) * 65536 + .5) / 65536
+                : dot(floor(paneOrigin * 4 + .13), float3(.173, .317, .427));
+            float occupied = step(.75, StreetHashPane(paneSeed * 53 + 11));
+            float3 lamplight = lerp(float3(1, .52, .23), float3(1, .72, .40),
+                                   StreetHashPane(seed * 29 + 17));
+            float curtainLight = lerp(.82, 1.05, dot(room, float3(.2126, .7152, .0722)));
+            float edge = min(min(uv.x, 1 - uv.x), min(uv.y, 1 - uv.y));
+            float insidePane = smoothstep(0, .018, edge);
+            float radiance = lerp(18, 34, StreetHashPane(seed * 41 + 23));
+            o.Emission = lamplight * radiance * curtainLight * insidePane * occupied * saturate(_StreetNightBlend);
             o.Alpha = 1;
         }
 

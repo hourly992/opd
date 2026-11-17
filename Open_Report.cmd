@@ -1,2 +1,2 @@
 @echo off
-start "" notepad.exe "%~dp0Reports\Day-Night.txt"
+start "" notepad.exe "%~dp0Reports\Atmosphere-Upgrade.txt"

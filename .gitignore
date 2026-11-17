@@ -52,6 +52,6 @@ secrets.local.*
 /Maintenance/
 **/QA_HDRP/
 **/QA_*/
-**/Build*/
+/Unity_Walk/Build*/
 /Фотоальбом_игры.pdf
 /.qa-launchers/

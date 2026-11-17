@@ -1,0 +1,147 @@
+{
+  "project": "C:\\Users\\Пользователь\\Documents\\Games\\opd-hdrp\\Unity_Walk",
+  "checkpoint": "C:\\Users\\Пользователь\\Documents\\Games\\opd-hdrp\\.checkpoints\\before-atmosphere-20261116-223040",
+  "originalFileCount": 11888,
+  "unchangedFileCount": 11873,
+  "changedExistingFiles": [
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn HDRP Instanced.mat",
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 1.asset",
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 2.asset",
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 3.asset",
+    "Assets/Scenes/Street.unity",
+    "Assets/Scenes/Street_LeafStudy.unity",
+    "Assets/Scripts/Environment/StreetLampNetwork.cs",
+    "Assets/Scripts/StreetDayNight.cs",
+    "Assets/Scripts/StreetHdrpPreset.cs",
+    "Assets/Scripts/StreetQA.cs",
+    "Assets/Shaders/HDRP/StreetGlassLitData.hlsl",
+    "Assets/StreetHDRP/Autumn RT.asset",
+    "Assets/StreetHDRP/Autumn lighting.asset",
+    "Assets/StreetHDRP/Autumn.asset",
+    "Assets/StreetHDRP/Comparison lighting.asset"
+  ],
+  "expectedChangedExistingFiles": [
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn HDRP Instanced.mat",
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 1.asset",
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 2.asset",
+    "Assets/Art/AutumnGrass/DenseLawn/Lawn tuft 3.asset",
+    "Assets/Scenes/Street.unity",
+    "Assets/Scenes/Street_LeafStudy.unity",
+    "Assets/Scripts/Environment/StreetLampNetwork.cs",
+    "Assets/Scripts/StreetDayNight.cs",
+    "Assets/Scripts/StreetHdrpPreset.cs",
+    "Assets/Scripts/StreetQA.cs",
+    "Assets/Shaders/HDRP/StreetGlassLitData.hlsl",
+    "Assets/StreetHDRP/Autumn RT.asset",
+    "Assets/StreetHDRP/Autumn lighting.asset",
+    "Assets/StreetHDRP/Autumn.asset",
+    "Assets/StreetHDRP/Comparison lighting.asset"
+  ],
+  "unexpectedChangedExistingFiles": [],
+  "missingOriginalFiles": [],
+  "newFiles": [
+    "Assets/Editor/StreetAtmosphereUpgrade.cs",
+    "Assets/Editor/StreetAtmosphereUpgrade.cs.meta",
+    "Assets/Editor/StreetGrassVolumeUpgrade.cs",
+    "Assets/Editor/StreetGrassVolumeUpgrade.cs.meta",
+    "Assets/Editor/StreetNightLighting.cs",
+    "Assets/Editor/StreetNightLighting.cs.meta",
+    "Assets/Editor/StreetRoadAtmosphere.cs",
+    "Assets/Editor/StreetRoadAtmosphere.cs.meta",
+    "Assets/Editor/StreetWindowAudit.cs",
+    "Assets/Editor/StreetWindowAudit.cs.meta",
+    "Assets/Scripts/StreetAtmosphereAudit.cs",
+    "Assets/Scripts/StreetAtmosphereAudit.cs.meta",
+    "Assets/StreetHDRP/AtmosphereDetails.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Curb dust.mat",
+    "Assets/StreetHDRP/AtmosphereDetails/Curb dust.mat.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Curb dust.png",
+    "Assets/StreetHDRP/AtmosphereDetails/Curb dust.png.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.mat",
+    "Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.mat.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.png",
+    "Assets/StreetHDRP/AtmosphereDetails/Fine asphalt wear.png.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.mat",
+    "Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.mat.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.png",
+    "Assets/StreetHDRP/AtmosphereDetails/Foundation weathering.png.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Main carriageway dashes.asset",
+    "Assets/StreetHDRP/AtmosphereDetails/Main carriageway dashes.asset.meta",
+    "Assets/StreetHDRP/AtmosphereDetails/Warm white road paint.mat",
+    "Assets/StreetHDRP/AtmosphereDetails/Warm white road paint.mat.meta"
+  ],
+  "preservationCategories": {
+    "sourceImages": {
+      "count": 192,
+      "preserved": 192,
+      "alteredOrMissing": []
+    },
+    "sourceModels": {
+      "count": 1,
+      "preserved": 1,
+      "alteredOrMissing": []
+    },
+    "originalPrefabs": {
+      "count": 58,
+      "preserved": 58,
+      "alteredOrMissing": []
+    },
+    "nativeLawnTerrainData": {
+      "count": 43,
+      "preserved": 43,
+      "alteredOrMissing": []
+    },
+    "originalMetaFiles": {
+      "count": 6036,
+      "preserved": 6036,
+      "alteredOrMissing": []
+    }
+  },
+  "scenes": [
+    {
+      "scene": "Assets/Scenes/Street.unity",
+      "originalObjects": 17975,
+      "newSerializedObjects": 231,
+      "originalTransforms": 6280,
+      "explicitOriginalTransforms": 3194,
+      "strippedPrefabTransforms": 3086,
+      "removedOriginalObjectIds": [],
+      "changedOriginalClasses": {
+        "108": 80,
+        "114": 83,
+        "1660057539": 1
+      },
+      "changedTransformBytes": [],
+      "changedTransformValues": [],
+      "changedMeshFilterReferences": [],
+      "changedMeshColliderReferences": [],
+      "changedRendererMaterialReferences": [],
+      "changedGameObjectActivation": [],
+      "changedColliderBlocks": [],
+      "geometryAndOriginalAssignmentsPreserved": true
+    },
+    {
+      "scene": "Assets/Scenes/Street_LeafStudy.unity",
+      "originalObjects": 13303,
+      "newSerializedObjects": 0,
+      "originalTransforms": 5005,
+      "explicitOriginalTransforms": 1875,
+      "strippedPrefabTransforms": 3130,
+      "removedOriginalObjectIds": [],
+      "changedOriginalClasses": {
+        "108": 80,
+        "114": 83,
+        "20": 1
+      },
+      "changedTransformBytes": [],
+      "changedTransformValues": [],
+      "changedMeshFilterReferences": [],
+      "changedMeshColliderReferences": [],
+      "changedRendererMaterialReferences": [],
+      "changedGameObjectActivation": [],
+      "changedColliderBlocks": [],
+      "geometryAndOriginalAssignmentsPreserved": true
+    }
+  ],
+  "passed": true
+}

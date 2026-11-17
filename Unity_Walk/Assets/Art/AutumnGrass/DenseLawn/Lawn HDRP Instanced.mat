@@ -26,7 +26,6 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
-  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -251,7 +250,7 @@ Material:
     - _UseShadowThreshold: 0
     - _WindHeightScale: 0.23
     - _WindStemHeight: 1.5
-    - _WindStrength: 0.008
+    - _WindStrength: 0.011
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4

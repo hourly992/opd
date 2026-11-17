@@ -116,7 +116,7 @@ MonoBehaviour:
   interCascadeBorders: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 145
+    m_Value: 320
   directionalTransmissionMultiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -125,13 +125,13 @@ MonoBehaviour:
     m_Value: 4
   cascadeShadowSplit0:
     m_OverrideState: 1
-    m_Value: 0.062
+    m_Value: 0.045
   cascadeShadowSplit1:
     m_OverrideState: 1
-    m_Value: 0.17
+    m_Value: 0.15
   cascadeShadowSplit2:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.38
   cascadeShadowBorder0:
     m_OverrideState: 1
     m_Value: 0.16
@@ -544,13 +544,13 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.61
+    m_Value: 0.77
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.12
+    m_Value: 0.22
   radius:
     m_OverrideState: 1
-    m_Value: 0.55
+    m_Value: 0.58
   spatialBilateralAggressiveness:
     m_OverrideState: 0
     m_Value: 0.15
@@ -1017,13 +1017,13 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 1.6
+    m_Value: 3.5
   intensity:
     m_OverrideState: 1
-    m_Value: 0.095
+    m_Value: 0.035
   scatter:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 0.38
   tint:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -1063,25 +1063,25 @@ MonoBehaviour:
     m_Value: 1
   enable:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   directionalOnly:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   halfResolution:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   length:
     m_OverrideState: 1
-    m_Value: 0.18
+    m_Value: 0.24
   opacity:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.67
   distanceScaleFactor:
     m_OverrideState: 0
     m_Value: 0.5
   maxDistance:
     m_OverrideState: 1
-    m_Value: 35
+    m_Value: 45
   minDistance:
     m_OverrideState: 0
     m_Value: 0
