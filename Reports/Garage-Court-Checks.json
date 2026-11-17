@@ -1,0 +1,706 @@
+{
+  "base": "b475127043417f343e330d0ce077314ed0c5bd6f",
+  "geometry": {
+    "mouthY": -0.009999990463256836,
+    "mouthZ": -50.0,
+    "roadZ": -54.599998474121094,
+    "rearZ": -26.799999237060547,
+    "rise": 0.8500000238418579,
+    "clearWidth": 4.400000095367432,
+    "depth": 2.640000104904175,
+    "rampLength": 18.0,
+    "vestibuleEnd": 20.700000762939453,
+    "cutSurfaces": [
+      "Assets/Art/StreetRepair/Surfaces/CourtRetained_148822049.asset · Grass · 73 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_1606348876.asset · LOD 0 · 2148 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_1517458601.asset · LOD 0 · 2059 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_1308198805.asset · LOD 0 · 10990 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_751070016.asset · LOD 0 · 4289 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_62286156.asset · LOD 1 · 349 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_1927681555.asset · LOD 1 · 268 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_755020820.asset · LOD 1 · 581 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_816626536.asset · LOD 1 · 1711 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_1513286928.asset · LOD 2 · 21 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_1118493497.asset · LOD 2 · 24 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_2023905261.asset · LOD 2 · 54 пересечённых треугольников",
+      "Assets/Art/AutumnGrass/Cell_2141702985.asset · LOD 2 · 158 пересечённых треугольников",
+      "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-2_Near.asset · Вблизи · 268 пересечённых треугольников",
+      "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-3_Near.asset · Вблизи · 44 пересечённых треугольников",
+      "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-3_Far.asset · Вдали · 6 пересечённых треугольников",
+      "Assets/Art/PaintedDistrict/Leaves/Leaves_1_-2_Far.asset · Вдали · 46 пересечённых треугольников",
+      "Assets/Art/StreetRepair/LocalAsphalt.asset · Местные асфальтовые проезды · короткие подходы к входам · 46 пересечённых треугольников",
+      "Assets/Art/StreetRepair/Surfaces/Retained_1053760653.asset · Мощение, отмостка, клумбы и площадка · 290 пересечённых треугольников",
+      "Assets/Art/StreetRepair/Surfaces/House13ApronRetainedAsphalt.asset · Объединённый асфальт проездов и въездов · 13 пересечённых треугольников",
+      "Assets/Art/StreetRepair/Surfaces/Shoulder_center.asset · Переход асфальт–грунт · center · 192 пересечённых треугольников"
+    ],
+    "adjustedObjects": [
+      "Ограждение, табличка и контейнеры отключены. Плита и бордюр убраны из покрытий двора.",
+      "Дворовый фонарь: (21.000, 0.000, -34.000) → (19.995, 0.435, -34.000)"
+    ],
+    "alteredTriangles": 23630,
+    "roofColliders": 2,
+    "supportColliders": 28,
+    "lawn": {
+      "overlappingTiles": 1,
+      "modifiedTiles": 1,
+      "removedInstances": 16025,
+      "remainingInstances": 0,
+      "retainedInstances": 56804,
+      "modifiedAssets": [
+        "Assets/Art/StreetRepair/SouthGarageCourt/GarageLawn_Lawn_0_-1.asset"
+      ]
+    },
+    "footprint": [
+      {
+        "x": 19.549999237060547,
+        "y": -54.33147430419922
+      },
+      {
+        "x": 34.45000076293945,
+        "y": -54.589881896972656
+      },
+      {
+        "x": 34.45000076293945,
+        "y": -26.799999237060547
+      },
+      {
+        "x": 19.549999237060547,
+        "y": -26.799999237060547
+      }
+    ]
+  },
+  "physicalChecks": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": false,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "hour": 13.0,
+    "lanes": [
+      {
+        "name": "Западный въезд и гаражный отсек",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 23.90799903869629,
+          "y": -0.0016991936136037111,
+          "z": -54.13957214355469
+        },
+        "maxHeightError": 0.014199193567037582,
+        "maximumExcessStep": 0.008738623932003975,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 1.9073486328125e-06,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Подъём и верхняя площадка",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 597,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 28.2239990234375,
+          "y": -0.005592270754277706,
+          "z": -54.21067810058594
+        },
+        "maxHeightError": 0.01809227094054222,
+        "maximumExcessStep": 0.011016765609383583,
+        "measuredRise": -0.04499999061226845,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Восточный въезд и гаражный отсек",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 30.091999053955078,
+          "y": -0.009999990463256836,
+          "z": -54.15678787231445
+        },
+        "maxHeightError": 0.01124999113380909,
+        "maximumExcessStep": 0.011250000447034836,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 1.9073486328125e-06,
+        "playerTraversal": true,
+        "passed": true
+      }
+    ],
+    "barriers": [
+      {
+        "name": "Западный арочный навес сверху",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 22.899999618530273,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный арочный навес снизу",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 22.899999618530273,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный · стойка навеса слева",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 20.56100082397461,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный · стойка навеса справа",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 25.238998413085938,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный арочный навес сверху",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 31.100000381469727,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный арочный навес снизу",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 31.100000381469727,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный · стойка навеса слева",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 28.761001586914062,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный · стойка навеса справа",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 33.43899917602539,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "01_courtyard_front.png",
+        "eye": {
+          "x": 27.0,
+          "y": 2.0999999046325684,
+          "z": -59.0
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.4000000059604645,
+          "z": -38.5
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 68.24298858642578
+      },
+      {
+        "name": "02_courtyard_flank.png",
+        "eye": {
+          "x": 17.700000762939453,
+          "y": 2.700000047683716,
+          "z": -57.0
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.25,
+          "z": -39.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 69.5545425415039
+      },
+      {
+        "name": "03_courtyard_top.png",
+        "eye": {
+          "x": 17.0,
+          "y": 12.0,
+          "z": -59.0
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.3499999940395355,
+          "z": -40.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 92.36494445800781
+      },
+      {
+        "name": "04_north_reference.png",
+        "eye": {
+          "x": 19.5,
+          "y": 2.700000047683716,
+          "z": 130.0
+        },
+        "lookAt": {
+          "x": 25.600000381469727,
+          "y": 0.20000000298023224,
+          "z": 110.5999984741211
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 76.13105010986328
+      },
+      {
+        "name": "05_north_top.png",
+        "eye": {
+          "x": 16.5,
+          "y": 10.5,
+          "z": 122.0
+        },
+        "lookAt": {
+          "x": 25.799999237060547,
+          "y": 0.0,
+          "z": 112.5
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 102.05467987060547
+      },
+      {
+        "name": "06_waste_pad.png",
+        "eye": {
+          "x": 32.5,
+          "y": 2.5,
+          "z": -45.400001525878906
+        },
+        "lookAt": {
+          "x": 25.399999618530273,
+          "y": 1.2000000476837158,
+          "z": -37.099998474121094
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 78.0564193725586
+      },
+      {
+        "name": "07_courtyard_right.png",
+        "eye": {
+          "x": 36.400001525878906,
+          "y": 2.700000047683716,
+          "z": -58.5
+        },
+        "lookAt": {
+          "x": 26.899999618530273,
+          "y": 0.30000001192092896,
+          "z": -40.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 71.98883056640625
+      }
+    ],
+    "errors": []
+  },
+  "scope": {
+    "passed": true,
+    "originalBlocks": 18206,
+    "unchangedBlocks": 18175,
+    "changedClasses": {
+      "33": 21,
+      "64": 5,
+      "1": 1,
+      "1001": 1,
+      "4": 1,
+      "218": 1,
+      "1660057539": 1
+    },
+    "originalTransforms": 6357,
+    "newObjects": 36,
+    "newRoots": [
+      "1615889673"
+    ],
+    "removed": [],
+    "unexpected": [],
+    "changes": {
+      "62286157": {
+        "cls": 33,
+        "owner": "LOD 1",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 672717dcd296bcc4fa325174d203ef5a, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 17457a2b674ba5b408f688defe6eec15, type: 2}"
+        ]
+      },
+      "148822049": {
+        "cls": 33,
+        "owner": "Grass",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 5ecf507fa277e71ca10a5423e37acbbc, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 603cd252ac475d548b7025caacec9d0b, type: 2}"
+        ]
+      },
+      "148822050": {
+        "cls": 64,
+        "owner": "Grass",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 5ecf507fa277e71ca10a5423e37acbbc, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 603cd252ac475d548b7025caacec9d0b, type: 2}"
+        ]
+      },
+      "255751788": {
+        "cls": 1,
+        "owner": null,
+        "before": [
+          "  m_IsActive: 1"
+        ],
+        "after": [
+          "  m_IsActive: 0"
+        ]
+      },
+      "277442652": {
+        "cls": 33,
+        "owner": "\"\\u0412\\u0431\\u043B\\u0438\\u0437\\u0438\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 842336293d6dd974b89c8ad5720893d6, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 562d62d3102712948af5561aaef99f75, type: 2}"
+        ]
+      },
+      "451327754": {
+        "cls": 33,
+        "owner": "\"\\u0412\\u0434\\u0430\\u043B\\u0438\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: ac5d8fcc7f961bf47bc6c6cc03b26674, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 6788886d8953929458da829530133ae7, type: 2}"
+        ]
+      },
+      "551265841": {
+        "cls": 64,
+        "owner": "\"\\u041E\\u0431\\u044A\\u0435\\u0434\\u0438\\u043D\\u0451\\u043D\\u043D\\u044B\\u0439 \\u0430\\u0441\\u0444\\u0430\\u043B\\u044C\\u0442 \\u043F\\u0440\\u043E\\u0435\\u0437\\u0434\\u043E\\u0432 \\u0438 \\u0432\\u044A\\u0435\\u0437\\u0434\\u043E\\u0432\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 02bc4d0a08690b35e76406ba95d7382f, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: e1b0c4aade23af84b9dee6d49b802a7b, type: 2}"
+        ]
+      },
+      "551265843": {
+        "cls": 33,
+        "owner": "\"\\u041E\\u0431\\u044A\\u0435\\u0434\\u0438\\u043D\\u0451\\u043D\\u043D\\u044B\\u0439 \\u0430\\u0441\\u0444\\u0430\\u043B\\u044C\\u0442 \\u043F\\u0440\\u043E\\u0435\\u0437\\u0434\\u043E\\u0432 \\u0438 \\u0432\\u044A\\u0435\\u0437\\u0434\\u043E\\u0432\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 02bc4d0a08690b35e76406ba95d7382f, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: e1b0c4aade23af84b9dee6d49b802a7b, type: 2}"
+        ]
+      },
+      "751070017": {
+        "cls": 33,
+        "owner": "LOD 0",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 8be2316601d2c434a92bdf5526c038c6, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: bbdffae58c318c84f9d9bf2ba38aec75, type: 2}"
+        ]
+      },
+      "755020821": {
+        "cls": 33,
+        "owner": "LOD 1",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 1c8e26247b082ec4b90eb88d65331981, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 9ad72ed5c8cbfbf41ac1ebec9f246c82, type: 2}"
+        ]
+      },
+      "816626537": {
+        "cls": 33,
+        "owner": "LOD 1",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: b548210e6c9c07041befbf70897c97de, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: e5a6514fab44b9d43b8d99804c3c1a78, type: 2}"
+        ]
+      },
+      "1053760651": {
+        "cls": 64,
+        "owner": "\"\\u041C\\u043E\\u0449\\u0435\\u043D\\u0438\\u0435, \\u043E\\u0442\\u043C\\u043E\\u0441\\u0442\\u043A\\u0430, \\u043A\\u043B\\u0443\\u043C\\u0431\\u044B \\u0438 \\u043F\\u043B\\u043E\\u0449\\u0430\\u0434\\u043A\\u0430\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 623cbf19cc73521ffa4afea3613d8c2b, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: cb54238b8136a1648ae96caf9aa1758a, type: 2}"
+        ]
+      },
+      "1053760653": {
+        "cls": 33,
+        "owner": "\"\\u041C\\u043E\\u0449\\u0435\\u043D\\u0438\\u0435, \\u043E\\u0442\\u043C\\u043E\\u0441\\u0442\\u043A\\u0430, \\u043A\\u043B\\u0443\\u043C\\u0431\\u044B \\u0438 \\u043F\\u043B\\u043E\\u0449\\u0430\\u0434\\u043A\\u0430\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 623cbf19cc73521ffa4afea3613d8c2b, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: cb54238b8136a1648ae96caf9aa1758a, type: 2}"
+        ]
+      },
+      "1118493498": {
+        "cls": 33,
+        "owner": "LOD 2",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: ba49590e3514f884ca1d91c213e9747a, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 169561c003e844947ac7183687c88781, type: 2}"
+        ]
+      },
+      "1308198806": {
+        "cls": 33,
+        "owner": "LOD 0",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 259391ac4600c904a93add5481126ba3, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 53443e8ab4338694e93730f10be7b9a6, type: 2}"
+        ]
+      },
+      "1513286929": {
+        "cls": 33,
+        "owner": "LOD 2",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: fc173d842d0ec3846bdb25b9c615db31, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: e7f3b391a54f2ce409a79ecdf5a21f04, type: 2}"
+        ]
+      },
+      "1517458602": {
+        "cls": 33,
+        "owner": "LOD 0",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 73b30e909ad28e149b02e9310c65cdfe, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: c9dbfd35940897948bbd06583a71b106, type: 2}"
+        ]
+      },
+      "1606348877": {
+        "cls": 33,
+        "owner": "LOD 0",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: cf77fcca28db304418ca09cb7ad5fd27, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: f3b138d963dbc494fb8822956871c905, type: 2}"
+        ]
+      },
+      "1672630270": {
+        "cls": 1001,
+        "owner": null,
+        "before": [
+          "      value: 21"
+        ],
+        "after": [
+          "      value: 19.995",
+          "      value: 0.43500167"
+        ]
+      },
+      "1719809422": {
+        "cls": 33,
+        "owner": "\"\\u0412\\u0434\\u0430\\u043B\\u0438\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 5e23235c014cd55449aa506ce3c1cbeb, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: c9dd70b8fd9caaf418b2d718a7315801, type: 2}"
+        ]
+      },
+      "1841297344": {
+        "cls": 33,
+        "owner": "\"\\u0412\\u0431\\u043B\\u0438\\u0437\\u0438\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 6a0e8d3fe70f15549bc1fc579e0b627c, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 1e635f114d270264d997c0e1731dac74, type: 2}"
+        ]
+      },
+      "1891100650": {
+        "cls": 4,
+        "owner": "\"\\u041F\\u043E\\u0434\\u0445\\u043E\\u0434 \\u043A \\u043A\\u043E\\u043D\\u0442\\u0435\\u0439\\u043D\\u0435\\u0440\\u0430\\u043C\"",
+        "before": [
+          "  m_LocalPosition: {x: 25.5, y: 0.14, z: -40.7}"
+        ],
+        "after": [
+          "  m_LocalPosition: {x: 27, y: 0.84000003, z: -40}"
+        ]
+      },
+      "1927681556": {
+        "cls": 33,
+        "owner": "LOD 1",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: cd600326d8581e14b90081d158d8e310, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 3549a5b7f12cb484089927812c6cbfc4, type: 2}"
+        ]
+      },
+      "2023905262": {
+        "cls": 33,
+        "owner": "LOD 2",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: c1801791ccb2eed4fa2bbd0708252e19, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: e8a5114b5a557f445ad25c1c3a6b4941, type: 2}"
+        ]
+      },
+      "2039079191": {
+        "cls": 218,
+        "owner": "Lawn_0_-1",
+        "before": [
+          "  m_TerrainData: {fileID: 15600000, guid: e1369c380b57f424690f3cb9b14e3926, type: 2}"
+        ],
+        "after": [
+          "  m_TerrainData: {fileID: 15600000, guid: cb46cc3ffefcb414e93a729dc8dbeeae, type: 2}"
+        ]
+      },
+      "2141702986": {
+        "cls": 33,
+        "owner": "LOD 2",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: c8e1650e6f2613440b90ad9ebc325380, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 5ee696e4bb2decf458548da00fca79e6, type: 2}"
+        ]
+      },
+      "2142541095": {
+        "cls": 64,
+        "owner": "\"\\u041F\\u0435\\u0440\\u0435\\u0445\\u043E\\u0434 \\u0430\\u0441\\u0444\\u0430\\u043B\\u044C\\u0442\\u2013\\u0433\\u0440\\u0443\\u043D\\u0442 \\xB7 center\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 6b5b53b03e2c22fa376a35150f743696, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 006c43efa4cbb7f4a8e14ad7bdcc325f, type: 2}"
+        ]
+      },
+      "2142541097": {
+        "cls": 33,
+        "owner": "\"\\u041F\\u0435\\u0440\\u0435\\u0445\\u043E\\u0434 \\u0430\\u0441\\u0444\\u0430\\u043B\\u044C\\u0442\\u2013\\u0433\\u0440\\u0443\\u043D\\u0442 \\xB7 center\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 6b5b53b03e2c22fa376a35150f743696, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 006c43efa4cbb7f4a8e14ad7bdcc325f, type: 2}"
+        ]
+      },
+      "4000000026": {
+        "cls": 33,
+        "owner": "\"\\u041C\\u0435\\u0441\\u0442\\u043D\\u044B\\u0435 \\u0430\\u0441\\u0444\\u0430\\u043B\\u044C\\u0442\\u043E\\u0432\\u044B\\u0435 \\u043F\\u0440\\u043E\\u0435\\u0437\\u0434\\u044B \\xB7 \\u043A\\u043E\\u0440\\u043E\\u0442\\u043A\\u0438\\u0435 \\u043F\\u043E\\u0434\\u0445\\u043E\\u0434\\u044B \\u043A \\u0432\\u0445\\u043E\\u0434\\u0430\\u043C\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 726a09c5fc9c06b23f8d86fd2195e503, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 283a707ee7d4fb14cb3b6f9b4e7bd7ee, type: 2}"
+        ]
+      },
+      "4000000028": {
+        "cls": 64,
+        "owner": "\"\\u041C\\u0435\\u0441\\u0442\\u043D\\u044B\\u0435 \\u0430\\u0441\\u0444\\u0430\\u043B\\u044C\\u0442\\u043E\\u0432\\u044B\\u0435 \\u043F\\u0440\\u043E\\u0435\\u0437\\u0434\\u044B \\xB7 \\u043A\\u043E\\u0440\\u043E\\u0442\\u043A\\u0438\\u0435 \\u043F\\u043E\\u0434\\u0445\\u043E\\u0434\\u044B \\u043A \\u0432\\u0445\\u043E\\u0434\\u0430\\u043C\"",
+        "before": [
+          "  m_Mesh: {fileID: 4300000, guid: 726a09c5fc9c06b23f8d86fd2195e503, type: 2}"
+        ],
+        "after": [
+          "  m_Mesh: {fileID: 4300000, guid: 283a707ee7d4fb14cb3b6f9b4e7bd7ee, type: 2}"
+        ]
+      },
+      "9223372036854775807": {
+        "cls": 1660057539,
+        "owner": null,
+        "before": [],
+        "after": [
+          "  - {fileID: 1615889673}"
+        ]
+      }
+    }
+  },
+  "pairedOffscreenFps": [
+    {
+      "view": "01_courtyard_front.png",
+      "before": 58.721466064453125,
+      "after": 68.24298858642578
+    },
+    {
+      "view": "02_courtyard_flank.png",
+      "before": 75.23737335205078,
+      "after": 69.5545425415039
+    },
+    {
+      "view": "03_courtyard_top.png",
+      "before": 69.56587982177734,
+      "after": 92.36494445800781
+    },
+    {
+      "view": "04_north_reference.png",
+      "before": 80.08304595947266,
+      "after": 76.13105010986328
+    },
+    {
+      "view": "05_north_top.png",
+      "before": 95.48030090332031,
+      "after": 102.05467987060547
+    },
+    {
+      "view": "06_waste_pad.png",
+      "before": 80.32243347167969,
+      "after": 78.0564193725586
+    },
+    {
+      "view": "07_courtyard_right.png",
+      "before": 71.3057861328125,
+      "after": 71.98883056640625
+    }
+  ]
+}
