@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public static class StreetPhotoBoundaryRepair
+public static partial class StreetPhotoBoundaryRepair
 {
     private const string PathRoot = "Assets/Art/StreetRepair";
     internal const string Output = PathRoot + "/PhotoBoundaryCourtyard";

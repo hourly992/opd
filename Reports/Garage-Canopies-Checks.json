@@ -1,0 +1,475 @@
+{
+  "scope": {
+    "passed": true,
+    "originalSceneBlocks": 18365,
+    "changedOriginalTypes": {
+      "33": 18,
+      "64": 5,
+      "218": 1,
+      "1001": 1,
+      "4": 3
+    },
+    "movedGarages": {
+      "Восточный гаражный въезд": [
+        31.1,
+        33.75
+      ],
+      "Западный гаражный въезд": [
+        22.9,
+        21.3
+      ]
+    },
+    "movedLamp": true,
+    "replacedSurfaces": 24,
+    "removedGarageObjects": [
+      "Восточная верхняя площадка",
+      "Восточный парапет от обхода",
+      "Западная верхняя площадка",
+      "Западный парапет от обхода"
+    ]
+  },
+  "runtime": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": false,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "hour": 13.0,
+    "lanes": [
+      {
+        "name": "Центральный подъём",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 597,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 28.2239990234375,
+          "y": -0.0056441184133291245,
+          "z": -54.21034240722656
+        },
+        "maxHeightError": 0.018144119530916214,
+        "maximumExcessStep": 0.011014966294169426,
+        "measuredRise": -0.04499999061226845,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Западный въезд и гараж",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 20.29199981689453,
+          "y": 0.03054252825677395,
+          "z": -54.211822509765625
+        },
+        "maxHeightError": 0.0067925285547971725,
+        "maximumExcessStep": 0.00620446540415287,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Центр → западный площадка",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 228,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 23.76999855041504,
+          "y": 0.7737681865692139,
+          "z": -31.410400390625
+        },
+        "maxHeightError": 0.061731815338134766,
+        "maximumExcessStep": 0.019500017166137695,
+        "measuredRise": 0.038799822330474854,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Восточный въезд и гараж",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 32.742000579833984,
+          "y": 0.030542440712451935,
+          "z": -54.42774200439453
+        },
+        "maxHeightError": 0.006792441010475159,
+        "maximumExcessStep": 0.006204430013895035,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Центр → восточный площадка",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 261,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 31.279998779296875,
+          "y": 0.7737681865692139,
+          "z": -31.410398483276367
+        },
+        "maxHeightError": 0.061731815338134766,
+        "maximumExcessStep": 0.01950007677078247,
+        "measuredRise": 0.038799822330474854,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      }
+    ],
+    "barriers": [
+      {
+        "name": "Западный навес",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 21.299999237060547,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный навес",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 21.299999237060547,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный стойка",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 18.96099853515625,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный стойка",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 23.638999938964844,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный навес",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 33.75,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный навес",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 33.75,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный стойка",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 31.410999298095703,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный стойка",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 36.0890007019043,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "Западный стык за навесом",
+        "collider": "Примыкание к дому · Запад",
+        "at": {
+          "x": 21.299999237060547,
+          "y": 0.8550000190734863,
+          "z": -29.0
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Восточный стык за навесом",
+        "collider": "Примыкание к дому · Восток",
+        "at": {
+          "x": 33.75,
+          "y": 0.8550000190734863,
+          "z": -29.0
+        },
+        "heightError": 0.0,
+        "passed": true
+      }
+    ],
+    "joins": [
+      {
+        "name": "Западный примыкание к дороге",
+        "samples": 27,
+        "missingSupport": 0,
+        "heightError": 0.009108666330575943,
+        "excessStep": 0.001216340810060501,
+        "passed": true
+      },
+      {
+        "name": "Восточный примыкание к дороге",
+        "samples": 27,
+        "missingSupport": 0,
+        "heightError": 0.009108571335673332,
+        "excessStep": 0.001216340810060501,
+        "passed": true
+      }
+    ],
+    "blockedWalks": [
+      {
+        "name": "Западный проход с газона z=-43",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299999237060547,
+        "advanced": 0.35000038146972656,
+        "stoppedAt": {
+          "x": 18.46000099182129,
+          "y": 0.075999915599823,
+          "z": -42.98073959350586
+        }
+      },
+      {
+        "name": "Западный проход с газона z=-39",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299999237060547,
+        "advanced": 0.35000038146972656,
+        "stoppedAt": {
+          "x": 18.46000099182129,
+          "y": 0.07096952199935913,
+          "z": -39.0
+        }
+      },
+      {
+        "name": "Западный проход с газона z=-34.5",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299999237060547,
+        "advanced": 0.35000038146972656,
+        "stoppedAt": {
+          "x": 18.46000099182129,
+          "y": 0.06999993324279785,
+          "z": -34.5
+        }
+      },
+      {
+        "name": "Западный проход с газона z=-30.5",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299999237060547,
+        "advanced": 0.35000038146972656,
+        "stoppedAt": {
+          "x": 18.46000099182129,
+          "y": 0.06999993324279785,
+          "z": -30.499998092651367
+        }
+      },
+      {
+        "name": "Западный подход у стены дома",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.7199993133544922,
+        "advanced": 0.4191150665283203,
+        "stoppedAt": {
+          "x": 17.931915283203125,
+          "y": 0.07299816608428955,
+          "z": -27.322307586669922
+        }
+      },
+      {
+        "name": "Восточный проход с газона z=-43",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299980163574219,
+        "advanced": 0.34999847412109375,
+        "stoppedAt": {
+          "x": 36.589996337890625,
+          "y": 0.06999993324279785,
+          "z": -43.0
+        }
+      },
+      {
+        "name": "Восточный проход с газона z=-39",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299980163574219,
+        "advanced": 0.3500022888183594,
+        "stoppedAt": {
+          "x": 36.589996337890625,
+          "y": 0.06999993324279785,
+          "z": -39.0
+        }
+      },
+      {
+        "name": "Восточный проход с газона z=-34.5",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299980163574219,
+        "advanced": 0.3500022888183594,
+        "stoppedAt": {
+          "x": 36.589996337890625,
+          "y": 0.06999993324279785,
+          "z": -34.5
+        }
+      },
+      {
+        "name": "Восточный проход с газона z=-30.5",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8299980163574219,
+        "advanced": 0.3500022888183594,
+        "stoppedAt": {
+          "x": 36.589996337890625,
+          "y": 0.06999987363815308,
+          "z": -30.5
+        }
+      },
+      {
+        "name": "Восточный подход у стены дома",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.720001220703125,
+        "advanced": 0.34012603759765625,
+        "stoppedAt": {
+          "x": 36.61747741699219,
+          "y": 0.06999993324279785,
+          "z": -26.53993034362793
+        }
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "01_front.png",
+        "eye": {
+          "x": 27.0,
+          "y": 1.7400000095367432,
+          "z": -59.0
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.4000000059604645,
+          "z": -37.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 71.14888763427734
+      },
+      {
+        "name": "02_overview.png",
+        "eye": {
+          "x": 27.0,
+          "y": 9.5,
+          "z": -53.0
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.20000000298023224,
+          "z": -34.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 85.22042083740234
+      },
+      {
+        "name": "03_west_side.png",
+        "eye": {
+          "x": 13.199999809265137,
+          "y": 1.7400000095367432,
+          "z": -40.79999923706055
+        },
+        "lookAt": {
+          "x": 22.0,
+          "y": 0.8500000238418579,
+          "z": -36.900001525878906
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 80.61849212646484
+      },
+      {
+        "name": "04_east_side.png",
+        "eye": {
+          "x": 41.0,
+          "y": 1.7400000095367432,
+          "z": -38.20000076293945
+        },
+        "lookAt": {
+          "x": 34.0,
+          "y": 0.800000011920929,
+          "z": -34.599998474121094
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 73.47704315185547
+      }
+    ],
+    "errors": []
+  }
+}
