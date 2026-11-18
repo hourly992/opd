@@ -16,6 +16,9 @@ public sealed class GaragePassageQA : MonoBehaviour
         public Shot[] views;
         public Lane[] lanes;
         public Barrier[] barriers;
+        public SurfaceSample[] surfaces;
+        public SurfaceJoin[] joins;
+        public BlockedWalk[] blockedWalks;
     }
 
     [Serializable]
@@ -43,6 +46,31 @@ public sealed class GaragePassageQA : MonoBehaviour
     }
 
     [Serializable]
+    private sealed class SurfaceSample
+    {
+        public string name, colliderNameContains;
+        public Vector3 point;
+        public float tolerance = .028f;
+    }
+
+    [Serializable]
+    private sealed class SurfaceJoin
+    {
+        public string name;
+        public Vector3 from, to;
+        public float tolerance = .035f;
+        public float maxExcessStep = .024f;
+    }
+
+    [Serializable]
+    private sealed class BlockedWalk
+    {
+        public string name;
+        public Vector3 from, to;
+        public float maxAdvance = .60f;
+    }
+
+    [Serializable]
     private sealed class LaneResult
     {
         public string name, worstGround, blocker;
@@ -58,6 +86,33 @@ public sealed class GaragePassageQA : MonoBehaviour
         public string name, collider;
         public Vector3 contact;
         public bool passed;
+    }
+
+    [Serializable]
+    private sealed class SurfaceResult
+    {
+        public string name, collider;
+        public Vector3 at;
+        public float heightError;
+        public bool passed;
+    }
+
+    [Serializable]
+    private sealed class SurfaceJoinResult
+    {
+        public string name;
+        public int samples, missingSupport;
+        public float heightError, excessStep;
+        public bool passed;
+    }
+
+    [Serializable]
+    private sealed class BlockedWalkResult
+    {
+        public string name;
+        public bool groundedAtStart, groundedAtStop, contactedWall, passed;
+        public float attempted, advanced;
+        public Vector3 stoppedAt;
     }
 
     [Serializable]
@@ -79,6 +134,9 @@ public sealed class GaragePassageQA : MonoBehaviour
         public float hour = 13f;
         public List<LaneResult> lanes = new();
         public List<BarrierResult> barriers = new();
+        public List<SurfaceResult> surfaces = new();
+        public List<SurfaceJoinResult> joins = new();
+        public List<BlockedWalkResult> blockedWalks = new();
         public List<ShotResult> screenshots = new();
         public List<string> errors = new();
     }
@@ -165,6 +223,15 @@ public sealed class GaragePassageQA : MonoBehaviour
                 report.lanes.Add(InspectLane(lane, controller));
             foreach (var barrier in layout.barriers)
                 report.barriers.Add(InspectBarrier(barrier));
+            if (layout.surfaces != null)
+                foreach (var sample in layout.surfaces)
+                    report.surfaces.Add(InspectSurface(sample));
+            if (layout.joins != null)
+                foreach (var join in layout.joins)
+                    report.joins.Add(InspectJoin(join));
+            if (layout.blockedWalks != null)
+                foreach (var walkProbe in layout.blockedWalks)
+                    report.blockedWalks.Add(InspectBlockedWalk(walkProbe, controller));
         }
 
         var target = new RenderTexture(report.width, report.height, 24, RenderTextureFormat.ARGB32,
@@ -209,7 +276,9 @@ public sealed class GaragePassageQA : MonoBehaviour
         target.Release();
         Destroy(target);
         Finish((report.captureOnly || report.wastePadHidden) &&
-            report.lanes.TrueForAll(lane => lane.passed) && report.barriers.TrueForAll(probe => probe.passed));
+            report.lanes.TrueForAll(lane => lane.passed) && report.barriers.TrueForAll(probe => probe.passed) &&
+            report.surfaces.TrueForAll(probe => probe.passed) && report.joins.TrueForAll(probe => probe.passed) &&
+            report.blockedWalks.TrueForAll(probe => probe.passed));
     }
 
     private static string Argument(string[] args, string name)
@@ -349,6 +418,95 @@ public sealed class GaragePassageQA : MonoBehaviour
         result.contact = hit.point;
         result.passed = !string.IsNullOrWhiteSpace(barrier.colliderNameContains) &&
             hit.collider.name.Contains(barrier.colliderNameContains, StringComparison.OrdinalIgnoreCase);
+        return result;
+    }
+
+    private static bool FindSurface(Vector3 point, out RaycastHit hit)
+    {
+        return Physics.Raycast(point + Vector3.up * .42f, Vector3.down, out hit, .84f,
+            Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+    }
+
+    private static SurfaceResult InspectSurface(SurfaceSample sample)
+    {
+        var result = new SurfaceResult { name = sample.name, at = sample.point };
+        if (!FindSurface(sample.point, out var hit))
+            return result;
+        result.at = hit.point;
+        result.collider = hit.collider.name;
+        result.heightError = Mathf.Abs(hit.point.y - sample.point.y);
+        bool nameMatches = string.IsNullOrWhiteSpace(sample.colliderNameContains) ||
+            hit.collider.name.Contains(sample.colliderNameContains, StringComparison.OrdinalIgnoreCase);
+        result.passed = nameMatches && hit.normal.y > .82f && result.heightError <= sample.tolerance;
+        return result;
+    }
+
+    private static SurfaceJoinResult InspectJoin(SurfaceJoin join)
+    {
+        var result = new SurfaceJoinResult { name = join.name };
+        float distance = Vector3.ProjectOnPlane(join.to - join.from, Vector3.up).magnitude;
+        if (distance < .025f || join.tolerance <= 0f || join.maxExcessStep <= 0f)
+            return result;
+        int count = Mathf.Max(2, Mathf.CeilToInt(distance / .025f));
+        float? priorError = null;
+        for (int i = 0; i <= count; ++i)
+        {
+            var at = Vector3.Lerp(join.from, join.to, (float)i / count);
+            ++result.samples;
+            if (!FindSurface(at, out var hit) || hit.normal.y < .65f)
+            {
+                ++result.missingSupport;
+                priorError = null;
+                continue;
+            }
+            float error = hit.point.y - at.y;
+            result.heightError = Mathf.Max(result.heightError, Mathf.Abs(error));
+            if (priorError.HasValue)
+                result.excessStep = Mathf.Max(result.excessStep, Mathf.Abs(error - priorError.Value));
+            priorError = error;
+        }
+        result.passed = result.missingSupport == 0 && result.heightError <= join.tolerance &&
+            result.excessStep <= join.maxExcessStep;
+        return result;
+    }
+
+    private static BlockedWalkResult InspectBlockedWalk(BlockedWalk probe, CharacterController source)
+    {
+        var result = new BlockedWalkResult { name = probe.name };
+        var direction = Vector3.ProjectOnPlane(probe.to - probe.from, Vector3.up);
+        result.attempted = direction.magnitude;
+        if (result.attempted <= probe.maxAdvance || !FindSurface(probe.from, out var floor))
+            return result;
+        direction.Normalize();
+        var node = new GameObject("Garage QA side access capsule") { layer = source.gameObject.layer };
+        float feet = source.height * .5f - source.center.y;
+        var start = floor.point + Vector3.up * (feet + .035f);
+        node.transform.position = start;
+        var capsule = node.AddComponent<CharacterController>();
+        capsule.height = source.height;
+        capsule.radius = source.radius;
+        capsule.center = source.center;
+        capsule.stepOffset = source.stepOffset;
+        capsule.slopeLimit = source.slopeLimit;
+        capsule.skinWidth = source.skinWidth;
+        capsule.minMoveDistance = 0;
+        Physics.SyncTransforms();
+        capsule.Move(Vector3.down * .12f);
+        result.groundedAtStart = capsule.isGrounded;
+        int count = Mathf.CeilToInt(result.attempted / .06f);
+        Vector3 move = direction * (result.attempted / count) - Vector3.up * .045f;
+        for (int i = 0; i < count; ++i)
+        {
+            var flags = capsule.Move(move);
+            result.contactedWall |= (flags & CollisionFlags.Sides) != 0;
+        }
+        result.advanced = Vector3.Dot(node.transform.position - start, direction);
+        result.stoppedAt = node.transform.position - Vector3.up * feet;
+        result.groundedAtStop = capsule.isGrounded;
+        result.passed = result.groundedAtStart && result.groundedAtStop &&
+            result.contactedWall && result.advanced <= probe.maxAdvance;
+        capsule.enabled = false;
+        Destroy(node);
         return result;
     }
 

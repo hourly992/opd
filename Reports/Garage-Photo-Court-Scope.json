@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "baselineCommit": "e810252d21cbcb60b8c5116281bce404c256d785",
+  "originalSceneBlocks": 18327,
+  "unchangedOriginalSceneBlocks": 18321,
+  "changedSceneTypes": {
+    "33": 2,
+    "1660057539": 1,
+    "64": 2,
+    "1001": 1
+  },
+  "removedSceneBlocks": [],
+  "newSceneBlocks": 38,
+  "newSceneRoots": [
+    "Двор у гаражей · стыки и границы по снимкам"
+  ],
+  "verifiedUnchangedRoadAndOriginalGarageAssets": {
+    "Assets/Art/StreetRepair/SouthGarageCourt/CourtAsphalt.asset": "8fd56019003f2ed3cfc14f6f97b31633cef3e94f5807c875c4c125c2ad9ece1e",
+    "Assets/Art/StreetRepair/SouthGarageCourt/GaragePassage.asset": "293db167e51c7f7537f5961622705896f6c84de485a385a8ccc6dcb2892c6d08",
+    "Assets/Art/StreetRepair/SouthGarageCourt/Retained_18_LocalAsphalt.asset": "0bd132419157cd2fe76d44209dc6849004d5e505ff04d1d289aec698d1b0a944",
+    "Assets/Art/StreetRepair/SouthGarageCourt/Retained_20_House13ApronRetainedAsphalt.asset": "1b98866072208f279fb699764068300ca16424d19eb13a3788acb895de330929",
+    "Assets/Art/StreetRepair/Surfaces/ReferenceRoad.asset": "d1512b6cf80864ad33d3613e3e376b90b15a3e4478c27be5a2a43c1fea0ba334"
+  },
+  "garageRecessedVertices": 42,
+  "generatedMeshBounds": [
+    {
+      "name": "EastApronParapet",
+      "vertices": 30,
+      "triangles": 10,
+      "outsideSamples": 0,
+      "minXYZ": [
+        33.32,
+        0.56,
+        -44.012
+      ],
+      "maxXYZ": [
+        36.07,
+        1.395,
+        -43.83
+      ]
+    },
+    {
+      "name": "VerifiedAutumnEdgeDetails",
+      "vertices": 1728,
+      "triangles": 816,
+      "outsideSamples": 0,
+      "minXYZ": [
+        58.9651,
+        -0.0003,
+        -66.0379
+      ],
+      "maxXYZ": [
+        110.8194,
+        0.2381,
+        41.2113
+      ]
+    },
+    {
+      "name": "EastGarageTerrace",
+      "vertices": 66,
+      "triangles": 22,
+      "outsideSamples": 0,
+      "minXYZ": [
+        28.64,
+        -0.045,
+        -44.0
+      ],
+      "maxXYZ": [
+        36.95,
+        0.855,
+        -25.39
+      ]
+    },
+    {
+      "name": "VerifiedLawnEdges",
+      "vertices": 11480,
+      "triangles": 5740,
+      "outsideSamples": 0,
+      "minXYZ": [
+        57.4177,
+        -0.013,
+        -66.2622
+      ],
+      "maxXYZ": [
+        111.9398,
+        0.1652,
+        44.9663
+      ]
+    },
+    {
+      "name": "WestApronParapet",
+      "vertices": 30,
+      "triangles": 10,
+      "outsideSamples": 0,
+      "minXYZ": [
+        18.055,
+        0.56,
+        -44.012
+      ],
+      "maxXYZ": [
+        20.68,
+        1.395,
+        -43.83
+      ]
+    },
+    {
+      "name": "VerifiedCurb",
+      "vertices": 17592,
+      "triangles": 8840,
+      "outsideSamples": 0,
+      "minXYZ": [
+        56.791,
+        -0.045,
+        -66.8688
+      ],
+      "maxXYZ": [
+        112.4625,
+        0.18,
+        45.365
+      ]
+    },
+    {
+      "name": "WestGarageTerrace",
+      "vertices": 66,
+      "triangles": 22,
+      "outsideSamples": 0,
+      "minXYZ": [
+        17.15,
+        -0.045,
+        -44.0
+      ],
+      "maxXYZ": [
+        25.36,
+        0.855,
+        -25.98
+      ]
+    }
+  ],
+  "terrainReferenceChanges": [],
+  "editedSourcePaths": [
+    "Unity_Walk/Assets/Scenes/Street.unity",
+    "Unity_Walk/Assets/Scripts/GaragePassageQA.cs"
+  ],
+  "addedSourcePaths": [
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/EastApronParapet.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/EastApronParapet.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/EastGarageTerrace.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/EastGarageTerrace.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/GarageRecessedPocketWalls.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/GarageRecessedPocketWalls.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes/VerifiedAutumnEdgeDetails.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes/VerifiedAutumnEdgeDetails.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes/VerifiedCurb.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes/VerifiedCurb.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes/VerifiedLawnEdges.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/Meshes/VerifiedLawnEdges.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/WestApronParapet.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/WestApronParapet.asset.meta",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/WestGarageTerrace.asset",
+    "Unity_Walk/Assets/Art/StreetRepair/PhotoBoundaryCourtyard/WestGarageTerrace.asset.meta",
+    "Unity_Walk/Assets/Editor/PhotoCourtAreas.json",
+    "Unity_Walk/Assets/Editor/PhotoCourtAreas.json.meta",
+    "Unity_Walk/Assets/Editor/StreetPhotoBoundaryRepair.cs",
+    "Unity_Walk/Assets/Editor/StreetPhotoBoundaryRepair.cs.meta",
+    "Unity_Walk/Assets/Editor/StreetPhotoEdgeWork.cs",
+    "Unity_Walk/Assets/Editor/StreetPhotoEdgeWork.cs.meta",
+    "Unity_Walk/Assets/Editor/StreetPhotoSiteBorders.cs",
+    "Unity_Walk/Assets/Editor/StreetPhotoSiteBorders.cs.meta"
+  ],
+  "originalSceneChanges": [
+    {
+      "id": "1662765825",
+      "class": 64,
+      "name": "Западный гаражный въезд",
+      "admitted": true
+    },
+    {
+      "id": "1662765827",
+      "class": 33,
+      "name": "Западный гаражный въезд",
+      "admitted": true
+    },
+    {
+      "id": "1672630270",
+      "class": 1001,
+      "name": "",
+      "admitted": true
+    },
+    {
+      "id": "2022198859",
+      "class": 64,
+      "name": "Восточный гаражный въезд",
+      "admitted": true
+    },
+    {
+      "id": "2022198861",
+      "class": 33,
+      "name": "Восточный гаражный въезд",
+      "admitted": true
+    },
+    {
+      "id": "9223372036854775807",
+      "class": 1660057539,
+      "name": "",
+      "admitted": true
+    }
+  ],
+  "errors": []
+}

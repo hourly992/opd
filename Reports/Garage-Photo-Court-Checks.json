@@ -1,0 +1,2495 @@
+{
+  "geometry": {
+    "garageEntryMeshesReassigned": 2,
+    "trailingVerticesRecessed": 42,
+    "backedWings": 2,
+    "lampPosition": {
+      "x": 19.9950008392334,
+      "y": 0.8550000190734863,
+      "z": -34.0
+    },
+    "originalDeckY": 0.8399999737739563,
+    "savedAsphaltMesh": "Assets/Art/StreetRepair/SouthGarageCourt/CourtAsphalt.asset",
+    "originalAsphaltUnchanged": true,
+    "bothHouseContactsValid": true
+  },
+  "edges": {
+    "candidateEdges": 995,
+    "admittedSpans": 722,
+    "lawnSpans": 574,
+    "raisedLawnSpans": 492,
+    "droppedEnds": 44,
+    "kerbChecks": 722,
+    "tuftClusters": 44,
+    "leaves": 46,
+    "terrainCopies": 0,
+    "detailUnitsCleared": 0,
+    "kerbLength": 220.55227661132812,
+    "lawnLength": 176.2679901123047,
+    "maxKerbProbeError": 1.2665987014770508E-06,
+    "roadKerbWidth": 0.1599999964237213,
+    "fullRise": 0.14499999582767487,
+    "roadsAndPavingUnchanged": true,
+    "insidePhotoScope": true,
+    "passed": true,
+    "sources": [
+      "Retained_18_LocalAsphalt",
+      "Retained_20_House13ApronRetainedAsphalt"
+    ],
+    "surfaces": [
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 58.12747573852539,
+          "y": 0.054089341312646866,
+          "z": -31.248743057250977
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 61.90643310546875,
+          "y": 0.17999999225139618,
+          "z": -31.18560028076172
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 63.42329406738281,
+          "y": 0.15892721712589264,
+          "z": -30.830474853515625
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 61.93330001831055,
+          "y": 0.17999999225139618,
+          "z": -39.64467239379883
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 62.29615783691406,
+          "y": 0.1646110713481903,
+          "z": -38.13857650756836
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 62.5142707824707,
+          "y": 0.1799204796552658,
+          "z": -35.09526062011719
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 60.07475280761719,
+          "y": 0.16003528237342834,
+          "z": -35.48188400268555
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 68.27046966552734,
+          "y": 0.17999999225139618,
+          "z": -28.300569534301758
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 69.8243637084961,
+          "y": 0.048710331320762634,
+          "z": -25.524681091308594
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 68.39126586914062,
+          "y": 0.15793129801750183,
+          "z": -36.766517639160156
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 70.55860137939453,
+          "y": 0.17999999225139618,
+          "z": -32.23881530761719
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 74.21862030029297,
+          "y": 0.17999999225139618,
+          "z": -17.654356002807617
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 73.81803894042969,
+          "y": 0.15989847481250763,
+          "z": -27.11307716369629
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 75.40824127197266,
+          "y": 0.17999999225139618,
+          "z": -15.525113105773926
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 74.92659759521484,
+          "y": 0.1620354801416397,
+          "z": -25.19535255432129
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 77.65361785888672,
+          "y": 0.05416683852672577,
+          "z": -19.530593872070312
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 79.79276275634766,
+          "y": 0.11544182151556015,
+          "z": -21.180631637573242
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 78.93437194824219,
+          "y": 0.1600385457277298,
+          "z": -20.787885665893555
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 90.91561889648438,
+          "y": 0.17999999225139618,
+          "z": -55.0987548828125
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 87.99221801757812,
+          "y": 0.16376717388629913,
+          "z": -59.386898040771484
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 90.26421356201172,
+          "y": 0.17999999225139618,
+          "z": -61.563507080078125
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 89.9273910522461,
+          "y": 0.07977644354104996,
+          "z": -65.69221496582031
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 92.04300689697266,
+          "y": 0.17999999225139618,
+          "z": -54.23173141479492
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 92.03857421875,
+          "y": 0.00734192319214344,
+          "z": 14.938226699829102
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 93.5500717163086,
+          "y": 0.17999999225139618,
+          "z": 16.94584083557129
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 96.16869354248047,
+          "y": 0.11682610213756561,
+          "z": 40.9776611328125
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 94.2936019897461,
+          "y": 0.17999999225139618,
+          "z": 18.2766170501709
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 94.51216888427734,
+          "y": 0.15888337790966034,
+          "z": -60.049442291259766
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 94.18634033203125,
+          "y": 0.17999999225139618,
+          "z": -61.313228607177734
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 94.20915222167969,
+          "y": 0.16027523577213287,
+          "z": -51.12229537963867
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 94.923583984375,
+          "y": 0.17999999225139618,
+          "z": -50.8213996887207
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 96.47589874267578,
+          "y": 0.16132071614265442,
+          "z": 22.936176300048828
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 97.2676773071289,
+          "y": 0.17999999225139618,
+          "z": 23.5997257232666
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 97.09538269042969,
+          "y": 0.11639775335788727,
+          "z": 40.97084045410156
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 97.7678451538086,
+          "y": 0.13500000536441803,
+          "z": 40.61212921142578
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 94.97563934326172,
+          "y": 0.1510671228170395,
+          "z": -57.4213752746582
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 97.59839630126953,
+          "y": 0.17999999225139618,
+          "z": -47.654666900634766
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 98.13215637207031,
+          "y": 0.1597791463136673,
+          "z": 25.8524227142334
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 99.05211639404297,
+          "y": 0.17999999225139618,
+          "z": 26.793588638305664
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 99.53218078613281,
+          "y": 0.11755695939064026,
+          "z": 40.98774719238281
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 100.13738250732422,
+          "y": 0.13121528923511505,
+          "z": 40.61138916015625
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 100.35941314697266,
+          "y": 0.1612720936536789,
+          "z": 20.34796905517578
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 99.86669921875,
+          "y": 0.17999999225139618,
+          "z": 20.218183517456055
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 103.15392303466797,
+          "y": 0.07004638761281967,
+          "z": -41.07772445678711
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 100.25714874267578,
+          "y": 0.16198629140853882,
+          "z": -51.165130615234375
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 101.54904174804688,
+          "y": 0.145094633102417,
+          "z": 33.47146987915039
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 101.07102966308594,
+          "y": 0.1603134721517563,
+          "z": 42.58723449707031
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 101.8077621459961,
+          "y": 0.12448333948850632,
+          "z": 35.159934997558594
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 103.77713012695312,
+          "y": 0.16227735579013824,
+          "z": 26.433279037475586
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 102.82372283935547,
+          "y": 0.17999999225139618,
+          "z": 25.510406494140625
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 102.41680908203125,
+          "y": 0.16260860860347748,
+          "z": -48.622989654541016
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 101.6970443725586,
+          "y": 0.17999999225139618,
+          "z": -48.87507629394531
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 105.53528594970703,
+          "y": 0.17999999225139618,
+          "z": 32.652469635009766
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 105.84040832519531,
+          "y": 0.017859363928437233,
+          "z": 32.99415969848633
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 105.7887954711914,
+          "y": 0.17999999225139618,
+          "z": 39.25380325317383
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 106.1205062866211,
+          "y": 0.1592332422733307,
+          "z": 39.326908111572266
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 105.71257781982422,
+          "y": 0.17999999225139618,
+          "z": 34.7555046081543
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 106.07352447509766,
+          "y": 0.16076037287712097,
+          "z": 34.79267120361328
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "colliderNameContains": "Бордюр · светлый бетон",
+        "point": {
+          "x": 105.3172836303711,
+          "y": 0.11584194749593735,
+          "z": 28.7271728515625
+        },
+        "tolerance": 0.013000000268220901
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "colliderNameContains": "Плавные кромки газона",
+        "point": {
+          "x": 109.55042266845703,
+          "y": 0.1586938500404358,
+          "z": 32.43014907836914
+        },
+        "tolerance": 0.013000000268220901
+      }
+    ],
+    "joins": [
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 57.991024017333984,
+          "y": 0.03500000014901161,
+          "z": -31.516935348510742
+        },
+        "to": {
+          "x": 57.98640441894531,
+          "y": 0.04799948260188103,
+          "z": -31.2249698638916
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 56.85628128051758,
+          "y": 0.03500000014901161,
+          "z": -34.91544723510742
+        },
+        "to": {
+          "x": 56.860904693603516,
+          "y": 0.047950539737939835,
+          "z": -35.2074089050293
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 60.74647521972656,
+          "y": 0.03500000014901161,
+          "z": -42.32150650024414
+        },
+        "to": {
+          "x": 60.491554260253906,
+          "y": 0.04788921773433685,
+          "z": -42.17910385131836
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 64.5938949584961,
+          "y": 0.03500000387430191,
+          "z": -35.43415069580078
+        },
+        "to": {
+          "x": 64.33897399902344,
+          "y": 0.04788924381136894,
+          "z": -35.291748046875
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 65.2139892578125,
+          "y": 0.03500000014901161,
+          "z": -41.25437545776367
+        },
+        "to": {
+          "x": 65.46891021728516,
+          "y": 0.048025086522102356,
+          "z": -41.39677810668945
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 70.07283020019531,
+          "y": 0.03500000014901161,
+          "z": -25.62684440612793
+        },
+        "to": {
+          "x": 69.81792449951172,
+          "y": 0.047448817640542984,
+          "z": -25.48442268371582
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 71.67989349365234,
+          "y": -0.009999990463256836,
+          "z": -20.884016036987305
+        },
+        "to": {
+          "x": 71.91155242919922,
+          "y": 0.0024777352809906006,
+          "z": -20.706256866455078
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 76.7011489868164,
+          "y": 0.03500000014901161,
+          "z": -13.763226509094238
+        },
+        "to": {
+          "x": 76.44623565673828,
+          "y": 0.047824181616306305,
+          "z": -13.620804786682129
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 77.49031829833984,
+          "y": 0.03500000014901161,
+          "z": -19.277488708496094
+        },
+        "to": {
+          "x": 77.7452392578125,
+          "y": 0.04802505671977997,
+          "z": -19.419889450073242
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "from": {
+          "x": 80.11514282226562,
+          "y": 0.03500000014901161,
+          "z": -16.19883918762207
+        },
+        "to": {
+          "x": 80.32778930664062,
+          "y": 0.04780741035938263,
+          "z": -15.998726844787598
+        },
+        "tolerance": 0.02500000037252903,
+        "maxExcessStep": 0.02500000037252903
+      }
+    ]
+  },
+  "runtime": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": false,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "hour": 13.0,
+    "lanes": [
+      {
+        "name": "Западный въезд и гаражный отсек",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 23.90799903869629,
+          "y": -0.0016991936136037111,
+          "z": -54.13957214355469
+        },
+        "maxHeightError": 0.014199193567037582,
+        "maximumExcessStep": 0.008738623932003975,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 1.9073486328125E-06,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Подъём и верхняя площадка",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 597,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 28.2239990234375,
+          "y": -0.005592270754277706,
+          "z": -54.21067810058594
+        },
+        "maxHeightError": 0.01809227094054222,
+        "maximumExcessStep": 0.011016765609383583,
+        "measuredRise": -0.04499999061226845,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Восточный въезд и гаражный отсек",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 30.091999053955078,
+          "y": -0.009999990463256836,
+          "z": -54.15678787231445
+        },
+        "maxHeightError": 0.01124999113380909,
+        "maximumExcessStep": 0.011250000447034836,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 1.9073486328125E-06,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "С центра к западной площадке",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 192,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 27.0,
+          "y": 0.7499682903289795,
+          "z": -31.270401000976562
+        },
+        "maxHeightError": 0.04303169250488281,
+        "maximumExcessStep": 0.0005997419357299805,
+        "measuredRise": 0.062599778175354,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "С центра к восточной площадке",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 204,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 27.0,
+          "y": 0.7499682903289795,
+          "z": -31.270401000976562
+        },
+        "maxHeightError": 0.04303169250488281,
+        "maximumExcessStep": 0.0005997419357299805,
+        "measuredRise": 0.062599778175354,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      }
+    ],
+    "barriers": [
+      {
+        "name": "Западный арочный навес сверху",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 22.899999618530273,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный арочный навес снизу",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 22.899999618530273,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный · стойка навеса слева",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 20.56100082397461,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный · стойка навеса справа",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 25.238998413085938,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный арочный навес сверху",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 31.100000381469727,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный арочный навес снизу",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 31.100000381469727,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный · стойка навеса слева",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 28.761001586914062,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный · стойка навеса справа",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 33.43899917602539,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Подпорная стенка с запада от въездов",
+        "collider": "Западная верхняя площадка",
+        "contact": {
+          "x": 19.200002670288086,
+          "y": 0.4500000476837158,
+          "z": -44.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Подпорная стенка с востока от въездов",
+        "collider": "Восточная верхняя площадка",
+        "contact": {
+          "x": 34.599998474121094,
+          "y": 0.45000001788139343,
+          "z": -44.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Подпорная стенка позади западного навеса",
+        "collider": "Западная верхняя площадка",
+        "contact": {
+          "x": 22.89999771118164,
+          "y": 0.44999998807907104,
+          "z": -25.979997634887695
+        },
+        "passed": true
+      },
+      {
+        "name": "Подпорная стенка позади восточного навеса",
+        "collider": "Восточная верхняя площадка",
+        "contact": {
+          "x": 31.10000228881836,
+          "y": 0.4500000476837158,
+          "z": -25.389999389648438
+        },
+        "passed": true
+      },
+      {
+        "name": "Западная площадка: наружный край",
+        "collider": "Западная верхняя площадка",
+        "contact": {
+          "x": 18.05500030517578,
+          "y": 0.44999995827674866,
+          "z": -39.79999542236328
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточная площадка: наружный край",
+        "collider": "Восточная верхняя площадка",
+        "contact": {
+          "x": 36.06999969482422,
+          "y": 0.45000001788139343,
+          "z": -39.79999923706055
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный парапет перекрывает старый скос",
+        "collider": "Западный парапет от обхода",
+        "contact": {
+          "x": 20.139999389648438,
+          "y": 0.9900000691413879,
+          "z": -44.012001037597656
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный парапет перекрывает старый скос",
+        "collider": "Восточный парапет от обхода",
+        "contact": {
+          "x": 33.86000061035156,
+          "y": 0.9899999499320984,
+          "z": -44.012001037597656
+        },
+        "passed": true
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "Западная площадка перекрывает гаражный карман",
+        "collider": "Западная верхняя площадка",
+        "at": {
+          "x": 22.899999618530273,
+          "y": 0.8550000190734863,
+          "z": -29.25
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Восточная площадка перекрывает гаражный карман",
+        "collider": "Восточная верхняя площадка",
+        "at": {
+          "x": 31.099998474121094,
+          "y": 0.8550000190734863,
+          "z": -29.25
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Опора со стороны дома №5",
+        "collider": "Западная верхняя площадка",
+        "at": {
+          "x": 18.18000030517578,
+          "y": 0.8550000190734863,
+          "z": -26.62999725341797
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Опора со стороны дома №7",
+        "collider": "Восточная верхняя площадка",
+        "at": {
+          "x": 36.04999923706055,
+          "y": 0.8550000190734863,
+          "z": -26.040000915527344
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Сохранённый центральный тротуар",
+        "collider": "Подъём и асфальтовая площадка",
+        "at": {
+          "x": 27.0,
+          "y": 0.8400000333786011,
+          "z": -35.5
+        },
+        "heightError": 5.960464477539063E-08,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 58.127471923828125,
+          "y": 0.05408923327922821,
+          "z": -31.248743057250977
+        },
+        "heightError": 1.0803341865539551E-07,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 61.90643310546875,
+          "y": 0.17999999225139618,
+          "z": -31.18560028076172
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 63.42329406738281,
+          "y": 0.15891125798225403,
+          "z": -30.830476760864258
+        },
+        "heightError": 1.595914363861084E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 61.93329620361328,
+          "y": 0.17999999225139618,
+          "z": -39.64467239379883
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 62.29615783691406,
+          "y": 0.16465172171592712,
+          "z": -38.13857650756836
+        },
+        "heightError": 4.0650367736816406E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 62.51427459716797,
+          "y": 0.17992046475410461,
+          "z": -35.09526062011719
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 60.07475280761719,
+          "y": 0.15988337993621826,
+          "z": -35.48188781738281
+        },
+        "heightError": 0.000151902437210083,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 68.27046966552734,
+          "y": 0.17999997735023499,
+          "z": -28.300569534301758
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 69.8243637084961,
+          "y": 0.048710282891988754,
+          "z": -25.524681091308594
+        },
+        "heightError": 4.842877388000488E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 68.39126586914062,
+          "y": 0.15802544355392456,
+          "z": -36.766517639160156
+        },
+        "heightError": 9.414553642272949E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 70.55859375,
+          "y": 0.17999999225139618,
+          "z": -32.23881530761719
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 74.21862030029297,
+          "y": 0.18000000715255737,
+          "z": -17.654356002807617
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 73.81803894042969,
+          "y": 0.16002920269966125,
+          "z": -27.11307716369629
+        },
+        "heightError": 0.0001307278871536255,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 75.40824127197266,
+          "y": 0.17999999225139618,
+          "z": -15.525113105773926
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 74.92659759521484,
+          "y": 0.16205424070358276,
+          "z": -25.19535255432129
+        },
+        "heightError": 1.87605619430542E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 77.65361785888672,
+          "y": 0.0541667640209198,
+          "z": -19.530593872070312
+        },
+        "heightError": 7.450580596923828E-08,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 79.79277038574219,
+          "y": 0.11544187366962433,
+          "z": -21.180633544921875
+        },
+        "heightError": 5.21540641784668E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 78.93437194824219,
+          "y": 0.15989917516708374,
+          "z": -20.787885665893555
+        },
+        "heightError": 0.00013937056064605713,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 90.91561889648438,
+          "y": 0.17999999225139618,
+          "z": -55.0987548828125
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 87.99221801757812,
+          "y": 0.16366302967071533,
+          "z": -59.38690185546875
+        },
+        "heightError": 0.00010414421558380127,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 90.26421356201172,
+          "y": 0.17999999225139618,
+          "z": -61.563507080078125
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 89.9273910522461,
+          "y": 0.07955309748649597,
+          "z": -65.69221496582031
+        },
+        "heightError": 0.0002233460545539856,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 92.04300689697266,
+          "y": 0.17999997735023499,
+          "z": -54.23173141479492
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 92.03857421875,
+          "y": 0.0072535015642642975,
+          "z": 14.938226699829102
+        },
+        "heightError": 8.842162787914276E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 93.5500717163086,
+          "y": 0.17999999225139618,
+          "z": 16.94584083557129
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 96.16869354248047,
+          "y": 0.1168438270688057,
+          "z": 40.9776611328125
+        },
+        "heightError": 1.7724931240081787E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 94.2936019897461,
+          "y": 0.17999999225139618,
+          "z": 18.276615142822266
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 94.51217651367188,
+          "y": 0.15880954265594482,
+          "z": -60.04944610595703
+        },
+        "heightError": 7.383525371551514E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 94.18634033203125,
+          "y": 0.17999999225139618,
+          "z": -61.31322479248047
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 94.20915222167969,
+          "y": 0.16033238172531128,
+          "z": -51.12229537963867
+        },
+        "heightError": 5.714595317840576E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 94.923583984375,
+          "y": 0.17999999225139618,
+          "z": -50.82140350341797
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 96.47589111328125,
+          "y": 0.16138550639152527,
+          "z": 22.936176300048828
+        },
+        "heightError": 6.479024887084961E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 97.2676773071289,
+          "y": 0.17999999225139618,
+          "z": 23.5997257232666
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 97.09538269042969,
+          "y": 0.11632899940013885,
+          "z": 40.97084045410156
+        },
+        "heightError": 6.875395774841309E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 97.76785278320312,
+          "y": 0.13500000536441803,
+          "z": 40.61212921142578
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 94.97563934326172,
+          "y": 0.1510886400938034,
+          "z": -57.4213752746582
+        },
+        "heightError": 2.1517276763916016E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 97.598388671875,
+          "y": 0.17999997735023499,
+          "z": -47.6546630859375
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 98.13215637207031,
+          "y": 0.15977299213409424,
+          "z": 25.852420806884766
+        },
+        "heightError": 6.154179573059082E-06,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 99.0521240234375,
+          "y": 0.17999999225139618,
+          "z": 26.793588638305664
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 99.53218078613281,
+          "y": 0.11761556565761566,
+          "z": 40.98774719238281
+        },
+        "heightError": 5.860626697540283E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 100.13738250732422,
+          "y": 0.13121522963047028,
+          "z": 40.61138916015625
+        },
+        "heightError": 5.960464477539063E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 100.35940551757812,
+          "y": 0.16117843985557556,
+          "z": 20.34796905517578
+        },
+        "heightError": 9.365379810333252E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 99.86669921875,
+          "y": 0.18000000715255737,
+          "z": 20.218183517456055
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 103.1539306640625,
+          "y": 0.07004624605178833,
+          "z": -41.077720642089844
+        },
+        "heightError": 1.4156103134155273E-07,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 100.25714111328125,
+          "y": 0.1619511842727661,
+          "z": -51.165130615234375
+        },
+        "heightError": 3.510713577270508E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 101.54904174804688,
+          "y": 0.14509502053260803,
+          "z": 33.471473693847656
+        },
+        "heightError": 3.8743019104003906E-07,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 101.07102966308594,
+          "y": 0.16045378148555756,
+          "z": 42.58723449707031
+        },
+        "heightError": 0.00014030933380126953,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 101.8077621459961,
+          "y": 0.12448349595069885,
+          "z": 35.159934997558594
+        },
+        "heightError": 1.564621925354004E-07,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 103.77713012695312,
+          "y": 0.16231590509414673,
+          "z": 26.433279037475586
+        },
+        "heightError": 3.854930400848389E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 102.82372283935547,
+          "y": 0.17999999225139618,
+          "z": 25.510404586791992
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 102.41680908203125,
+          "y": 0.16254714131355286,
+          "z": -48.622989654541016
+        },
+        "heightError": 6.146728992462158E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 101.69703674316406,
+          "y": 0.17999999225139618,
+          "z": -48.87508010864258
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 105.53528594970703,
+          "y": 0.17999999225139618,
+          "z": 32.652469635009766
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 105.84040832519531,
+          "y": 0.023120973259210587,
+          "z": 32.99415969848633
+        },
+        "heightError": 0.005261609330773354,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 105.78880310058594,
+          "y": 0.18000000715255737,
+          "z": 39.25380325317383
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 106.12051391601562,
+          "y": 0.1593078076839447,
+          "z": 39.32691192626953
+        },
+        "heightError": 7.456541061401367E-05,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 105.71257019042969,
+          "y": 0.17999999225139618,
+          "z": 34.7555046081543
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 106.07352447509766,
+          "y": 0.16064220666885376,
+          "z": 34.79267120361328
+        },
+        "heightError": 0.00011816620826721191,
+        "passed": true
+      },
+      {
+        "name": "Existing-profile concrete curb",
+        "collider": "Бордюр · светлый бетон",
+        "at": {
+          "x": 105.31727600097656,
+          "y": 0.11584068089723587,
+          "z": 28.7271728515625
+        },
+        "heightError": 1.2665987014770508E-06,
+        "passed": true
+      },
+      {
+        "name": "Grass bank behind concrete curb",
+        "collider": "Плавные кромки газона",
+        "at": {
+          "x": 109.55043029785156,
+          "y": 0.15871348977088928,
+          "z": 32.43014907836914
+        },
+        "heightError": 1.963973045349121E-05,
+        "passed": true
+      }
+    ],
+    "joins": [
+      {
+        "name": "Въезд с сохранённого дорожного полотна",
+        "samples": 36,
+        "missingSupport": 0,
+        "heightError": 0.01558210514485836,
+        "excessStep": 0.002535194158554077,
+        "passed": true
+      },
+      {
+        "name": "Переход с тротуара на существующую землю",
+        "samples": 25,
+        "missingSupport": 0,
+        "heightError": 0.01804555580019951,
+        "excessStep": 0.0037083355709910393,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008666325360536575,
+        "excessStep": 0.011916328221559525,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008633691817522049,
+        "excessStep": 0.01187136396765709,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008592810481786728,
+        "excessStep": 0.01181504875421524,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.00859282910823822,
+        "excessStep": 0.01181495189666748,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.00868339091539383,
+        "excessStep": 0.011939648538827896,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008299209177494049,
+        "excessStep": 0.011411286890506744,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008318483829498291,
+        "excessStep": 0.011437884531915188,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008549455553293228,
+        "excessStep": 0.011755499988794327,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008683372288942337,
+        "excessStep": 0.01193949580192566,
+        "passed": true
+      },
+      {
+        "name": "Lowered curb beside existing approach",
+        "samples": 13,
+        "missingSupport": 0,
+        "heightError": 0.008538268506526947,
+        "excessStep": 0.011740189045667648,
+        "passed": true
+      }
+    ],
+    "blockedWalks": [
+      {
+        "name": "Обход снаружи западного въезда закрыт",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8100013732910156,
+        "advanced": 0.358001708984375,
+        "stoppedAt": {
+          "x": 19.200000762939453,
+          "y": 0.0734674334526062,
+          "z": -44.391998291015625
+        }
+      },
+      {
+        "name": "Обход снаружи восточного въезда закрыт",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.8100013732910156,
+        "advanced": 0.35799407958984375,
+        "stoppedAt": {
+          "x": 34.59999084472656,
+          "y": 0.06999987363815308,
+          "z": -44.391998291015625
+        }
+      },
+      {
+        "name": "Позади западного навеса нельзя забраться с земли",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.7099990844726562,
+        "advanced": 0.35000038146972656,
+        "stoppedAt": {
+          "x": 22.899999618530273,
+          "y": 0.06999993324279785,
+          "z": -25.600000381469727
+        }
+      },
+      {
+        "name": "Позади восточного навеса нельзя забраться с земли",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.710000991821289,
+        "advanced": 0.35000038146972656,
+        "stoppedAt": {
+          "x": 31.099998474121094,
+          "y": 0.06999993324279785,
+          "z": -25.010000228881836
+        }
+      },
+      {
+        "name": "Поперечный проход с западного газона закрыт",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.7000007629394531,
+        "advanced": 0.3750019073486328,
+        "stoppedAt": {
+          "x": 17.67500114440918,
+          "y": 0.0839928388595581,
+          "z": -39.79999923706055
+        }
+      },
+      {
+        "name": "Поперечный проход с восточного газона закрыт",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.7000007629394531,
+        "advanced": 0.37000274658203125,
+        "stoppedAt": {
+          "x": 36.44999694824219,
+          "y": 0.06999987363815308,
+          "z": -39.79999923706055
+        }
+      },
+      {
+        "name": "Старый скос у западной стены закрыт",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.7400016784667969,
+        "advanced": 0.3280029296875,
+        "stoppedAt": {
+          "x": 20.0758056640625,
+          "y": 0.6916431188583374,
+          "z": -44.391998291015625
+        }
+      },
+      {
+        "name": "Старый скос у восточной стены закрыт",
+        "groundedAtStart": true,
+        "groundedAtStop": true,
+        "contactedWall": true,
+        "passed": true,
+        "attempted": 1.7400016784667969,
+        "advanced": 0.3280029296875,
+        "stoppedAt": {
+          "x": 33.96556854248047,
+          "y": 0.6550668478012085,
+          "z": -44.391998291015625
+        }
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "01_garage_west.png",
+        "eye": {
+          "x": 12.890000343322754,
+          "y": 1.5499999523162842,
+          "z": -27.809999465942383
+        },
+        "lookAt": {
+          "x": 30.709999084472656,
+          "y": -0.49000000953674316,
+          "z": -29.290000915527344
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 50.53046417236328
+      },
+      {
+        "name": "02_garage_east.png",
+        "eye": {
+          "x": 39.79999923706055,
+          "y": 1.7200000286102295,
+          "z": -27.850000381469727
+        },
+        "lookAt": {
+          "x": 26.0,
+          "y": 0.5799999833106995,
+          "z": -33.400001525878906
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 81.49737548828125
+      },
+      {
+        "name": "03_garage_rear.png",
+        "eye": {
+          "x": 27.0,
+          "y": 2.1500000953674316,
+          "z": -20.799999237060547
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.8199999928474426,
+          "z": -37.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 85.16523742675781
+      },
+      {
+        "name": "04_garage_front.png",
+        "eye": {
+          "x": 27.0,
+          "y": 2.1500000953674316,
+          "z": -59.0
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.3499999940395355,
+          "z": -36.0
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 75.1908950805664
+      },
+      {
+        "name": "05_garage_high.png",
+        "eye": {
+          "x": 27.0,
+          "y": 10.5,
+          "z": -23.600000381469727
+        },
+        "lookAt": {
+          "x": 27.0,
+          "y": 0.800000011920929,
+          "z": -38.5
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 84.49844360351562
+      },
+      {
+        "name": "02_utility_road.png",
+        "eye": {
+          "x": 76.30000305175781,
+          "y": 1.75,
+          "z": -33.25
+        },
+        "lookAt": {
+          "x": 56.5,
+          "y": 0.25,
+          "z": -29.850000381469727
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 76.59414672851562
+      },
+      {
+        "name": "03_utility_south.png",
+        "eye": {
+          "x": 102.0,
+          "y": 1.850000023841858,
+          "z": -73.0
+        },
+        "lookAt": {
+          "x": 98.87000274658203,
+          "y": 0.7160000205039978,
+          "z": -53.25
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 78.4386215209961
+      },
+      {
+        "name": "04_service_branch.png",
+        "eye": {
+          "x": 64.0,
+          "y": 1.75,
+          "z": -36.0
+        },
+        "lookAt": {
+          "x": 77.63999938964844,
+          "y": 0.0,
+          "z": -21.3700008392334
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 86.18494415283203
+      },
+      {
+        "name": "05_playground_path.png",
+        "eye": {
+          "x": 82.0,
+          "y": 1.75,
+          "z": 20.0
+        },
+        "lookAt": {
+          "x": 101.05000305175781,
+          "y": 0.0,
+          "z": 25.81999969482422
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 91.17613983154297
+      },
+      {
+        "name": "06_playground_entry.png",
+        "eye": {
+          "x": 90.94999694824219,
+          "y": 1.7000000476837158,
+          "z": 33.13600158691406
+        },
+        "lookAt": {
+          "x": 105.76000213623047,
+          "y": 0.28700000047683716,
+          "z": 46.5099983215332
+        },
+        "timedFrames": 60,
+        "offscreenAverageFps": 90.28697967529297
+      }
+    ],
+    "errors": []
+  },
+  "performance": {
+    "Method": "Sequential hidden player captures at 13:00, 60 timed frames per matching camera, RTX 5060, Direct3D12, High, 1600x900",
+    "Before": {
+      "status": "finished",
+      "scene": "Street",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "graphicsApi": "Direct3D12",
+      "hdrpQuality": "High",
+      "passed": true,
+      "captureOnly": true,
+      "wastePadHidden": true,
+      "width": 1600,
+      "height": 900,
+      "hour": 13.0,
+      "lanes": [],
+      "barriers": [],
+      "screenshots": [
+        {
+          "name": "01_garage_west.png",
+          "eye": {
+            "x": 12.890000343322754,
+            "y": 1.5499999523162842,
+            "z": -27.809999465942383
+          },
+          "lookAt": {
+            "x": 30.709999084472656,
+            "y": -0.49000000953674316,
+            "z": -29.290000915527344
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 86.28128051757812
+        },
+        {
+          "name": "02_garage_east.png",
+          "eye": {
+            "x": 39.79999923706055,
+            "y": 1.7200000286102295,
+            "z": -27.850000381469727
+          },
+          "lookAt": {
+            "x": 26.0,
+            "y": 0.5799999833106995,
+            "z": -33.400001525878906
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 86.19073486328125
+        },
+        {
+          "name": "03_garage_rear.png",
+          "eye": {
+            "x": 27.0,
+            "y": 2.1500000953674316,
+            "z": -20.799999237060547
+          },
+          "lookAt": {
+            "x": 27.0,
+            "y": 0.8199999928474426,
+            "z": -37.0
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 78.08901977539062
+        },
+        {
+          "name": "04_garage_front.png",
+          "eye": {
+            "x": 27.0,
+            "y": 2.1500000953674316,
+            "z": -59.0
+          },
+          "lookAt": {
+            "x": 27.0,
+            "y": 0.3499999940395355,
+            "z": -36.0
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 72.84947967529297
+        },
+        {
+          "name": "05_garage_high.png",
+          "eye": {
+            "x": 27.0,
+            "y": 10.5,
+            "z": -23.600000381469727
+          },
+          "lookAt": {
+            "x": 27.0,
+            "y": 0.800000011920929,
+            "z": -38.5
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 84.196044921875
+        },
+        {
+          "name": "02_utility_road.png",
+          "eye": {
+            "x": 76.30000305175781,
+            "y": 1.75,
+            "z": -33.25
+          },
+          "lookAt": {
+            "x": 56.5,
+            "y": 0.25,
+            "z": -29.850000381469727
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 71.79762268066406
+        },
+        {
+          "name": "03_utility_south.png",
+          "eye": {
+            "x": 102.0,
+            "y": 1.850000023841858,
+            "z": -73.0
+          },
+          "lookAt": {
+            "x": 98.87000274658203,
+            "y": 0.7160000205039978,
+            "z": -53.25
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 78.69068145751953
+        },
+        {
+          "name": "04_service_branch.png",
+          "eye": {
+            "x": 64.0,
+            "y": 1.75,
+            "z": -36.0
+          },
+          "lookAt": {
+            "x": 77.63999938964844,
+            "y": 0.0,
+            "z": -21.3700008392334
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 93.80411529541016
+        },
+        {
+          "name": "05_playground_path.png",
+          "eye": {
+            "x": 82.0,
+            "y": 1.75,
+            "z": 20.0
+          },
+          "lookAt": {
+            "x": 101.05000305175781,
+            "y": 0.0,
+            "z": 25.81999969482422
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 88.1323471069336
+        },
+        {
+          "name": "06_playground_entry.png",
+          "eye": {
+            "x": 90.94999694824219,
+            "y": 1.7000000476837158,
+            "z": 33.13600158691406
+          },
+          "lookAt": {
+            "x": 105.76000213623047,
+            "y": 0.28700000047683716,
+            "z": 46.5099983215332
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 105.44657135009766
+        }
+      ],
+      "errors": []
+    },
+    "After": {
+      "status": "finished",
+      "scene": "Street",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "graphicsApi": "Direct3D12",
+      "hdrpQuality": "High",
+      "passed": true,
+      "captureOnly": true,
+      "wastePadHidden": true,
+      "width": 1600,
+      "height": 900,
+      "hour": 13.0,
+      "lanes": [],
+      "barriers": [],
+      "surfaces": [],
+      "joins": [],
+      "blockedWalks": [],
+      "screenshots": [
+        {
+          "name": "01_garage_west.png",
+          "eye": {
+            "x": 12.890000343322754,
+            "y": 1.5499999523162842,
+            "z": -27.809999465942383
+          },
+          "lookAt": {
+            "x": 30.709999084472656,
+            "y": -0.49000000953674316,
+            "z": -29.290000915527344
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 83.59850311279297
+        },
+        {
+          "name": "02_garage_east.png",
+          "eye": {
+            "x": 39.79999923706055,
+            "y": 1.7200000286102295,
+            "z": -27.850000381469727
+          },
+          "lookAt": {
+            "x": 26.0,
+            "y": 0.5799999833106995,
+            "z": -33.400001525878906
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 77.806640625
+        },
+        {
+          "name": "03_garage_rear.png",
+          "eye": {
+            "x": 27.0,
+            "y": 2.1500000953674316,
+            "z": -20.799999237060547
+          },
+          "lookAt": {
+            "x": 27.0,
+            "y": 0.8199999928474426,
+            "z": -37.0
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 89.68405151367188
+        },
+        {
+          "name": "04_garage_front.png",
+          "eye": {
+            "x": 27.0,
+            "y": 2.1500000953674316,
+            "z": -59.0
+          },
+          "lookAt": {
+            "x": 27.0,
+            "y": 0.3499999940395355,
+            "z": -36.0
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 77.26351928710938
+        },
+        {
+          "name": "05_garage_high.png",
+          "eye": {
+            "x": 27.0,
+            "y": 10.5,
+            "z": -23.600000381469727
+          },
+          "lookAt": {
+            "x": 27.0,
+            "y": 0.800000011920929,
+            "z": -38.5
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 90.95317077636719
+        },
+        {
+          "name": "02_utility_road.png",
+          "eye": {
+            "x": 76.30000305175781,
+            "y": 1.75,
+            "z": -33.25
+          },
+          "lookAt": {
+            "x": 56.5,
+            "y": 0.25,
+            "z": -29.850000381469727
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 78.74897766113281
+        },
+        {
+          "name": "03_utility_south.png",
+          "eye": {
+            "x": 102.0,
+            "y": 1.850000023841858,
+            "z": -73.0
+          },
+          "lookAt": {
+            "x": 98.87000274658203,
+            "y": 0.7160000205039978,
+            "z": -53.25
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 87.72364807128906
+        },
+        {
+          "name": "04_service_branch.png",
+          "eye": {
+            "x": 64.0,
+            "y": 1.75,
+            "z": -36.0
+          },
+          "lookAt": {
+            "x": 77.63999938964844,
+            "y": 0.0,
+            "z": -21.3700008392334
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 94.80247497558594
+        },
+        {
+          "name": "05_playground_path.png",
+          "eye": {
+            "x": 82.0,
+            "y": 1.75,
+            "z": 20.0
+          },
+          "lookAt": {
+            "x": 101.05000305175781,
+            "y": 0.0,
+            "z": 25.81999969482422
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 87.72341918945312
+        },
+        {
+          "name": "06_playground_entry.png",
+          "eye": {
+            "x": 90.94999694824219,
+            "y": 1.7000000476837158,
+            "z": 33.13600158691406
+          },
+          "lookAt": {
+            "x": 105.76000213623047,
+            "y": 0.28700000047683716,
+            "z": 46.5099983215332
+          },
+          "timedFrames": 60,
+          "offscreenAverageFps": 87.6877212524414
+        }
+      ],
+      "errors": []
+    }
+  }
+}
