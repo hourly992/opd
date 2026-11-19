@@ -4,7 +4,7 @@
 
 Основа 3D-игры про уборку Ханты-Мансийска. Первый участок — улица Дунина-Горкавича у дома №5. Unity 6.6 (6000.6.7f1), C#. Сейчас разрабатывается окружение, без экономики и механик уборки.
 
-Откройте папку `Unity_Walk` в Unity Hub и сцену `Assets/Scenes/Street.unity`. Текущая проверенная HDRP-сборка находится в `Unity_Walk/Build/StreetWindowsHDRPLawnGrades/`. Для запуска используйте `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd` или `Play_DLSS_Quality.cmd`. Повторная сборка сохранённых городских сцен выполняется через `StreetLawnGrades.Build`; генерацию карты для неё запускать не требуется.
+Откройте папку `Unity_Walk` в Unity Hub и сцену `Assets/Scenes/Street.unity`. Текущая проверенная HDRP-сборка находится в `Unity_Walk/Build/StreetWindowsHDRPGrassCanopy/`. Для запуска используйте `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd` или `Play_DLSS_Quality.cmd`. Повторная сборка сохранённых городских сцен выполняется через `StreetGrassCanopy.Build`; генерацию карты для неё запускать не требуется.
 
 WASD / стрелки — ходьба, мышь — обзор, Esc — меню.
 
@@ -23,3 +23,5 @@ WASD / стрелки — ходьба, мышь — обзор, Esc — мен�
 Разнесённые гаражные навесы и подходы к домам — [четыре пары кадров до и после](Reports/Garage-Canopies.pdf).
 
 Поднятые газоны и пешеходный переход дома №5 — [проверки сохранённой сцены](Reports/Lawn-Grades-Checks.json).
+
+Высота, плотность и дальность травы — [результаты проверок](Reports/Grass-Canopy-Checks.json).
