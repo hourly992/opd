@@ -21,11 +21,22 @@ void ApplyVertexModification(AttributesMesh input, float3 normalWS, inout float3
         // Reduce the density of the instanced lawn before Terrain drops its detail patches.
         float3 rootRWS = TransformObjectToWorld(float3(0.0, 0.0, 0.0));
         float distanceToCamera = length(rootRWS.xz - GetPrimaryCameraPosition().xz);
-        float density = 1.0 - smoothstep(13.0, 21.0, distanceToCamera);
+        float density = 1.0 - smoothstep(15.0, 26.0, distanceToCamera);
         float2 cell = floor(GetAbsolutePositionWS(rootRWS).xz * 16.0);
         float variation = frac(dot(cell, float2(0.75487766, 0.5698403)));
         float growth = smoothstep(0.0, 0.23, density - variation * 0.77);
         positionRWS.y = lerp(rootRWS.y - 0.055, positionRWS.y, growth);
+    }
+    else if (_Grass >= 1.0)
+    {
+        // The baked mid-distance lawn keeps the higher silhouette as Terrain fades.
+        // Moving only Y keeps the roots and the clearance at paving and curbs.
+        float addedHeight = 0.053;
+#if defined(ATTRIBUTES_NEED_COLOR)
+        addedHeight = lerp(0.036, 0.078, saturate(3.5 * (input.color.r - input.color.b)));
+#endif
+        float tip = saturate(input.uv0.y);
+        positionRWS.y += addedHeight * tip * tip;
     }
     float3 world = GetAbsolutePositionWS(positionRWS);
     float wave = StreetBreeze(world.xz, timeParameters.x);

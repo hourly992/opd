@@ -1,2 +1,2 @@
 @echo off
-start "" /d "%~dp0Unity_Walk\Build\StreetWindowsHDRPLawnGrades" "%~dp0Unity_Walk\Build\StreetWindowsHDRPLawnGrades\DuninaGorkavicha.exe" -streetHDRPHigh -streetHDRPDLSS
+start "" /d "%~dp0Unity_Walk\Build\StreetWindowsHDRPGrassCanopy" "%~dp0Unity_Walk\Build\StreetWindowsHDRPGrassCanopy\DuninaGorkavicha.exe" -streetHDRPHigh -streetHDRPDLSS
