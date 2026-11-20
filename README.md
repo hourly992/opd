@@ -4,7 +4,7 @@
 
 Основа 3D-игры про уборку Ханты-Мансийска. Первый участок — улица Дунина-Горкавича у дома №5. Unity 6.6 (6000.6.7f1), C#. Сейчас разрабатывается окружение, без экономики и механик уборки.
 
-Откройте папку `Unity_Walk` в Unity Hub и сцену `Assets/Scenes/Street.unity`. Текущая проверенная HDRP-сборка находится в `Unity_Walk/Build/StreetWindowsHDRPYniViar/`. Для запуска используйте `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd` или `Play_DLSS_Quality.cmd`. Повторная сборка сохранённых городских сцен выполняется через `StreetSketchfabLamps.Build`; генерацию карты для неё запускать не требуется.
+Откройте папку `Unity_Walk` в Unity Hub и сцену `Assets/Scenes/Street.unity`. Текущая проверенная HDRP-сборка находится в `Unity_Walk/Build/StreetWindowsHDRPDuninLandmarks/`. Для запуска используйте `Play_High.cmd`, `Play_Ultra.cmd`, `Play_Night.cmd` или `Play_DLSS_Quality.cmd`. Повторная сборка сохранённых городских сцен выполняется через `StreetLocalLandmarks.Build`; генерацию карты для неё запускать не требуется.
 
 WASD / стрелки — ходьба, мышь — обзор, Esc — меню.
 
@@ -27,3 +27,5 @@ WASD / стрелки — ходьба, мышь — обзор, Esc — мен�
 Высота, плотность и дальность травы — [результаты проверок](Reports/Grass-Canopy-Checks.json).
 
 Уличные и дворовые фонари Street Lamp от Yni Viar — [результаты проверок](Reports/Yni-Viar-Lamps-Checks.json).
+
+Памятник Дунину-Горкавичу и шаровые фонари во дворе №7 — [кадры до и после](Reports/Dunin-Landmarks.pdf).

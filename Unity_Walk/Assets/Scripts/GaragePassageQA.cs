@@ -121,7 +121,7 @@ public sealed class GaragePassageQA : MonoBehaviour
     {
         public string name;
         public Vector3 eye, lookAt;
-        public int timedFrames, activeLamps, shadowLamps;
+        public int timedFrames, activeLamps, shadowLamps, courtLights;
         public float offscreenAverageFps;
     }
 
@@ -132,7 +132,8 @@ public sealed class GaragePassageQA : MonoBehaviour
         public string scene, gpu, graphicsApi, hdrpQuality;
         public bool passed, captureOnly, wastePadHidden;
         public int width = 1600, height = 900;
-        public int registeredLampSources;
+        public int registeredLampSources, courtyardGlobeSources, monumentLodCount;
+        public bool monumentApproachSolid, monumentBaseSolid;
         public float hour = 13f;
         public List<LaneResult> lanes = new();
         public List<BarrierResult> barriers = new();
@@ -204,6 +205,11 @@ public sealed class GaragePassageQA : MonoBehaviour
         var cycle = FindAnyObjectByType<StreetDayNight>();
         var lampNetwork = FindAnyObjectByType<StreetLampNetwork>();
         report.registeredLampSources = lampNetwork ? lampNetwork.lamps?.Length ?? 0 : 0;
+        var courtLights = new List<Light>();
+        if (lampNetwork && lampNetwork.lamps != null)
+            foreach (var light in lampNetwork.lamps)
+                if (light && light.name == "Тёплый свет · двор №7") courtLights.Add(light);
+        report.courtyardGlobeSources = courtLights.Count;
         var controller = camera ? camera.GetComponentInParent<CharacterController>() : null;
         if (!camera || !controller || !cycle || GraphicsSettings.currentRenderPipeline is not HDRenderPipelineAsset)
         {
@@ -219,6 +225,17 @@ public sealed class GaragePassageQA : MonoBehaviour
         cycle.Paused = true;
         cycle.SetHour(report.hour);
         Physics.SyncTransforms();
+        if (FindAnyObjectByType<MonumentReference>() is { } monument && monument)
+        {
+            var anchor = monument.transform;
+            var start = anchor.TransformPoint(new Vector3(0f, 1f, 1.4f));
+            report.monumentApproachSolid = Physics.Raycast(start, Vector3.down, out var step, 1.09f,
+                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore) && step.transform == anchor;
+            start = anchor.TransformPoint(new Vector3(0f, .64f, .82f));
+            report.monumentBaseSolid = Physics.Raycast(start, -anchor.forward, out var baseHit, 1.2f,
+                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore) && baseHit.transform == anchor;
+            if (monument.TryGetComponent<LODGroup>(out var group)) report.monumentLodCount = group.lodCount;
+        }
         report.wastePadHidden = true;
         foreach (var filter in FindObjectsByType<MeshFilter>())
             if (filter.sharedMesh && (filter.sharedMesh.name == "ContainerScreen" ||
@@ -281,7 +298,8 @@ public sealed class GaragePassageQA : MonoBehaviour
                 name = name, eye = shot.eye, lookAt = shot.lookAt,
                 timedFrames = measuredFrames, offscreenAverageFps = averageRate,
                 activeLamps = lampNetwork ? lampNetwork.ActiveLampCount : 0,
-                shadowLamps = lampNetwork ? lampNetwork.ShadowLampCount : 0
+                shadowLamps = lampNetwork ? lampNetwork.ShadowLampCount : 0,
+                courtLights = courtLights.FindAll(light => light.enabled).Count
             });
         }
         Destroy(image);

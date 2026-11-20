@@ -4,11 +4,11 @@
   "latitude": 61.001164,
   "longitude": 69.060422,
   "coordinateSource": "https://visit-hm.ru/places/216",
-  "coordinateNote": "Coordinates are the location field in the tourist portal page, not a surveyed monument centre. Needs local verification.",
-  "heightMetres": null,
-  "orientationDegrees": null,
-  "identityConfidence": "Primary manufacturer and city tourist portal identify this monument on the reconstructed street. User has not independently identified it.",
-  "checked": "2026-11-02",
+  "coordinateNote": "Published portal marker used as the anchor. Gameplay position is on the adjacent lawn near the fence. Position, orientation and height are visual estimates.",
+  "heightMetres": 3.27,
+  "orientationDegrees": 241.6,
+  "identityConfidence": "City tourist portal and the bronze caster identify this memorial on Dunina-Gorkavicha Street.",
+  "checked": "2026-11-20",
   "sources": [
     "https://visit-hm.ru/places/216",
     "https://litart.ru/pamyatnik-aleksandru-duninu-gorkavichu-v-hanty-mansijske/",
@@ -20,7 +20,19 @@
     "https://visit-hm.ru/storage/images/medium.28720b42b70d147dc073a58b50153522.jpg"
   ],
   "observedShape": "Dark bronze half-length uniformed figure, right hand holds a scroll, inscription below, tall curved red granite slab on left with vertical foliage relief, shorter foliage panel on right, narrow granite pedestal, rectangular red/grey paved approach with flower beds.",
-  "status": "Editor-only placement and granite support study. Bronze figure and foliage relief are not modelled; not a completed replica.",
-  "needed": ["side and rear photographs", "monument and pedestal measured height/width/depth", "view linking monument to road and building corners", "current approach paving and planting photographs"],
-  "rights": "Photographs used only for observation; no photo pixels included in game or source assets. Site reserves reuse rights."
+  "status": "Playable HDRP monument and approach in Street. Reconstructed from photographs; the editor study remains in the source resources.",
+  "needed": [
+    "side and rear photographs",
+    "monument and pedestal measured height/width/depth",
+    "view linking monument to road and building corners",
+    "current approach paving and planting photographs"
+  ],
+  "rights": "Photographs used only for observation; no photo pixels included in game or source assets. Site reserves reuse rights.",
+  "gameScenePosition": {
+    "x": -109.60057067871094,
+    "y": 0.21800002455711365,
+    "z": 161.49456787109375
+  },
+  "offsetFromMarkerMetres": 2.8284270763397217,
+  "estimate": true
 }
