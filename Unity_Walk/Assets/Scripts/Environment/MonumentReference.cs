@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// This object is tagged EditorOnly and stripped from the game, while its evidence remains in the source project.
+// Records the published reference point and the accuracy of the landmark model.
 public sealed class MonumentReference : MonoBehaviour
 {
     public string identity, source;

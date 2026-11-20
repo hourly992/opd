@@ -121,3 +121,5 @@ https://github.com/google/fonts/tree/main/ofl/ptsans
 ## Фонари Street Lamp от Yni Viar
 
 Модель [Street Lamp](https://sketchfab.com/3d-models/street-lamp-152055979ddd48669529f5d4f5f3543c) размещена на существующих уличных и дворовых опорах в `Assets/Scenes/Street.unity`. Атрибуция, сведения о лицензии CC BY 4.0 и описание изменений находятся в [SOURCE-LICENSE.md](Assets/ThirdParty/Sketchfab/YniViar/StreetLamp/SOURCE-LICENSE.md). Исходный GLB входит в проект.
+
+Памятник у дома №1 и четыре шаровых фонаря во дворе №7 — [отчёт и парные игровые кадры](../Reports/Dunin-Landmarks.pdf).

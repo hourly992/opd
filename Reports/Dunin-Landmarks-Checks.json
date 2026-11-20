@@ -1,0 +1,1691 @@
+{
+  "baseCommit": "2af38129381349c9c452118024a1bf8862b731bd",
+  "scope": {
+    "passed": true,
+    "newPrefabs": {
+      "threeGlobes": 2,
+      "monument": 1,
+      "oneGlobe": 2
+    },
+    "localChanges": {
+      "newMonumentSceneRoot": 1,
+      "localGrassMesh": 3,
+      "newReferencesInExistingLampNetwork": 4,
+      "newCourtyardGroup": 1,
+      "localGrassDetailTile": 1
+    }
+  },
+  "placements": {
+    "scene": "Assets/Scenes/Street.unity",
+    "monumentPosition": {
+      "x": -109.60057067871094,
+      "y": 0.21800002455711365,
+      "z": 161.49456787109375
+    },
+    "front": {
+      "x": -0.879988968372345,
+      "y": 0.0,
+      "z": -0.47499406337738037
+    },
+    "offsetFromPortal": 2.8284270763397217,
+    "height": 3.2699997425079346,
+    "approachSupportRange": 2.980232238769531E-08,
+    "monumentLod0": 207110,
+    "monumentLod1": 42954,
+    "terrainDetailsRemoved": 545,
+    "meshTrianglesRemoved": 794,
+    "previousStreetSources": 56,
+    "totalSources": 60,
+    "court": [
+      {
+        "site": "Островок у скамей",
+        "position": {
+          "x": 34.599998474121094,
+          "y": 0.3330138325691223,
+          "z": 33.77000045776367
+        },
+        "globes": 3,
+        "lod0": 2880,
+        "lod1": 800
+      },
+      {
+        "site": "Островок напротив входа",
+        "position": {
+          "x": 42.97999954223633,
+          "y": 0.31470876932144165,
+          "z": 43.86000061035156
+        },
+        "globes": 3,
+        "lod0": 2880,
+        "lod1": 800
+      },
+      {
+        "site": "Северный проход",
+        "position": {
+          "x": 40.27000045776367,
+          "y": 0.2160000056028366,
+          "z": 51.220001220703125
+        },
+        "globes": 1,
+        "lod0": 680,
+        "lod1": 248
+      },
+      {
+        "site": "Подход к восточному крыльцу",
+        "position": {
+          "x": 51.93000030517578,
+          "y": 0.3289797306060791,
+          "z": 34.279998779296875
+        },
+        "globes": 1,
+        "lod0": 680,
+        "lod1": 248
+      }
+    ]
+  },
+  "benchmark": {
+    "nightViews": 4,
+    "resolution": "1600x900",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "beforeDay": 77.8413584782527,
+    "afterDay": 76.92108271672176,
+    "afterNight": 79.57477188110352,
+    "method": "60 measured player render requests per matched viewpoint after 24 warm-up frames",
+    "dayViews": 13,
+    "api": "Direct3D12",
+    "beforeNight": 75.87294960021973,
+    "quality": "High"
+  },
+  "beforeDay": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": false,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "registeredLampSources": 56,
+    "hour": 13.0,
+    "lanes": [
+      {
+        "name": "Подъём к двору №5",
+        "worstGround": "Местные асфальтовые проезды · короткие подходы к входам",
+        "blocker": "",
+        "samples": 93,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 22.920000076293945,
+          "y": -0.00999999139457941,
+          "z": -25.51000213623047
+        },
+        "maxHeightError": 0.003000001423060894,
+        "maximumExcessStep": 0.0030000004917383194,
+        "measuredRise": 0.8650000095367432,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Пешеходный выход из двора №5",
+        "worstGround": "Местные асфальтовые проезды · короткие подходы к входам",
+        "blocker": "",
+        "samples": 93,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 23.188800811767578,
+          "y": -0.00999999139457941,
+          "z": -25.75
+        },
+        "maxHeightError": 0.003000001423060894,
+        "maximumExcessStep": 0.0030000004917383194,
+        "measuredRise": -0.8650000095367432,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Центральный подъём",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 597,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 28.2239990234375,
+          "y": -0.0056441184133291245,
+          "z": -54.21034240722656
+        },
+        "maxHeightError": 0.018144119530916214,
+        "maximumExcessStep": 0.011014966294169426,
+        "measuredRise": -0.04499999061226845,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Западный въезд и гараж",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 20.29199981689453,
+          "y": 0.03054252825677395,
+          "z": -54.211822509765625
+        },
+        "maxHeightError": 0.0067925285547971725,
+        "maximumExcessStep": 0.00620446540415287,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Восточный въезд и гараж",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 32.742000579833984,
+          "y": 0.030542440712451935,
+          "z": -54.42774200439453
+        },
+        "maxHeightError": 0.006792441010475159,
+        "maximumExcessStep": 0.006204430013895035,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      }
+    ],
+    "barriers": [
+      {
+        "name": "Западный навес",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 21.299999237060547,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный навес",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 21.299999237060547,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный стойка",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 18.96099853515625,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный стойка",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 23.638999938964844,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный навес",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 33.75,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный навес",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 33.75,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный стойка",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 31.410999298095703,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный стойка",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 36.0890007019043,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "Коллайдер пешеходного перехода",
+        "collider": "Вход во двор №5 · пешеходный переход",
+        "at": {
+          "x": 22.920000076293945,
+          "y": 0.4240000247955322,
+          "z": -27.565000534057617
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Газон 07",
+        "collider": "Газон 0_-3",
+        "at": {
+          "x": 62.01466369628906,
+          "y": 0.21599999070167542,
+          "z": -132.6926727294922
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 07",
+        "collider": "Белый бордюр 0_-3",
+        "at": {
+          "x": 50.58466720581055,
+          "y": 0.2160000056028366,
+          "z": -142.09132385253906
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Газон 08",
+        "collider": "Газон 1_-1",
+        "at": {
+          "x": 77.67666625976562,
+          "y": 0.2160000056028366,
+          "z": -21.371999740600586
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 08",
+        "collider": "Белый бордюр 1_-1",
+        "at": {
+          "x": 76.9800033569336,
+          "y": 0.21599999070167542,
+          "z": -20.84600067138672
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Газон 05",
+        "collider": "Газон 1_0",
+        "at": {
+          "x": 107.89567565917969,
+          "y": 0.2160000056028366,
+          "z": 47.795997619628906
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 05",
+        "collider": "Белый бордюр 1_0",
+        "at": {
+          "x": 104.54222106933594,
+          "y": 0.21599999070167542,
+          "z": 46.082000732421875
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Газон 06",
+        "collider": "Газон -2_2",
+        "at": {
+          "x": -97.21333312988281,
+          "y": 0.21599999070167542,
+          "z": 137.50599670410156
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 06",
+        "collider": "Белый бордюр -2_2",
+        "at": {
+          "x": -99.2337875366211,
+          "y": 0.21599999070167542,
+          "z": 135.96665954589844
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      }
+    ],
+    "joins": [
+      {
+        "name": "Западный примыкание к дороге",
+        "samples": 27,
+        "missingSupport": 0,
+        "heightError": 0.009108666330575943,
+        "excessStep": 0.001216340810060501,
+        "passed": true
+      },
+      {
+        "name": "Восточный примыкание к дороге",
+        "samples": 27,
+        "missingSupport": 0,
+        "heightError": 0.009108571335673332,
+        "excessStep": 0.001216340810060501,
+        "passed": true
+      }
+    ],
+    "blockedWalks": [],
+    "screenshots": [
+      {
+        "name": "01-house5-start.png",
+        "eye": {
+          "x": -9.100000381469727,
+          "y": 1.7999999523162842,
+          "z": -27.399999618530273
+        },
+        "lookAt": {
+          "x": 7.0,
+          "y": 2.9000000953674316,
+          "z": -5.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 59.881553649902344
+      },
+      {
+        "name": "02-court7.png",
+        "eye": {
+          "x": 26.0,
+          "y": 1.850000023841858,
+          "z": 37.0
+        },
+        "lookAt": {
+          "x": 61.0,
+          "y": 1.649999976158142,
+          "z": 38.29999923706055
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 70.71959686279297
+      },
+      {
+        "name": "03-street-eye.png",
+        "eye": {
+          "x": -39.66999816894531,
+          "y": 2.4000000953674316,
+          "z": 11.020000457763672
+        },
+        "lookAt": {
+          "x": -31.600000381469727,
+          "y": 2.4000000953674316,
+          "z": -2.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 76.05880737304688
+      },
+      {
+        "name": "04-south-edge.png",
+        "eye": {
+          "x": 36.29999923706055,
+          "y": 1.9500000476837158,
+          "z": -125.7300033569336
+        },
+        "lookAt": {
+          "x": 45.400001525878906,
+          "y": 4.179999828338623,
+          "z": -133.2100067138672
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 98.43081665039062
+      },
+      {
+        "name": "05-east-edge.png",
+        "eye": {
+          "x": 164.06700134277344,
+          "y": 1.7699999809265137,
+          "z": 65.05999755859375
+        },
+        "lookAt": {
+          "x": 161.83999633789062,
+          "y": 2.0299999713897705,
+          "z": 58.869998931884766
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 69.99870300292969
+      },
+      {
+        "name": "06-memorial.png",
+        "eye": {
+          "x": -123.19999694824219,
+          "y": 1.7200000286102295,
+          "z": 152.10000610351562
+        },
+        "lookAt": {
+          "x": -112.30999755859375,
+          "y": 1.5800000429153442,
+          "z": 162.3000030517578
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 79.79434204101562
+      },
+      {
+        "name": "07-memorial-overview.png",
+        "eye": {
+          "x": -126.0,
+          "y": 24.0,
+          "z": 155.0
+        },
+        "lookAt": {
+          "x": -107.0,
+          "y": 0.0,
+          "z": 164.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 96.80358123779297
+      },
+      {
+        "name": "08-court7-return.png",
+        "eye": {
+          "x": 40.5,
+          "y": 1.850000023841858,
+          "z": 33.0
+        },
+        "lookAt": {
+          "x": 17.0,
+          "y": 1.899999976158142,
+          "z": 17.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 58.63069534301758
+      },
+      {
+        "name": "09-court7-ne.png",
+        "eye": {
+          "x": 49.0,
+          "y": 1.9199999570846558,
+          "z": 45.0
+        },
+        "lookAt": {
+          "x": 29.0,
+          "y": 2.0,
+          "z": 27.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 59.56611251831055
+      },
+      {
+        "name": "10-court7-overview.png",
+        "eye": {
+          "x": 38.0,
+          "y": 29.0,
+          "z": 34.0
+        },
+        "lookAt": {
+          "x": 36.0,
+          "y": 0.0,
+          "z": 41.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 85.5778579711914
+      },
+      {
+        "name": "11-memorial-close.png",
+        "eye": {
+          "x": -112.65228271484375,
+          "y": 1.9880000352859497,
+          "z": 159.3586883544922
+        },
+        "lookAt": {
+          "x": -109.60057067871094,
+          "y": 1.878000020980835,
+          "z": 161.49456787109375
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 87.64179229736328
+      },
+      {
+        "name": "12-memorial-portrait.png",
+        "eye": {
+          "x": -111.14875030517578,
+          "y": 2.247999906539917,
+          "z": 160.0679931640625
+        },
+        "lookAt": {
+          "x": -109.60057067871094,
+          "y": 2.3980000019073486,
+          "z": 161.49456787109375
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 72.88642120361328
+      },
+      {
+        "name": "13-court-lamps-close.png",
+        "eye": {
+          "x": 32.099998474121094,
+          "y": 1.7699999809265137,
+          "z": 37.79999923706055
+        },
+        "lookAt": {
+          "x": 37.599998474121094,
+          "y": 1.8899999856948853,
+          "z": 34.5
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "offscreenAverageFps": 95.94738006591797
+      }
+    ],
+    "errors": []
+  },
+  "afterDay": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": false,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "registeredLampSources": 60,
+    "courtyardGlobeSources": 4,
+    "monumentLodCount": 2,
+    "monumentApproachSolid": true,
+    "monumentBaseSolid": true,
+    "hour": 13.0,
+    "lanes": [
+      {
+        "name": "Подъём к двору №5",
+        "worstGround": "Местные асфальтовые проезды · короткие подходы к входам",
+        "blocker": "",
+        "samples": 93,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 22.920000076293945,
+          "y": -0.00999999139457941,
+          "z": -25.51000213623047
+        },
+        "maxHeightError": 0.003000001423060894,
+        "maximumExcessStep": 0.0030000004917383194,
+        "measuredRise": 0.8650000095367432,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Пешеходный выход из двора №5",
+        "worstGround": "Местные асфальтовые проезды · короткие подходы к входам",
+        "blocker": "",
+        "samples": 93,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 23.188800811767578,
+          "y": -0.00999999139457941,
+          "z": -25.75
+        },
+        "maxHeightError": 0.003000001423060894,
+        "maximumExcessStep": 0.0030000004917383194,
+        "measuredRise": -0.8650000095367432,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Центральный подъём",
+        "worstGround": "Подъём и асфальтовая площадка",
+        "blocker": "",
+        "samples": 597,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 28.2239990234375,
+          "y": -0.0056441184133291245,
+          "z": -54.21034240722656
+        },
+        "maxHeightError": 0.018144119530916214,
+        "maximumExcessStep": 0.011014966294169426,
+        "measuredRise": -0.04499999061226845,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Западный въезд и гараж",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 20.29199981689453,
+          "y": 0.03054252825677395,
+          "z": -54.211822509765625
+        },
+        "maxHeightError": 0.0067925285547971725,
+        "maximumExcessStep": 0.00620446540415287,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      },
+      {
+        "name": "Восточный въезд и гараж",
+        "worstGround": "Асфальт у разнесённых въездов",
+        "blocker": "",
+        "samples": 534,
+        "missingGround": 0,
+        "excessiveGroundError": 0,
+        "clearanceObstructions": 0,
+        "worstPosition": {
+          "x": 32.742000579833984,
+          "y": 0.030542440712451935,
+          "z": -54.42774200439453
+        },
+        "maxHeightError": 0.006792441010475159,
+        "maximumExcessStep": 0.006204430013895035,
+        "measuredRise": -2.68500018119812,
+        "walkEndError": 0.0,
+        "playerTraversal": true,
+        "passed": true
+      }
+    ],
+    "barriers": [
+      {
+        "name": "Западный навес",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 21.299999237060547,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный навес",
+        "collider": "Западный арочный навес",
+        "contact": {
+          "x": 21.299999237060547,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный стойка",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 18.96099853515625,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Западный стойка",
+        "collider": "Западный · стойка навеса",
+        "contact": {
+          "x": 23.638999938964844,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный навес",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 33.75,
+          "y": 2.549999713897705,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный навес",
+        "collider": "Восточный арочный навес",
+        "contact": {
+          "x": 33.75,
+          "y": 2.494999885559082,
+          "z": -39.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный стойка",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 31.410999298095703,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      },
+      {
+        "name": "Восточный стойка",
+        "collider": "Восточный · стойка навеса",
+        "contact": {
+          "x": 36.0890007019043,
+          "y": 1.190000057220459,
+          "z": -42.0
+        },
+        "passed": true
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "Коллайдер пешеходного перехода",
+        "collider": "Вход во двор №5 · пешеходный переход",
+        "at": {
+          "x": 22.920000076293945,
+          "y": 0.4240000247955322,
+          "z": -27.565000534057617
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Газон 07",
+        "collider": "Газон 0_-3",
+        "at": {
+          "x": 62.01466369628906,
+          "y": 0.21599999070167542,
+          "z": -132.6926727294922
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 07",
+        "collider": "Белый бордюр 0_-3",
+        "at": {
+          "x": 50.58466720581055,
+          "y": 0.2160000056028366,
+          "z": -142.09132385253906
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Газон 08",
+        "collider": "Газон 1_-1",
+        "at": {
+          "x": 77.67666625976562,
+          "y": 0.2160000056028366,
+          "z": -21.371999740600586
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 08",
+        "collider": "Белый бордюр 1_-1",
+        "at": {
+          "x": 76.9800033569336,
+          "y": 0.21599999070167542,
+          "z": -20.84600067138672
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Газон 05",
+        "collider": "Газон 1_0",
+        "at": {
+          "x": 107.89567565917969,
+          "y": 0.2160000056028366,
+          "z": 47.795997619628906
+        },
+        "heightError": 0.0,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 05",
+        "collider": "Белый бордюр 1_0",
+        "at": {
+          "x": 104.54222106933594,
+          "y": 0.21599999070167542,
+          "z": 46.082000732421875
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Газон 06",
+        "collider": "Газон -2_2",
+        "at": {
+          "x": -97.21333312988281,
+          "y": 0.21599999070167542,
+          "z": 137.50599670410156
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      },
+      {
+        "name": "Белый бордюр 06",
+        "collider": "Белый бордюр -2_2",
+        "at": {
+          "x": -99.2337875366211,
+          "y": 0.21599999070167542,
+          "z": 135.96665954589844
+        },
+        "heightError": 1.4901161193847656E-08,
+        "passed": true
+      }
+    ],
+    "joins": [
+      {
+        "name": "Западный примыкание к дороге",
+        "samples": 27,
+        "missingSupport": 0,
+        "heightError": 0.009108666330575943,
+        "excessStep": 0.001216340810060501,
+        "passed": true
+      },
+      {
+        "name": "Восточный примыкание к дороге",
+        "samples": 27,
+        "missingSupport": 0,
+        "heightError": 0.009108571335673332,
+        "excessStep": 0.001216340810060501,
+        "passed": true
+      }
+    ],
+    "blockedWalks": [],
+    "screenshots": [
+      {
+        "name": "01-house5-start.png",
+        "eye": {
+          "x": -9.100000381469727,
+          "y": 1.7999999523162842,
+          "z": -27.399999618530273
+        },
+        "lookAt": {
+          "x": 7.0,
+          "y": 2.9000000953674316,
+          "z": -5.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 59.377872467041016
+      },
+      {
+        "name": "02-court7.png",
+        "eye": {
+          "x": 26.0,
+          "y": 1.850000023841858,
+          "z": 37.0
+        },
+        "lookAt": {
+          "x": 61.0,
+          "y": 1.649999976158142,
+          "z": 38.29999923706055
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 74.2146987915039
+      },
+      {
+        "name": "03-street-eye.png",
+        "eye": {
+          "x": -39.66999816894531,
+          "y": 2.4000000953674316,
+          "z": 11.020000457763672
+        },
+        "lookAt": {
+          "x": -31.600000381469727,
+          "y": 2.4000000953674316,
+          "z": -2.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 69.83930969238281
+      },
+      {
+        "name": "04-south-edge.png",
+        "eye": {
+          "x": 36.29999923706055,
+          "y": 1.9500000476837158,
+          "z": -125.7300033569336
+        },
+        "lookAt": {
+          "x": 45.400001525878906,
+          "y": 4.179999828338623,
+          "z": -133.2100067138672
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 106.55260467529297
+      },
+      {
+        "name": "05-east-edge.png",
+        "eye": {
+          "x": 164.06700134277344,
+          "y": 1.7699999809265137,
+          "z": 65.05999755859375
+        },
+        "lookAt": {
+          "x": 161.83999633789062,
+          "y": 2.0299999713897705,
+          "z": 58.869998931884766
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 75.06147766113281
+      },
+      {
+        "name": "06-memorial.png",
+        "eye": {
+          "x": -123.19999694824219,
+          "y": 1.7200000286102295,
+          "z": 152.10000610351562
+        },
+        "lookAt": {
+          "x": -112.30999755859375,
+          "y": 1.5800000429153442,
+          "z": 162.3000030517578
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 80.31684875488281
+      },
+      {
+        "name": "07-memorial-overview.png",
+        "eye": {
+          "x": -126.0,
+          "y": 24.0,
+          "z": 155.0
+        },
+        "lookAt": {
+          "x": -107.0,
+          "y": 0.0,
+          "z": 164.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 76.27330017089844
+      },
+      {
+        "name": "08-court7-return.png",
+        "eye": {
+          "x": 40.5,
+          "y": 1.850000023841858,
+          "z": 33.0
+        },
+        "lookAt": {
+          "x": 17.0,
+          "y": 1.899999976158142,
+          "z": 17.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 57.60966110229492
+      },
+      {
+        "name": "09-court7-ne.png",
+        "eye": {
+          "x": 49.0,
+          "y": 1.9199999570846558,
+          "z": 45.0
+        },
+        "lookAt": {
+          "x": 29.0,
+          "y": 2.0,
+          "z": 27.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 73.08489990234375
+      },
+      {
+        "name": "10-court7-overview.png",
+        "eye": {
+          "x": 38.0,
+          "y": 29.0,
+          "z": 34.0
+        },
+        "lookAt": {
+          "x": 36.0,
+          "y": 0.0,
+          "z": 41.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 85.24385070800781
+      },
+      {
+        "name": "11-memorial-close.png",
+        "eye": {
+          "x": -112.65228271484375,
+          "y": 1.9880000352859497,
+          "z": 159.3586883544922
+        },
+        "lookAt": {
+          "x": -109.60057067871094,
+          "y": 1.878000020980835,
+          "z": 161.49456787109375
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 74.74349975585938
+      },
+      {
+        "name": "12-memorial-portrait.png",
+        "eye": {
+          "x": -111.14875030517578,
+          "y": 2.247999906539917,
+          "z": 160.0679931640625
+        },
+        "lookAt": {
+          "x": -109.60057067871094,
+          "y": 2.3980000019073486,
+          "z": 161.49456787109375
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 78.9163589477539
+      },
+      {
+        "name": "13-court-lamps-close.png",
+        "eye": {
+          "x": 32.099998474121094,
+          "y": 1.7699999809265137,
+          "z": 37.79999923706055
+        },
+        "lookAt": {
+          "x": 37.599998474121094,
+          "y": 1.8899999856948853,
+          "z": 34.5
+        },
+        "timedFrames": 60,
+        "activeLamps": 0,
+        "shadowLamps": 0,
+        "courtLights": 0,
+        "offscreenAverageFps": 88.73969268798828
+      }
+    ],
+    "errors": []
+  },
+  "beforeNight": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": true,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "registeredLampSources": 56,
+    "hour": 1.0,
+    "lanes": [],
+    "barriers": [],
+    "surfaces": [],
+    "joins": [],
+    "blockedWalks": [],
+    "screenshots": [
+      {
+        "name": "02-court7.png",
+        "eye": {
+          "x": 26.0,
+          "y": 1.850000023841858,
+          "z": 37.0
+        },
+        "lookAt": {
+          "x": 61.0,
+          "y": 1.649999976158142,
+          "z": 38.29999923706055
+        },
+        "timedFrames": 60,
+        "activeLamps": 1,
+        "shadowLamps": 1,
+        "offscreenAverageFps": 70.3990707397461
+      },
+      {
+        "name": "08-court7-return.png",
+        "eye": {
+          "x": 40.5,
+          "y": 1.850000023841858,
+          "z": 33.0
+        },
+        "lookAt": {
+          "x": 17.0,
+          "y": 1.899999976158142,
+          "z": 17.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 1,
+        "shadowLamps": 1,
+        "offscreenAverageFps": 68.94210815429688
+      },
+      {
+        "name": "09-court7-ne.png",
+        "eye": {
+          "x": 49.0,
+          "y": 1.9199999570846558,
+          "z": 45.0
+        },
+        "lookAt": {
+          "x": 29.0,
+          "y": 2.0,
+          "z": 27.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 1,
+        "shadowLamps": 1,
+        "offscreenAverageFps": 76.58761596679688
+      },
+      {
+        "name": "13-court-lamps-close.png",
+        "eye": {
+          "x": 32.099998474121094,
+          "y": 1.7699999809265137,
+          "z": 37.79999923706055
+        },
+        "lookAt": {
+          "x": 37.599998474121094,
+          "y": 1.8899999856948853,
+          "z": 34.5
+        },
+        "timedFrames": 60,
+        "activeLamps": 1,
+        "shadowLamps": 1,
+        "offscreenAverageFps": 87.56300354003906
+      }
+    ],
+    "errors": []
+  },
+  "afterNight": {
+    "status": "finished",
+    "scene": "Street",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "graphicsApi": "Direct3D12",
+    "hdrpQuality": "High",
+    "passed": true,
+    "captureOnly": true,
+    "wastePadHidden": true,
+    "width": 1600,
+    "height": 900,
+    "registeredLampSources": 60,
+    "courtyardGlobeSources": 4,
+    "monumentLodCount": 2,
+    "monumentApproachSolid": true,
+    "monumentBaseSolid": true,
+    "hour": 1.0,
+    "lanes": [],
+    "barriers": [],
+    "surfaces": [],
+    "joins": [],
+    "blockedWalks": [],
+    "screenshots": [
+      {
+        "name": "02-court7.png",
+        "eye": {
+          "x": 26.0,
+          "y": 1.850000023841858,
+          "z": 37.0
+        },
+        "lookAt": {
+          "x": 61.0,
+          "y": 1.649999976158142,
+          "z": 38.29999923706055
+        },
+        "timedFrames": 60,
+        "activeLamps": 5,
+        "shadowLamps": 1,
+        "courtLights": 4,
+        "offscreenAverageFps": 75.99999237060547
+      },
+      {
+        "name": "08-court7-return.png",
+        "eye": {
+          "x": 40.5,
+          "y": 1.850000023841858,
+          "z": 33.0
+        },
+        "lookAt": {
+          "x": 17.0,
+          "y": 1.899999976158142,
+          "z": 17.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 5,
+        "shadowLamps": 1,
+        "courtLights": 4,
+        "offscreenAverageFps": 79.10152435302734
+      },
+      {
+        "name": "09-court7-ne.png",
+        "eye": {
+          "x": 49.0,
+          "y": 1.9199999570846558,
+          "z": 45.0
+        },
+        "lookAt": {
+          "x": 29.0,
+          "y": 2.0,
+          "z": 27.0
+        },
+        "timedFrames": 60,
+        "activeLamps": 5,
+        "shadowLamps": 1,
+        "courtLights": 4,
+        "offscreenAverageFps": 71.930419921875
+      },
+      {
+        "name": "13-court-lamps-close.png",
+        "eye": {
+          "x": 32.099998474121094,
+          "y": 1.7699999809265137,
+          "z": 37.79999923706055
+        },
+        "lookAt": {
+          "x": 37.599998474121094,
+          "y": 1.8899999856948853,
+          "z": 34.5
+        },
+        "timedFrames": 60,
+        "activeLamps": 5,
+        "shadowLamps": 1,
+        "courtLights": 4,
+        "offscreenAverageFps": 91.26715087890625
+      }
+    ],
+    "errors": []
+  },
+  "streetQA": {
+    "sameBooleanResults": true,
+    "before": {
+      "passed": false,
+      "grounded": true,
+      "buildingCollision": true,
+      "containerCollision": false,
+      "benchCollision": true,
+      "treeCollision": true,
+      "approachesWalkable": true,
+      "entranceStepsWalkable": true,
+      "lodConfigured": false,
+      "containerStateValid": true,
+      "wasteBinsHidden": true,
+      "activeWasteBins": 0,
+      "inactiveWasteBins": 6,
+      "referenceBuildingsConfigured": true,
+      "referenceBuildingCollisions": true,
+      "walkDistance": 6.000002384185791,
+      "renderers": 13173,
+      "missingMaterials": 0,
+      "entrances": 5,
+      "containers": 3,
+      "lodGroups": 55,
+      "referenceBuildings": 18,
+      "texturedMaterials": 241,
+      "legacyMaterials": 1,
+      "reflectiveWindows": 10,
+      "masonryMaterials": 35,
+      "facadeMaterialsConfigured": true,
+      "graphicsMaterialsConfigured": false,
+      "parkedVehicles": 0,
+      "parkingVehicleReferences": 0,
+      "meadowCells": 320,
+      "vehiclesAbsent": true,
+      "graphicsPresentationConfigured": true,
+      "roadNetworkConfigured": true,
+      "roadSurfacesContinuous": true,
+      "roadSurfaceChecks": 76,
+      "roadSurfaceHits": 76,
+      "roadWalkPasses": 6,
+      "roadTransitionChecks": 96,
+      "roadTransitionHits": 91,
+      "woodlandPatches": 6,
+      "woodlandTrees": 1507,
+      "woodlandShrubs": 1205,
+      "roadTransitionsContinuous": false,
+      "woodlandPlacementValid": true,
+      "woodlandLodsConfigured": true,
+      "lightingConfigured": true,
+      "shadowCasters": 8347,
+      "shadowReceivers": 13149,
+      "playgrounds": 5,
+      "playgroundEquipment": 20,
+      "playgroundCollisionHits": 20,
+      "residentialEntrances": 115,
+      "connectedResidentialEntrances": 115,
+      "residentialSurfaceChecks": 70612,
+      "residentialSurfaceHits": 46198,
+      "residentialWalkChecks": 6,
+      "residentialWalkPasses": 5,
+      "playgroundsConfigured": true,
+      "residentialAccessConfigured": false,
+      "roadMaterialsDistinct": false,
+      "grassCoverageExpanded": true,
+      "residentialDestinationsPaved": false,
+      "openingInspectionViews": 98,
+      "backgroundOpeningViews": 8,
+      "parkingSites": 18,
+      "parkingSurfaceChecks": 4859,
+      "parkingSurfaceHits": 4783,
+      "parkingAccessChecks": 108,
+      "parkingAccessHits": 108,
+      "photoParkingAreas": 1,
+      "parkingPlacementValid": true,
+      "parkingSurfacesContinuous": false,
+      "parkingAccessConnected": true,
+      "entranceLandingChecks": 31712,
+      "entranceLandingHits": 29086,
+      "entrancesHaveContinuousPaving": false,
+      "occludedSideDetails": 2,
+      "photoEntrancePresent": true,
+      "photoEntranceSurfaceValid": true,
+      "photoEntranceWalkValid": true,
+      "streetLampSources": 56,
+      "addedCourtyardLamps": 22,
+      "activeNightLamps": 7,
+      "streetLampsConfigured": true,
+      "streetLampCollision": true,
+      "streetLampNightValid": true,
+      "centralCourtPresent": true,
+      "centralCourtWalkValid": true,
+      "districtTerrainPresent": false,
+      "districtTerrainValid": false,
+      "courtDoorLowPresent": true,
+      "courtDoorLowWalkValid": true,
+      "stage05CivilPresent": true,
+      "stage05ApproachPaved": false,
+      "stage05ApproachWalkValid": true,
+      "stage05ApproachChecks": 1215,
+      "stage05ApproachHits": 164,
+      "rayTracingActive": false,
+      "rayTracingFallback": false,
+      "rayTracingInstances": 0,
+      "rayTracedContactPixels": 0,
+      "districtWalkChecks": 0,
+      "districtWalkPasses": 0,
+      "leafFlightPaths": 0,
+      "leafFlightMoved": 0,
+      "bakedLightProbes": 600,
+      "probeLitRenderers": 12249,
+      "bakedProbeDataValid": true,
+      "districtSector": "",
+      "engine": "6000.6.7f1",
+      "entranceChecks": [
+        {
+          "name": "Подход 1",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000762939453,
+          "rise": 0.6080420017242432
+        },
+        {
+          "name": "Подход 2",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000286102295,
+          "rise": 0.6077582836151123
+        },
+        {
+          "name": "Подход 3",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000286102295,
+          "rise": 0.5199998617172241
+        },
+        {
+          "name": "Подход 4",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000762939453,
+          "rise": 0.5199998617172241
+        },
+        {
+          "name": "Подход 5",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.1999998092651367,
+          "rise": 0.5199998617172241
+        }
+      ]
+    },
+    "after": {
+      "passed": false,
+      "grounded": true,
+      "buildingCollision": true,
+      "containerCollision": false,
+      "benchCollision": true,
+      "treeCollision": true,
+      "approachesWalkable": true,
+      "entranceStepsWalkable": true,
+      "lodConfigured": false,
+      "containerStateValid": true,
+      "wasteBinsHidden": true,
+      "activeWasteBins": 0,
+      "inactiveWasteBins": 6,
+      "referenceBuildingsConfigured": true,
+      "referenceBuildingCollisions": true,
+      "walkDistance": 6.000002384185791,
+      "renderers": 13189,
+      "missingMaterials": 0,
+      "entrances": 5,
+      "containers": 3,
+      "lodGroups": 55,
+      "referenceBuildings": 18,
+      "texturedMaterials": 241,
+      "legacyMaterials": 1,
+      "reflectiveWindows": 10,
+      "masonryMaterials": 35,
+      "facadeMaterialsConfigured": true,
+      "graphicsMaterialsConfigured": false,
+      "parkedVehicles": 0,
+      "parkingVehicleReferences": 0,
+      "meadowCells": 320,
+      "vehiclesAbsent": true,
+      "graphicsPresentationConfigured": true,
+      "roadNetworkConfigured": true,
+      "roadSurfacesContinuous": true,
+      "roadSurfaceChecks": 76,
+      "roadSurfaceHits": 76,
+      "roadWalkPasses": 6,
+      "roadTransitionChecks": 96,
+      "roadTransitionHits": 91,
+      "woodlandPatches": 6,
+      "woodlandTrees": 1507,
+      "woodlandShrubs": 1205,
+      "roadTransitionsContinuous": false,
+      "woodlandPlacementValid": true,
+      "woodlandLodsConfigured": true,
+      "lightingConfigured": true,
+      "shadowCasters": 8363,
+      "shadowReceivers": 13165,
+      "playgrounds": 5,
+      "playgroundEquipment": 20,
+      "playgroundCollisionHits": 20,
+      "residentialEntrances": 115,
+      "connectedResidentialEntrances": 115,
+      "residentialSurfaceChecks": 70612,
+      "residentialSurfaceHits": 46198,
+      "residentialWalkChecks": 6,
+      "residentialWalkPasses": 5,
+      "playgroundsConfigured": true,
+      "residentialAccessConfigured": false,
+      "roadMaterialsDistinct": false,
+      "grassCoverageExpanded": true,
+      "residentialDestinationsPaved": false,
+      "openingInspectionViews": 98,
+      "backgroundOpeningViews": 8,
+      "parkingSites": 18,
+      "parkingSurfaceChecks": 4859,
+      "parkingSurfaceHits": 4783,
+      "parkingAccessChecks": 108,
+      "parkingAccessHits": 108,
+      "photoParkingAreas": 1,
+      "parkingPlacementValid": true,
+      "parkingSurfacesContinuous": false,
+      "parkingAccessConnected": true,
+      "entranceLandingChecks": 31712,
+      "entranceLandingHits": 29086,
+      "entrancesHaveContinuousPaving": false,
+      "occludedSideDetails": 2,
+      "photoEntrancePresent": true,
+      "photoEntranceSurfaceValid": true,
+      "photoEntranceWalkValid": true,
+      "streetLampSources": 60,
+      "addedCourtyardLamps": 22,
+      "activeNightLamps": 7,
+      "streetLampsConfigured": true,
+      "streetLampCollision": true,
+      "streetLampNightValid": true,
+      "centralCourtPresent": true,
+      "centralCourtWalkValid": true,
+      "districtTerrainPresent": false,
+      "districtTerrainValid": false,
+      "courtDoorLowPresent": true,
+      "courtDoorLowWalkValid": true,
+      "stage05CivilPresent": true,
+      "stage05ApproachPaved": false,
+      "stage05ApproachWalkValid": true,
+      "stage05ApproachChecks": 1215,
+      "stage05ApproachHits": 164,
+      "rayTracingActive": false,
+      "rayTracingFallback": false,
+      "rayTracingInstances": 0,
+      "rayTracedContactPixels": 0,
+      "districtWalkChecks": 0,
+      "districtWalkPasses": 0,
+      "leafFlightPaths": 0,
+      "leafFlightMoved": 0,
+      "bakedLightProbes": 600,
+      "probeLitRenderers": 12265,
+      "bakedProbeDataValid": true,
+      "districtSector": "",
+      "engine": "6000.6.7f1",
+      "entranceChecks": [
+        {
+          "name": "Подход 1",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000762939453,
+          "rise": 0.6080420017242432
+        },
+        {
+          "name": "Подход 2",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000286102295,
+          "rise": 0.6077582836151123
+        },
+        {
+          "name": "Подход 3",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000286102295,
+          "rise": 0.5199998617172241
+        },
+        {
+          "name": "Подход 4",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.200000762939453,
+          "rise": 0.5199998617172241
+        },
+        {
+          "name": "Подход 5",
+          "grounded": true,
+          "climbed": true,
+          "distance": 3.1999998092651367,
+          "rise": 0.5199998617172241
+        }
+      ]
+    }
+  }
+}

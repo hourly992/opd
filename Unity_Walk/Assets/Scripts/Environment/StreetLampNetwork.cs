@@ -5,6 +5,7 @@ using UnityEngine;
 public sealed class StreetLampNetwork : MonoBehaviour
 {
     public Light[] lamps;
+    public Light[] shadowlessLamps;
     public int retainedStreetPositions, addedCourtyardPositions;
     public bool forceNight;
     public float visibleDistance = 66f;
@@ -18,6 +19,7 @@ public sealed class StreetLampNetwork : MonoBehaviour
     private float[] currentWeight;
     private bool[] selected;
     private bool[] shadows;
+    private bool[] withoutShadows;
     private StreetDayNight clock;
     private Camera view;
     private float nextSelection;
@@ -40,8 +42,12 @@ public sealed class StreetLampNetwork : MonoBehaviour
         currentWeight = new float[count];
         selected = new bool[count];
         shadows = new bool[count];
+        withoutShadows = new bool[count];
         for (int i = 0; i < count; i++)
+        {
             originalIntensity[i] = lamps[i] ? lamps[i].intensity : 0f;
+            withoutShadows[i] = shadowlessLamps != null && System.Array.IndexOf(shadowlessLamps, lamps[i]) >= 0;
+        }
         PrepareLensMaterials();
     }
 
@@ -128,7 +134,7 @@ public sealed class StreetLampNetwork : MonoBehaviour
             if (index < 0) continue;
             selected[index] = true;
             var pole = lamps[index].transform.parent;
-            if (shadowCount >= ShadowBudget || shadowCount > 0 && pole == shadowPole)
+            if (withoutShadows[index] || shadowCount >= ShadowBudget || shadowCount > 0 && pole == shadowPole)
                 continue;
             shadows[index] = true;
             shadowPole = pole;
