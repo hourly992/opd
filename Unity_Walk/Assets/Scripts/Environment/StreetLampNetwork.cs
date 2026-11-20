@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 // Existing fixtures share one bounded runtime lighting controller.
@@ -20,7 +21,10 @@ public sealed class StreetLampNetwork : MonoBehaviour
     private StreetDayNight clock;
     private Camera view;
     private float nextSelection;
+    private static readonly int HdrpEmission = Shader.PropertyToID("_EmissiveColor");
+    private static readonly int LegacyEmission = Shader.PropertyToID("_EmissionColor");
     private Material[] lensMaterials;
+    private int[] lensColorProperties;
     private Color[] lensBaseEmission;
     private float lastGlow = -1f;
 
@@ -134,24 +138,34 @@ public sealed class StreetLampNetwork : MonoBehaviour
 
     private void PrepareLensMaterials()
     {
-        var originals = new System.Collections.Generic.List<Material>();
-        var instances = new System.Collections.Generic.List<Material>();
-        foreach (var renderer in GetComponentsInChildren<MeshRenderer>(true))
+        var originals = new List<Material>();
+        var instances = new List<Material>();
+        var properties = new List<int>();
+        var renderers = new HashSet<MeshRenderer>(GetComponentsInChildren<MeshRenderer>());
+        foreach (var lamp in lamps)
         {
+            if (lamp && lamp.transform.parent && !lamp.transform.IsChildOf(transform))
+                renderers.UnionWith(lamp.transform.parent.GetComponentsInChildren<MeshRenderer>());
+        }
+        foreach (var renderer in renderers)
+        {
+            if (!renderer.enabled) continue;
             var slots = renderer.sharedMaterials;
             bool changed = false;
             for (int i = 0; i < slots.Length; i++)
             {
                 var source = slots[i];
-                if (!source || !source.name.StartsWith("WarmLedLens", System.StringComparison.Ordinal) ||
-                    !source.HasProperty("_EmissionColor"))
+                if (!source || !source.name.StartsWith("WarmLedLens", System.StringComparison.Ordinal))
                     continue;
+                int property = source.HasProperty(HdrpEmission) ? HdrpEmission : LegacyEmission;
+                if (!source.HasProperty(property)) continue;
                 int index = originals.IndexOf(source);
                 if (index < 0)
                 {
                     index = originals.Count;
                     originals.Add(source);
                     instances.Add(new Material(source) { name = source.name + " · night runtime" });
+                    properties.Add(property);
                 }
                 slots[i] = instances[index];
                 changed = true;
@@ -159,9 +173,10 @@ public sealed class StreetLampNetwork : MonoBehaviour
             if (changed) renderer.sharedMaterials = slots;
         }
         lensMaterials = instances.ToArray();
+        lensColorProperties = properties.ToArray();
         lensBaseEmission = new Color[lensMaterials.Length];
         for (int i = 0; i < lensMaterials.Length; i++)
-            lensBaseEmission[i] = lensMaterials[i].GetColor("_EmissionColor");
+            lensBaseEmission[i] = lensMaterials[i].GetColor(lensColorProperties[i]);
     }
 
     private void UpdateLensGlow(float night)
@@ -170,7 +185,7 @@ public sealed class StreetLampNetwork : MonoBehaviour
             return;
         lastGlow = night;
         for (int i = 0; i < lensMaterials.Length; i++)
-            lensMaterials[i].SetColor("_EmissionColor",
+            lensMaterials[i].SetColor(lensColorProperties[i],
                 Color.Lerp(lensBaseEmission[i], new Color(15f, 9.4f, 4.2f), night));
     }
 

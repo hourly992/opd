@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -120,7 +121,7 @@ public sealed class GaragePassageQA : MonoBehaviour
     {
         public string name;
         public Vector3 eye, lookAt;
-        public int timedFrames;
+        public int timedFrames, activeLamps, shadowLamps;
         public float offscreenAverageFps;
     }
 
@@ -131,6 +132,7 @@ public sealed class GaragePassageQA : MonoBehaviour
         public string scene, gpu, graphicsApi, hdrpQuality;
         public bool passed, captureOnly, wastePadHidden;
         public int width = 1600, height = 900;
+        public int registeredLampSources;
         public float hour = 13f;
         public List<LaneResult> lanes = new();
         public List<BarrierResult> barriers = new();
@@ -166,6 +168,10 @@ public sealed class GaragePassageQA : MonoBehaviour
             hdrpQuality = QualitySettings.names[QualitySettings.GetQualityLevel()],
             captureOnly = Array.IndexOf(args, "-garageQACaptureOnly") >= 0
         };
+        string hour = Argument(args, "-garageQAHour");
+        if (float.TryParse(hour, NumberStyles.Float, CultureInfo.InvariantCulture, out float requestedHour) &&
+            requestedHour >= 0f && requestedHour < 24f)
+            report.hour = requestedHour;
         File.WriteAllText(reportPath, JsonUtility.ToJson(report, true));
         Application.logMessageReceived += CaptureError;
         Application.runInBackground = true;
@@ -196,6 +202,8 @@ public sealed class GaragePassageQA : MonoBehaviour
 
         Camera camera = Camera.main;
         var cycle = FindAnyObjectByType<StreetDayNight>();
+        var lampNetwork = FindAnyObjectByType<StreetLampNetwork>();
+        report.registeredLampSources = lampNetwork ? lampNetwork.lamps?.Length ?? 0 : 0;
         var controller = camera ? camera.GetComponentInParent<CharacterController>() : null;
         if (!camera || !controller || !cycle || GraphicsSettings.currentRenderPipeline is not HDRenderPipelineAsset)
         {
@@ -250,6 +258,8 @@ public sealed class GaragePassageQA : MonoBehaviour
         foreach (var shot in views)
         {
             camera.transform.SetPositionAndRotation(shot.eye, Quaternion.LookRotation(shot.lookAt - shot.eye));
+            if (hour != null)
+                yield return new WaitForSecondsRealtime(.85f);
             for (int frame = 0; frame < 24; ++frame)
             {
                 RenderPipeline.SubmitRenderRequest(camera, request);
@@ -269,7 +279,9 @@ public sealed class GaragePassageQA : MonoBehaviour
             report.screenshots.Add(new ShotResult
             {
                 name = name, eye = shot.eye, lookAt = shot.lookAt,
-                timedFrames = measuredFrames, offscreenAverageFps = averageRate
+                timedFrames = measuredFrames, offscreenAverageFps = averageRate,
+                activeLamps = lampNetwork ? lampNetwork.ActiveLampCount : 0,
+                shadowLamps = lampNetwork ? lampNetwork.ShadowLampCount : 0
             });
         }
         Destroy(image);
