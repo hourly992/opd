@@ -46,7 +46,7 @@ public static partial class StreetFacadeUtilities
         }
     }
 
-    private enum Surface { Other, Wall, Gutter }
+    private enum Surface { Other, Wall, Gutter, Window }
     private sealed class WallProbe
     {
         private sealed class Part
@@ -107,6 +107,7 @@ public static partial class StreetFacadeUtilities
         {
             string name = (material + " " + part).ToLowerInvariant();
             if (name.Contains("roofedge") || name.Contains("водосток")) return Surface.Gutter;
+            if (name.Contains("glass") || name.Contains("стекло")) return Surface.Window;
             if (name.Contains("brick") || name.Contains("plinth") || name.Contains("foundation") ||
                 name.Contains("masonry") || name.Contains("кирпич") || name.Contains("штукатурка") ||
                 name.Contains("цоколь") || name.Contains("стена"))
