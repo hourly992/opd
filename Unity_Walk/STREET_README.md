@@ -117,3 +117,7 @@ https://github.com/google/fonts/tree/main/ofl/ptsans
 **Архитектурная итерация 01.11.2026:** Windows-сборка и повторный запуск с `-streetQA -buildingQA` прошли, все 18 новых объектов присутствуют, столкновения проверены, сохранены и просмотрены 48 кадров. Отчёт — `street_qa/reference_buildings/report.json`. Это проверка работоспособности и визуальных ошибок моделей, не подтверждение обмерной точности. Подробности — в [описании реконструкции домов](BUILDING_RECONSTRUCTION.md).
 
 **Общая графическая итерация 01.11.2026:** последняя Windows-сборка и запуск с `-streetQA -buildingQA -graphicsQA -graphicsBenchmark` завершились с кодом 0. Все прежние проверки прошли; 67 PBR-материалов, 10 материалов стекла, 0 отсутствующих материалов. Просмотрены 67 кадров, включая исправленные LOD дерева. Короткий замер RTX 5060 / 1600×900: 148–164 FPS в трёх ракурсах. Отчёты — `street_qa/graphics_overhaul_final/`; условия замера и ограничения — в [GRAPHICS_OVERHAUL.md](GRAPHICS_OVERHAUL.md).
+
+## Фонари Street Lamp от Yni Viar
+
+Модель [Street Lamp](https://sketchfab.com/3d-models/street-lamp-152055979ddd48669529f5d4f5f3543c) размещена на существующих уличных и дворовых опорах в `Assets/Scenes/Street.unity`. Атрибуция, сведения о лицензии CC BY 4.0 и описание изменений находятся в [SOURCE-LICENSE.md](Assets/ThirdParty/Sketchfab/YniViar/StreetLamp/SOURCE-LICENSE.md). Исходный GLB входит в проект.
