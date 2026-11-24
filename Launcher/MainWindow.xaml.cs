@@ -22,7 +22,6 @@ public partial class MainWindow : Window
     private LauncherSettings settings = new();
     private Button? panelOrigin;
     private bool initialized;
-    private bool? ambientMotion;
 
     public MainWindow()
     {
@@ -57,14 +56,13 @@ public partial class MainWindow : Window
 
         initialized = true;
         ApplyPlayback();
-        if (AnimationsEnabled)
-            Fade(TitleComposition, .22, 1, .54);
     }
 
     private void Gallery_FrameChanged(object? sender, GalleryFrame frame)
     {
         FrameCaption.Text = frame.Caption;
         FrameIndex.Text = string.Format(CultureInfo.InvariantCulture, "{0:00} / {1:00}", Gallery.CurrentFrameNumber, Gallery.FrameCount);
+        PreviousFrame.IsEnabled = NextFrame.IsEnabled = Gallery.FrameCount > 1;
         Glow.ApplyFrame(frame);
     }
 
@@ -80,27 +78,11 @@ public partial class MainWindow : Window
         MotionSettings.SetIsEnabled(this, animations && inForeground);
         Gallery.SetPlayback(playAmbient, animations, highQuality);
         Glow.SetPlayback(playAmbient, animations, highQuality);
-
-        bool animateDetails = playAmbient && animations && highQuality;
-        if (ambientMotion == animateDetails)
-            return;
-
-        ambientMotion = animateDetails;
-        Logo.SetPlayback(animateDetails);
-        if (animateDetails)
-        {
-            RouteMotion.BeginAnimation(TranslateTransform.XProperty, new DoubleAnimation(0, 17, TimeSpan.FromSeconds(3.8))
-            {
-                EasingFunction = new SineEase { EasingMode = EasingMode.EaseInOut },
-                AutoReverse = true,
-                RepeatBehavior = RepeatBehavior.Forever
-            });
-        }
-        else
-        {
-            RouteMotion.BeginAnimation(TranslateTransform.XProperty, null);
-        }
     }
+
+    private async void PreviousFrame_Click(object sender, RoutedEventArgs e) => await Gallery.NavigateAsync(-1);
+
+    private async void NextFrame_Click(object sender, RoutedEventArgs e) => await Gallery.NavigateAsync(1);
 
     private string? ResolveGamePath(string configuredPath) => string.IsNullOrWhiteSpace(configuredPath)
         ? game.DiscoverGamePath()

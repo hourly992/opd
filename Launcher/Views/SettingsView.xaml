@@ -8,19 +8,16 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="GamePathBox" Foreground="{StaticResource Ink}" Background="#17141A"
-                     BorderBrush="#3D3640" BorderThickness="1" Padding="9,5" Height="36" VerticalContentAlignment="Center"
-                     CaretBrush="{StaticResource Brass}" HorizontalScrollBarVisibility="Hidden"
+            <TextBox x:Name="GamePathBox" Style="{StaticResource PanelTextBox}" HorizontalScrollBarVisibility="Hidden"
                      AutomationProperties.Name="Исполняемый файл игры"/>
             <Button Grid.Column="1" Content="Обзор…" Style="{StaticResource PanelButton}" Click="Browse_Click"
                     Width="91" Margin="9,0,0,0"/>
         </Grid>
         <TextBlock x:Name="PathHint" Style="{StaticResource PanelHint}" Margin="0,7,0,0"/>
         <Border Height="1" Background="{StaticResource Line}" Margin="0,19,0,15"/>
-        <CheckBox x:Name="AnimationsBox" Content="Анимации интерфейса" Foreground="{StaticResource Ink}"
-                  FontSize="14" FontWeight="SemiBold" VerticalContentAlignment="Center" Padding="5,0,0,0"/>
+        <CheckBox x:Name="AnimationsBox" Content="Анимации интерфейса" Style="{StaticResource PanelCheckBox}"/>
         <TextBlock Text="Переходы кадров, движение света и плавное появление панелей." Style="{StaticResource PanelHint}"
-                   Margin="19,6,0,15"/>
+                   Margin="26,6,0,15"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>

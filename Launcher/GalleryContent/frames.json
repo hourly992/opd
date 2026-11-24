@@ -19,5 +19,40 @@
     "color": "#9B60E6",
     "intensity": 0.73,
     "direction": "left"
+  },
+  {
+    "file": "street-eye-level.jpg",
+    "caption": "Прогулка по улице",
+    "color": "#618FDE",
+    "intensity": 0.76,
+    "direction": "right"
+  },
+  {
+    "file": "canopy-backlight.jpg",
+    "caption": "Солнце сквозь листву",
+    "color": "#EE6949",
+    "intensity": 0.87,
+    "direction": "left"
+  },
+  {
+    "file": "east-edge.jpg",
+    "caption": "Восточная сторона",
+    "color": "#C47BBB",
+    "intensity": 0.73,
+    "direction": "right"
+  },
+  {
+    "file": "autumn-crossing.jpg",
+    "caption": "Двор у перехода",
+    "color": "#DB9551",
+    "intensity": 0.81,
+    "direction": "left"
+  },
+  {
+    "file": "district-overview.jpg",
+    "caption": "Панорама квартала",
+    "color": "#7A79E9",
+    "intensity": 0.79,
+    "direction": "right"
   }
 ]

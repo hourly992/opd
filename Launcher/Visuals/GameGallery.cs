@@ -37,6 +37,7 @@ public sealed class GameGallery : Grid
     private bool _animate = true;
     private bool _highQuality = true;
     private bool _preloading;
+    private bool _navigating;
 
     public GameGallery()
     {
@@ -68,7 +69,7 @@ public sealed class GameGallery : Grid
         {
             Width = PlaybackTrackWidth,
             Height = 2,
-            Margin = new Thickness(0, 0, 20, 16),
+            Margin = new Thickness(0, 0, 117, 31),
             HorizontalAlignment = HorizontalAlignment.Right,
             VerticalAlignment = VerticalAlignment.Bottom,
             Background = new SolidColorBrush(Color.FromArgb(74, 221, 228, 244)),
@@ -99,6 +100,38 @@ public sealed class GameGallery : Grid
         : 0;
 
     public int FrameCount => _frames.Count - _invalidFrames.Count;
+
+    public async Task NavigateAsync(int direction)
+    {
+        if (direction == 0 || _navigating || _current is null || FrameCount < 2)
+            return;
+
+        _navigating = true;
+        try
+        {
+            if (_incoming is not null)
+                CompleteTransition();
+
+            var currentIndex = _current.Index;
+            int step = Math.Sign(direction);
+            var next = step > 0 ? _preloaded : null;
+            _preloaded = null;
+            next ??= await DecodeFromAsync(currentIndex + step, currentIndex, step);
+            if (next is null || !IsLoaded)
+                return;
+
+            BeginTransition(next);
+            if (!_animate || !_active)
+                CompleteTransition();
+        }
+        finally
+        {
+            _navigating = false;
+            UpdatePlaybackTrack();
+            UpdateRenderingSubscription();
+            StartPreloading();
+        }
+    }
 
     public void SetPlayback(bool active, bool animationsEnabled, bool highQuality)
     {
@@ -150,13 +183,13 @@ public sealed class GameGallery : Grid
         StartPreloading();
     }
 
-    private async Task<DecodedFrame?> DecodeFromAsync(int startIndex, int excludedIndex)
+    private async Task<DecodedFrame?> DecodeFromAsync(int startIndex, int excludedIndex, int step = 1)
     {
         int width = _highQuality ? 2048 : 1120;
         int height = _highQuality ? 1200 : 700;
         for (int offset = 0; offset < _frames.Count; offset++)
         {
-            int index = (startIndex + offset) % _frames.Count;
+            int index = (startIndex + step * offset + _frames.Count) % _frames.Count;
             if (index == excludedIndex || _invalidFrames.Contains(index))
             {
                 continue;
@@ -177,16 +210,19 @@ public sealed class GameGallery : Grid
 
     private async void StartPreloading()
     {
-        if (!IsLoaded || !_active || !_animate || _preloading || _preloaded is not null
+        if (!IsLoaded || !_active || !_animate || _preloading || _navigating || _preloaded is not null
             || _incoming is not null || _current is null || FrameCount < 2)
         {
             return;
         }
 
+        int currentIndex = _current.Index;
         _preloading = true;
         try
         {
-            _preloaded = await DecodeFromAsync(_current.Index + 1, _current.Index);
+            var next = await DecodeFromAsync(currentIndex + 1, currentIndex);
+            if (_current?.Index == currentIndex && _incoming is null && !_navigating)
+                _preloaded = next;
         }
         finally
         {
@@ -195,6 +231,8 @@ public sealed class GameGallery : Grid
 
         UpdatePlaybackTrack();
         UpdateRenderingSubscription();
+        if (_current?.Index != currentIndex)
+            StartPreloading();
     }
 
     private void UpdateRenderingSubscription()
