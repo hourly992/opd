@@ -1,0 +1,14 @@
+<UserControl x:Class="Pereulki.Launcher.Views.UpdatesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel>
+        <Grid Margin="0,0,0,18">
+            <TextBlock Text="Версия лаунчера" Style="{StaticResource PanelLabel}" VerticalAlignment="Center"/>
+            <TextBlock x:Name="VersionText" FontFamily="{StaticResource Mono}" FontSize="19" Foreground="{StaticResource Brass}"
+                       HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </Grid>
+        <Border Background="{StaticResource Line}" Height="1" Margin="0,0,0,16"/>
+        <TextBlock Text="Обновления игры" Style="{StaticResource PanelLabel}"/>
+        <TextBlock x:Name="UpdateMessage" Style="{StaticResource PanelHint}" Margin="0,7,0,0" AutomationProperties.LiveSetting="Polite"/>
+    </StackPanel>
+</UserControl>

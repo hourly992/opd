@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Pereulki.Launcher</AssemblyName>
+    <RootNamespace>Pereulki.Launcher</RootNamespace>
+    <Version>0.1.0</Version>
+    <Product>Переулки</Product>
+    <Description>Лаунчер игры «Переулки»</Description>
+    <ApplicationIcon>Assets/Pereulki.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Assets/Pereulki.ico" />
+    <Content Include="GalleryContent/**/*" CopyToOutputDirectory="PreserveNewest"
+             CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+</Project>

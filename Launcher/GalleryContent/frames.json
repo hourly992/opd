@@ -1,0 +1,23 @@
+[
+  {
+    "file": "street-sunset.jpg",
+    "caption": "Последний свет",
+    "color": "#EE804D",
+    "intensity": 0.86,
+    "direction": "left"
+  },
+  {
+    "file": "street-night.jpg",
+    "caption": "Ночные кварталы",
+    "color": "#4F70F7",
+    "intensity": 0.9,
+    "direction": "right"
+  },
+  {
+    "file": "autumn-courtyard.jpg",
+    "caption": "Осенний двор",
+    "color": "#9B60E6",
+    "intensity": 0.73,
+    "direction": "left"
+  }
+]
