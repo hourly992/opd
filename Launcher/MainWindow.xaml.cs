@@ -22,6 +22,7 @@ public partial class MainWindow : Window
     private LauncherSettings settings = new();
     private Button? panelOrigin;
     private bool initialized;
+    private bool loadingCatalog;
 
     public MainWindow()
     {
@@ -47,9 +48,7 @@ public partial class MainWindow : Window
 
         var loaded = settingsStore.Load();
         settings = loaded.Settings;
-        var version = updates.GetStatus();
-        TopVersion.Text = $"v{version.LauncherVersion}";
-        UpdatesPanel.ShowStatus(version);
+        TopVersion.Text = $"v{updates.LauncherVersion}";
         RefreshGameStatus();
         if (loaded.Warning is { } warning)
             SetStatus(warning, isError: true);
@@ -152,10 +151,22 @@ public partial class MainWindow : Window
         OpenPanel("Настройки", showSettings: true, origin);
     }
 
-    private void Updates_Click(object sender, RoutedEventArgs e)
+    private async void Updates_Click(object sender, RoutedEventArgs e)
     {
-        UpdatesPanel.ShowStatus(updates.GetStatus());
         OpenPanel("Обновления", showSettings: false, UpdatesButton);
+        if (loadingCatalog)
+            return;
+
+        loadingCatalog = true;
+        UpdatesPanel.ShowLoading(updates.LauncherVersion);
+        try
+        {
+            UpdatesPanel.ShowCatalog(await updates.GetGameCatalogAsync());
+        }
+        finally
+        {
+            loadingCatalog = false;
+        }
     }
 
     private void SettingsPanel_SaveRequested(object? sender, LauncherSettings proposed)
