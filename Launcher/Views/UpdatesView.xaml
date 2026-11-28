@@ -10,5 +10,23 @@
         <Border Background="{StaticResource Line}" Height="1" Margin="0,0,0,16"/>
         <TextBlock Text="Обновления игры" Style="{StaticResource PanelLabel}"/>
         <TextBlock x:Name="UpdateMessage" Style="{StaticResource PanelHint}" Margin="0,7,0,0" AutomationProperties.LiveSetting="Polite"/>
+        <ItemsControl x:Name="GameVersions" Margin="0,14,0,0">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Text="{Binding Title}" Style="{StaticResource PanelLabel}" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding Date}" Style="{StaticResource PanelHint}" Margin="0,3,0,0"/>
+                        </StackPanel>
+                        <Button Grid.Column="1" Content="Скачать ZIP" Style="{StaticResource PanelButton}"
+                                VerticalAlignment="Center" Click="Download_Click" ToolTip="{Binding Tag}"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </StackPanel>
 </UserControl>
